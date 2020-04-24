@@ -1,0 +1,446 @@
+﻿JAWS Tandem Quick Start Guide
+
+[Freedom Scientific]
+
+Call Today!1(800) 444-4443
+
+Search: Search
+
+Submit
+
+Toggle navigation
+
+-   Home
+-   Products
+    -   Low Vision Products
+    -   Blindness Products
+    -   Accessibility Testing Products
+-   Software
+    -   JAWS
+    -   ZoomText
+    -   Fusion
+    -   OpenBook
+    -   Software For Home
+    -   Software For School
+    -   Software For Business
+    -   
+    -   Activate Software License
+    -   Sponsored Software Licenses
+-   Services
+    -   Accessibility Consulting
+    -   Disability Etiquette Training
+    -   Training
+    -   Certification
+-   Support
+    -   Technical Support
+    -   Training and Certification
+    -   Register A Product
+    -   Documentation
+    -   
+    -   Software Downloads
+    -   Synthesizers
+    -   Focus Blue Firmware
+    -   Hardware Drivers
+-   Downloads
+    -   JAWS
+    -   Fusion
+    -   ZoomText
+    -   MAGic
+    -   OpenBook
+    -   WYNN
+    -   Synthesizers
+    -   Focus Blue Firmware
+    -   omniReader Update
+    -   Hardware Drivers
+    -   EyeMerge
+    -   Eye-Pal / Zoom-Office
+-   Find A Dealer
+-   Find A Dealer
+-   Shop Online
+
+-   PRODUCTS
+    -   Low Vision Products
+    -   Blindness Products
+    -   Accessibility Testing Products
+    -   Learning Systems Group Products
+-   SERVICES
+    -   Accessibility Consulting
+    -   Enterprise Accessibility Training
+    -   Disability Etiquette Training
+    -   Training
+    -   Certification
+-   DOWNLOADS
+    -   JAWS
+    -   Fusion
+    -   ZoomText
+    -   MAGic
+    -   OpenBook
+    -   WYNN
+    -   Synthesizers
+    -   Focus Blue Firmware
+    -   omniReader Update
+    -   Hardware Drivers
+    -   EyeMerge
+    -   Eye-Pal / Zoom-Office
+-   SUPPORT
+    -   Technical Support
+    -   Software Activation
+    -   Documentation
+    -   Product Registration
+    -   Product Videos
+    -   Vision Loss Facts and Resources
+    -   Software License Agreements
+-   DEALER LOCATOR
+-   SHOP
+
+JAWS Tandem Quick Start Guide
+
+Use JAWS Tandem™ to access another computer running JAWS to provide hands on technical support, write scripts from a distance, or perform remote JAWS training. This feature consists of a controller system, used by support personnel, distributors, dealers, consultants, and trainers, and a target system, which is the customer's JAWS application and computer.
+
+A JAWS Tandem connection serves as an online meeting between two JAWS users. A meeting can be conducted over the Internet, which is known as a Tandem Center session, or over a private network, known as a Tandem Direct session. The primary connection method is through Tandem Center, a gateway server responsible for creating meeting IDs, verifying proper use of JAWS Tandem, and providing a path between the two systems. After the session is established, the controller can manage and run the target system's desktop.
+
+Tandem Center sessions on both the controller and target computers are free of charge. For Tandem Direct sessions (typically used by corporations within a network) there is a charge for any computer that acts as a controller such as a help desk. There is no charge for target computers, such as workstations, in a Tandem Direct session.
+
+Remember to visit the Frequently Asked Questions for more information.
+
+Verify the following before you begin:
+
+-   Internet access
+-   Windows 7 or later
+-   If you are having issues connecting to the Tandem Center, please make sure that Internet address tandem.freedomscientific.com and port 12000 be given access in the firewall. If you are in a corporate environment, please contact your IT team with this information.
+
+Starting a JAWS Tandem Center Session
+
+Note: The controller user provides the target user with a meeting ID. The ID is automatically generated for the controller during the connection process as described in the following procedure.
+
+To start a JAWS Tandem Center session on a controller computer, do the following:
+
+1.  Press INSERT+J to open the JAWS application window.
+2.  Press ALT+U to open the Utilities menu.
+3.  Select JAWS Tandem from this menu, and then select Tandem Center from the next submenu.
+4.  Select Get Access to a computer, which then opens the Get Access to a Computer dialog box.
+5.  Press SPACEBAR to activate the Get Access button.
+    The Meeting ID Created dialog box opens. An alphanumeric ID appears in the Meeting ID read-only edit field. It is not case sensitive.
+6.  Provide the target user with the meeting ID, and then wait for the connection process to complete on the target system. After successful connection with the target, you have access to the target system's desktop. Note that once an ID is generated, it is valid for 60 minutes until a connection is made. If you have not made a connection within this period, you must obtain a new ID from the Tandem Center.
+
+Note: Instead of having the target user walk through similar menus, just tell the user to press INSERT+ALT+T. This will open the Allow Access to My Computer dialog box, and place focus in the Meeting ID edit box. You can then give the user the meeting ID that was created for you.
+
+On the target computer, do the following:
+
+1.  Press INSERT+ALT+T. The Allow Access to My Computer dialog box opens.
+2.  Type the meeting ID into the edit box. The ID is not case sensitive.
+3.  Press TAB, and then SPACEBAR to activate the Allow Access button.
+    After the controller and target successfully connect, the controller has access to the target system's desktop.
+
+Running a Session
+
+As a controller, you can run the target system using JAWS and braille just as if you are sitting in front of that computer. Use the same JAWS keystrokes and functionality that you are familiar with to control the target system. JAWS keystrokes work no matter which type of keyboard layout is used: Laptop or Desktop.
+
+JAWS Tandem Keystrokes
+
+Note: When using the Laptop keyboard layout, substitute CAPS LOCK for INSERT when typing a JAWS Tandem keystroke.
+
+-   INSERT+ALT+T - ends session and can be issued from controller or target systems.
+    Note: You can also use this keystroke to start JAWS Tandem on a target system.
+-   INSERT+ALT+TAB - toggles between target system's desktop and controller system's desktop. Only available on controller system; cannot be used by target system.
+-   INSERT+CTRL+SHIFT+V - toggles video on or off. Video is off by default. When video is on, it lets sighted users watch JAWS Tandem activity. Only available on controller system; cannot be used by target system.
+
+Note: If JAWS is running with ZoomText or as Fusion, you must always use INSERT+ALT+T to start or end a Tandem session even when using the Laptop keyboard layout.
+
+Remote Clipboard
+
+Use the CTRL+C keystroke to copy text with formatting from the target system, and then use CTRL+V to paste text into a file on the controller system. This is ideal for support personnel who want to copy specific text from a log file on the target system.
+
+Note: Remote Clipboard will not transfer files.
+
+Disconnecting a Session
+
+Press INSERT+ALT+T to terminate a session at any time from either the controller system or the target system. Each system regains control of its own desktop.
+
+Tandem Direct Session
+
+A Tandem Direct session is used for enterprise networks in a business when two JAWS users are connected to the same network. All functionality and keystrokes previously mentioned for a Tandem Center session are applicable for a Tandem Direct session.
+
+Starting a Tandem Direct session is slightly different than a Tandem Center session as outlined in the following list.
+
+-   Determine which computer will be the controller and which will be the target.
+-   The first time you run a Tandem Direct session on a target system, you must unblock the program JTTarget so that it can communicate through Windows Firewall.
+-   The target system always initiates the session, and it must provide its meeting ID and its host name to the controller.
+-   By default, the target system listens on port 3000. If you change the port setting, remember to configure the controller system for the same port.
+-   The controller can turn on video to view JAWS Tandem activity.
+
+Starting a JAWS Tandem Direct Session
+
+A JAWS Tandem Direct session is always launched from the target computer. To start, do the following:
+
+1.  Press INSERT+J and then ALT+U to open the Utilities menu in the JAWS application window.
+2.  Press T to open the JAWS Tandem submenu, and then R to open the Tandem Direct submenu.
+3.  Press A to choose Allow Access to my Computer. A dialog box opens with focus in the Meeting ID edit box.
+4.  Type a value into the Meeting ID edit box. The Meeting ID can be letters, numbers, or a combination of both. The maximum ID length is 64-characters, and it is not case sensitive. You will provide this ID to the controller user.
+5.  Press TAB to move to the Host Name or IP Address read-only edit box. Provide the controller user with the host name, for example, ABC-DEF001.
+6.  Press TAB to move to the Allow Access button, and press SPACEBAR to activate the button.
+
+Note: As a target system, a Windows Security Alert dialog box may appear after pressing the Allow Access button. If this happens, choose the Unblock button and press SPACEBAR. (If a User Account Control dialog box opens, choose the Continue button and press SPACEBAR.) This action adds the JTTarget program to an exceptions list in Windows Firewall on the target system.
+
+7.  Wait for the controller user to enter the target information. On a successful Tandem Direct connection, JAWS announces Tandem connection open. The controller system now has access to and can operate the target system.
+
+To start a JAWS Tandem Direct session on the controller computer, do the following:
+
+1.  Press INSERT+J to open the JAWS application window, and press ALT+U to open the Utilities menu.
+2.  Press T to open the JAWS Tandem submenu, and then R to open the Tandem Direct submenu.
+3.  Press G to select Get Access to a Computer. A dialog box opens, and focus is in the Host Name or IP Address edit box.
+4.  Type the host name, provided to you by the target user, into the edit box.
+5.  Press TAB to move to the Meeting ID edit box, and type the ID provided by the target user.
+6.  Press TAB to move to the Enable Video check box. If you are a sighted user and want to watch the JAWS Tandem activity on the target system, select the check box. If you do not need video, clear the check box.
+
+Note: By default, the Enable Video check box is cleared; however, if you selected the check box in a previous session, JAWS Tandem remembers this setting and uses it for the next session. Also, video can be toggled on or off at any time during a session using INSERT+CTRL+SHIFT+V.
+
+7.  Press TAB to move to the Get Access button and press SPACEBAR to activate the button. After successfully connecting with the target, you now have control of the target system's desktop. If the connection fails, verify that Windows Firewall is not blocking JTTarget on the target system. Also verify that host name, meeting ID, and port settings match.
+
+Configuring Windows Firewall for Tandem Direct Sessions
+
+Note: The following procedures are only necessary if JTTarget is later blocked on the target system.
+
+The target system uses a program named JTTarget. It must be added to an exceptions list on the target system so that the program can communicate through Windows Firewall. (It is not necessary to do this on the controller system.) Windows lets you unblock this program when you first create a Tandem Direct session. Later, if you block the program by deleting JTTarget from the Windows Firewall exceptions list or by clearing the JTTarget check box in the exceptions list, an error message or a Windows Security Alert will appear the next time the target and controller try to connect.
+
+Adding JTTarget to the Exceptions List
+
+If you previously deleted the JTTarget program from the exceptions list in Windows Firewall, use the following steps to add the program:
+
+1.  Open the Windows Control Panel and then select and open Windows Firewall.
+2.  For Windows 10 or Windows 8.1, navigate to and select the Allow an app or feature through Windows Firewall link, or for Windows 7, navigate to and select the Allow a program through Windows Firewall link. If a User Account Control dialog box opens, choose the Continue button and press SPACEBAR to activate the button.
+3.  Select Change Settings and then select the Allow Another App button.
+4.  Choose the Browse button in the Add a Program dialog box, and then type JTTarget.exe in the File name combo of the Browse dialog box.
+5.  Press ENTER. The program is added to the Programs list in the Add a Program dialog box.
+6.  Choose OK. JTTarget is added to and selected in the Allowed Programs list.
+7.  Press TAB to move to the OK button and press SPACEBAR to save the change and close Windows Firewall. The controller system can now connect to the target system.
+
+Windows Firewall Exception for Tandem Direct
+
+If you previously cleared the JTTarget check box in the exceptions list, do the following to select the check box:
+
+1.  Open the Windows Control Panel and then select and open Windows Firewall.
+2.  For Windows 10 or Windows 8.1, navigate to and select the Allow an app or feature through Windows Firewall link, or for Windows 7, navigate to and select the Allow a program through Windows Firewall link. If a User Account Control dialog box opens, choose the Continue button and press SPACEBAR to activate the button.
+3.  Select Change Settings and then select the Allow Another App button.
+4.  In the Allowed Programs list, use the ARROW keys to move to JTTarget.
+5.  Press SPACEBAR to select the check box.
+6.  Press TAB to move to the OK button and press SPACEBAR to save the change and close Windows Firewall. The controller system can now connect to the target system.
+
+Connection Audit Logging
+
+JAWS Tandem now maintains a log of session activity using the Windows Event Log service. These events are used to record the beginning and end of a session, the suspension and continuation of a session, and errors triggered before a session starts. The advantage of having such a log is that consultants and trainers now have a record of JAWS Tandem activity which is useful for tracking time for billing purposes and so on. The event log can be set up so that only administrators can delete events. Also, users assigned any privilege level can write events to the event log.
+
+Note: JAWS Tandem event logging does not record user activity. It only logs session errors and the start, suspension, restart, and end of a session.
+
+-   To learn more about events, see JAWS Tandem Events.
+-   To learn more about the event properties, see JAWS Tandem Event Properties.
+-   To launch the Event Viewer, see Opening the Event Viewer.
+
+JAWS Tandem Events
+
+JAWS Tandem events and actions trigger an entry in the event log. The following events are available. For event details, see Event Properties.
+
+-   Event ID 1 - Tandem session error: An error event describing when a session cannot be established. This can be caused by the following:
+    -   Meeting ID used by the target does not match the meeting ID used by the controller.
+    -   Target and controller are unable to find a common voice synthesizer.
+    -   Meeting ID expired.
+    -   Network error occurred; can be caused by the target computer not communicating with the Tandem Center.
+-   Event ID 2 - Tandem session started: An information event showing when a session is established between a controller and target computer. It appears in both the controller and target event logs.
+-   Event ID 3 - Tandem session concluded: An information event showing when a session ended. This can be caused by the target or controller computer closing the session, or by a network error closing the session. It appears in both the controller and target event logs.
+-   Event ID 4 - Tandem session suspended: An information event showing when the controller suspended a session. This is done by toggling between the target system desktop and the controller system desktop using INSERT+ALT+TAB. It appears in the target event log.
+-   Event ID 5 - Tandem session resumed: An information event showing when the controller resumed the session. This is done by toggling between the controller system desktop and the target system desktop using INSERT+ALT+TAB. It appears in the target event log.
+
+JAWS Tandem Event Properties
+
+Event properties provide information about a JAWS Tandem event. The amount of detail given depends on the Event ID type. For example, an Event ID 4 logs only the Meeting ID, whereas an Event ID 3 provides details for all of the following event properties:
+
+-   Meeting ID: The alphanumeric ID that is used to start a session. For a Tandem Center session, this is the value that is automatically generated for the controller computer. For a Tandem Direct session, this is the value entered in the Meeting ID edit box on the target computer.
+-   Meeting type: Indicates if the meeting is a Tandem Center or Tandem Direct session.
+-   User role: Indicates if the controller or target computer started or ended the session. It also indicates whether the error occurred on the controller side or the target side of the session.
+-   Peer machine name - IP address: The machine name of the other computer in the session. For Tandem Direct sessions, the IP address is also included.
+-   Peer user name: The user name associated with the other computer in the session.
+-   Duration: Indicates the total duration of the session in hours, minutes, and seconds. This value also includes the amount of time the session was suspended.
+-   Suspend time: Indicates the duration that the session was suspended by the controller system.
+-   Reason: A three-digit code that explains why a session could not be established. The following error codes are available:
+    -   001: The controller or target computer could not connect to the Tandem Center.
+    -   002: The meeting ID expired. This code applies to the controller computer in a Tandem Center session.
+    -   003: The Tandem Center rejected the meeting ID. This code applies to the target computer in a Tandem Center session.
+    -   004: The controller computer could not connect to the target computer. This applies to Tandem Direct sessions.
+    -   005: There is a mismatch between the meeting ID entered for the controller system and the meeting ID entered for the target system. This code applies to Tandem Direct sessions.
+    -   006: The controller computer and target computer could not agree on a common voice synthesizer to use for the session.
+
+Opening the Event Viewer
+
+To open the Event Viewer, do the following:
+
+1.  In Windows 10 or Windows 8.1, press WINDOWS Key+X to open the Quick Link menu, then navigate to Event Viewer and press ENTER. If the User Account Control dialog box opens, choose Continue. The Event Viewer (Local) tree menu opens.
+    In Windows 7, press the WINDOWS key, type event viewer into the Start Search edit box, and press ENTER.
+2.  Press W to select Windows Logs from the Event Viewer (Local) tree view. If necessary, press RIGHT ARROW to open Windows Logs.
+3.  Press A to select Application.
+4.  Press ALT+A to open the Action menu, and choose Filter Current Log. The Filter Current Log dialog box opens.
+5.  Select the Information and Error check boxes. Clear the Critical, Warning, and Verbose check boxes.
+6.  Press TAB one time from the Information check box and then press INSERT+3, followed by ALT+DOWN ARROW to open the Event source combo box list.
+7.  Select JAWS X, where X is the JAWS release number. Make sure the check box is selected by pressing SPACEBAR, and then press ENTER.
+8.  Choose OK to apply the event filter and close the dialog box.
+9.  Press F6 to move focus to the Application list. You can now view all JAWS Tandem events. When reviewing audit points, use the meeting ID to make sure that you are viewing all events associated with a single session.
+
+Frequently Asked Questions
+
+Question: What version of JAWS must the controller and target system have?
+
+Answer: JAWS 10 or later. An authorized license is needed if you are going to be a controller.
+
+Question: How responsive is the JAWS Tandem session?
+
+Answer: You'll be amazed! It's very much like Remote Desktop or Citrix.
+
+Question: Can JAWS Demo or JAWS 40-Minute mode be used with JAWS Tandem on either the controller or target system?
+
+Answer: Yes, you can use JAWS as a Demo for a target system during Tandem sessions.
+
+Question: During a Tandem session, which keyboard layout, laptop or desktop, is used?
+
+Answer: The layout used on the controller side of the session is the primary keyboard layout used by both the controller and target systems.
+
+Question: Can a sighted user who is using a mouse on the controller computer work with the target computer or is it limited to keyboard use only?
+
+Answer: The mouse is also active when running JAWS Tandem provided that you turn on the video output on controller side.
+
+Question: What are the main uses of this outside of AT training and tech support? For example, can it be used to work with Web developers for usability testing?
+
+Answer: Yes. It can also be used by consultants to help with scripting and debugging issues from a distance.
+
+Question: Can JAWS Tandem be used by a JAWS user to remote into computers of sighted colleagues that don't necessarily use JAWS?
+
+Answer: Yes, if the sighted colleagues install JAWS as a demo on their computers.
+
+Question: What is the difference between JAWS Tandem and Remote Desktop, Citrix, or terminal services?
+
+Answer: JAWS Tandem lets you, the controller, run in the target's user session while the target user is on the computer at the same time. Remote Desktop/Terminal/Citrix is running on your own desktop on the remote machine, and no one on the other side can see or hear it. For support purposes, JAWS Tandem is perfect.
+
+Question: While in a JAWS Tandem session, can the controller use the Task Manager on the target computer?
+
+Answer: Yes. To launch Task Manager on the target side, you must use the keystroke CTRL+SHIFT+ESCAPE, or press WINDOWS Key+R to open the Run dialog box, and then type taskmgr and press ENTER. Note that if you try to use CTRL+ALT+DELETE to open the Task Manager, this command will be executed on the controller's machine.
+
+Question: From the controller system, can I hear the target system's audio?
+
+Answer: Yes. During a JAWS Tandem session, events that generate sounds on the target system, such as a Windows program error, entry and exit of Auto Forms Mode, or other JAWS sounds associated with the Speech and Sounds Manager, can be heard on the controller system. This means that when an event occurs on the target system, a notification is sent to the controller system so that the controller computer plays the same or a similar WAV file. This is very helpful to support personnel and trainers running the JAWS Tandem session.
+
+Question: Can I change my synthesizer during a session?
+
+Answer: No. After a session is established, you can only change the pitch or volume of your synthesizer.
+
+Question: Can my English United States (ENU) computer use JAWS Tandem to connect to an English United Kingdom (ENG) or Australian (ENA) computer?
+
+Answer: Yes. Systems with different minor languages (dialects) will work in JAWS Tandem.
+
+Question: Can my English computer use JAWS Tandem to connect to a computer with a different major language such as French or Spanish?
+
+Answer: No. You would first need to switch one of the computers to match the others' major language before starting the JAWS Tandem meeting.
+
+Question: Can a controller temporarily turn off any JAWS user settings on the target computer, in order to troubleshoot a problem that the target computer is having?
+
+Answer: Yes. Use the Manage Application Settings dialog box located in the Options menu of the JAWS application window. In this dialog, you can choose to disable all settings, default settings, or selective applications without having to restart JAWS. A restart would end the JAWS Tandem session. This is a great way to troubleshoot a problem by ruling out any user modifications or third party scripts.
+
+Question: If either the controller or target computer needs to be restarted, what will happen to the JAWS Tandem session?
+
+Answer: You would need to start a JAWS Tandem session again with a new meeting ID after the computer restarts. It is suggested that the controller or target end the JAWS Tandem session with INSERT+ALT+T before rebooting the computer.
+
+Question: How many computers can join a JAWS Tandem Meeting?
+
+Answer: There can only be two. One controller and one target.
+
+Question: If you are using Skype to talk between two different computers, can you also use JAWS Tandem without ending the Skype call?
+
+Answer: Yes, this can be very useful as well. The controller can explain what is being done and the target user can ask questions over Skype during the entire meeting consequently avoiding a phone call.
+
+Question: What if either computer receives a Skype call during a JAWS Tandem Session? Can it be answered?
+
+Answer: If the call is on the target computer, then either the target user, or controller for that matter, can answer. If the call is on the controller side, then the controller can answer it by toggling back to his or her own desktop by using INSERT+ALT+TAB without having to end the JAWS Tandem session.
+
+Question: Can I run JAWS and MAGic simultaneously with JAWS Tandem?
+
+Answer: Not at this time. If you want to run JAWS Tandem, exit MAGic first before starting a JAWS Tandem session. You can restart MAGic after you close the session.
+
+Question: What is the role of the Tandem Center?
+
+Answer: The Tandem Center allows two arbitrary JAWS users anywhere on the Internet to connect to each other. The Tandem Center gets data from one user and passes it to the other user.
+
+Question: Who runs the Tandem Center?
+
+Answer: The Tandem Center is hosted by Freedom Scientific.
+
+Question: How does JAWS Tandem communication work?
+
+Answer: JAWS Tandem uses a proprietary protocol to establish a connection and transport data between two computers. To achieve security, it uses Diffie Hellman Key exchange (DH 1024) for asymmetric key exchange and RC4 cipher for the symmetric part. It uses Open SSL 1.0.2n to provide the actual implementation of the key exchange and cipher algorithms.
+
+Question: Does Freedom Scientific know about what I am doing if all data travels through the Tandem Center?
+
+Answer: Freedom Scientific does not record the contents of any session. The session infrastructure is set up so that once a session begins; the data is encrypted so that the Tandem Center server cannot decipher the information.
+
+Question: Can the target user disconnect the session if they do not like the controller user's actions?
+
+Answer: Yes. Any user can disconnect at any time by pressing INSERT+ALT+T.
+
+Question: My Firewall is blocking the connection to the Tandem Center. What do I do?
+
+Answer: The Tandem Center runs at a well-known Internet address and port. The Tandem Center address is tandem.freedomscientific.com. The port is 12000. If Tandem Center is being blocked, configure your firewall to allow access to this address and port.
+
+Question: For a Tandem Direct session, what port does the target system listen to for a connection to the controller system? Can I change the port?
+
+Answer: For a Tandem Direct session, the target system listens on port 3000 by default. If you need to change the port setting, choose the Options button in the Allow Access to my Computer dialog box, and type a new port number in the Port edit box. Remember to tell the user on the controller side so that JAWS Tandem on the controller system can be configured for the same port. The Options button is in the Get Access to a Computer on the controller system.
+
+Question: I use the DECtalk hardware synthesizer. My friend wants to connect to me and help me configure e-mail. He does not have DECtalk and uses Vocalizer Expressive. Can we have a JAWS Tandem session?
+
+Answer: Yes, JAWS Tandem will detect that you and your friend have different synthesizers. It will offer to switch both of you to Eloquence for the length of the sessions. You both will connect and work for the length of the session using Eloquence. After the JAWS Tandem session ends, both you and your friend will go back to your synthesizers automatically.
+
+Question: My Tandem Direct connection fails and JAWS announces the following message: A connection attempt failed because the connected party did not properly respond after a period of time, or the established connection failed because the connected host has failed to respond. What happened?
+
+Answer: On the target system, you must add an exception to the JTTarget program in the Windows Firewall. Refer to Configuring Windows Firewall for Tandem Direct Sessions for more information. After following the steps in this section, make a Tandem Direct connection again. If this still does not work, restart JAWS and try to connect again.
+
+This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit.(http://www.openssl.org/)
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+
+------------------------------------------------------------------------
+
+©2020 Freedom Scientific, Inc.
+800-444-4443
+727-803-8000
+
+GSA Advantage
+Accessibility Policy
+Conditions of Use
+Privacy Policy
+
+Careers
+Contact Us
+About
+
+[Consumer Technology Association member][Part of VFO]
+
+[Freedom Scientific]
+
+Freedom Scientific is the largest worldwide manufacturer of assistive technology products for those with vision impairments or learning disabilities.
+Read More About Freedom Scientific
+
+-   Home
+-   About Us
+-   Careers
+-   Blog
+-   Contact Us
+-   Media Center
+
+-   GSA Advantage
+-   Privacy Policy
+-   Accessibility Policy
+-   Conditions of Use
+
+Contact Us
+
+(800) 444-4443
+
+(727) 803-8000
+
+[Freedom Scientific Facebook] [Freedom Scientific Twitter]
+
+Copyright © Freedom Scientific Inc. - A Vispero Brand - All Rights Reserved.

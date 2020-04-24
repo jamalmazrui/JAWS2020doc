@@ -1,0 +1,281 @@
+﻿<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:1.85pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:111%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5pt;
+	margin-bottom:.0001pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria",serif;
+	color:#365F91;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5pt;
+	margin-bottom:.0001pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Cambria",serif;
+	color:#4F81BD;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Cambria",serif;
+	color:#4F81BD;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria",serif;
+	color:#365F91;
+	font-weight:bold;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:74.3pt 90.55pt 120.3pt 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:-.25pt;margin-bottom:.0001pt;line-height:107%'><b><span
+style='font-size:14.0pt;line-height:107%;font-family:"Cambria",serif;
+color:#365F91'>Domain Scripting Quick Start Guide </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:27.2pt;
+margin-left:-.25pt'>This document provides an overview of the web scriptability
+functionality added to JAWS 17. </p>
+
+<h1 style='margin-left:-.25pt'>Script Naming and Loading </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.35pt;
+margin-left:-.25pt'>Scripts are loaded when a .jss file exists with a name that
+matches the domain name and extension plus the .jss file extension. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.4pt;
+margin-left:-.25pt;line-height:111%'>Example: <i> www.FreedomScientific.com.jss
+</i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.55pt;
+margin-left:-.25pt'>In order to create a user friendly name for a web script
+file, add an entry to confignames.ini. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.4pt;
+margin-left:-.25pt;line-height:111%'>Example:<i> 
+www.FreedomScientific.com=FSWebPage </i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:26.35pt;
+margin-left:-.25pt'>Settings Center and other managers have been updated to
+allow domain settings to be loaded. This includes the Dictionary Manager which
+may now have domain specific entries. For example, a medical web portal may
+have many medical terms only relevant to that portal. These may now be added to
+a domain specific dictionary without cluttering your application or default
+dictionary. </p>
+
+<h1 style='margin-left:-.25pt'>Web Scriptability Functions </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.45pt;
+margin-left:-.25pt'>Added and enhanced functions make web scripting more
+powerful. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:-.25pt;margin-bottom:.0001pt;line-height:107%'><b><span
+style='font-size:13.0pt;line-height:107%;font-family:"Cambria",serif;
+color:#4F81BD'>GetDomainName </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.45pt;
+margin-left:-.25pt'>GetDomainName returns the domain name or file base name for
+a locally stored web page. </p>
+
+<h2 style='margin-left:-.25pt'>GetActiveConfiguration </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.25pt;
+margin-left:-.25pt'>GetActiveConfiguration has been extended via an optional
+parameter to be able to obtain either the application script base name, the
+domain script base name (or null if no domain), or either the domain or
+application name as appropriate. </p>
+
+<h2 style='margin-left:-.25pt'>GetDocumentXML </h2>
+
+<p class=MsoNormal style='margin-left:-.25pt'>GetDocumentXML has been added to
+obtain a well-formed XML document representing the current virtual document. Note
+this XML reflects but is not identical to the underlying HTML of the document.
+For example, it contains control type and state information and other data
+assigned by our DOM server. This XML may be processed by instantiating an MSXML
+DOM document object via the JAWS scripting language, and then by calling
+methods on this object to process and extract data from the XML. The below two
+functions are used to find and interact with elements from the XML from this
+function. </p>
+
+<h2 style='margin-left:-.25pt'>PerformActionOnElementWithTagAndAttribute </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.25pt;
+margin-left:-.25pt'>PerformActionOnElementWithTagAndAttribute has been added to
+find an element based upon tag and attribute data and perform an action on it
+such as setFocus, makeVisible, leftMouseClick, rightMouseClick,
+doDefaultAction.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.2pt;
+margin-left:18.5pt;line-height:111%'>Note: <i>Tag does not refer to the XML
+tag, but the FSTag attribute of an XML node which reflects the underlying HTML
+tag. The attribute may be any other attribute from the underlying HTML which is
+automatically added to the XML node such as id, class, value, etc.</i> </p>
+
+<h2 style='margin-left:-.25pt'>PerformActionOnElementWithID </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.25pt;
+margin-left:-.25pt'>PerformActionOnElementWithID has been added to find an
+element based upon its FSDom assigned unique ID and perform an action on it
+such as setFocus, makeVisible, leftMouseClick, rightMouseClick,
+doDefaultAction.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.4pt;margin-bottom:12.15pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+0in;line-height:116%'>Note:  <i>The FSDom assigned unique ID is not the id
+attribute which may be assigned in the underlying HTML, but a unique identifier
+assigned to every element by our FSDom server and which is reflected in the </i><i><span
+style='font-size:10.0pt;line-height:116%;font-family:"Arial",sans-serif'>fsID
+attribute of an XML node.</span></i> </p>
+
+<h2 style='margin-left:-.25pt'>Use of Existing Script Functions </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:-.25pt;margin-bottom:.0001pt'>You do not necessarily need to use
+the new functions or process the XML; dozens of existing script functions may
+also be used in a domain specific script file such as MoveToControlType,
+MoveToControlledTarget, MoveToDocumentOffset, MoveToElementOfDifferentType, </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:-.25pt;margin-bottom:.0001pt'>MoveToElementOfSameType,
+MoveToHeading, GetCurrentHeading, MoveToFormField, </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:26.5pt;
+margin-left:-.25pt'>MoveToTable, MoveToTableCell, GetRowText, GetColumnText,
+GetColumnHeader, GetRowHeader, MoveToLandmark, MoveToHTMLFrame, MoveToRegion,
+saveCurrentLocation, SelectFromSavedLocationToCurrent, ClearSavedLocation, etc.
+</p>
+
+<h1 style='margin-left:-.25pt'>Web Scriptability Usage </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.7pt;
+margin-left:-.25pt'>The following are a few examples of how web scriptability
+can be used: </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Adding functionality to an online spreadsheet to calculate and
+read row or column totals, or monitor cells without moving from the focused
+cell </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Quickly invoking commonly used links on a webpage such as the
+“Next” or “Prior” links in a Google or other search results screen </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Rapidly gathering and speaking pertinent information from a
+dynamically updated web portal </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Setting focus to an important control via a keystroke in a web
+portal without having to navigate or tab to find the control </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Present a list of the most important actionable controls in a web
+portal to the user to make their work more efficient, etc. </p>
+
+<h1 style='margin-left:-.25pt'>Web Scriptability Examples </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.55pt;
+margin-left:-.25pt'>A sample script set has been added to the JAWS installation
+which demonstrates how to use web scriptability functions to build a toolbar
+script for a web application. This sample set is called SharepointWeb. To see
+this in action, modify the confignames.ini file to map your SharePoint web URL
+to the SharepointWeb script set. This sample obtains XML from the active
+SharePoint portal, instantiates the MSXML document parser, builds a collection
+of toolbar controls from the SharePoint ribbon, and presents these controls in
+a list to the JAWS user. The JAWS user may invoke this toolbar script with <b>CTRL+INSERT+F8</b>,
+select a toolbar control, and invoke its action. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.85pt;
+margin-left:-.25pt'>Smart Navigation is a new mode in JAWS to make web
+application navigation more intuitive by presenting the web application in a
+similar way to a regular Windows application. Two examples follow: </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>When focused on a toolbar of buttons, the buttons are laid out on
+one line in the virtual buffer and <b>LEFT</b> and <b>RIGHT ARROW</b> will
+navigate from button to button rather than character to character. One can
+drill down and read the buttons by character by first pressing sayCharacter
+twice and then using <b>LEFT</b> and <b>RIGHT ARROW</b>. Navigation returns to
+control navigation when the user arrows up or down away from the toolbar. </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>When in a table, the entire row is shown in Braille and arrowing
+left and right or up and down navigates by cell and reads the new cell content.
+One can read the entire row by pressing sayLine twice, and then proceed to read
+by row using <b>UP</b> and <b>DOWN ARROW</b> until navigation reaches the table
+boundary at which point it returns to control or cell navigation.  </p>
+
+</div>
+
+</body>
+
+</html>

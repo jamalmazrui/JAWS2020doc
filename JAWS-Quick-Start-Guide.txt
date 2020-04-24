@@ -1,0 +1,2213 @@
+﻿
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+JAWS^(®) for Windows^(®)
+
+Quick Start Guide
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Freedom Scientific, Inc. 
+
+ 
+
+ 
+
+ 
+
+PUBLISHED BY Freedom Scientific www.FreedomScientific.com
+
+Information in this document is subject to change without notice. No part of this publication may be reproduced or transmitted in any form or any means electronic or mechanical, for any purpose, without the express written permission of Freedom Scientific.
+
+Copyright © 2018 Freedom Scientific, Inc. All Rights Reserved.
+
+JAWS is a registered trademark of Freedom Scientific, Inc. in the United States and other countries. Microsoft, Windows 10, Windows 8.1, Windows 7, and Windows Server are registered trademarks of Microsoft Corporation in the U.S. and/or other countries.
+
+Sentinel® is a registered trademark of SafeNet, Inc. 
+
+ 
+
+ii
+
+Table of Contents 
+
+Welcome to JAWS for Windows ................................................................. 1_(\ )
+
+System Requirements ............................................................................... 2_(\ )
+
+Installing JAWS ............................................................................................ 3_(\ )
+
+Activating JAWS ....................................................................................... 3_(\ )
+
+Dongle Authorization ................................................................................. 4_(\ )
+
+Network JAWS .......................................................................................... 5_(\ )
+
+Running JAWS Startup Wizard ................................................................. 5_(\ )Installing Vocalizer Expressive Voices ...................................................... 5_(\ )FSReader and Training Materials ............................................................. 5_(\ )
+
+Starting and Using FSReader............................................................... 6_(\ )
+
+Updating JAWS ......................................................................................... 7_(\ )
+
+Getting Help .................................................................................................. 8_(\ )
+
+JAWS Training Materials .......................................................................... 8_(\ )
+
+JAWS Help System ................................................................................... 8_(\ )
+
+Keystrokes to Get Help Wherever You Are .............................................. 9_(\ )
+
+Technical Support ................................................................................... 10_(\ )
+
+New Users Start Here ................................................................................ 11_(\ )
+
+Reading Screens and Documents .......................................................... 11_(\ )
+
+More Reading Commands.................................................................. 12_(\ )
+
+Working with Dialog Boxes................................................................. 12_(\ )
+
+Getting Started with the Internet .............................................................. 12_(\ )
+
+          iii Reading and Moving through Web Pages ...............................................13_(\ )
+
+Quick and Easy Navigation .....................................................................13_(\ )
+
+Displaying Lists of Information .................................................................13_(\ )
+
+Interacting with Forms .............................................................................14_(\ )
+
+Keystrokes ..................................................................................................15_(\ )
+
+Web Browsing Keystrokes ......................................................................15_(\ )
+
+General ...............................................................................................15_(\ )
+
+Tabbed Browsing Quick Keys .............................................................16_(\ )
+
+Navigation Quick Keys ........................................................................17_(\ )
+
+Forms ..................................................................................................19_(\ )Tables .................................................................................................20_(\ )
+
+PlaceMarkers ......................................................................................21_(\ )
+
+Frames ................................................................................................21_(\ )
+
+Elements .............................................................................................22_(\ )
+
+Desktop and Laptop Keystrokes ..............................................................22_(\ )
+
+For Reading Text ................................................................................22_(\ )
+
+Informational .......................................................................................26_(\ )
+
+For Cursors and Mouse ......................................................................26_(\ )
+
+For Dialog Boxes ................................................................................27_(\ )
+
+For Help ..............................................................................................28_(\ )
+
+Miscellaneous .....................................................................................28_(\ )
+
+For Frames .........................................................................................30_(\ )
+
+For JAWS Tandem .............................................................................31_(\ )
+
+iv
+
+For Research It ................................................................................... 31_(\ )
+
+For Convenient OCR .......................................................................... 32_(\ )
+
+For Mouse Echo ................................................................................. 33_(\ )For Touch Cursor ............................................................................... 34_(\ )
+
+Windows Keystrokes ............................................................................... 36_(\ )
+
+General ............................................................................................... 36_(\ )
+
+For Windows and Menus .................................................................... 36_(\ )
+
+For Dialog Boxes ................................................................................ 37_(\ )For Reading Text ................................................................................ 37_(\ )
+
+For Editing Text .................................................................................. 38_(\ )
+
+For Windows Explorer ........................................................................ 39_(\ )
+
+Touch Gestures .......................................................................................... 40_(\ )
+
+Gestures for Touch Navigation, Text Reading, and Speech Settings ..... 40_(\ )
+
+Gestures for General Windows and JAWS Commands ......................... 43_(\ )
+
+v
+
+ 
+
+Welcome to JAWS for Windows
+
+[]
+
+Freedom Scientific has developed a full range of screen reading and screen magnification software, notetakers, braille displays, and other devices for blind and visually impaired computer users. With our products, users can access a whole world of information, education, and job-related applications for browsing the web, reading or writing email messages, working with spreadsheets, or accessing information in a database. Our software is the product of choice for blind and visually impaired people around the world.
+
+Freedom Scientific leads by example, with software developed by blind people for blind people. Many of our developers, technical support personnel, and sales representatives are users of our products. We are dedicated to remaining at the forefront of assistive technology, ensuring our own progress in addition to that of the blind and low vision community at large.
+
+JAWS offers comprehensive screen reading capability for Windows that includes extended product customization through powerful utility managers.
+
+ 
+
+System Requirements
+
+The system requirements for JAWS are listed below.
+
++-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+| Specification                     | Minimum Requirement                                                                                                                  |
++-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+| Operating System                  | Windows® 10, Windows 8.1,                                                                                                            |
+|                                   |                                                                                                                                      |
+|                                   | Windows 7 Service Pack 1,                                                                                                            |
+|                                   |                                                                                                                                      |
+|                                   | Windows Server® 2016,                                                                                                                |
+|                                   |                                                                                                                                      |
+|                                   | Windows Server 2012, and                                                                                                             |
+|                                   |                                                                                                                                      |
+|                                   | Windows Server 2008                                                                                                                  |
++-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+| Processor speed                   | Minimum 1.5 GHz processor                                                                                                            |
++-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+| Memory (RAM)                      | 4 GB recommended (64-bit) or 2                                                                                                       |
+|                                   |                                                                                                                                      |
+|                                   | GB recommended (32-bit                                                                                                               |
++-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+| Required hard disk space          | 1.6 GB required during                                                                                                               |
+|                                   |                                                                                                                                      |
+|                                   | installation                                                                                                                         |
+|                                   |                                                                                                                                      |
+|                                   | 20 MB to 690 MB required per voice for installing Vocalizer Expressive voices (file sizes will vary depending on the voice installed |
++-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+| Video                             | A display adapter capable of at least 800 x 600 screen resolution with 16-bit color (1024 x 768                                      |
+|                                   |                                                                                                                                      |
+|                                   | screen resolution with 32-bit color recommended)                                                                                     |
++-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+| Sound                             | Windows compatible sound card (for speech)                                                                                           |
++-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+
+Older Versions of JAWS needed for Windows XP and Windows Vista installations are still available from the Freedom Scientific website.
+
+Installing JAWS 
+
+[]
+
+Note:  You must have an active internet connection as well as be logged on to an account with administrator privileges to install JAWS. 
+
+If you have not already downloaded JAWS, you can get it from www.freedomscientific.com/Downloads/JAWS. Once the download is complete, navigate to where you saved the executable file, select it, and press ENTER.
+
+The JAWS setup program starts. You will hear the installation speak the instructions as they appear on your screen. Follow these instructions to complete the JAWS installation. Once installation is complete, you must restart your computer before using JAWS.
+
+If this is a new JAWS installation, the next step is to complete the activation process. Otherwise, the JAWS Startup Wizard opens. Use it to configure basic JAWS parameters.
+
+Activating JAWS
+
+Note:  This section applies to perpetual licenses (Professional and Home). If you have an Annual license, you can skip to the next section.
+
+Internet License Manager lets you activate JAWS using an Internet connection. The activation process begins automatically when you start JAWS. For information on other ways to activate, choose Activation Help when the activation process begins.
+
+To activate JAWS using the Internet, do the following: 
+
+1.           In the Activation dialog box, choose Start Activation.
+
+2.           Read the message that displays and then use the ARROW keys to select Internet (RECOMMENDED), and then press ENTER. 
+
+3.           If your 20-digit Authorization number is not automatically displayed, type it into the Authorization Number edit box. 
+
+4.           Press ENTER to continue. You will be asked to connect to the Internet if you have not already done so. You must establish an Internet connection before continuing with the activation.
+
+5.           If you have not registered JAWS, you are asked to do so now. Registering JAWS lets you receive technical support. Choose Register Now and complete the online registration form by following the instructions provided. You can choose to register later, but you must register the next time you activate JAWS.
+
+6.           After you submit your registration, Internet License Manager attempts to activate JAWS. This process may take several minutes. When the activation is successful, choose Finish.
+
+Note:  If Internet License Manager cannot activate JAWS, you may need to reconfigure your firewall. Refer to the Activation Help for more information.
+
+Dongle Authorization
+
+A dongle is a hardware device that you can connect to a computer's USB port. One dongle can be used to authorize all Freedom Scientific software products (JAWS, Fusion, and ZoomText). The software is authorized to run on that computer as long as the dongle remains connected. Dongles are useful if you are a trainer or consultant where you frequently use Freedom Scientific software on many different computers as you do not have to worry about activation. 
+
+When JAWS starts, it first determines whether a dongle is connected to the computer. If one is connected, JAWS uses the features and information for the license associated with the dongle to authorize JAWS. If no dongle is connected, JAWS searches for the license information stored on the computer. You can use the Dongle Viewer utility to view information on the license associated with the dongle currently connected to your computer. To start this utility, go to the Utilities menu located in the JAWS main window, choose "Explore Utilities Folder", and select Dongle Viewer.
+
+Dongles are sold separately as an add-on for ILM perpetual licenses of JAWS and Fusion Professional and Home, as well as for ZoomText. To purchase one, contact Freedom Scientific Sales. Dongles are not available for adding to a Home Annual license.
+
+Network JAWS
+
+If you have a multi-user network license, your system administrator must go to www.fsactivate.com/network and download the network authorization tools and license server. This page also contains simple instructions for setting up the license server and activating the network license.
+
+Running JAWS Startup Wizard
+
+The JAWS Startup Wizard is a helpful tool that lets you configure specific JAWS parameters, such as speech and braille preferences, verbosity settings, and JAWS startup options. During a new JAWS installation, the Startup Wizard appears after you complete product activation. However, it can always be accessed later from the JAWS Help menu by pressing ALT+H and choosing Startup Wizard.
+
+Installing Vocalizer Expressive Voices
+
+Vocalizer Expressive provides mor natural-sounding speech in a variety of voices in several languages. To install these voices, press INSERT+J to open the JAWS application window, press ALT+H to open the Help menu, press DOWN ARROW until you reach More Voices, and then press ENTER. This opens the Synthesizers page on the Freedom Scientific website where you can preview voice samples, and then download and install voices.
+
+FSReader and Training Materials
+
+Freedom Scientific offers basic training materials in a digital document format known as DAISY (Digital Accessible Information System). You can listen to and read the training modules by using FSReader (Freedom
+
+Scientific’s DAISY book reader), which is automatically installed with JAWS. By default, at least one DAISY book (FSReaderGettingStarted) is also installed.
+
+To install training materials, do the following:
+
+1.           Press INSERT+J to open the JAWS application window. 
+
+2.           Press ALT+H to choose the Help menu, and then press ENTER to choose Training. 
+
+3.           FSReader opens and displays the JAWS Training Table of Contents which contains links to all of the available DAISY training books. Use the ARROW keys to navigate to the book you want to download and install and then press ENTER. FSReader will automatically download and install the book and then open it.
+
+4.           Repeat this process for each book you want to download.
+
+Starting and Using FSReader 
+
+The following describes how to start FSReader and open a DAISY book. 
+
+1.           Do one of the following:
+
+•      From the JAWS application window, press ALT+H, T, or
+
+•      Choose the FSReader shortcut available on your desktop, and then press CTRL+J. The JAWS Training Materials Table of Contents opens. Each DAISY book is represented by a link.
+
+2.           Select a DAISY book and press ENTER. The selected book appears in FSReader. 
+
+3.           Press CTRL+P to begin reading the book. Press CTRL+P again to pause reading the book. To fast forward five seconds, press CTRL+PERIOD. To rewind the book five seconds, press CTRL+COMMA. 
+
+Note: As long as FSReader is running, CTRL+P will toggle between play and pause. If you want to print while FSReader is active, you must use an application’s Print command.
+
+4.           When you are finished reading the book, press CTRL+J to open another JAWS training book, press ALT+F, O to open a DAISY book from another provider, or press ALT+F, X to close and exit FSReader.
+
+Updating JAWS
+
+Freedom Scientific is continually seeking to improve and expand JAWS for Windows. Periodically, updates to JAWS will be released. It is recommended that you keep your software up-to-date so that you experience the greatest possible performance.
+
+Updating your software is quick and easy. To search for updates to JAWS, do the following:
+
+1.           Establish a connection to the Internet.
+
+2.           Start JAWS.
+
+3.           From the Help menu, choose Check for Updates.
+
+4.           JAWS searches the Internet for updates and displays a list of any that are available to download. Use the ARROW keys to move through the list, and press the SPACEBAR to select the check box next to any updates that you want to download and install. 
+
+Note:  If your computer has active firewall software (such as Windows Firewall), you may receive a warning indicating that either the FSAutoUpdate Application or FSAutoUpdate.exe is attempting to access the Internet. You must allow this process to access the Internet through the firewall in order to retrieve updates. 
+
+5.           When you are finished selecting updates, choose the Install button. You may be required to restart your computer. If the updates are not installed successfully, repair your installation of JAWS (refer to the online help for more information) and then try the procedure again.
+
+Getting Help
+
+[]
+
+Freedom Scientific provides many ways to access help when using JAWS. With so many formats, you can always receive assistance in the most comfortable way possible. 
+
+JAWS Training Materials
+
+The Basic Training for JAWS and the What’s New in JAWS training materials can be downloaded and read using the FSReader DAISY reader included with JAWS. To start FSReader, open the Help menu and choose Training. For more information on using FSReader, select the "FSReaderGettingStarted" DAISY book and press ENTER. 
+
+The training materials are installed in the following folder:  C:\Program Files\Freedom Scientific\Training\JAWS\enu. The JAWS Basic Training modules give you the best possible start on your road to mastering Windows with JAWS. The set takes you logically from starting JAWS to working in the Windows environment. The modules include actual samples of what you will hear as you perform various Windows and JAWS operations. All users are encouraged to take advantage of this training. Once JAWS is running, you should listen to all modules and perform the operations along with them. 
+
+JAWS Help System
+
+Using the JAWS Help system is quick and easy. To start JAWS Help, press INSERT+J to switch to the JAWS window, press ALT+H to open the Help menu, and choose JAWS Help Topics. 
+
+When you first open JAWS Help, the Table of Contents appears on the left side of a split window. The Table of Contents lists a number of books and pages. Books are categories that contain pages. The pages are topics containing information. Use the UP and DOWN ARROW keys to move through the Table of Contents. Use RIGHT ARROW to open a book and LEFT ARROW to close a book. Press ENTER on a selected page to display the text of that topic and then press F6 to move to the topic window. Press F6 again to return to the Table of Contents, or press ALT+C to return to the Table of Contents from any section of the help system.
+
+Use CTRL+TAB to access the Index and Search tabs in the Help system. 
+
+In almost all Windows applications, you can press F1 to open Help for that application. This is also true in the JAWS window and in the JAWS Managers (INSERT+F2), such as Keyboard Manager. 
+
+Keystrokes to Get Help Wherever You Are
+
+JAWS Context Sensitive Help provides information on using various dialog box options, buttons, and other controls. To activate this feature, move to the control you want help for and press INSERT+F1. This is a quick way to get specific help for the program you are using.
+
+Hot Key Help is a feature that provides you quick access to available JAWS keystrokes that might be useful. It is aware of the applications that you are using so it gives you the proper help based on what you are doing at the time. To activate Hot Key Help, press INSERT+H.
+
+Many popular applications have an additional help feature available. Pressing INSERT+F1 twice quickly opens a JAWS Help topic for the currently running application. 
+
+As you learn commands, JAWS Keyboard Help is a beneficial tool. It gives information on key combinations while you are working in any application. To activate JAWS Keyboard Help, press INSERT+1. JAWS then says, “Keyboard help on.” Press any key combination to hear a description of that command. Obtain a more extensive description of the command by holding down the first key or keys in the combination and pressing the last key twice quickly. If the command contains only one key, press this key twice quickly. For example, to get help on the Say All command you would press INSERT+DOWN ARROW twice quickly. While Keyboard Help is active, keystrokes that you press do not actually perform any action. Press INSERT+1 again to turn off Keyboard Help. 
+
+You can also search for specific commands using the JAWS Command
+
+Search. Press INSERT+SPACEBAR, followed by J to open the Search for Commands window, begin typing text related to the type of command you want to perform, and JAWS will display commands matching what you entered along with their keystrokes.
+
+The last keystroke to obtain help is INSERT+W, which provides help for some commonly used Windows application keystrokes.
+
+Technical Support
+
+Our Technical Support staff provides assistance for the setup of JAWS and other Freedom Scientific products. Ongoing Technical Support is available for those users who purchase and register JAWS. Before calling Technical Support, please visit our web site at www.FreedomScientific.com. You can also e-mail technical support at support@FreedomScientific.com, or call them at (727) 803-8600. When calling Freedom Scientific Technical Support, please have your JAWS serial number ready. To read your JAWS serial number, switch to the
+
+JAWS window and press INSERT+PAGE DOWN to read the status bar. 
+
+New Users Start Here
+
+[]
+
+If you are new to JAWS, the following sections contain a summary of useful reading and navigation keystrokes to help you get started. To learn more about using JAWS, install and listen to the Basic Training DAISY files or open the JAWS Help file. For instructions describing how to install and locate the Basic Training, refer to FSReader and Training Materials on page 5 and JAWS Training Materials on page 8. Refer to JAWS Help System on page 8 for more information on opening and using Help.
+
+Reading Screens and Documents
+
+You can access many speech functions in JAWS by using the numeric keypad (NUM PAD) located on the far right side of most keyboards. JAWS uses the INSERT key at the bottom left of the NUM PAD in combination with the other keys on this keypad to control what JAWS will speak.
+
+To start JAWS reading the screen, press the key combination
+
+INSERT+DOWN ARROW. This is the Say All command. While using the Say All command, you can press the LEFT or RIGHT ARROW keys to rewind or fast forward through the text. You can also press PAGE UP or PAGE DOWN to increase or decrease the speech rate. To halt speech, press the CTRL key.
+
+The following are additional keystroke combinations that use this keypad:
+
+•      NUM PAD 5 - Say Character 
+
+•      INSERT+NUM PAD 5 - Say Word 
+
+•      INSERT+NUM PAD 5 twice - Spell Word 
+
+•      INSERT+LEFT ARROW - Say Prior Word 
+
+•      INSERT+RIGHT ARROW - Say Next Word 
+
+•      INSERT+UP ARROW - Say Line 
+
+•      INSERT+HOME (the 7 key) - Say To Cursor 
+
+•      INSERT+PAGE UP (the 9 key) - Say From Cursor 
+
+•      INSERT+PAGE DOWN (the 3 key) - Say Bottom Line Of Window 
+
+•      INSERT+END (the 1 key) - Say Top Line Of Window
+
+More Reading Commands
+
+There are more reading commands in addition to those listed previously. You can use the LEFT and RIGHT ARROW keys to move to and read the next or previous character. The UP and DOWN ARROW keys allow you to move to and read the previous or next line. Hold down the ALT key and press the UP or DOWN ARROW key to move through a document by sentence. Similarly, hold down CTRL and use the UP and DOWN ARROW keys to move through a document by paragraph. 
+
+Working with Dialog Boxes
+
+Dialog boxes display information and allow you to interact with Windows programs. To move through the various options in a dialog box, press TAB or SHIFT+TAB. If the dialog box is divided into tabs, you can use CTRL+TAB to move between the tabs. Press INSERT+TAB to hear a description of the currently selected option. 
+
+Getting Started with the Internet
+
+Web browsers such as Internet Explorer, Firefox, or Chrome allow you to view pages on the Internet as well as interact with other people in several ways. JAWS uses the Virtual Cursor in web pages, letting you read as you would in a word processing document. The Virtual Cursor is also available in other applications, such as HTML-based help systems, PDF files, and HTML email. Many of the features discussed in this section are also available wherever the Virtual Cursor is used. For specific information on which features are available, refer to the JAWS help topic for the application you are using.
+
+Reading and Moving through Web Pages
+
+When you start the web browser, your home page opens. If you don't have a home page specified, you can select a web page from the Favorites or Bookmarks menu, or press ALT+D to move to the Address Bar and type in the address of a page. After you select a page, the browser loads it and JAWS announces the presence of frames, links, headings, and forms and begins speaking the text on the screen. To move through the page, use the standard JAWS reading commands. 
+
+Note: If you start to read before a page finishes loading, some of the page may not be available.
+
+JAWS says, "Link," when it encounters a link to another document or portion of the page. To follow a link, press ENTER while positioned on the link. To go back to the previous page, press ALT+LEFT ARROW or BACKSPACE. To move forward one page after you have moved back, press ALT+RIGHT ARROW.
+
+Quick and Easy Navigation
+
+JAWS provides easy to use and remember commands to move through web pages. You can press a single letter on your keyboard to move to an item. For example, you can press T for table, F for form control, V for visited link, H for heading, and so on. Add SHIFT to move to the previous element of that type. For a complete listing of these commands, refer to the JAWS help system.
+
+Displaying Lists of Information
+
+JAWS can compile lists of frames, links, headings, or form fields on a web page so you can quickly find what you need. Press INSERT+F9 to display a list of all frames on the current page. Press INSERT+F7 to display a list of all links on the current page. Press INSERT+F6 to display a list of all headings on the current page. Press INSERT+F5 to display a list of all form fields on the current page. Use the ARROW keys to select an item and press ENTER to move to it.
+
+In addition, if you hold down CTRL+INSERT and press one of several Navigation Quick Keys, JAWS displays a list of those elements on the current page. You can then select an item using the ARROW keys and press ENTER to move to it. For example, to display a list of check boxes on the current page, press CTRL+INSERT+X. 
+
+  -------- ---------------------------------------------------------------------------------------------------------
+  Tip:     Pressing INSERT+F3 allows you to view any of the lists of information that are available for web pages.
+  -------- ---------------------------------------------------------------------------------------------------------
+
+Interacting with Forms
+
+JAWS lets you easily work with forms on the web. When you move into a form control, you can simply type in edit fields or select items in combo boxes. This is known as Auto Forms Mode and is on by default. If you would like to have more control over a form, you can turn off Auto Forms Mode by pressing INSERT+V and then setting the Auto Forms Mode option to Manual or Semi-Auto. In Semi-Auto, Forms Mode only activates
+
+when you navigate to an edit field or combo box using TAB or SHIFT+TAB.
+
+To manually control a form, press F to move to the next form control on the page. Press ENTER to activate Forms Mode. Press the TAB key to move between form controls while in Forms Mode. Type in edit fields, select check boxes, and select items from lists and combo boxes. Press NUM PAD PLUS to turn off Forms Mode. 
+
+If you like, you can set Auto Forms Mode on or off based on the web pages that you visit. You can personalize settings for specific web pages by opening Quick Settings (INSERT+V), selecting the Personalize Web Settings group, and then configuring the Auto Forms Mode option.
+
+Keystrokes
+
+[]
+
+Web Browsing Keystrokes
+
+Note:  The JAWS help system includes detailed information about using the Internet. In your browser, press and hold INSERT and press F1 twice quickly. Once JAWS help is open, press F6 to move to the help topic window.
+
+General
+
+  ------------------------------ -----------------------------
+  Description                    Keystroke
+  Go Back a Page                 ALT+LEFT ARROW or BACKSPACE
+  Go Forward a Page              ALT+RIGHT ARROW
+  Read Address Bar               INSERT+A
+  Next Link                      TAB
+  Prior Link                     SHIFT+TAB
+  Open Link                      ENTER
+  List Frames                    INSERT+F9
+  List Links                     INSERT+F7
+  List Headings                  INSERT+F6
+  Heading at Level               1 through 6
+  Virtual HTML Features          INSERT+F3
+  JAWS Find Next and Previous    F3 and SHIFT+F3
+  Assign Custom Label            CTRL+INSERT+TAB
+  ------------------------------ -----------------------------
+
++-------------------------------------+-----------------------------------+
+| ARIA Drag-and-Drop                  | WINDOWS                           |
+|                                     |                                   |
+|                                     | Key+CTRL+EQUALS                   |
++-------------------------------------+-----------------------------------+
+| ARIA Live Region Text Filter        | WINDOWS Key+CTRL+DASH             |
++-------------------------------------+-----------------------------------+
+| Open Flexible Web Wizard            | INSERT+SPACEBAR followed by X     |
++-------------------------------------+-----------------------------------+
+| Temporarily Toggle Smart Navigation | INSERT+X                          |
++-------------------------------------+-----------------------------------+
+
+Tabbed Browsing Quick Keys
+
+  ------------------------------------------- ---------------------------------------------
+  Description                                 Keystroke
+  Open a New Tab                              CTRL+T
+  Open a New Tab from the Address Bar         ALT+ENTER (on address bar)
+  Switch to the Next Tab                      CTRL+TAB 
+  Switch to the Previous Tab                  CTRL+SHIFT+TAB
+  Switch to a Specific Tab Number             CTRL+n, where n is a digit from 1 through 8
+  Switch to Last Tab                          CTRL+9
+  Close Current Tab                           CTRL+W or CTRL+F4
+  Close All Tabs                              ALT+F4
+  Close Other Tabs                            CTRL+ALT+F4
+  Open Links in a New Tab in the Background   CTRL+ENTER
+  Open Links in a New Tab in the Foreground   CTRL+SHIFT+ENTER
+  ------------------------------------------- ---------------------------------------------
+
+Navigation Quick Keys
+
+Tip:
+
+If you hold down SHIFT before pressing one of the following Navigation Quick Keys, you can move to the previous instance of that element, for example, press A to move to the next radio button, press SHIFT+A to move to the previous radio button. In addition, if you hold down CTRL+INSERT while pressing keystrokes with an asterisk (*) next to them, JAWS displays a list of those elements on the page.
+
+Description
+
+Keystroke
+
+ 
+
+Next Radio Button
+
+A*
+
+ 
+
+Next Button
+
+B*
+
+ 
+
+Next Combo Box, List Box, or Tree View
+
+C*
+
+ 
+
+Next Different Element
+
+D
+
+ 
+
+Next Edit Box
+
+E*
+
+ 
+
+Next Form Control
+
+F
+
+ 
+
+Next Graphic
+
+G*
+
+ 
+
+Next Heading
+
+H
+
+ 
+
+Next Item in a List
+
+I
+
+ 
+
+Jump to Line
+
+J*
+
+ 
+
+Next PlaceMarker
+
+K*
+
+ 
+
+Next List
+
+L*
+
+ 
+
+Next Frame
+
+M
+
+ 
+
+Skip Past Links
+
+N
+
+ 
+
+Next Article
+
+O*
+
+ 
+
+Next Paragraph
+
+P*
+
+ 
+
+ 
+
+  ------------------------- --------------
+  Move to Main Region       Q
+  Next Region               R*
+  Next Same Element         S
+  Next Table                T*
+  Next Unvisited Link       U
+  Next Visited Link         V
+  Next Check Box            X*
+  Next Division             Z*
+  Next Tab Control          APOSTROPHE*
+  Next Separator            DASH
+  Next Clickable Element    SLASH*
+  Next Mouse Over Element   SEMICOLON*
+  Next Element              SHIFT+PERIOD
+  Previous Element          SHIFT+COMMA 
+  ------------------------- --------------
+
+Forms
+
+  --------------------------------------------- ------------------
+  Description                                   Keystroke
+  Enter Forms Mode                              ENTER
+  Exit Forms Mode                               NUM PAD PLUS
+  List Form Fields                              INSERT+F5
+  First Form Field                              INSERT+CTRL+HOME
+  Next Form Field                               F
+  Prior Form Field                              SHIFT+F
+  Last Form Field                               INSERT+CTRL+END
+  Next Radio Button                             A
+  Prior Radio Button                            SHIFT+A
+  List Radio Buttons                            CTRL+INSERT+A
+  Next Button                                   B
+  Prior Button                                  SHIFT+B
+  List Buttons                                  CTRL+INSERT+B
+  Next Combo Box, List Box, or Tree View        C
+  Prior Combo Box, List Box, or Tree View       SHIFT+C
+  List Combo Boxes, List Boxes, or Tree Views   CTRL+INSERT+C
+  Next Edit Box                                 E 
+  Prior Edit Box                                SHIFT+E
+  List Edit Boxes                               CTRL+INSERT+E
+  --------------------------------------------- ------------------
+
+ 
+
++--------------------------------------+--------------------------------------------------------+
+| Next Check Box                       | X                                                      |
++--------------------------------------+--------------------------------------------------------+
+| Prior Check Box                      | SHIFT+X                                                |
++--------------------------------------+--------------------------------------------------------+
+| List Check Boxes                     | CTRL+INSERT+X                                          |
+|                                      |                                                        |
+| Tables                               |                                                        |
++--------------------------------------+--------------------------------------------------------+
+| Description                          | Keystroke                                              |
++--------------------------------------+--------------------------------------------------------+
+| List keystrokes for table navigation | INSERT+SPACEBAR, followed by T, and then QUESTION MARK |
++--------------------------------------+--------------------------------------------------------+
+| Next Table                           | T                                                      |
++--------------------------------------+--------------------------------------------------------+
+| Prior Table                          | SHIFT+T                                                |
++--------------------------------------+--------------------------------------------------------+
+| Select Table                         | F8                                                     |
++--------------------------------------+--------------------------------------------------------+
+| Next Row                             | WINDOWS KEY+ALT+DOWN ARROW                             |
++--------------------------------------+--------------------------------------------------------+
+| Prior Row                            | WINDOWS KEY+ALT+UP ARROW                               |
++--------------------------------------+--------------------------------------------------------+
+| Read Row                             | WINDOWS KEY+COMMA or WINDOWS KEY+NUM PAD 5             |
++--------------------------------------+--------------------------------------------------------+
+| Next Column                          | WINDOWS KEY+ALT+RIGHT ARROW                            |
++--------------------------------------+--------------------------------------------------------+
+| Prior Column                         | WINDOWS KEY+ALT+LEFT ARROW                             |
++--------------------------------------+--------------------------------------------------------+
+| Read Column                          | WINDOWS KEY+PERIOD                                     |
++--------------------------------------+--------------------------------------------------------+
+| Next Cell in Row                     | ALT+CTRL+RIGHT ARROW                                   |
++--------------------------------------+--------------------------------------------------------+
+| Prior Cell in Row                    | ALT+CTRL+LEFT ARROW                                    |
++--------------------------------------+--------------------------------------------------------+
+| Cell Below in Column                 | ALT+CTRL+DOWN ARROW                                    |
++--------------------------------------+--------------------------------------------------------+
+
+Keystroke
+
++-------------------------------------------------------+------------------------------------+
+| Cell Above in Column                                  | ALT+CTRL+UP ARROW                  |
++-------------------------------------------------------+------------------------------------+
+| Jump to Table Cell                                    | CTRL+WINDOWS KEY+J                 |
++-------------------------------------------------------+------------------------------------+
+| Return to Previous Cell                               | CTRL+WINDOWS KEY+SHIFT+J           |
+|                                                       |                                    |
+| PlaceMarkers                                          |                                    |
++-------------------------------------------------------+------------------------------------+
+| Description                                           | Keystroke                          |
++-------------------------------------------------------+------------------------------------+
+| Set Temporary PlaceMarker (Permanent Marker for Word) | CTRL+WINDOWS Key+K                 |
++-------------------------------------------------------+------------------------------------+
+| Add, Delete, Edit, or Rename Permanent PlaceMarkers   | CTRL+SHIFT+K                       |
++-------------------------------------------------------+------------------------------------+
+| Move to the Next or Prior PlaceMarker                 | K or SHIFT+K                       |
++-------------------------------------------------------+------------------------------------+
+| Read Text at PlaceMarkers 1 through 4                 | Number Row Keys 7 through 0        |
++-------------------------------------------------------+------------------------------------+
+| Move to PlaceMarker 1 through 4                       | SHIFT+ number row keys 7 through 0 |
++-------------------------------------------------------+------------------------------------+
+| Return to PlaceMarker in Word                         | ALT+WINDOWS Key+K                  |
++-------------------------------------------------------+------------------------------------+
+| Select Text from PlaceMarker to Cursor Position       | INSERT+SPACEBAR followed by M      |
+|                                                       |                                    |
+| Frames                                                |                                    |
++-------------------------------------------------------+------------------------------------+
+| Description                                           | Keystroke                          |
++-------------------------------------------------------+------------------------------------+
+| Next Frame                                            | M                                  |
++-------------------------------------------------------+------------------------------------+
+| Prior Frame                                           | SHIFT+M                            |
++-------------------------------------------------------+------------------------------------+
+| List Frames                                           | INSERT+F9                          |
++-------------------------------------------------------+------------------------------------+
+
+Elements
+
+  -------------------------------------- ----------------------
+  Description                            Keystroke
+  Next Same Element                      S
+  Prior Same Element                     SHIFT+S
+  Next Different Element                 D
+  Prior Different Element                SHIFT+D
+  Next Element                           SHIFT+PERIOD
+  Prior Element                          SHIFT+COMMA
+  Select Entire Element                  F8
+  Display Entire Element                 SHIFT+INSERT+F1
+  Display Detailed Element Information   CTRL+SHIFT+INSERT+F1
+  Activate Mouse Over                    INSERT+CTRL+ENTER
+  -------------------------------------- ----------------------
+
+Desktop and Laptop Keystrokes
+
+For Reading Text
+
++-----------------------+-------------------------+-----------------------+
+| Description           | Desktop Keystroke       | Laptop Keystroke      |
++-----------------------+-------------------------+-----------------------+
+| Say                   | NUM PAD 5               | CAPS                  |
+|                       |                         |                       |
+| Character             |                         | LOCK+COMMA            |
++-----------------------+-------------------------+-----------------------+
+| Say                   | NUM PAD 5 twice quickly | CAPS                  |
+|                       |                         |                       |
+| Character             |                         | LOCK+COMMA twice      |
+|                       |                         |                       |
+| Phonetically          |                         | quickly               |
++-----------------------+-------------------------+-----------------------+
+| Say Prior Character   | LEFT ARROW              | CAPS LOCK+M           |
++-----------------------+-------------------------+-----------------------+
+| Say Next Character    | RIGHT ARROW             | CAPS                  |
+|                       |                         |                       |
+|                       |                         | LOCK+PERIOD           |
++-----------------------+-------------------------+-----------------------+
+
+ 
+
++-----------------------+------------------------+-----------------------+
+|                       | Desktop Keystroke      | Laptop Keystroke      |
++-----------------------+------------------------+-----------------------+
+| Say Word              | INSERT+NUM PAD 5       | CAPS LOCK+K           |
++-----------------------+------------------------+-----------------------+
+| Spell Word            | INSERT+NUM PAD 5 twice | CAPS LOCK+K twice     |
+|                       |                        |                       |
+|                       | quickly                | quickly               |
++-----------------------+------------------------+-----------------------+
+| Say Prior             | INSERT+LEFT ARROW      | CAPS LOCK+J           |
+|                       |                        |                       |
+| Word                  |                        |                       |
++-----------------------+------------------------+-----------------------+
+| Say Next Word         | INSERT+RIGHT ARROW     | CAPS LOCK+L           |
++-----------------------+------------------------+-----------------------+
+| Say Line              | INSERT+UP ARROW        | CAPS LOCK+I           |
++-----------------------+------------------------+-----------------------+
+| Spell Line            | INSERT+UP ARROW twice  | CAPS LOCK+I twice     |
+|                       |                        |                       |
+|                       | quickly                | quickly               |
++-----------------------+------------------------+-----------------------+
+| Say Prior Line        | UP ARROW               | CAPS LOCK+U           |
++-----------------------+------------------------+-----------------------+
+| Say Next Line         | DOWN ARROW             | CAPS LOCK+O           |
++-----------------------+------------------------+-----------------------+
+| Say                   | ALT+NUM PAD 5          | CAPS LOCK+H           |
+|                       |                        |                       |
+| Sentence              |                        |                       |
++-----------------------+------------------------+-----------------------+
+| Say Prior Sentence    | ALT+UP ARROW           | CAPS LOCK+Y           |
++-----------------------+------------------------+-----------------------+
+| Say Next Sentence     | ALT+DOWN ARROW         | CAPS LOCK+N           |
++-----------------------+------------------------+-----------------------+
+| Say                   | CTRL+NUM PAD 5         | CAPS LOCK+CTRL+I      |
+|                       |                        |                       |
+| Paragraph             |                        |                       |
++-----------------------+------------------------+-----------------------+
+| Say Prior Paragraph   | CTRL+UP ARROW          | CAPS                  |
+|                       |                        |                       |
+|                       |                        | LOCK+CTRL+U           |
++-----------------------+------------------------+-----------------------+
+| Say Next Paragraph    | CTRL+DOWN ARROW        | CAPS                  |
+|                       |                        |                       |
+|                       |                        | LOCK+CTRL+O           |
++-----------------------+------------------------+-----------------------+
+| Say to Cursor         | INSERT+HOME            | CAPS                  |
+|                       |                        |                       |
+|                       |                        | LOCK+SHIFT+J          |
++-----------------------+------------------------+-----------------------+
+
+ 
+
++-----------------------+-----------------------------+-----------------------+
+| Description           | Desktop Keystroke           | Laptop Keystroke      |
++-----------------------+-----------------------------+-----------------------+
+| Say from Cursor       | INSERT+PAGE UP              | CAPS                  |
+|                       |                             |                       |
+|                       |                             | LOCK+SHIFT+L          |
++-----------------------+-----------------------------+-----------------------+
+| Say All               | INSERT+DOWN ARROW           | CAPS LOCK+A           |
++-----------------------+-----------------------------+-----------------------+
+| Rewind                | LEFT ARROW                  | LEFT ARROW            |
+|                       |                             |                       |
+| During Say            |                             |                       |
+|                       |                             |                       |
+| All                   |                             |                       |
++-----------------------+-----------------------------+-----------------------+
+| Fast                  | RIGHT ARROW                 | RIGHT ARROW           |
+|                       |                             |                       |
+| Forward               |                             |                       |
+|                       |                             |                       |
+| During Say            |                             |                       |
+|                       |                             |                       |
+| All                   |                             |                       |
++-----------------------+-----------------------------+-----------------------+
+| Say Color             | INSERT+5 on the numbers row | CAPS LOCK+5           |
++-----------------------+-----------------------------+-----------------------+
+| Increase              | PAGE UP                     | PAGE UP               |
+|                       |                             |                       |
+| Voice Rate            |                             |                       |
+|                       |                             |                       |
+| During Say            |                             |                       |
+|                       |                             |                       |
+| All                   |                             |                       |
++-----------------------+-----------------------------+-----------------------+
+| Decrease              | PAGE DOWN                   | PAGE DOWN             |
+|                       |                             |                       |
+| Voice Rate            |                             |                       |
+|                       |                             |                       |
+| During Say            |                             |                       |
+|                       |                             |                       |
+| All                   |                             |                       |
++-----------------------+-----------------------------+-----------------------+
+| Temporarily           | ALT+CTRL+PAGE UP            | ALT+CTRL+PAGE UP      |
+|                       |                             |                       |
+| Increase              |                             |                       |
+|                       |                             |                       |
+| Voice Rate            |                             |                       |
+|                       |                             |                       |
+| When Not in           |                             |                       |
+|                       |                             |                       |
+| Say All               |                             |                       |
++-----------------------+-----------------------------+-----------------------+
+| Temporarily           | ALT+CTRL+PAGE DOWN          | ALT+CTRL+PAGE DOWN    |
+|                       |                             |                       |
+| Decrease              |                             |                       |
+|                       |                             |                       |
+| Voice Rate            |                             |                       |
+|                       |                             |                       |
+| When Not in           |                             |                       |
+|                       |                             |                       |
+| Say All               |                             |                       |
++-----------------------+-----------------------------+-----------------------+
+
+ 
+
++--------------------------+--------------------------------------+------------------------------------+
+|                          | Desktop Keystroke                    | Laptop Keystroke                   |
++--------------------------+--------------------------------------+------------------------------------+
+| Permanently              | ALT+WINDOWS                          | ALT+WINDOWS                        |
+|                          |                                      |                                    |
+| Increase                 | Key+CTRL+PAGE UP                     | Key+CTRL+PAGE UP                   |
+|                          |                                      |                                    |
+| Voice Rate               |                                      |                                    |
+|                          |                                      |                                    |
+| When Not in              |                                      |                                    |
+|                          |                                      |                                    |
+| Say All                  |                                      |                                    |
++--------------------------+--------------------------------------+------------------------------------+
+| Permanently              | ALT+WINDOWS                          | ALT+WINDOWS                        |
+|                          |                                      |                                    |
+| Decrease                 | Key+CTRL+PAGE DOWN                   | Key+CTRL+PAGE                      |
+|                          |                                      |                                    |
+| Voice Rate               |                                      | DOWN                               |
+|                          |                                      |                                    |
+| When Not in              |                                      |                                    |
+|                          |                                      |                                    |
+| Say All                  |                                      |                                    |
++--------------------------+--------------------------------------+------------------------------------+
+| Start Skim Reading       | CTRL+INSERT+DOWN ARROW               | CAPS                               |
+|                          |                                      |                                    |
+|                          |                                      | LOCK+CTRL+DOWN                     |
+|                          |                                      |                                    |
+|                          |                                      | ARROW                              |
++--------------------------+--------------------------------------+------------------------------------+
+| Change                   | CTRL+SHIFT+INSERT+DOWN ARROW         | CAPS                               |
+|                          |                                      |                                    |
+| Skim                     |                                      | LOCK+CTRL+SHIFT+                   |
+|                          |                                      |                                    |
+| Reading                  |                                      | DOWN ARROW                         |
+|                          |                                      |                                    |
+| Preferences              |                                      |                                    |
++--------------------------+--------------------------------------+------------------------------------+
+| Toggle Full              | INSERT+SPACEBAR, followed by S       | CAPS                               |
+|                          |                                      |                                    |
+| Speech,                  |                                      | LOCK+SPACEBAR,                     |
+|                          |                                      |                                    |
+| Speech On                |                                      | followed by S                      |
+|                          |                                      |                                    |
+| Demand                   |                                      |                                    |
+|                          |                                      |                                    |
+| (default), or            |                                      |                                    |
+|                          |                                      |                                    |
+| Mute                     |                                      |                                    |
+|                          |                                      |                                    |
+| Speech                   |                                      |                                    |
++--------------------------+--------------------------------------+------------------------------------+
+| Toggle                   | INSERT+SPACEBAR, followed by SHIFT+S | CAPS                               |
+|                          |                                      |                                    |
+| Speech On                |                                      | LOCK+SPACEBAR, followed by SHIFT+S |
+|                          |                                      |                                    |
+| Demand or                |                                      |                                    |
+|                          |                                      |                                    |
+| Mute                     |                                      |                                    |
+|                          |                                      |                                    |
+| Speech                   |                                      |                                    |
+|                          |                                      |                                    |
+| (Full                    |                                      |                                    |
+|                          |                                      |                                    |
+| Speech must be disabled) |                                      |                                    |
++--------------------------+--------------------------------------+------------------------------------+
+
+Informational
+
+Description
+
+Desktop Keystroke
+
+Laptop
+
+Keystroke
+
+Interrupt Speech
+
+CTRL
+
+CTRL
+
+Say Font
+
+INSERT+F
+
+CAPS LOCK+F
+
+Say Window Title
+
+INSERT+T
+
+CAPS LOCK+T
+
+Say Window Prompt and Text
+
+INSERT+TAB
+
+CAPS
+
+LOCK+TAB
+
+JAWS Find
+
+CTRL+INSERT+F
+
+CAPS LOCK+ CTRL+F
+
+JAWS Find Next
+
+INSERT+F3
+
+CAPS LOCK+F3
+
+JAWS Find Previous
+
+INSERT+SHIFT+F3
+
+CAPS
+
+LOCK+SHIFT+F3
+
+Say Top Line of
+
+Window
+
+INSERT+END
+
+CAPS
+
+LOCK+SHIFT+Y
+
+Say Bottom Line of
+
+Window
+
+INSERT+PAGE DOWN
+
+CAPS
+
+LOCK+SHIFT+N
+
+Say Selected Text
+
+INSERT+SHIFT+ DOWN ARROW
+
+CAPS
+
+LOCK+SHIFT+A
+
+Get Application Version
+
+CTRL+INSERT+V
+
+CAPS
+
+LOCK+CTRL+V
+
+For Cursors and Mouse
+
+Description        Desktop Keystroke           Laptop Keystroke
+
+PC Cursor            NUM PAD PLUS                  CAPS LOCK+SEMICOLON
+
+JAWS                   NUM PAD MINUS              CAPS LOCK+P
+
+Cursor
+
++-----------------------+---------------------------+------------------------+
+|                       | Desktop Keystroke         | Laptop Keystroke       |
++-----------------------+---------------------------+------------------------+
+| Touch Cursor          | SHIFT+NUM PAD PLUS        | CAPS                   |
+|                       |                           |                        |
+|                       |                           | LOCK+SHIFT+SEMICOLON   |
++-----------------------+---------------------------+------------------------+
+| Route PC              | INSERT+NUM PAD PLUS       | CAPS                   |
+|                       |                           |                        |
+| Cursor to             |                           | LOCK+APOSTROPHE        |
+|                       |                           |                        |
+| JAWS                  |                           |                        |
+|                       |                           |                        |
+| Cursor                |                           |                        |
++-----------------------+---------------------------+------------------------+
+| Route                 | INSERT+NUM PAD MINUS      | CAPS LOCK+LEFT BRACKET |
+|                       |                           |                        |
+| JAWS                  |                           |                        |
+|                       |                           |                        |
+| Cursor to PC          |                           |                        |
+|                       |                           |                        |
+| Cursor                |                           |                        |
++-----------------------+---------------------------+------------------------+
+| Left Mouse Button     | NUM PAD SLASH             | CAPS LOCK+8            |
++-----------------------+---------------------------+------------------------+
+| Right Mouse Button    | NUM PAD STAR              | CAPS LOCK+9            |
++-----------------------+---------------------------+------------------------+
+| Drag and Drop         | CTRL+INSERT+NUM PAD SLASH | CAPS LOCK+CTRL+8       |
++-----------------------+---------------------------+------------------------+
+| Restrict              | INSERT+R                  | CAPS LOCK+R            |
+|                       |                           |                        |
+| JAWS                  |                           |                        |
+|                       |                           |                        |
+| Cursor                |                           |                        |
++-----------------------+---------------------------+------------------------+
+
+For Dialog Boxes
+
++----------------------------------+-----------------------+-----------------------+
+| Description                      | Desktop Keystroke     | Laptop Keystroke      |
++----------------------------------+-----------------------+-----------------------+
+| Say Default Button of Dialog Box | INSERT+E              | CAPS LOCK+E           |
++----------------------------------+-----------------------+-----------------------+
+| Read Window from Top to Bottom   | INSERT+B              | CAPS LOCK+B           |
++----------------------------------+-----------------------+-----------------------+
+| Read Word in Context             | INSERT+C              | CAPS LOCK+C           |
++----------------------------------+-----------------------+-----------------------+
+| Say Current                      | SHIFT+NUM PAD 5       | CAPS                  |
+|                                  |                       |                       |
+| Control Hot Key                  |                       | LOCK+SHIFT+COMMA      |
++----------------------------------+-----------------------+-----------------------+
+
+ 
+
+Open Combo Box
+
+ALT+DOWN ARROW
+
+ALT+DOWN ARROW
+
+Close Combo Box
+
+ALT+UP ARROW
+
+ALT+UP ARROW
+
+Announce
+
+Progress Bar Status
+
+For Help
+
+INSERT+TAB
+
+CAPS LOCK+TAB
+
+Description
+
+Desktop Keystroke
+
+Laptop Keystroke
+
+JAWS
+
+Command
+
+Search
+
+INSERT+SPACEBAR,
+
+followed by J
+
+CAPS
+
+LOCK+SPACEBAR,
+
+followed by J
+
+Context
+
+Sensitive Help
+
+INSERT+F1
+
+CAPS LOCK+F1
+
+Keyboard Help
+
+INSERT+1
+
+CAPS LOCK+1
+
+JAWS Help for Applications
+
+INSERT+F1 twice quickly
+
+CAPS LOCK+F1 twice
+
+quickly
+
+Hot Key Help
+
+INSERT+H
+
+CAPS
+
+LOCK+CTRL+SHIFT+H
+
+Windows Key Help
+
+INSERT+W
+
+CAPS LOCK+W
+
+Miscellaneous
+
+Description             Desktop Keystrokes
+
+Laptop Keystrokes
+
+JAWS Window         INSERT+J
+
+CAPS
+
+LOCK+CTRL+SHIFT+J
+
+Refresh Screen        INSERT+ESC
+
+CAPS LOCK+ESC
+
+Quick Settings          INSERT+V
+
+CAPS LOCK+V
+
+ 
+
+ 
+
+Desktop Keystrokes
+
+Laptop Keystrokes
+
+ 
+
+Run JAWS Manager
+
+INSERT+F2
+
+CAPS LOCK+F2
+
+ 
+
+Shut Down
+
+JAWS
+
+INSERT+F4
+
+CAPS LOCK+F4
+
+ 
+
+Window List Dialog
+
+INSERT+F10
+
+CAPS LOCK+F10
+
+ 
+
+Select a
+
+System Tray
+
+Icon Dialog
+
+INSERT+F11
+
+CAPS LOCK+F11
+
+ 
+
+Say System Time
+
+INSERT+F12
+
+CAPS LOCK+F12
+
+ 
+
+Graphics Labeler
+
+INSERT+G
+
+CAPS LOCK+G
+
+ 
+
+Auto Graphics Labeler
+
+CTRL+INSERT+G
+
+CAPS LOCK+CTRL+G
+
+ 
+
+Pass Key Through
+
+INSERT+3 on the numbers row
+
+CAPS LOCK+3
+
+ 
+
+Virtualize
+
+Window
+
+ALT+INSERT+W
+
+ALT+CAPS LOCK+W
+
+ 
+
+Virtualize
+
+Current Control
+
+ALT+SHIFT+INSERT+W
+
+ALT+CAPS
+
+LOCK+SHIFT+W
+
+ 
+
+Select Scheme
+
+ALT+INSERT+S
+
+ALT+CAPS LOCK+S
+
+ 
+
+Select
+
+Language
+
+CTRL+WINDOWS
+
+Key+L
+
+CTRL+WINDOWS
+
+Key+L
+
+ 
+
+Select Voice
+
+Profile 
+
+CTRL+INSERT+S
+
+CAPS LOCK+CTRL+S
+
+ 
+
+Description
+
+Desktop Keystrokes
+
+Laptop Keystrokes
+
+Read Columns 1 through 10 of a List View
+
+CTRL+INSERT+n,
+
+where n is a value from 1, 2, 3 through 0
+
+CAPS LOCK+CTRL+n,
+
+where n is a value from 1, 2, 3, through 0
+
+Copy Selected
+
+Text to
+
+FSClipboard
+
+INSERT+WINDOWS Key+C
+
+CAPS
+
+LOCK+WINDOWS
+
+Key+C
+
+Show Speech
+
+History
+
+INSERT+SPACEBAR
+
+followed by H
+
+CAPS
+
+LOCK+SPACEBAR
+
+followed by H
+
+Toggle Audio
+
+Ducking (Windows 8.1 and later)
+
+INSERT+SPACEBAR
+
+followed by D
+
+CAPS
+
+LOCK+SPACEBAR
+
+followed by D
+
+Toggle Default Mode (used for troubleshooting)
+
+INSERT+SPACEBAR
+
+followed by Z
+
+CAPS
+
+LOCK+SPACEBAR
+
+followed by z
+
+Toggle Screen Shade
+
+For Frames
+
+INSERT+SPACEBAR,
+
+followed by F11
+
+CAPS
+
+LOCK+SPACEBAR,
+
+followed by F11
+
+Description
+
+Desktop Keystroke
+
+Laptop Keystroke
+
+Frame Get Top
+
+Left
+
+CTRL+SHIFT+LEFT BRACKET
+
+CTRL+SHIFT+LEFT BRACKET
+
+Frame Get Bottom Right
+
+CTRL+SHIFT+RIGHT BRACKET
+
+CTRL+SHIFT+RIGHT BRACKET
+
+Frame Set to
+
+Window
+
+CTRL+SHIFT+LEFT
+
+BRACKET twice quickly
+
+CTRL+SHIFT+LEFT BRACKET twice
+
+quickly
+
+For JAWS Tandem
+
+Description
+
+Desktop Keystroke
+
+Laptop Keystroke
+
+Ends JAWS
+
+Tandem
+
+Session 
+
+INSERT+ALT+T
+
+INSERT+ALT+T
+
+Toggle
+
+Between
+
+Target and
+
+Controller
+
+Desktop
+
+(Controller
+
+User only)
+
+INSERT+ALT+TAB
+
+INSERT+ALT+TAB
+
+Toggle
+
+Video On or
+
+Off on
+
+Controller
+
+(Controller
+
+User only)
+
+INSERT+CTRL+SHIFT+V
+
+INSERT+CTRL+SHIFT+V
+
+For Research It
+
+Description                  Desktop Keystroke
+
+Laptop Keystroke
+
+Open Research It       INSERT+SPACEBAR, followed by R
+
+CAPS
+
+LOCK+SPACEBAR,
+
+followed by R
+
+Launch Research       INSERT+WINDOWS
+
+It Using the                  Key+R
+
+Primary Lookup
+
+Source 
+
+CAPS
+
+LOCK+WINDOWS
+
+Key+R
+
+For Convenient OCR
+
+Description                 Desktop Keystroke
+
+Acquire image from camera or scanner
+
+Recognize currently selected image file
+
+Recognize current PDF document
+
+Recognize current application window
+
+Recognize entire screen
+
+Recognize currently selected control INSERT+SPACEBAR,
+
+followed by O, and then A
+
+INSERT+SPACEBAR,
+
+followed by O, and then F
+
+INSERT+SPACEBAR,
+
+followed by O, and then D
+
+INSERT+SPACEBAR, followed by O, and then
+
+W
+
+INSERT+SPACEBAR,
+
+followed by O, and then S
+
+INSERT+SPACEBAR,
+
+followed by O, and then C Laptop Keystroke
+
+CAPS LOCK+SPACEBAR,
+
+followed by O, and then A
+
+CAPS LOCK+SPACEBAR,
+
+followed by O, and then F
+
+CAPS LOCK+SPACEBAR,
+
+followed by O, and then D
+
+CAPS LOCK+SPACEBAR,
+
+followed by O, and then W
+
+CAPS LOCK+SPACEBAR,
+
+followed by O, and then S
+
+CAPS LOCK+SPACEBAR,
+
+followed by O, and then C
+
++--------------------------------------+-----------------------------------+
+| Cancel recognition while in progress | INSERT+SPACEBAR,                  |
+|                                      |                                   |
+|                                      | followed by O, and then Q         |
++--------------------------------------+-----------------------------------+
+
+CAPS LOCK+SPACEBAR,
+
+followed by O, and
+
+then Q
+
++----------------------------------------------------------------------------------------------------------------+-----------------------------------+
+| Announce help    INSERT+SPACEBAR, message for     followed by O, and then OCR commands           QUESTION MARK | CAPS                              |
+|                                                                                                                |                                   |
+| For Mouse Echo                                                                                                 | LOCK+SPACEBAR,                    |
+|                                                                                                                |                                   |
+|                                                                                                                | followed by O, and                |
+|                                                                                                                |                                   |
+|                                                                                                                | then QUESTION                     |
+|                                                                                                                |                                   |
+|                                                                                                                | MARK                              |
++----------------------------------------------------------------------------------------------------------------+-----------------------------------+
+| Description                  Desktop Keystroke                                                                 | Laptop Keystroke                  |
++----------------------------------------------------------------------------------------------------------------+-----------------------------------+
+| Toggle Mouse INSERT+SPACEBAR, Echo followed by E, and then O                                                   | CAPS                              |
+|                                                                                                                |                                   |
+|                                                                                                                | LOCK+SPACEBAR,                    |
+|                                                                                                                |                                   |
+|                                                                                                                | followed by E, and then O         |
++----------------------------------------------------------------------------------------------------------------+-----------------------------------+
+| Speak Character         INSERT+SPACEBAR, followed by E, and then C                                             | CAPS                              |
+|                                                                                                                |                                   |
+|                                                                                                                | LOCK+SPACEBAR,                    |
+|                                                                                                                |                                   |
+|                                                                                                                | followed by E, and then C         |
++----------------------------------------------------------------------------------------------------------------+-----------------------------------+
+| Speak Word                INSERT+SPACEBAR,                                                                     | CAPS                              |
+|                                                                                                                |                                   |
+| followed by E, and then                                                                                        | LOCK+SPACEBAR,                    |
+|                                                                                                                |                                   |
+| W                                                                                                              | followed by E, and                |
++----------------------------------------------------------------------------------------------------------------+-----------------------------------+
+
+Speak Line                  INSERT+SPACEBAR, followed by E, and then L
+
+then W
+
+CAPS LOCK+SPACEBAR, followed by E, and then L
+
++-----------------------------------+-----------------------------------+
+| Description                       | Desktop Keystroke                 |
++-----------------------------------+-----------------------------------+
+| Touch Cursor                      | SHIFT+NUM PAD PLUS                |
++-----------------------------------+-----------------------------------+
+| Next                              | RIGHT ARROW or TAB                |
+|                                   |                                   |
+| Element                           |                                   |
++-----------------------------------+-----------------------------------+
+| Prior                             | LEFT ARROW or SHIFT+TAB           |
+|                                   |                                   |
+| Element                           |                                   |
++-----------------------------------+-----------------------------------+
+| Next                              | DOWN ARROW                        |
+|                                   |                                   |
+| Element by                        |                                   |
+|                                   |                                   |
+| Type                              |                                   |
++-----------------------------------+-----------------------------------+
+| Prior                             | UP ARROW                          |
+|                                   |                                   |
+| Element by                        |                                   |
+|                                   |                                   |
+| Type                              |                                   |
++-----------------------------------+-----------------------------------+
+| Cycle                             | PAGE UP or PAGE                   |
+|                                   |                                   |
+| Through                           | DOWN                              |
+|                                   |                                   |
+| Element                           |                                   |
+|                                   |                                   |
+| Navigation                        |                                   |
+|                                   |                                   |
+| Types                             |                                   |
++-----------------------------------+-----------------------------------+
+
+For Touch Cursor
+
+CTRL+HOME
+
++-----------------------------------------------+---------------------------+----------------------------------+
+| Description                                   | Desktop Keystroke         | Laptop Keystroke                 |
++-----------------------------------------------+---------------------------+----------------------------------+
+| Speak Paragraph                               | INSERT+SPACEBAR,          | CAPS                             |
+|                                               |                           |                                  |
+|                                               | followed by E, and then P | LOCK+SPACEBAR,                   |
+|                                               |                           |                                  |
+|                                               |                           | followed by E, and then P        |
++-----------------------------------------------+---------------------------+----------------------------------+
+| Announce help message for Mouse Echo commands | INSERT+SPACEBAR,          | CAPS                             |
+|                                               |                           |                                  |
+|                                               | followed by E, and then   | LOCK+SPACEBAR,                   |
+|                                               |                           |                                  |
+|                                               | QUESTION MARK             | followed by E, and then QUESTION |
++-----------------------------------------------+---------------------------+----------------------------------+
+
+MARK
+
+Laptop Keystroke
+
+CAPS
+
+LOCK+SHIFT+SEMICOLON
+
+RIGHT ARROW or TAB
+
+LEFT ARROW or SHIFT+TAB
+
+DOWN ARROW
+
+UP ARROW
+
+PAGE UP or PAGE DOWN
+
+CTRL+HOME
+
+First
+
+Element
+
+ 
+
++---------------------------+-------------------------------+------------------------------+
+| Description               | Desktop Keystroke             | Laptop Keystroke             |
++---------------------------+-------------------------------+------------------------------+
+| Last                      | CTRL+END                      | CTRL+END                     |
+|                           |                               |                              |
+| Element                   |                               |                              |
++---------------------------+-------------------------------+------------------------------+
+| Say                       | INSERT+UP ARROW               | CAPS LOCK+I                  |
+|                           |                               |                              |
+| Current                   |                               |                              |
+|                           |                               |                              |
+| Element                   |                               |                              |
++---------------------------+-------------------------------+------------------------------+
+| Say All with Touch Cursor | INSERT+DOWN ARROW             | CAPS LOCK+DOWN ARROW         |
++---------------------------+-------------------------------+------------------------------+
+| Route                     | INSERT+NUM PAD PLUS           | CAPS LOCK+APOSTROPHE         |
+|                           |                               |                              |
+| Touch                     |                               |                              |
+|                           |                               |                              |
+| Cursor to                 |                               |                              |
+|                           |                               |                              |
+| Focused                   |                               |                              |
+|                           |                               |                              |
+| Element                   |                               |                              |
++---------------------------+-------------------------------+------------------------------+
+| Route                     | INSERT+SHIFT+NUM PAD PLUS     | CAPS                         |
+|                           |                               |                              |
+| Touch                     |                               | LOCK+SHIFT+APOSTROPHE        |
+|                           |                               |                              |
+| Cursor to                 |                               |                              |
+|                           |                               |                              |
+| JAWS                      |                               |                              |
+|                           |                               |                              |
+| Cursor                    |                               |                              |
++---------------------------+-------------------------------+------------------------------+
+| Route                     | INSERT+SHIFT+NUM PAD MINUS    | CAPS LOCK+SHIFT+LEFT BRACKET |
+|                           |                               |                              |
+| JAWS                      |                               |                              |
+|                           |                               |                              |
+| Cursor to                 |                               |                              |
+|                           |                               |                              |
+| Touch                     |                               |                              |
+|                           |                               |                              |
+| Cursor                    |                               |                              |
++---------------------------+-------------------------------+------------------------------+
+| Text                      | NUM PAD SLASH or INSERT+ENTER | CAPS LOCK+ENTER              |
+|                           |                               |                              |
+| Review                    |                               |                              |
++---------------------------+-------------------------------+------------------------------+
+| Advanced Navigation       | NUM PAD STAR                  | CAPS LOCK+A                  |
++---------------------------+-------------------------------+------------------------------+
+
+Windows Keystrokes
+
+General
+
++----------------------------------------+-----------------------------------+
+| Description                            | Keystroke                         |
++----------------------------------------+-----------------------------------+
+| Get Help                               | F1                                |
++----------------------------------------+-----------------------------------+
+| Open the Start menu                    | CTRL+ESC                          |
++----------------------------------------+-----------------------------------+
+| Open Windows Explorer                  | WINDOWS KEY+E                     |
++----------------------------------------+-----------------------------------+
+| Open Run Dialog                        | WINDOWS KEY+R                     |
++----------------------------------------+-----------------------------------+
+| Find File or Folder from Desktop       | F3                                |
++----------------------------------------+-----------------------------------+
+| Minimize All Applications              | WINDOWS KEY+M                     |
++----------------------------------------+-----------------------------------+
+| Switch Between Open Applications       | ALT+TAB                           |
++----------------------------------------+-----------------------------------+
+| Quit the Active Application            | ALT+F4                            |
+|                                        |                                   |
+| For Windows and Menus                  |                                   |
++----------------------------------------+-----------------------------------+
+| Description                            | Keystroke                         |
++----------------------------------------+-----------------------------------+
+| Open the Application Control           | ALT+SPACEBAR                      |
+|                                        |                                   |
+| Menu                                   |                                   |
++----------------------------------------+-----------------------------------+
+| Move to Current Application’s Menu Bar | ALT                               |
++----------------------------------------+-----------------------------------+
+| Choose a Menu Item                     | ENTER                             |
++----------------------------------------+-----------------------------------+
+| Move Between Menus                     | ALT, ARROW KEYS                   |
++----------------------------------------+-----------------------------------+
+| Cancel or Close a Menu                 | ESC                               |
++----------------------------------------+-----------------------------------+
+| Cancel or Close a Cascading Menu       | ALT                               |
++----------------------------------------+-----------------------------------+
+
+ 
+
++---------------------------------------+-----------------------------------+
+| Open a Child Window Control Menu      | ALT+DASH                          |
++---------------------------------------+-----------------------------------+
+| Close a Child Window                  | CTRL+F4                           |
++---------------------------------------+-----------------------------------+
+| Open the Context Menu                 | APPLICATIONS KEY or SHIFT+F10     |
+|                                       |                                   |
+| For Dialog Boxes                      |                                   |
++---------------------------------------+-----------------------------------+
+| Description                           | Keystroke                         |
++---------------------------------------+-----------------------------------+
+| Move Through Dialog Controls          | TAB                               |
++---------------------------------------+-----------------------------------+
+| Move Backward Through Dialog Controls | SHIFT+TAB                         |
++---------------------------------------+-----------------------------------+
+| Move to Another Page                  | CTRL+TAB                          |
++---------------------------------------+-----------------------------------+
+| Reverse Direction Through Pages       | CTRL+SHIFT+TAB                    |
++---------------------------------------+-----------------------------------+
+| Select or Deselect in List View       | SPACEBAR or                       |
+|                                       |                                   |
+|                                       | CTRL+SPACEBAR                     |
++---------------------------------------+-----------------------------------+
+| Toggle a Check Box On/Off             | SPACEBAR                          |
+|                                       |                                   |
+| For Reading Text                      |                                   |
++---------------------------------------+-----------------------------------+
+| Description                           | Keystroke                         |
++---------------------------------------+-----------------------------------+
+| Move One Character Left               | LEFT ARROW                        |
++---------------------------------------+-----------------------------------+
+| Move One Character Right              | RIGHT ARROW                       |
++---------------------------------------+-----------------------------------+
+| Move One Word Left                    | CTRL+LEFT ARROW                   |
++---------------------------------------+-----------------------------------+
+| Move One Word Right                   | CTRL+RIGHT ARROW                  |
++---------------------------------------+-----------------------------------+
+| Move to Beginning of Line             | HOME                              |
++---------------------------------------+-----------------------------------+
+| Move to End of Line                   | END                               |
++---------------------------------------+-----------------------------------+
+
+ 
+
++----------------------------------------------------------+-----------------------------------------------------+
+| Description                                              | Keystroke                                           |
++----------------------------------------------------------+-----------------------------------------------------+
+| Move One Paragraph Up                                    | CTRL+UP ARROW                                       |
++----------------------------------------------------------+-----------------------------------------------------+
+| Move One Paragraph Down                                  | CTRL+DOWN ARROW                                     |
++----------------------------------------------------------+-----------------------------------------------------+
+| Scroll Up One Screen                                     | PAGE UP                                             |
++----------------------------------------------------------+-----------------------------------------------------+
+| Scroll Down One Screen                                   | PAGE DOWN                                           |
++----------------------------------------------------------+-----------------------------------------------------+
+| Move to Beginning                                        | CTRL+HOME                                           |
++----------------------------------------------------------+-----------------------------------------------------+
+| Move to End                                              | CTRL+END                                            |
+|                                                          |                                                     |
+| For Editing Text                                         |                                                     |
++----------------------------------------------------------+-----------------------------------------------------+
+| Description                                              | Keystroke                                           |
++----------------------------------------------------------+-----------------------------------------------------+
+| Copy                                                     | CTRL+C                                              |
++----------------------------------------------------------+-----------------------------------------------------+
+| Cut                                                      | CTRL+X                                              |
++----------------------------------------------------------+-----------------------------------------------------+
+| Paste                                                    | CTRL+V                                              |
++----------------------------------------------------------+-----------------------------------------------------+
+| Read Clipboard Contents (Desktop or Laptop Layout)       | WINDOWS KEY+INSERT+X or WINDOWS KEY+CAPS LOCK+X     |
++----------------------------------------------------------+-----------------------------------------------------+
+| Virtualize Clipboard Contents (Desktop or Laptop Layout) | INSERT+SPACEBAR followed by C or CAPS LOCK+SPACEBAR |
+|                                                          |                                                     |
+|                                                          | followed by C                                       |
++----------------------------------------------------------+-----------------------------------------------------+
+| Undo                                                     | CTRL+Z                                              |
++----------------------------------------------------------+-----------------------------------------------------+
+| Delete Current Character                                 | DELETE                                              |
++----------------------------------------------------------+-----------------------------------------------------+
+| Delete Prior Character                                   | BACKSPACE                                           |
++----------------------------------------------------------+-----------------------------------------------------+
+| Select One Character Left                                | SHIFT+LEFT ARROW                                    |
++----------------------------------------------------------+-----------------------------------------------------+
+| Select One Character Right                               | SHIFT+RIGHT ARROW                                   |
++----------------------------------------------------------+-----------------------------------------------------+
+| Select One Word Left                                     | CTRL+SHIFT+LEFT ARROW                               |
++----------------------------------------------------------+-----------------------------------------------------+
+| Select One Word Right                                    | CTRL+SHIFT+RIGHT ARROW                              |
++----------------------------------------------------------+-----------------------------------------------------+
+
+ 
+
++---------------------------------------------+-----------------------------------+
+| Description                                 | Keystroke                         |
++---------------------------------------------+-----------------------------------+
+| Select to Beginning of Line                 | SHIFT+HOME                        |
++---------------------------------------------+-----------------------------------+
+| Select to End of Line                       | SHIFT+END                         |
++---------------------------------------------+-----------------------------------+
+| Select to Beginning                         | CTRL+SHIFT+HOME                   |
++---------------------------------------------+-----------------------------------+
+| Select to End                               | CTRL+SHIFT+END                    |
++---------------------------------------------+-----------------------------------+
+| Select All                                  | CTRL+A                            |
+|                                             |                                   |
+| For Windows Explorer                        |                                   |
++---------------------------------------------+-----------------------------------+
+| Description                                 | Keystroke                         |
++---------------------------------------------+-----------------------------------+
+| Delete files                                | DELETE                            |
++---------------------------------------------+-----------------------------------+
+| Rename a file or folder                     | F2                                |
++---------------------------------------------+-----------------------------------+
+| Open Properties for Selected File or Folder | ALT+ENTER                         |
++---------------------------------------------+-----------------------------------+
+| Refresh a window                            | F5                                |
++---------------------------------------------+-----------------------------------+
+| Switch between panes                        | TAB and SHIFT+TAB                 |
++---------------------------------------------+-----------------------------------+
+| Go up one level                             | BACKSPACE                         |
++---------------------------------------------+-----------------------------------+
+
+Touch Gestures
+
+[]
+
+Gestures for Touch Navigation, Text Reading, and Speech Settings
+
++-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Gesture         | Touch                                                                                                                                               | Text Reading                                                                                                                                        | Speech Settings |
+|                 |                                                                                                                                                     |                                                                                                                                                     |                 |
+|                 | Navigation                                                                                                                                          |                                                                                                                                                     |                 |
++-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| One-finger tap  | Speak the element at the current location (continuously move your finger around the screen to explore)                                              | Speak the element at the current location (continuously move your finger around the screen to explore)                                              | -               |
++-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Split tap       | Speak the character at the current location while exploring, or activate the selected Touch Keyboard button in both Standard and Touch Typing modes | Speak the character at the current location while exploring, or activate the selected Touch Keyboard button in both Standard and Touch Typing modes | -               |
++-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+ 
+
++---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| Gesture             | Touch                                                                                                                                                                      | Text Reading                                                                                                                                             | Speech Settings                  |
+|                     |                                                                                                                                                                            |                                                                                                                                                          |                                  |
+|                     | Navigation                                                                                                                                                                 |                                                                                                                                                          |                                  |
++---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| Split double tap    | Speak the word at the current location while exploring, or open and close the panel of alternative keys related to the selected Touch Keyboard button in Touch Typing mode | Speak the word at the current location while exploring, or open and close the panel of alternative keys related to the selected Touch Keyboard button in | -                                |
+|                     |                                                                                                                                                                            |                                                                                                                                                          |                                  |
+|                     |                                                                                                                                                                            | Touch Typing mode                                                                                                                                        |                                  |
++---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| Flick right or left | Next or prior element                                                                                                                                                      | Next or prior character                                                                                                                                  | Increase or decrease speech rate |
++---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| Flick down or up    | Next or prior element (of the type previously set by two-finger flick right or left)                                                                                       | Next or prior line (or anywhere that up/down                                                                                                             | Decrease or increase main volume |
+|                     |                                                                                                                                                                            |                                                                                                                                                          |                                  |
+|                     | or changes the value in slider controls                                                                                                                                    | arrow works to move by line)                                                                                                                             | settings                         |
++---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| Two-finger          | Cycle forward or backward through element navigation types, such as regions, headings, list items, etc.                                                                    | Next or prior word                                                                                                                                       | -                                |
+|                     |                                                                                                                                                                            |                                                                                                                                                          |                                  |
+| flick right or left |                                                                                                                                                                            |                                                                                                                                                          |                                  |
++---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+
+ 
+
+Gesture
+
+Touch
+
+Navigation
+
+Text Reading
+
+Speech Settings
+
+ 
+
+Two-finger flick up
+
+Say current element
+
+Prior paragraph
+
+(performs a CTRL+UP
+
+ARROW)
+
+-
+
+ 
+
+Two-finger flick down
+
+Say all
+
+Next paragraph
+
+(performs a
+
+CTRL+DOWN
+
+ARROW)
+
+-
+
+ 
+
+Triple tap
+
+Select or clear an item in a list or open and close the panel of alternative keys related to
+
+the selected Touch Keyboard button in
+
+Standard
+
+Typing mode
+
+Toggle text selection
+
+Toggles touch cursor on/off
+
+ 
+
+Two-finger triple tap
+
+Speak selected
+
+text
+
+Speak selected text
+
+-
+
+ 
+
+Three-finger flick right or left
+
+Performs a
+
+TAB or
+
+SHIFT+TAB
+
+End or beginning of current line (performs a
+
+JAWS END/HOME)
+
+-
+
+ 
+
+ 
+
+Gesture
+
+Touch
+
+Navigation
+
+Text Reading
+
+Speech Settings
+
+ 
+
+Three-finger
+
+flick up or
+
+down
+
+Cycle between application panes similar to pressing F6 or
+
+SHIFT+F6
+
+Beginning or end of text area (performs a
+
+CTRL+HOME/END)
+
+-
+
+ 
+
+Four-finger
+
+flick up or
+
+down
+
+First or last element
+
+Move up or down a page or screen (performs a PAGE
+
+UP/DOWN)
+
+-
+
+ 
+
+Four-finger swipe down
+
+-
+
+Say All (a single tap anywhere on the screen stops reading)
+
+-
+
+ 
+
+Four-finger swipe downup
+
+Toggles
+
+Windows touch keyboard on/off
+
+Toggles Windows touch keyboard on/off
+
+-
+
+ 
+
+Four-finger double tap
+
+List gestures for
+
+touch navigation
+
+List gestures for text reading
+
+List gestures for speech settings
+
+Gestures for General Windows and JAWS Commands
+
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Gesture                             | Action                                                                                                                                |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Double tap                          | Activate the current element or Touch Keyboard button in Standard Typing mode (Works for both touch navigation and text reading)      |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Two-finger swipe                    | Escape (performs ESC for both touch navigation and text reading)                                                                      |
+|                                     |                                                                                                                                       |
+| right-left                          |                                                                                                                                       |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Two-finger swipe up-down            | Close application (For both touch navigation and text reading)                                                                        |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Gesture                             | Action                                                                                                                                |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Three-finger swipe down-up          | Toggle text review window for elements with text names that do not support standard cursor navigation, such as buttons and list items |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Two-finger tap                      | Silence speech                                                                                                                        |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Two-finger double tap               | Same as pressing the APPLICATIONS key                                                                                                 |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Two-finger rotate clockwise         | Set next gesture mode                                                                                                                 |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Two-finger rotate counter clockwise | Set prior gesture mode                                                                                                                |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Three-finger double tap             | Toggle speech on/off                                                                                                                  |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Four-finger tap                     | Display gesture context help                                                                                                          |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Four-finger triple tap              | Gesture practice mode, similar to keyboard help                                                                                       |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Four-finger rotate                  | Passes the next gesture through to Windows                                                                                            |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Five-finger tap                     | JAWS Manager dialog box (If the gesture mode is not already set to touch when this command is used, the mode is set to touch.)        |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Five-finger double tap              | JAWS window (If the gesture mode is not already set to touch when this command is used, the mode is set to touch.)                    |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Five-finger triple tap              | Shut down JAWS (If the gesture mode is not already set to touch when this command is used, the mode is set to touch.)                 |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Five-finger rotate                  | Toggle JAWS gestures off and on                                                                                                       |
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+
+ 
+
+ 

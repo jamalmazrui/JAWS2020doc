@@ -1,0 +1,666 @@
+﻿Introduction to Creating Rule Sets for JAWS Research It Queries
+
+Introduction to Creating Rule Sets for JAWS Research It Queries
+
+ 
+
+Introduction
+
+ 
+
+Research It is a query tool first introduced in JAWS 11 which makes it fast and simple to look up information using a predefined set of lookup modules.  Thus, for example, one might wish quickly to look up the definition for a word encountered while reading an article without taking the time and trouble to visit an Internet website and search for the definition.  Once the information is found, the user can rapidly return to the primary task with a single keystroke.  This allows the user to find the needed information with a minimum amount of time and distraction.  JAWS Research It can do this and other look up tasks, providing that a rule set has been created which tells JAWS where and how to find the information requested.  At present JAWS ships with a number of predefined rule sets, but it is inevitable that users will want the ability to use Research It to find data that is not available using those predefined rule sets.
+
+ 
+
+It is the purpose of this document to provide a basic introduction to creating these rule sets so users with adequate programming background can learn the basic strategy for creating their own queries.  We will discuss the two file types that comprise a rule set and describe what types of information are required in each.  We will then discuss how desired information is found and extracted from a webpage, provide a very basic introduction to the programming tools used to find and extract that information, and give a couple of simple examples to illustrate these techniques.  However, it is beyond the scope of this article to provide a comprehensive tutorial on how to program these queries.  We will provide references to manuals and function libraries that should allow anyone with moderate to advanced programming knowledge to acquire the necessary tools.  Such individuals should have little difficulty in expanding the introductory information presented here and learn how to create more complex queries.  This article will probably not be very useful for that purpose to those with little or no programming knowledge.
+
+ 
+
+It is assumed that the reader has a solid understanding of how to use JAWS and at least some familiarity with how to invoke and use a Research It query.  Those who do not should study the JAWS help system before proceeding with this article.
+
+ 
+
+Rule Sets
+
+ 
+
+A Research It rule set contains two files:
+
+ 
+
+-   Rule File - This file contains the basic information needed to run the query and allow the user to interface with it in the JAWS Research It dialog.  It uses the file extension .rul.
+-   Query File - This file contains the program which accesses an Internet website, sends any query data to that site, locates the desired data, and returns it as a JAWS Research It result.  It uses the file extension .qry.
+
+ 
+
+These two files must share a common name followed by one of these extensions.  For example, a set might contain the files MyQuery.rul and MyQuery.qry.
+
+ 
+
+The Rule File
+
+ 
+
+The rule file will normally contain three or 4 entries:
+
+ 
+
+-   Friendly Name - This is a string which is the title of the query the user will see in the JAWS Research It dialog.  This is a required entry with a maximum length of 100 characters.
+-   Description - This is a more detailed description of the query and is an optional string with a maximum length of 500 characters.  It can contain any information which the developer feels will assist the user in using the query such as what the query does and the format for the input data.
+-   Timeout - This is an integer defining the timeout in milliseconds that the query will wait to receive a response from the target website.  Any query using this rule set will be aborted if it exceeds the timeout specified.  The default timeout is 15000 milliseconds and will be used if no timeout value is specified.  A longer timeout may be required if the Web site that is queried is slow, if a large amount of data is returned, or if the query is complicated.
+-   Version - This optional entry contains the version information for the rule set.
+
+ 
+
+An example showing the structure of a typical rule set is shown below:
+
+ 
+
+[Details]
+
+FriendlyName=Area code lookup
+
+Description=Enter a three digit area code to find its location.  Example: If you type in 416 and choose this lookup, it will report back Toronto, Ontario, Canada.  Available for the United States and Canada only.
+
+Timeout=15000
+
+Version=1.0.0
+
+ 
+
+The query file, which performs the actual search, will be the subject of the remainder of this article.
+
+ 
+
+The Query File
+
+ 
+
+When one navigates to a searchable webpage using a browser and enters data to be searched, the website will return a results page that, if the search is successful, contains the desired result embedded in that page's HTML or XML code.  Usually, the telltale that a given page has been dynamically created and is searchable by an external tool such as Research It for the desired result is that the page's URL in the address bar contains the search term that was input by the user.  If such a page is to be searched using an external tool, then the tool will have to supply the search term as well as locating and returning the search result to the user.  In some cases, a webpage may be dynamically created on an automatic basis based on ongoing events without any input data from the user, and these pages can also contain data subject to an external query.  (The Yahoo/Dow Jones search described below is an example of such a webpage.)  In such cases, the external query need only return the data of interest without providing any search terms.  Thus, it is the purpose of the rule file to submit any search data necessary for the webpage search and to parse the returned page's code for the result, retrieve it, and report it back to the Research It dialog box.
+
+ 
+
+The trick, of course, is to locate the specific data of interest, the search result, within the large amount of HTML or XML that comprises the webpage so that it can be returned to the external query.  The programming tools used to perform the queries, locate the resulting data, and return the data to the external query are called XQuery, XQilla, and XPath.
+
+ 
+
+XQuery is a programming language specifically designed to query an XML data set and to locate specific data of interest.  It contains the required functions and other tools necessary to parse and navigate an XML webpage to locate the desired data.
+
+ 
+
+It does, however, require that the webpage format be XML rather than HTML.  XQilla is an open-source implementation of XQuery which allows the user to parse an HTML file as an XML file, thus making HTML webpages searchable by an external tool like Research It.  XQilla also contains a number of additional functions which can be used in a query.  Developers creating rule sets for Research It can use XQilla functions in their rule sets.
+
+ 
+
+XPath is an XML path language that allows the user to locate specific nodes on an XML page.  XPath is analogous to a DOS path statement which allows one to find a particular file or file set by specifying the series of nodes (i.e., subdirectories or folders) one must traverse to get to the target.  XML and HTML files are, of course, a series of tags embedded within tags embedded within other tags, etc.  Embedded somewhere within this tag structure is the data we wish to retrieve with our query.  If one views an XML file as a tree view of parent and child tags branching out from one parent tag, then the goal is to locate the branch of interest, the one which contains the desired data, and traverse that branch of parent and child tags until we reach the tag containing the data we want.  Thus, an XPath statement contains a path of tags as opposed to a DOS path statement which contains a path of folders.
+
+ 
+
+A comprehensive book on XQuery by Priscilla Walmsley (XQuery, Sebastopol, CA:  O'Reilly Media, 2007) is available at bookshare.org for Bookshare subscribers.  For basic tutorials about XQuery, XPath, XML, and HTML, refer to http://www.w3schools.com.  These tutorials provide overviews, while the book covers XQuery comprehensively.  XQilla functions are documented at http://xqilla.sourceforge.net/ExtensionFunctions.
+
+ 
+
+The XQilla command Line Tool
+
+ 
+
+One simple way to start learning how to create XQuery/XQilla queries is by using the XQilla command line tool available for download at:
+
+ 
+
+http://www.freedomscientific.com/Content/Documents/Other/ResearchItTools.zip.
+
+ 
+
+This simplifies developing the query by obviating the need to use the JAWS Research It interface or to create the rule file.  One simply creates a query file with an arbitrary extension such as .xq and runs it at the Windows command line prompt.  The format is "xqilla test.xq" without the quotation marks, where test.xq is the query file to be run.  To use this tool, unpack the zip archive to a convenient folder on your hard drive such as XQillaTool.  The folder will contain the XQilla.exe executable file and all required support DLLs.  Two example queries, wiktionary.xq and dji.xq, are also included.
+
+ 
+
+Anatomy of an XQilla Query
+
+ 
+
+To see how this command line tool works, open a command prompt, navigate to the folder containing the XQilla command line tool, and type "xqilla wiktionary.xq" without the quotation marks.  Wiktionary.xq is a query designed to look up the word "scrunch" and report back its definition along with other data.
+
+ 
+
+The code contained within the wiktionary.xq file is shown below.  All comments are surrounded by (: and :) in the form (: my comment :).
+
+ 
+
+Before reviewing this code, we must introduce the concept of Namespace.  Simply put, Namespace is a conceptual space or grouping that separates a collection of items such as programming functions so as to avoid confusion with identically-named items that have a different purpose and exist in another group.  One must normally provide a Namespace declaration at the top of the code so that the query will work correctly.  It is allowed to have more than one Namespace declaration in a query, and one of those can be a default Namespace declaration.  Function calls or custom XML tags that are used within the query must be prefixed by their Namespace name unless their Namespace has been declared as the default Namespace.  The form for the non-default syntax is namespace:functionName () or Namespace:CustomTagName.
+
+ 
+
+Wiktionary.XQ is shown below.  First is shown the complete program without any comments to illustrate the general form of this type of query.  Second is shown the same program interspersed with explanatory comments.
+
+ 
+
+declare default element namespace "http://www.w3.org/1999/xhtml";
+
+declare variable $doc :=
+
+xqilla:parse-html(fn:unparsed-text("http://en.wiktionary.org/wiki/scrunch"));
+
+for $onedef in $doc//div[@class="infl-table"]
+
+let $partofspeech := $onedef/preceding::h3[1]/span[@class="mw-headline"]
+
+let $pronunciation := $onedef/following::span[@class="infl-inline"]
+
+let $definition := $onedef//following::ol[1]
+
+return ("Part of Speech ", data ($partofspeech), "Pronunciation ", data ($pronunciation), "Definition ", data ($definition))
+
+Now, here's the same thing with comments:
+
+ 
+
+(:
+
+Comments appear within parenthesized colon pairs
+
+Put this file within the same directory as the xqilla files,
+
+open a command prompt, change to that directory and type:
+
+     xqilla wiktionary.xq
+
+:)
+
+(:
+
+The following line is the Namespace declaration that applies to the HTML document that will be processed.
+
+:)
+
+declare default element namespace "http://www.w3.org/1999/xhtml";
+
+ (:
+
+Next we define any necessary variables.  Variables in XQuery must be declared and always have a $ prefix.  In point of fact, the variables defined in this way are more reminiscent of constants in other programming languages as their values do not change.  As you will see later in this example, we also use variables in the more expected fashion, and these have not been declared.  These assignments use the := operator rather than just =.  The variable to be defined here will hold the contents of the HTML to be searched.
+
+:)
+
+declare variable $doc :=
+
+xqilla:parse-html(fn:unparsed-text("http://en.wiktionary.org/wiki/scrunch"));
+
+(:
+
+The above sets the variable $doc to the root element of a tree of elements representing the contents of the HTML page http://en.wiktionary.org/wiki/scrunch.  This involves a nested function call.  The innermost call, fn:unparsed-text, says to retrieve the textual HTML contents of the page.  The xqilla:parse-html function takes those HTML contents and turns them into a tree of elements that can be analyzed using XQuery.  When starting with an XML page, however, it is not necessary to parse the code in this manner since the XML code is already properly formed.  An example of such a declaration for an XML page is as follows:
+
+ 
+
+declare variable $doc := doc("http://en.wikipedia.org/w/api.php?action=opensearch&amp;search=
+
+JAWS&amp;format=xml");
+
+Because the XML is already properly-formed, we do not have to use the functions to recover the unparsed text or then to parse such text.
+
+:)
+
+(:
+
+It may also be noted that the two functions in this statement, xqilla:parse-html and fn:unparsed-text, are composed of sections before and after the colon.  the sections before the colon are the Namespaces of the collections which contain the functions parse-html and unparsed-text.  The Namespaces make it impossible to confuse these functions with any that might exist in other Namespaces and have identical names.
+
+:)
+
+(:
+
+Now that $doc contains the contents of the page in a form that can be analyzed, that is to say, as XML parsed into a tree view, we can loop over each word definition and print out selected information about it.  The next line sets up a loop for processing each word definition.
+
+It has been empirically determined that the best way to find each word definition is to look in the document for a tag that contains, among other things, <div class="infl-table"> ... </div>.  (Finding a tag with a unique identifier in the vicinity of the data you want to retrieve is the best way to locate that data in your query code.)
+
+:)
+
+for $onedef in $doc//div[@class="infl-table"]
+
+(:
+
+This statement searches the entire parsed document ($doc) for all tag nodes equal to div and containing the required class attribute.  The double slash says to find all div tags as part of the document regardless of how deeply nested they are and without specifying an exact XPath path.  Without using the double slash, we'd need to specify all tags from the outermost parent that would lead us to the div of interest, perhaps something like $doc/html/body/div or something far more complex for deeply-buried data.  In this case it's much easier to use the double //.
+
+The @class= syntax indicates that a div only qualifies to be processed if that div contains the aforementioned class attribute.  Other div tags will be ignored.  A pointer to each qualifying div, defined as the current element, will be temporarily placed in the variable $onedef and then processed according to subsequent statements contained in the for loop.  The loop will perform as many iterations as necessary to find all of the qualifying tags.  The variable name $onedef is a completely arbitrary name and could be any convenient string preceded by a dollar sign.
+
+:)
+
+(:
+
+Next we must decide what we wish to output and how to return the data.  Let us assume we wish to output three pieces of data about the word scrunch, the part of speech, the pronunciation, and the definition.  We must examine the information contained in the tags in the vicinity of the qualifying div we have located and create statements that will extract the data we want and return it.  We have decided to do this by assigning the XML tags containing the data we want to three different variables and then using a return statement to send the data contained in those variables back to the user.  (As can be seen variables used in this way are not formally declared.  The next four statements will be processed once for each qualifying div.
+
+:)
+
+let $partofspeech := $onedef/preceding::h3[1]/span[@class="mw-headline"]
+
+let $pronunciation := $onedef/following::span[@class="infl-inline"]
+
+let $definition := $onedef//following::ol[1]
+
+return ("Part of Speech ", data ($partofspeech), "Pronunciation ", data ($pronunciation), "Definition ", data ($definition))
+
+(:
+
+The first thing we want to output is the part of speech that this definition represents.  It turns out that it appears immediately before the div.  The syntax $onedef/preceding::h3[1]/span[@class="mw-headline"] says to find the first h3 tag preceding the div and find a <span> element within it that has a class="mw-headline" attribute.  We assign that HTML data to $partofspeech.
+
+(If we were to have searched instead for $onedef/h3[1]/span[@class="mw-headline"], we would be saying that the h3 was a child element of the current element rather than at the same level as the current element but before it.)
+
+The pronunciation key comes next.  It is found by finding the first span following the current div that has an attribute of class="infl-inline.  We assign that HTML data to $pronunciation.
+
+Lastly the definition is retrieved by finding the first <ol> tag following the current element.  We assign that HTML data to $definition.
+
+The return( ...) statement says that everything contained within the parentheses will be output.  Different elements to be output are separated by commas.  In this case, we're outputting the three different items we've stored in $partofspeech, $pronunciation, and $definition.
+
+The data(…) function surrounding each element to be output says to just print out the text (data) rather than all of the html tags.  As an experiment, one could remove the data() functions to see what is output instead.
+
+We've inserted literal strings of the form "Part of Speech ","Pronunciation ", and "Definition " so you can see what is output by each part of the return statement.
+
+:)
+
+ 
+
+It is important to emphasize that the statements designed to extract the data we wanted (part of speech, pronunciation, and definition) didn't spring into existence as wholly-formed entities that worked correctly the first time.  The user must examine the HTML or XML source code of the webpage and experiment with different formulations until the correct data is extracted.  As an exercise in learning how to do this, the reader should navigate to a variety of webpages, locate some data of interest, view the source code for each page, and then search for the data of interest within that source code.  Exploring the XML or HTML tags surrounding that data and the parent-child relationships of nearby tags will help improve ones understanding of how to create statements that will locate and extract the desired data
+
+ 
+
+There is an additional tool built into Internet Explorer which can be used to study the parent-child relationship of the XML and HTML tag tree of a webpage.  This tool can be invoked by pressing F12 while in Internet Explorer 8.  For example, one could navigate to the Wiktionary webpage from which the data for scrunch was extracted, http://en.wiktionary.org/wiki/scrunch, and then press F12.  The Developer Tool will open, and the focus will be on the tab control of a multi-page dialog.  The HTML tab will have focus.  Press TAB once, and focus will move to a search box edit field.  Type in the following text without the quotation marks: " infl-table".  This is the class identifier information we discussed earlier for the div tag that locates the desired definition information.  Now press TAB again, and focus will move to the search button.  Press SPACEBAR to initiate the search and then press TAB three times to reach the tree view.  Focus will be on a div element with the class infl-table.  This is exactly the element we were searching for.  One can navigate up and down in the tree view with the UP ARROW and DOWN ARROW keys in the usual fashion.  One can also expand and collapse the various nodes that have child elements.  Exploring in the vicinity of this div tag will show the various data returned by the XQilla query.  As an exercise, navigate down to the ordered list (OL) tag previously discussed as the location for the definition of scrunch, and find the actual definition.  If one wishes to perform another search for the same data or for different data, press SHIFT+TAB three times to reach the clear search highlighting button.  Press SPACEBAR to clear the previous search highlighting.  One can then press SHIFT+TAB to return to the edit box and enter new search data or just press the search button again to locate the next incidence of the same data, if one exists.
+
+ 
+
+Building an XQilla Query From Scratch
+
+ 
+
+Instead of just studying our second example query, dji.xq, as we did with wiktionary.xq, it should be more instructive to go through the thought processes involved in building this query from scratch.  After doing that, the reader should have a better understanding of how we arrived at the resulting code.
+
+ 
+
+First, visit the webpage to be used for this query, http://finance.yahoo.com/q?s=%5EDJI.  By exploring this page, one can see that the page reports, among other things, the current Dow Jones price or, if the market has closed, the closing price for the day.  The goal of this query will be to extract that price and report it back to the user.
+
+ 
+
+To begin with, we should declare the namespace for the page and then define $doc for this HTML page, much as we did in the Wiktionary example.  The statements to do this are very similar to what we've already seen.
+
+ 
+
+declare default element namespace "http://www.w3.org/1999/xhtml";
+
+declare variable $doc := xqilla:parse-html(fn:unparsed-text("http://finance.yahoo.com/q?s=%5EDJI"));
+
+ 
+
+So far, we've set the variable $doc to contain the parsed contents of the target webpage.  Now we must start digging for data.  By examining the source code directly or by using the Internet Explorer 8 Developer Tool, we can see that the Dow Jones current/closing price comes immediately after a span tag with the id identifier "yfs_l10_^dji".  It seems like it would be a good idea to try using that information to locate the Dow Jones price.  We could formulate the following statement:
+
+ 
+
+for $onedef in $doc//span[@id="yfs_l10_^dji"]
+
+ 
+
+This says to drill down through all of the branches in the tree until we find any and all that have a span tag with the particular id identifier of interest.
+
+ 
+
+Assuming we find one or more tags that fit the description, we'd like to return that information back to the user.  We could write a statement like the one shown below:
+
+ 
+
+return ($onedef)
+
+ 
+
+But that would return the entire tag, so let's modify it just to return the data contained within the tag.
+
+ 
+
+return (data ($onedef))
+
+ 
+
+So, now we have the following query:
+
+ 
+
+declare default element namespace "http://www.w3.org/1999/xhtml";
+
+declare variable $doc := xqilla:parse-html(fn:unparsed-text("http://finance.yahoo.com/q?s=%5EDJI"));
+
+for $onedef in $doc//span[@id="yfs_l10_^dji"]
+
+return (data ($onedef))
+
+ 
+
+Let's see if this works.  Try pasting it into a text editor such as Notepad and saving it in the same folder as your other XQilla files with the name "dji_1.xq".  Then run the file by typing "xqilla dji_1.xq".
+
+ 
+
+Wow, that actually worked!  The only thing is that we see the data being reported back twice.  That's because the data actually does appear twice on the page within a span tag that has the requisite id identifier.  If we only want to see it once, we need to find a way to differentiate one of the instances of the data from the other and use that difference to report just that instance of the data.  By studying the source code for the page or by using the Internet Explorer 8 Developer Tool, we can see that the second instance of the span containing the Dow Jones price also is embedded within a td tag with the class identifier " yfnc_tabledata1".  Perhaps by modifying our for loop to set $onedef equal to the desired span tag only if that span tag also occurs within the desired td tag would do the trick.  We could formulate the statement shown below:
+
+ 
+
+for $onedef in $doc//td[@class="yfnc_tabledata1"]//span[@id="yfs_l10_^dji"]
+
+ 
+
+Let's take that statement and substitute it into our previous query.  That would give the query shown below:
+
+ 
+
+declare default element namespace "http://www.w3.org/1999/xhtml";
+
+declare variable $doc := xqilla:parse-html(fn:unparsed-text("http://finance.yahoo.com/q?s=%5EDJI"));
+
+for $onedef in $doc//td[@class="yfnc_tabledata1"]//span[@id="yfs_l10_^dji"]
+
+ return (data ($onedef))
+
+ 
+
+Let's paste that code into a Notepad file called "dji_2.xq" and run it in the same way as before.  If you did everything correctly, you should see the query print out just one instance of the price, just what we wanted.
+
+ 
+
+Now, let's make the data display a little more user-friendly by adding a few words of text to identify what we're displaying.  Modify your return line as follows, and then save the query file and run it again.
+
+ 
+
+return ("The Dow Jones price is ", data ($onedef))
+
+ 
+
+As you can see, we now have a phrase telling us what's being returned.  This will help keep the returned data clear as we make the query more complicated.
+
+ 
+
+Let's try rearranging this query a little to introduce the idea of using variables to store tag information and to show there's some flexibility in how we arrange the statements.  What we want to do is take the data () function out of the return statement and use it to extract the price information from $onedef and store it in a variable for later use.  We could do this with the following statement:
+
+ 
+
+let $price := data ($onedef)
+
+ 
+
+Now $price contains the actual data, so we don't need the data function in the return statement any longer.  That statement could be rewritten as:
+
+ 
+
+return ("The Dow Jones price is ", $price)
+
+ 
+
+Our complete query now would be as follows:
+
+ 
+
+declare default element namespace "http://www.w3.org/1999/xhtml";
+
+declare variable $doc := xqilla:parse-html(fn:unparsed-text("http://finance.yahoo.com/q?s=%5EDJI"));
+
+for $onedef in $doc//td[@class="yfnc_tabledata1"]//span[@id="yfs_l10_^dji"]
+
+let $price := data ($onedef)
+
+return ("The Dow Jones price is ", $price)
+
+ 
+
+Copy this code into a new Notepad file and save it as dji_3.xq.  Running this file should give you exactly the same data return as before, but now our code is a little cleaner.
+
+ 
+
+Perhaps we'd like to get more information from this website.  We might, for example, like to know the amount that the Dow Jones changed, not just its current/closing price.  If you look at the source code for this page or use the Developer Tool, you can see that the amount of the change is given just a little further down below the price.  In fact, the data for the change occurs in the first span tag following the price data which has an id identifier of "yfs_c10_^dji".  Therefore we can formulate the following statement to extract that price change data:
+
+ 
+
+let $change := data ($onedef/following::span[@id="yfs_c10_^dji"])
+
+ 
+
+Adding this to the code we already have and modifying our return statement to include the new data, we get the following code:
+
+ 
+
+declare default element namespace "http://www.w3.org/1999/xhtml";
+
+declare variable $doc := xqilla:parse-html(fn:unparsed-text("http://finance.yahoo.com/q?s=%5EDJI"));
+
+for $onedef in $doc//td[@class="yfnc_tabledata1"]//span[@id="yfs_l10_^dji"]
+
+let $price := data ($onedef)
+
+let $change := data ($onedef/following::span[@id="yfs_c10_^dji"])
+
+return ("The Dow Jones price is ", $price, $change)
+
+ 
+
+Copy the above code into a Notepad file and save it as DJI_4.xq.  When you run this query, you should get both the Dow Jones price and the amount of the change.
+
+ 
+
+But what if we're still not satisfied?  What if we want even more information?  It might be useful also to know the direction of the change.  In other words, did the Dow go up or down?  Looking again at the source code for the page, we can see that there is information about the direction of the change that is located between the price and the change amount.  The bad news is that the direction of the change is portrayed in graphical form by retrieving an image from elsewhere on the Internet.  This graphic is used to indicate up or down for the change.  Fortunately for us, the webmaster for this site included alt text for the graphic which can be retrieved and spoken by a screen reader.
+
+ 
+
+As with the change amount discussed above, the information we want occurs immediately after the first span tag with an id identifier of "yfs_c10_^dji" which follows the price data.  The image tag, img, is the first such tag after the designated span.  Therefore, we can formulate the following statement to retrieve the information we need:
+
+ 
+
+let $vector := $onedef/following::span[@id="yfs_c10_^dji"]//img/@alt
+
+ 
+
+This statement grabs the first image tag information following the designated span and specifically extracts the alt attribute information.  It is necessary to understand that this alt information isn't text data in the same fashion as the data we've been extracting from other tags on the page.  Rather, the up or down alt information is an attribute of the image tag and is not generated dynamically as is other data.  Therefore, we need to use another method to extract this information.  The /@alt at the end of the statement says to extract the alt information from the image tag, and this is what is assigned to $vector.  As it now stands, this statement would extract either alt="Up" or alt="Down" from the image tag and assign it to $vector, depending upon whether the Dow was up or down.  To get only the actual up or down alt text, we need to follow the above statement by the one shown below:
+
+ 
+
+let $vector := data ($vector)
+
+ 
+
+This says to extract the up or down alt text from $vector and change $vector to be equal only to that text.  Let's incorporate these two statements into our query and modify the return function to include the $vector data.  The code as it now stands is shown below:
+
+ 
+
+declare default element namespace "http://www.w3.org/1999/xhtml";
+
+declare variable $doc := xqilla:parse-html(fn:unparsed-text("http://finance.yahoo.com/q?s=%5EDJI"));
+
+for $onedef in $doc//td[@class="yfnc_tabledata1"]//span[@id="yfs_l10_^dji"]
+
+let $price := data ($onedef)
+
+let $vector := $onedef/following::span[@id="yfs_c10_^dji"]//img/@alt
+
+let $vector := data ($vector)
+
+let $change := data ($onedef/following::span[@id="yfs_c10_^dji"])
+
+return ("The Dow Jones price is ", $price, $vector, $change)
+
+ 
+
+Put this code into a file called dji_5.xq, and run it.  Now you should get an output which tells you the price whether the change was up or down, and the amount of the change.
+
+ 
+
+As you can see, each of the returned items is placed on a separate line in the output.  There's a function called concat () which can be used to concatenate all of the output strings and make the output more aesthetically pleasing.  Adding this function to the return statement above gives us the following line:
+
+ 
+
+return (concat ("The Dow Jones price is ",$price, ", ", $vector, $change))
+
+ 
+
+Make this modification to your dji_5.xq file, and run it to see what effect the concat () function has.  We also added a ", " literal to the middle of the return statement to prevent two strings from running together.
+
+ 
+
+This concludes the design of the dji.xq query.
+
+ 
+
+Modifying an XQilla Query to Work With JAWS Research It
+
+ 
+
+The final form of the dji query, dji-5.xq, should be the same as the dji.xq query that was contained in the XQilla zip file.  This section will show how to prepare that query for use in JAWS Research It.
+
+ 
+
+As discussed above, we will need a rule file and a qry file.  The qry file is quite simple as it's the same as the xq file we've already created but with a new file name.  So, the first thing to do is make a copy of that file and rename it as lrl_dji.qry.  The reason for the lrl prefix will be explained below.
+
+ 
+
+Now we must create the rule set.  Using the explanation of the various entries required for this file that was given above, we can create the following rule file:
+
+ 
+
+[Details]
+
+FriendlyName=Dow Jones Price
+
+Description=Press ENTER to get the current Dow Jones Price.
+
+Timeout=15000
+
+Version=1.0.0
+
+ 
+
+This file is self-explanatory if you've already read the above section on rule files.  We'll copy this into a Notepad file and save it as lrl_dji.rul.  Now we must put the query and rule files into the correct folder for them to work in JAWS.  Using Windows Explorer, navigate to the folder where you've saved lrl_dji.qry and lrl_dji.rul, and copy both of them to the clipboard using CONTROL+C.  Then press your keyboard's WINDOWS KEY followed by the letter P followed by as many presses of the letter J as it takes you to get to the version of JAWS you are using.  (Any version of JAWS starting with JAWS 11 will work.)  Now press RIGHT ARROW twice until you hear JAWS say "Explore My Settings".  Then press ENTER.  You will find yourself in the JAWS settings directory for the JAWS language you are using.  Press DOWN ARROW until you get to the RuleSets folder.  Then press ENTER again to enter this folder.  Press CONTROL+V to paste your two files into this folder.  You may now close Windows Explorer.
+
+ 
+
+Now it is necessary to make sure JAWS will be able to find your new Research It query.  First, open the Configuration manager by pressing JAWSKEY+6.  Then press CONTROL+SHIFT+D to open the default configuration file.  Then press ALT+S followed by the letter R to open the Research It dialog box.  You will find yourself in a listbox containing all of the available Research It queries.  Press DOWN ARROW until you reach the Dow Jones Price query.  If this item is not checked, press SPACEBAR to check it.  Then press ENTER to close the dialog box followed by CONTROL+S to save your changes.  You may now close the configuration manager.  (Note that versions of JAWS starting with version 12 use a tree view for configuration settings, but the setup is analogous.)
+
+ 
+
+To test the new query, press JAWSKEY+SPACEBAR followed by the letter R to open the Research It dialog box.  You will find yourself in an edit field which may contain some data.  Press DELETE to clear this field.  Then press TAB to reach the list of Research It queries.  Press DOWN ARROW until you get to Dow Jones price, then press ENTER.  After a few seconds, the virtual viewer will open, and it will contain your Dow Jones price information.
+
+ 
+
+There's one more small thing we can do to clean up the output a little.  You'll note that the phrase "Press Escape to Close This Message, is appended to the bottom of the output data by JAWS.  This phrase really belongs on a separate line, so we need to find a way to insert a line break after the price change number.  We can do that by defining a variable (again, more like a constant) to be equal to a line break and then putting that variable at the end of the return () function.  This would give us the following two statements:
+
+ 
+
+declare variable $newline := "
+
+";
+
+return (concat ("The Dow Jones price is ",$price, ", ", $vector, $change, $newline))
+
+ 
+
+You can't tell just by looking at the $newline declaration, but there's a carriage return between the two quotation marks at the end of the line.  We did this simply by typing a quotation mark, pressing ENTER, and then by typing another quotation mark.  This declaration assigns the value of a carriage return to $newline.  Then, by adding $newline to the end of the return () function, we add a carriage return that forces the press escape message to be on a new line.  This $newline declaration can be placed at the top of the query file, right after the namespace declaration.  Make these changes to your lrl_dji.qry file, and note that the jaws message is, indeed, now on its own line when the query is run.
+
+ 
+
+Creating Rule Sets Within JAWS Research It
+
+ 
+
+You may prefer to bypass the xqilla command line tool and build your queries directly as rule sets that run in jaws research it.  Simply create your .rul file as discussed above, then write your query in an editor like notepad and save it as your.qry file.  The difficulty is that, if there are bugs in the query code, all JAWS will report back when you run the query in Research It is that no results were found.  To obtain error and debugging information within Research It, you must use the JAWS Utility Mode, as described in the below procedure.
+
+ 
+
+1.  Do one of the following to turn on Script Utility Mode:
+
+ 
+
+·  On a desktop computer, press JAWSKEY+WINDOWSKEY+NUMPAD MINUS.
+
+·  On a laptop computer, press JAWSKEY+WINDOWSKEY+DASH.
+
+ 
+
+2.  Press JAWSKEY+WINDOWSKEY+D to launch the Select Rule Set to Debug dialog box.  A list that contains all rule sets appears.
+3.  Press UP ARROW or DOWN ARROW to navigate to your rule set, and then press enter.  The Apply Search Term to Debug dialog box opens.
+4.  Type one or more words into the edit field and press ENTER.
+5.  The virtual viewer window opens and displays an error code.  If the rule set is successful, the error code is 0, and feedback, based on your query, appears.  If the rule set fails, use the error code and feedback to help you troubleshoot your rule set files.
+
+ 
+
+Errors generated result in error code 3, and output a resulting XQuery error string.  This string usually contains a line number for you to trace when running this debugging procedure, any hyperlinks generated in the query are not presented as links in the virtual viewer.  Instead, the raw HTML source is output.  This is not a problem as JAWS scripts will convert that HTML to a link when the query is run normally in Research It.
+
+ 
+
+Running XQuery and XQilla Queries Within JAWS Research It
+
+ 
+
+The fact that XQuery/XQilla queries can run within JAWS 11 and later is because a Freedom Scientific lookup module called liveresourcelookup.dll has been created and placed in the JAWS folder within the lookupmodule subfolder.  This is the API that allows the queries to run within JAWS.  This dll can support multiple lookup sources, those created by Freedom Scientific and supplied with JAWS, and those created by third-party developers who want to create their own queries.  The three-letter prefix, lrl, which we used in the file names of our dji Research It files comes from the name of this dll.  It is useful to prefix the file names in this fashion to indicate the particular dll they are meant to work with.  If you are interacting with a lookup source that does not support XQuery, if you must protect proprietary data, or if your lookup source requires user authentication, then you must create your own dll API.  The creation of such an API is beyond the scope of this article.
+
+ 
+
+Real Time Data Input for JAWS Research It Queries
+
+ 
+
+Neither of the query examples we've shown above required any data input at the time they are run, but this is not always the case.  Many queries do require data input, so it's necessary to be able to send search data to the query from the Research It dialog box.  This section will give a brief description of how this can be done.
+
+ 
+
+JAWS uses an input token to pass data into the query at the time it is being run.  This token is, essentially, an input variable which is replaced by the user's input data when the query is run.  The form of the token is |ARG_1...ARG_n|.  This token should be assigned to a variable near the beginning of the query file, as shown in the example below.
+
+ 
+
+declare variable $input-string := |ARG_1...ARG_N|;
+
+ 
+
+This would set the variable $input-string equal to the data typed in by the user in the Research It dialog box.  If this data is to be used as part of the URL for the search webpage of interest, then it will be necessary to operate on the data using a special function that eliminates characters that are not permitted to be present in a URL and replaces them with permissible alternatives.  Furthermore, sometimes one might wish to pass more than one string into a query.  In this case, one can use standard XQuery functions to parse or modify the input data and assign the converted data into other variables prior to its use.  This lets you pass multiple arguments using |ARG_1...ARG_n| and parse them into separate variables within the query code.  For example, one might place multiple terms into a search with the terms separated by a particular character such as a blank, a semicolon, or a comma.  Then one could use code in the query to parse the input string at the special character and extract the various terms and place them into the appropriate locations for the search.  If one is setting up a query with multiple input strings in this way, then the .rul file should contain this information, including the separator to be used, so that it will appear in the Description field of the Research It dialog.  This will allow the user to construct the input string properly for use in that query.
+
+ 
+
+Shown below is the dji.qry file after modification to allow data to be passed into the query.  We have added comments where necessary to explain what's happening.
+
+ 
+
+declare default element namespace "http://www.w3.org/1999/xhtml";
+
+declare variable $newline := "
+
+";
+
+declare variable $search-tag := "|ARG_1...ARG_n|";
+
+(: This sets the variable $search-tag equal to the string passed into the query by the search token.  :)
+
+declare variable $search-string := encode-for-uri ("|ARG_1...ARG_n|");
+
+(: This sets the variable $search-string equal to the value of the input data passed by the token after that data has been modified by the function encode-for-uri () to replace characters not permitted in a URL with allowed alternatives. :)
+
+declare variable $doc := xqilla:parse-html(fn:unparsed-text(concat ("http://finance.yahoo.com/q?s=", $search-string)));
+
+(: This sets the variable $doc equal to the parsed text of the URL which is a combination (concatenation) of the section of the URL within the quotation marks plus the variable $search-string.  This concatenation provides a complete URL target which references the user's input data. :)
+
+for $onedef in $doc//td[@class="yfnc_tabledata1"]//span[@id=concat ("yfs_l10_", $search-tag)]
+
+(: This statement operates in exactly the same fashion as in the dji.qry example, except that it combines (concatenates) the section of the node located within quotation marks with the variable $search-tag to provide a complete identifier which contains the input data.  If the user were to input "^dji" as the text string, then this statement would be the functional equivalent of the one in the dji.qry example.  Again, this allows the user's input data to become part of the tag being searched for :)
+
+let $price := data ($onedef)
+
+let $vector := $onedef/following::span[@id=concat ("yfs_c10_", $search-tag)]//img/@alt
+
+(: Again, the unvarying part of the tag (the part within quotation marks) is being concatenated with the user's input data ($search-tag) to create a complete identifier for the tag reference for the desired data on the webpage. :)
+
+let $vector := data ($vector)
+
+let $change := data ($onedef/following::span[@id=concat ("yfs_c10_", $search-tag)])
+
+(: Again, the unvarying part of the tag (the part within quotation marks) is being concatenated with the user's input data ($search-tag) to create a complete tag reference for the desired data on the webpage. :)
+
+ return (concat ("The current ", $search-tag, " price is ",$price, ", ", $vector, $change, ".", $newline))
+
+(: Here, including the variable $search-tag as part of the return data allows us to include the search term in the data reported to the user. :)
+
+ 
+
+Conclusions
+
+ 
+
+The purpose of this document has been to introduce the concept of extracting search data from an XML or HTML webpage and to explore the basics of how to set up a query that can locate and report that data back to the user.  In particular, it is hoped that we have provided a grounding sufficient to allow interested parties to study and understand the citations given here and learn how to create their own JAWS Research It modules.
+
+ 

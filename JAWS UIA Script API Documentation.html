@@ -1,0 +1,2755 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>JAWS UIA Script API Documentation</title>
+    <link rel="stylesheet" href="/Content/Css/Site.min.css?v=1.7" media="all" />
+    <link rel="stylesheet" href="/Content/Css/MainMenu.min.css?v=3" media="all" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+
+	.inner-page-wrap{font-size:16px !important;}
+	p{font-size:16px !important;}
+	</style>
+	<!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+
+      </style>
+    <![endif]-->
+    <!--[if IE 8]>
+      <style type="text/css">
+	  body{font-size:1.8em !important; 	font-family: 'Montserrat', sans-serif !important;
+}
+        #main-menu {
+            background-color: #a2a4a7;
+        }
+
+		a {
+			color: #1a1a1a !important;
+		}
+		a:visited {
+			color: #1a1a1a !important;
+		}
+		a:hover, a:active {
+			color: #222222 !important;
+		}
+		/*
+		a:focus {
+			outline: thin dotted;
+		}*/
+		a:hover, a:active {
+			outline: 0 !important;
+		}
+		.underlineit:after {
+
+    content: "" !important; /* This is necessary for the pseudo element to work. */
+
+    display: block !important; /* This will put the pseudo element on its own line. */
+
+    margin: 0 !important; /* This will center the border. */
+
+    width: 10% !important; /* Change this to whatever width you want. */
+
+    padding-top: 20px !important; /* This creates some space between the element and the border. */
+
+    border-bottom: 4px solid #f17878 !important; /* This creates the border. Replace black with whatever color you want. */
+
+}
+
+
+      </style>
+    <![endif]-->
+    <!-- include jquery -->
+    <script src="/Scripts/jquery-1.11.0.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function OpenVideo(url, w, h) { if (w == null) w = 875; if (h == null) h = 690; var left = (screen.width / 2) - (w / 2); var top = (screen.height / 2) - (h / 2); window.open(url, '', 'scrollbars=no,status=no,resizable=no,width=' + w + ',height=' + h + ',left=' + left + ',top=' + top); }
+    </script>
+
+    
+    <meta name="Author" content="Freedom Scientific" />
+    <meta name="Description" content="UIA Script API for JAWS" />
+<link rel="canonical" href="http://www.freedomscientific.com/Support/JAWSDocumentation/UIAScriptAPI" />
+
+
+    <script>
+        (function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-97234721-1', 'auto'); ga('send', 'pageview');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google AdWords: 1065046387 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1065046387"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-1065046387'); </script>
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4793141.js"></script>
+    <!-- End of Async HubSpot Analytics Code -->
+
+    <!-- Hotjar Tracking Code -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1466271,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+</head>
+<body>
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-P6GZBF"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-P6GZBF');</script>
+
+
+	<div class="row" style="max-width:1200px; margin:0 auto !important;">
+
+
+
+    <div class="col-sm-8 logo mobilecenter">
+
+    	<a focusable="false" href="https://www.freedomscientific.com"><img src="https://www.freedomscientific.com/assets/images/freedom-scientific-logo.png" alt="Freedom Scientific"/></a>
+
+	</div>
+
+    <div class="col-sm-4 mobilecenter" style="text-align:right;">
+
+		<span class="calltoday">Call Today!</span><span class="mainphone"><a href="tel:+18004444443">1(800) 444-4443</a></span>
+
+
+
+        <form title="Site Search Form" method="get" action="/Home/SiteSearch" class="navbar-form navbar-right nomobile" style="margin=top:25px;">
+
+        <div class="form-group">
+
+          <label for="search">Search:</label>
+<input type="hidden" value="date:D:L:d1" name="sort" />
+                                <input type="hidden" value="xml_no_dtd" name="output" />
+                                <input type="hidden" value="UTF-8" name="oe" />
+                                <input type="hidden" value="UTF-8" name="ie" />
+                                <input type="hidden" value="default_frontend" name="client" />
+                                <input type="hidden" value="default_collection" name="site" />
+                                <input type="hidden" value="p" name="filter" />
+                                <label class="sr-hidden" for="search-query">Search</label>
+          <input type="text" class="form-control" name="q" id="search-query" value="" />
+
+        </div>
+
+        <button type="submit" class="btn btn-dark">Submit</button>
+
+      </form>
+
+    </div>
+
+
+
+</div>
+
+
+
+    <div class="">
+        <div>
+		<!--
+            <div class="header">
+
+				<div class="column-1">
+                    <div class="sr-hidden" id="skip-div"><a href="#main-content-anchor" id="skip-link">Skip to main content</a></div>
+                    <a href="/" title="Freedom Scientific"><img class="logo" alt="Freedom Scientific" src="/Content/Images/freedomLogo.gif" /></a>
+                </div>
+
+                <div class="column-2" style="text-align: right;">
+                    <div style="display: inline-block; width: 100%;">
+                        <div class="low-vision-controls">
+                            <span class="decrease-font">
+                                <a href="javascript:fsTextResizer.decreaseSize();" title="Decrease font size"><img src="/Content/Images/decrease-font-size.gif" alt="Decrease font size" /></a></span> <span class="font-sample" aria-hidden="true">A</span>
+                            <span class="increase-font">
+                                <a href="javascript:fsTextResizer.increaseSize();" title="Increase font size"><img src="/Content/Images/increase-font-size.gif" alt="Increase font size" /></a></span>
+                            <span class="toggle-contrast">
+                                <a href="javascript:fsHighContrast.toggle();" title="Toggle contrast"><img src="/Content/Images/toggle-high-contrast-mode.gif" alt="Toggle contrast" /></a></span>
+                        </div>
+                        <div class="search-bar" role="search">
+                            <form title="Site Search Form" method="get" action="/Home/SiteSearch">
+                                <input type="hidden" value="date:D:L:d1" name="sort" />
+                                <input type="hidden" value="xml_no_dtd" name="output" />
+                                <input type="hidden" value="UTF-8" name="oe" />
+                                <input type="hidden" value="UTF-8" name="ie" />
+                                <input type="hidden" value="default_frontend" name="client" />
+                                <input type="hidden" value="default_collection" name="site" />
+                                <input type="hidden" value="p" name="filter" />
+                                <label class="sr-hidden" for="search-query">Search</label>
+                                <input type="text" class="form-control" value="" name="q" id="search-query" /><button type="submit" id="btnG" name="btnG" title="Search" class="search-button">Search</button>
+                            </form>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+			-->
+			<!-- done hiding old header -->
+	<script>
+$(document).ready(function(){
+    $(".dropdown").hover(
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');
+        }
+    );
+});
+</script>
+	<nav class="navbar">
+
+<div class="menuwrap">
+
+  <div class="container-fluid">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fsnavbar" aria-expanded="false">
+
+        <span class="sr-only">Toggle navigation</span>
+
+        <span class="icon-bar"></span>
+
+        <span class="icon-bar"></span>
+
+        <span class="icon-bar"></span>
+
+      </button>
+
+    </div>
+
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+    <div class="collapse navbar-collapse" id="fsnavbar">
+
+      <ul class="nav navbar-nav">
+
+        <li><a href="https://www.freedomscientific.com">Home</a></li>
+
+        <li class="dropdown">
+
+          <a href="https://www.freedomscientific.com/products" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+
+            <li><a href="https://www.freedomscientific.com/products/lowvision">Low Vision Products</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/blindness">Blindness Products</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/accessibility-testing">Accessibility Testing Products</a></li>
+
+          </ul>
+
+        </li>
+
+
+
+        <li class="dropdown">
+
+          <a href="https://www.freedomscientific.com/software" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Software<span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+
+            <li><a href="https://www.freedomscientific.com/products/software/jaws">JAWS</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/software/zoomtext">ZoomText</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/software/fusion">Fusion</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/software/openbook">OpenBook</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/software/home-licenses/">Software For Home</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/software/school-licenses/">Software For School</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/software/business-licenses/">Software For Business</a></li>
+
+            <li role="separator" class="divider" aria-hidden="true"></li>
+
+            <li><a href="//fsactivate.freedomscientific.com">Activate Software License</a></li>
+
+            <li><a href="//portal.freedomscientific.com/SponsoredSoftware">Sponsored Software Licenses</a></li>
+
+          </ul>
+
+        </li>
+
+
+
+        <li class="dropdown">
+
+          <a href="https://www.freedomscientific.com/services" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+
+          	<li><a href="https://www.freedomscientific.com/services/accessibilityconsulting/">Accessibility Consulting</a></li>
+
+            <li><a href="https://www.freedomscientific.com/services/disabilityetiquettetraining/">Disability Etiquette Training</a></li>
+
+            <li><a href="https://www.freedomscientific.com/training">Training</a></li>
+            
+            <li><a href="https://www.freedomscientific.com/training/certification">Certification</a></li>
+          </ul>
+
+        </li>
+
+
+
+        <li class="dropdown">
+
+          <a href="//support.freedomscientific.com" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support<span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+
+            <li><a href="https://support.freedomscientific.com/support">Technical Support</a></li>
+
+            <li><a href="https://www.freedomscientific.com/training/">Training and Certification</a></li>
+
+            <li><a href="https://support.freedomscientific.com/forms/productregistration">Register A Product</a></li>
+
+	    <li><a href="https://support.freedomscientific.com/downloads/documentation">Documentation</a></li>
+
+            <li role="separator" class="divider" aria-hidden="true"></li>
+
+            <li><a href="https://www.freedomscientific.com/downloads">Software Downloads</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/Synthesizers">Synthesizers</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/Focus">Focus Blue Firmware</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/HardwareDrivers">Hardware Drivers</a></li>
+
+          </ul>
+
+        </li>
+
+
+
+        <li class="dropdown">
+
+          <a href="/downloads" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Downloads<span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+
+            <li><a href="https://support.freedomscientific.com/Downloads/JAWS">JAWS</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/fusion">Fusion</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/ZoomText">ZoomText</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/MAGic">MAGic</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/OpenBook">OpenBook</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/WYNN">WYNN</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/Synthesizers">Synthesizers</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/Focus">Focus Blue Firmware</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/omniReader">omniReader Update</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/HardwareDrivers">Hardware Drivers</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/EyeMerge">EyeMerge</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/EyePalZoomOffice">Eye-Pal / Zoom-Office</a></li>
+
+          </ul>
+
+        </li>
+
+
+
+        <li><a href="https://support.freedomscientific.com/forms/dealerlocator">Find A Dealer</a></li>
+
+        <li style="display:none;"><a href="https://www.freedomscientific.com/dealer-locator/">Find A Dealer</a></li>
+
+        <li><a href="//store.freedomscientific.com" class="shopnow">Shop Online</a></li>
+
+      </ul>
+
+
+
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+
+</div>
+
+</nav>
+
+<style>
+html {
+
+	line-height: 1.15; /* 1 */
+
+	-webkit-text-size-adjust: 100%; /* 2 */
+
+	border-top:4px solid #f17878;
+
+	padding-top:7px;
+
+}
+
+body{font-size:1.3em;}
+.navbar{background:/*#06C*/ #fcfbfb; width:100%; color:#1a1a1a !importantform;  margin-top:25px !important; margin-bottom:0 !important; -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+		  border:0px !important;
+		  border-bottom:1px solid #efefef !important;
+ }
+ .navbar-default {
+  box-shadow: none;
+}
+.navbar a:link{color:#1a1a1a; box-shadow: none; padding:15px 25px; font-weight:600; font-size:15.5px;}
+.navbar-brand, .navbar-nav>li>a {
+    text-shadow: 0 0px 0 rgba(255,255,255,.25) !important;
+}
+.dropdown-menu>li>a{
+	display: block;
+    padding: 13px 20px;
+    clear: both;
+    font-weight: 400 !important;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+	}
+.row{margin:0 !important;}
+.shopnow{background:#005abf !important; color:#ffffff !important;}
+.calltoday{font-size:22px; color:#005abf; padding:9px; margin:0; /*background:#1a1a1a;*/ font-weight:bold;}
+.mainphone{font-size:22px; color:#222222; padding:9px; margin:0; /*background:#005abf;*/ font-weight:bold;}
+.content-page h1, .form-page h1 {
+    margin: 0 0 20px;
+    padding: 10px 35px;
+    background-color: #ffffff;
+    font-size: 2.6em;
+	display:block;
+    font-weight: 700;
+}
+/*.content-page h1, .form-page h1 :after {
+    content: "";
+    display: block;
+    margin: 0;
+    width: 10%;
+    padding-top: 20px;
+    border-bottom: 4px solid #f17878;
+}*/
+hr.large-solid {
+    height: 1px;
+    margin: 0 0 30px;
+    padding: 0;
+    width: 100%;
+}
+hr.medium {
+    height: 1px;
+}
+.search-header-side{font-weight:bold;}
+.search-result{width:98%; margin:1%; min-height:130px; background:#f7f7f7; padding:10px; border:1px solid #efefef; float:left;}
+.results-nav-links{display:block;}
+.kb-search .search-results-col a h3 {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 0;
+}
+.search-footer-row h4{font-weight:bold;}
+.search-footer-row .search-result{width:98%; min-height:10px; margin:.5%; background:#f7f7f7; padding:10px; border-bottom:1px solid #efefef; border-left:4px solid #f17878; float:left;}
+.search-footer-row .liRecent{width:98%; min-height:10px; margin:.5%; background:#f7f7f7; padding:10px; border-bottom:1px solid #efefef; border-left:4px solid #f17878; float:left;}
+.search-footer-col1{width:98%; margin:1%;}
+.search-footer-col2{width:98%; margin:1%;}
+.search-footer-row ol {
+    list-style: none;
+    padding-left: 0px;
+}
+.search-footer-row a {
+    font-size: 1.2em;
+    line-height: 20px;
+}
+.form-page, .form-page fieldset label {
+    font-size: 0.8em;
+}
+label {
+    display: inline;
+    max-width: 20%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.form-page INPUT[type=text], .form-page SELECT, .form-page TEXTAREA {
+    display: inline-block;
+    /*width: 100%;*/
+    height: 28px;
+    padding: 6px 12px;
+    font-size: 14px;
+    /*line-height: 1.42857143;*/
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-page .form-field label {
+    display: inline-block;
+	text-align:left;
+	font-size:1.0em;
+}
+.form-page.base-form FORM {
+    /* width: auto; */
+    display: block;}
+
+footer{
+
+	background:#f9f9f9; border-top:1px solid #efefef;padding:25px 0; /*min-height:400px;*/ /*margin-top:200px;*/ width:100%; /*color:#a7a7a7 !important*/ color:#222222;
+
+}
+
+footer a:link, footer a:active, footer a:visited {color:#222222;}
+
+footer a:hover {color:#666666;}
+
+/*footer h3{border-bottom:0px solid #dddddd; padding:5px;}*/
+
+.footer-links{list-style:none !important;
+
+			  margin-left: 0px;
+
+    		  padding-left: 5px;
+
+			  line-height:1.8em;
+
+			  }
+
+footer .footermain h3:after {
+
+    content: '';
+
+    width: 40px;
+
+    height: 2px;
+
+    background-color: #005abf;
+
+    display: block;
+
+    margin-top: 13px;
+
+}
+
+
+</style>
+
+
+
+            <nav id="main-menu" style="z-index: 999999; position: relative; display:none; aria-hidden="true">
+                <!-- BEGIN DO NOT CHANGE SPACING IE REQUIRES NO SPACE AFTER CLOSING UL AND NEXT LI TO READ PROPERLY -->
+                <ul id="mb1" class="menubar root-level" title="Main Menu" aria-controls="st1">
+
+                    <li class="menu-parent" tabindex="-1" aria-haspopup="true" aria-label="PRODUCTS" data-section="/products/">
+                        <a style="color:white!important;" href="javascript:void(0);">PRODUCTS <span class="menu-hidden-description-parent"></span></a>
+                        <ul id="productsSubMenu" class="menu" aria-hidden="true">
+                            <li id="low-vision-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a id="low-vision-menu_link" title="" href="/Products/LowVision">
+                                    Low Vision Products
+                                </a>
+                            </li>
+                            <li id="blindness-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a id="blindness-menu_link" title="" href="/Products/Blindness">
+                                    Blindness Products
+                                </a>
+                            </li>
+                            <li id="accessibility-testing-products-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a id="accessibility-testing-products_link" title="" href="/Services/AccessibilityTestingProducts">
+                                    Accessibility Testing Products
+                                </a>
+                            </li>
+                            <li id="blindness-learning-systems"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a id="blindness-learning-systems_link" title="" href="https://lsg.freedomscientific.com">
+                                    Learning Systems Group Products
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-parent" aria-haspopup="true" tabindex="-1" aria-label="SERVICES" data-section="/services/">
+                        <a style="color:white!important;" href="javascript:void(0);">SERVICES<span class="menu-hidden-description-parent"></span></a>
+                        <ul id="servicesSubmenu" class="menu" aria-hidden="true">
+
+                            <li id="consulting-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Services/AccessibilityConsulting">
+                                    Accessibility Consulting
+                                </a>
+                            </li>
+                            <li id="accessibility-Training-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="https://www.paciellogroup.com/services/training/">
+                                    Enterprise Accessibility Training
+                                </a>
+                            </li>
+                            <li id="Disability-Etiquette-Training-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Services/DisabilityEtiquetteTraining">
+                                    Disability Etiquette Training
+                                </a>
+                            </li>
+                            <li id="training-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Services/TrainingAndCertification">
+                                    Training
+                                </a>
+                            </li>
+                            <li id="certification-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Services/TrainingAndCertification/Certification">
+                                     Certification
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li id="downloadsMenu" class="menu-parent" tabindex="-1" aria-haspopup="true" data-section="/downloads/" aria-label="DOWNLOADS">
+                        <a style="color:white!important;" href="javascript:void(0);">DOWNLOADS<span class="menu-hidden-description-parent"></span></a>
+                        <ul id="downloadsSubMenu" class="menu" aria-hidden="true">
+                            <li id="JAWS-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/JAWS">
+                                    JAWS
+                                </a>
+                            </li>
+                            <li id="Fusion-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="https://www.zoomtext.com/downloads#Fusion 2018" target="_blank">
+                                    Fusion
+                                </a>
+                            </li>
+                            <li id="ZoomText-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="https://www.zoomtext.com/help/product-downloads#ZoomText 2018" target="_blank">
+                                    ZoomText
+                                </a>
+                            </li>
+                            <li id="MAGic-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/MAGic">
+                                    MAGic
+                                </a>
+                            </li>
+                            <li id="OpenBook-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/OpenBook">
+                                    OpenBook
+                                </a>
+                            </li>
+                            <li id="WYNN-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/WYNN">
+                                    WYNN
+                                </a>
+                            </li>
+                            <li id="synthesizers-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/Synthesizers">
+                                    Synthesizers
+                                </a>
+                            </li>
+                            <li id="focus-blue-firmware-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/Focus">
+                                    Focus Blue Firmware
+                                </a>
+                            </li>
+                            <li id="omniReader-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/omniReader">
+                                    omniReader Update
+                                </a>
+                            </li>
+                            <li id="hardware-drivers-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/HardwareDrivers">
+                                    Hardware Drivers
+                                </a>
+                            </li>
+                            <li id="EyeMerge-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/EyeMerge">
+                                    EyeMerge
+                                </a>
+                            </li>
+                            <li id="EyePal-ZoomOffice-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/EyePalZoomOffice">
+                                    Eye-Pal / Zoom-Office
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="supportMenu" class="menu-parent" tabindex="-1" aria-haspopup="true" data-section="/support" aria-label="SUPPORT">
+                        <a style="color:white!important;" href="javascript:void(0);">SUPPORT<span class="menu-hidden-description-parent"></span></a>
+                        <ul id="supportSubMenu" class="menu" aria-hidden="true">
+                            <li id="tech-support-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Support">
+                                    Technical Support
+                                </a>
+                            </li>
+                            <li id="activation-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="https://fsactivate.freedomscientific.com/">
+                                    Software Activation
+                                </a>
+                            </li>
+                            <li id="documentation-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/Documentation">
+                                    Documentation
+                                </a>
+                            </li>
+                            <li id="product-registration-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Forms/ProductRegistration">
+                                    Product Registration
+                                </a>
+                            </li>
+                            <li id="product-demo-videos-menu"
+                                class="menu-item"
+                                tabindex="-1" data-href="/Support/ProductVideos">
+                                <a title="" href="/Support/ProductVideos">
+                                    Product Videos
+                                </a>
+                            </li>
+                            <li id="vision-loss-menu"
+                                class="menu-item"
+                                tabindex="-1" data-href="/Support/VisionLoss">
+                                <a title="" href="/Support/VisionLoss">
+                                    Vision Loss Facts and Resources
+                                </a>
+                            </li>
+                            <li id="EULAS-menu"
+                                class="menu-item"
+                                tabindex="-1" data-href="/Products/EULAS">
+                                <a title="" href="/Products/EULAS">
+                                    Software License Agreements
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="dealerMenu" class="menu-parent" tabindex="-1" data-section="/forms/dealerlocator" data-href="/Forms/DealerLocator" aria-label="DEALER LOCATOR">
+                        <a title="" style="color:white!important" href="/Forms/DealerLocator">DEALER LOCATOR<span class="menu-hidden-description"></span></a>
+                    </li>
+                    <li id="shopMenu" class="menu-parent" style="background-image:none !important;" tabindex="-1" data-href="https://sales.freedomscientific.com" data-section="https://sales.freedomscientific.com" aria-label="SHOP">
+                        <a title="" style="color:white!important" href="https://sales.freedomscientific.com">SHOP<span class="menu-hidden-description"></span></a>
+                    </li>
+                </ul>
+                <!-- END DO NOT CHANGE SPACING IE REQUIRES NO SPACE AFTER CLOSING UL AND NEXT LI TO READ PROPERLY -->
+            </nav>
+        </div>
+		<div class="row" style="height:200px; /*background:#06C;*/ background-image:url('https://www.freedomscientific.com/wp-content/uploads/2018/08/topbackground.jpg');
+    background-position:top left;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+ color:#ffffff; text-align:center;">
+	</div>
+        <div class="main-content" role="main" style="z-index: 1; position: relative; max-width:1600px; margin:-90px auto 0 auto; background:#ffffff;" id="main-div-layout">
+            
+<div class="content-page">
+  <h1><a name="top"></a>JAWS UIA Script API</h1>
+    <div class="inner-page-wrap">
+  <h2>Introduction</h2>
+  <p>The JAWS UIA Script API provides access to Microsoft&#8217;s User Interface Automation (UIA) infrastructure via the JAWS script language. You can find detailed information about UIA on the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ee684009(v=vs.85).aspx" target="_blank">Microsoft web site</a>. This document describes the objects, methods, properties, and events available through the JAWS UIA Script API.</p>
+  <h3>Supported Versions</h3>
+  <p>With each version of Windows&reg;, Microsoft extends the features provided by UI Automation. Many of the methods and properties described in this document are supported in Windows 7, most in Windows 8 and Windows 8.1, and all in Windows 10. Please consult the Microsoft documentation to find out which UIA interfaces, methods, and properties are supported in which versions of Windows.</p>
+  <p>All the objects, methods, properties, and events described in this document are available as of JAWS 18.0.2530.</p>
+  <h3>Getting the FSUIA Object</h3>
+  <p>The primary object in the JAWS UIA script API is FSUIA. Using this object, you can get other objects that represent UIA elements, get tree walkers which will allow you to traverse the tree of UIA elements, register for UIA events, and more.</p>
+  <p>To get an FSUIA object in scripts, use the JAWS built-in function <strong>CreateObjectEx</strong> as follows:</p>
+  <p><code>var object myObject = CreateObjectEx (&quot;FreedomSci.UIA&quot;, false, &quot;UIAScriptAPI.x.manifest&quot; );</code></p>
+  <p>You can create as many FSUIA objects as you like, although you probably won&#8217;t need that many.</p>
+  <h3>Properties</h3>
+  <p>In the UIA Script API, all properties are get-only, except those for which &#8220;get/put&#8221; is explicitly declared in this document.</p>
+  <h3>Caching</h3>
+  <p>Those familiar with UIA will know that clients may request element and pattern data be cached in order to improve system performance. The JAWS UIA Script API handles UIA&#8217;s caching mechanism internally. Several of the most commonly requested element and pattern properties are requested to be cached; and the cached values are always checked before the uncached values. Using this approach should make most situations efficient while keeping the API as simple as possible.</p>
+  <h3>The &#8220;Bool&#8221; Type</h2>
+  <p>At present, the JAWS script language has no Boolean type. The term &#8220;bool&#8221; is used throughout the remainder of this document to indicate an integer value where zero (0) represents a Boolean value of false and any non-zero value represents a Boolean value of true.</p>
+  <h3>The &#8220;Variant&#8221; Type</h3>
+  <p>In the JAWS script language, a &#8220;variant&#8221; is a variable whose type is unknown at compile-time. Variants may be an int, string, handle, or object, and they can be used like any of these types. You can use the JAWS built-in script function <strong>GetVariantType</strong> to determine the type of a variant, although you may already know the underlying type based on the context. For example, if you request the name property of a UIA element and the return type is a variant, the underlying type will almost certainly be a string. If you happen to know the type of a given variant, you can declare the variable as the known type in the scripts. For example: if the <strong>GetProperty</strong> function returns a variant, but you know the type of the property returned will be a string, you can assign the return value directly to a string variable, rather than having to declare a variant. But even if you don&#8217;t know that a variant is a certain type like a string, you can still pass it to functions which take the string type.</p>
+  <h3>Special Integer Types</h3>
+  <p>There are several sets of pre-defined integer values used by UI Automation methods and properties. These represent various element types, property types, pattern identifiers, and so on. For JAWS scripters, these types are declared in the file <strong>UIA.jsh</strong>. In the file, each of the types listed below is preceded by a comment containing the name of the type in order to make them easy to reference from this document. These types are used to indicate the intended values of certain parameter, return, and property types from here on.</p>
+  <ul>
+    <li>AnnotationTypeID</li>
+    <li>ControlTypeID</li>
+    <li>DockPosition</li>
+    <li>Endpoint</li>
+    <li>EventID</li>
+    <li>ExpandCollapseState</li>
+	<li>LandmarkTypeID</li>
+    <li>LegacySelectionFlags</li>
+    <li>LiveSetting</li>
+    <li>OrientationTypeID</li>
+    <li>PropertyID</li>
+    <li>RowOrColumnMajor</li>
+    <li>ScrollAmountID</li>
+    <li>StructureChangeTypeID</li>
+    <li>StyleID</li>
+    <li>SupportedTextSelectionID</li>
+    <li>SynchronizedInputType</li>
+    <li>TextAttributeID</li>
+	<li>TextEditChangeType</li>
+    <li>TextUnit</li>
+    <li>ToggleState</li>
+    <li>TreeScope</li>
+    <li>WindowInteractionState</li>
+    <li>WindowVisualState</li>
+    <li>ZoomUnit</li>
+  </ul>
+  <h3>Parameters by Reference</h3>
+  <p>When a parameter is passed to a function &#8220;by reference,&#8221; the value of the parameter is not only passed to the function, but also returned from the function. Therefore, after calling a function that takes a parameter by reference, the value of the parameter may have changed. This is a way of returning multiple pieces of information from a single function call. Throughout this document, the term &#8220;ByRef&#8221; is used to indicate those parameters which need to be passed to a function by reference.</p>
+  <p>In the JAWS script language, When a parameter is passed by reference, it must be done using a call to one of the reference functions: <strong>IntRef</strong>, <strong>StringRef</strong>, or <strong>IDispatchRef</strong>.</p>
+    <div class="blockdl">
+<p><strong>Note:</strong> this last function is used when the variable type is object. For example:</p>
+  <p><code>var int x; <br>
+    var int y; <br>
+    element.GetClickablePoint(IntRef(x), IntRef(y));</code></p>
+  <p>When this function returns, the values of x and y will be populated with the coordinates of the clickable point.</p>
+    </div>
+  <h3>Arrays</h3>
+  <p>The table below lists the types of arrays provided by the UIA Script API. Although the types of items contained in each array are different, all arrays behave the same way.</p>
+  <p>To get the number of items in an array, use its Count property, for instance, myArray.Count.</p>
+  <p>To access a specific item in an array by index, include the index in parentheses after the array name, for instance, myArray(5).</p>
+    <div class="blockdl">
+<p><strong>Note:</strong> Indexes are zero-based.</p>
+    </div>
+  <p>Finally, arrays may be used in ForEach loops as follows:</p>
+  <p><code>var string s; <br>
+    ForEach s in myArray <br>
+    ; do something with s <br>
+    EndForEach</code></p>
+  <table border=1 cellpadding=5 summary="Table of various types of arrays.">
+    <tr>
+      <th><strong>Array</strong></th>
+      <th><strong>Item type</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray</td>
+      <td>FSUIAElement</td>
+    </tr>
+    <tr>
+      <td>FSUIAIntArray</td>
+      <td>int</td>
+    </tr>
+    <tr>
+      <td>FSUIARectArray</td>
+      <td>FSUIARect</td>
+    </tr>
+    <tr>
+      <td>FSUIAStringArray</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>FSUIATextRangeArray</td>
+      <td>FSUIATextRange</td>
+    </tr>
+  </table>
+  <h2><a name="objects"></a>Objects</h2>
+  <h3>FSUIA</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIA object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool AddAutomationEventHandler( EventID, FSUIAElement, TreeScope ); </td>
+      <td>Registers a method that handles Microsoft UI Automation events. See the <a href="#events">Events</a> section of this document for further details.</td>
+    </tr>
+    <tr>
+      <td>bool AddFocusChangedEventHandler(); </td>
+      <td>Registers a method that handles focus-changed events. See the <a href="#events">Events</a> section of this document for further details.</td>
+    </tr>
+    <tr>
+      <td>bool AddPropertyChangedEventHandler( PropertyID, FSUIAElement, TreeScope ); </td>
+      <td>Registers a method that handles property-changed events.
+          See the <a href="#events">Events</a> section of this document for further details.</td>
+    </tr>
+    <tr>
+      <td>bool AddStructureChangedEventHandler( FSUIAElement, TreeScope ); </td>
+      <td>Registers a method that handles structure-changed events.
+          See the <a href="#events">Events</a> section of this document for further details.</td>
+    </tr>
+    <tr>
+      <td>bool AddTextEditTextChangedEventHandler ( FSUIAElement, TreeScope, TextEditChangeType);</td>
+      <td>Registers a method that handles programmatic text-edit events. See the <a href="#events">Events</a> section of this document for further details.</td>
+    </tr>
+    <tr>
+      <td>bool CheckNotSupported(variant ); </td>
+      <td>Checks a provided VARIANT to see if it contains the Not Supported identifier.</td>
+    </tr>
+    <tr>
+      <td>bool CompareElements( FSUIAElement, FSUIAElement ); </td>
+      <td>Compares two UI Automation elements to determine whether they represent the same underlying UI element.</td>
+    </tr>
+    <tr>
+      <td>bool CompareRuntimeIds( FSUIAIntArray, FSUIAIntArray ); </td>
+      <td>Compares two integer arrays containing run-time identifiers (IDs) to determine whether their content is the same and they belong to the same UI element.</td>
+    </tr>
+    <tr>
+      <td>FSUIACondition CreateAndCondition( FSUIACondition, FSUIACondition ); </td>
+      <td>Creates a condition that selects elements that match both of two conditions.</td>
+    </tr>
+    <tr>
+      <td>FSUIACondition CreateBoolPropertyCondition( PropertyID, bool ); </td>
+      <td>Creates a condition for a Boolean property.</td>
+    </tr>
+    <tr>
+      <td>FSUIACondition CreateFalseCondition(); </td>
+      <td>Creates a condition that is always false.</td>
+    </tr>
+    <tr>
+      <td>FSUIACondition CreateIntPropertyCondition( PropertyID, int ); </td>
+      <td>Creates a condition for an integer property.</td>
+    </tr>
+    <tr>
+      <td>FSUIACondition CreateNotCondition( FSUIACondition ); </td>
+      <td>Creates a condition that is the negative of a specified condition.</td>
+    </tr>
+    <tr>
+      <td>FSUIACondition CreateOrCondition( FSUIACondition, FSUIACondition ); </td>
+      <td>Creates a combination of two conditions where a match exists if either of the conditions is true.</td>
+    </tr>
+    <tr>
+      <td>FSUIACondition CreateStringPropertyCondition( PropertyID, string ); </td>
+      <td>Creates a condition for a string property.</td>
+    </tr>
+    <tr>
+      <td>FSUIATreeWalker CreateTreeWalker( FSUIACondition ); </td>
+      <td>Retrieves an IUIAutomationTreeWalker interface that can be used to traverse the UI Automation tree. Elements in the tree match the provided condition.</td>
+    </tr>
+    <tr>
+      <td>FSUIACondition CreateTrueCondition(); </td>
+      <td>Retrieves a predefined condition that selects all elements.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElement GetElementFromHandle( handle ); </td>
+      <td>Retrieves a UI Automation element for the specified window.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElement GetElementFromIAccessible(object, int ); </td>
+      <td>Retrieves a UI Automation element for the specified accessible object from a Microsoft Active Accessibility server. Parameter 2 is the MSAA child ID of the desired object.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElement GetElementFromPoint( int, int ); </td>
+      <td>Retrieves the FSUIAElement interface for the UI element at the specified point on the desktop. Parameter 1 is the x coordinate of the point. Parameter 2 is the y coordinate.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElement GetFocusedElement(); </td>
+      <td>Retrieves the UI Automation element that has the input focus.</td>
+    </tr>
+    <tr>
+      <td>string GetPatternProgramaticName( PatternID ); </td>
+      <td>Retrieves the registered programmatic name of a control pattern.</td>
+    </tr>
+    <tr>
+      <td>string GetPropertyProgramaticName( PropertyID ); </td>
+      <td>Retrieves the registered programmatic name of a property.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElement GetRootElement(); </td>
+      <td>Retrieves the UI Automation element that represents the desktop.</td>
+    </tr>
+    <tr>
+      <td>bool PollForPotentialSupportedPatterns( FSUIAElement, ByRef FSUIAIntArray, ByRef FSUIAStringArray ); </td>
+      <td>Retrieves the control patterns that might be supported on a UI Automation element. Parameter 2 is an array of PatternIDs. Parameter 3 is an array of localized pattern name strings.</td>
+    </tr>
+    <tr>
+      <td>bool PollForPotentialSupportedProperties( FSUIAElement, ByRef FSUIAIntArray, ByRef FSUIAStringArray ); </td>
+      <td>Retrieves the properties that might be supported on a UI Automation element. Parameter 2 is an array of PropertyIDs. Parameter 3 is an array of localized property name strings.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIA object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool</td>
+      <td>AutoSetFocus</td>
+      <td>Specifies whether calls to UI Automation control pattern methods automatically set focus to the target element. (get/put)</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>ConnectionTimeout</td>
+      <td>Specifies the length of time, in milliseconds, that UI Automation will wait for a provider to respond to a client request for an automation element. (get/put)</td>
+    </tr>
+    <tr>
+      <td>FSUIACondition</td>
+      <td>ContentViewCondition</td>
+      <td>Retrieves a predefined condition object that selects content elements.</td>
+    </tr>
+    <tr>
+      <td>FSUIATreeWalker</td>
+      <td>ContentViewWalker</td>
+      <td>Retrieves an IUIAutomationTreeWalker interface used to discover content elements.</td>
+    </tr>
+    <tr>
+      <td>FSUIACondition</td>
+      <td>ControlViewCondition</td>
+      <td>Retrieves a predefined condition interface that selects control elements.</td>
+    </tr>
+    <tr>
+      <td>FSUIATreeWalker</td>
+      <td>ControlViewWalker</td>
+      <td>Retrieves an IUIAutomationTreeWalker interface used to discover control elements.</td>
+    </tr>
+    <tr>
+      <td>FSUIACondition</td>
+      <td>RawViewCondition</td>
+      <td>Retrieves a condition interface for a predefined condition that selects all UI elements in an unfiltered view.</td>
+    </tr>
+    <tr>
+      <td>FSUIATreeWalker</td>
+      <td>RawViewWalker</td>
+      <td>Retrieves an IUIAutomationTreeWalker interface used to traverse an unfiltered view of the UI Automation tree.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>TransactionTimeout</td>
+      <td>Specifies the length of time, in Milliseconds, that UI Automation will wait for a provider to respond to a client request for information about an automation element. (get/put)</td>
+    </tr>
+  </table>
+  <h3>FSUIAAnnotation</h3>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIAAnnotation object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>Author </td>
+      <td>Retrieves the name of the annotation author.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>DateTime</td>
+      <td>Retrieves the date and time that this annotation was created.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElement</td>
+      <td>Target </td>
+      <td>Retrieves the element that is being annotated.</td>
+    </tr>
+    <tr>
+      <td>AnnotationTypeID</td>
+      <td>TypeID</td>
+      <td>Retrieves a value that identifies the annotation's type.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>TypeName</td>
+      <td>Retrieves the localized name of this annotation's type.</td>
+    </tr>
+  </table>
+  <h3>FSUIACondition</h3>
+  <p>The FSUIACondition object has no script-accessible members.</p>
+  <h3>FSUIADock</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIADock object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool SetPosition(DockPosition ); </td>
+      <td>Sets the dock position of this element.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIADock object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>DockPosition</td>
+      <td>Position </td>
+      <td>Retrieves the dock position of this element within its docking container.</td>
+    </tr>
+  </table>
+  <h3>FSUIADrag</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIADrag object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray GetGrabbedItems(); </td>
+      <td>Retrieves a collection of elements that represent the full set of items that the user is dragging as part of a drag operation.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIADrag object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>DropEffect</td>
+      <td>Retrieves a localized string that indicates what happens when the user drops this element as part of a drag-drop operation.</td>
+    </tr>
+    <tr>
+      <td>FSUIAStringArray</td>
+      <td>DropEffects</td>
+      <td>Retrieves an array of localized strings that enumerate the  full set of effects that can happen when this element as part of a drag-and-drop operation.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>IsGrabbed</td>
+      <td>Indicates whether the user has grabbed this element as part of a drag-and-drop operation.</td>
+    </tr>
+  </table>
+  <h3>FSUIADropTarget</h3>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIADropTarget object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>Effect </td>
+      <td>Retrieves a localized string that describes what happens when the user drops the grabbed element on this drop target.</td>
+    </tr>
+    <tr>
+      <td>FSUIAStringArray</td>
+      <td>Effects </td>
+      <td>Retrieves an array of localized strings that enumerate the full set of effects that can happen when the user drops a grabbed element on this drop target as part of a drag-and-drop operation.</td>
+    </tr>
+  </table>
+  <h3>FSUIAElement</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIAElement object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIAElement BuildUpdatedCache(); </td>
+      <td>Retrieves a new FSUIAElement interface with an updated cache.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray FindAll( TreeScope, FSUIACondition ); </td>
+      <td>Returns all UI Automation elements that satisfy the specified condition.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElement FindFirst( TreeScope, FSUIACondition ); </td>
+      <td>Retrieves the first child or descendant element that matches the specified condition.</td>
+    </tr>
+    <tr>
+      <td>FSUIAAnnotation GetAnnotationPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>bool GetClickablePoint( ByRef int, ByRef int ); </td>
+      <td>Retrieves a point on the element that can be clicked. The first parameter is the x coordinate. The second parameter is the y coordinate.</td>
+    </tr>
+    <tr>
+      <td>FSUIADock GetDockPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIADrag GetDragPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIADropTarget GetDropTargetPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIAExpandCollapse GetExpandCollapsePattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIAGridItem GetGridItemPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIAGrid GetGridPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIAInvoke GetInvokePattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIAItemContainer GetItemContainerPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIALegacyIAccessible GetLegacyIAccessiblePattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIAMultipleView GetMultipleViewPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>variant GetPropertyValue(PropertyID ); </td>
+      <td>Retrieves the value of a property for this UI Automation element.</td>
+    </tr>
+    <tr>
+      <td>FSUIARangeValue GetRangeValuePattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIAIntArray GetRuntimeID(); </td>
+      <td>Retrieves the unique identifier assigned to the UI element.</td>
+    </tr>
+    <tr>
+      <td>FSUIAScrollItem GetScrollItemPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIAScroll GetScrollPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIASelectionItem GetSelectionItemPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIASelection GetSelectionPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIASpreadsheetItem GetSpreadsheetItemPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIASpreadsheet GetSpreadsheetPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIAStyles GetStylesPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIASynchronizedInput GetSynchronizedInputPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIATableItem GetTableItemPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIATable GetTablePattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIATextChild GetTextChildPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIATextEdit GetTextEditPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIAText GetTextPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIAToggle GetTogglePattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIATransform GetTransformPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIAValue GetValuePattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIAVirtualizedItem GetVirtualizedItemPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>FSUIAWindow GetWindowPattern(); </td>
+      <td>Returns a pattern object if the pattern is available.</td>
+    </tr>
+    <tr>
+      <td>bool SetFocus(); </td>
+      <td>Sets the keyboard focus to this UI Automation element.</td>
+    </tr>
+    <tr>
+      <td>bool ShowContextMenu();</td>
+      <td>Programmatically invokes a context menu on the target element.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIAElement object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>AcceleratorKey</td>
+      <td>Retrieves the accelerator key for the element.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>AccessKey</td>
+      <td>Retrieves the access key character for the element.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray</td>
+      <td>Annotation Objects</td>
+      <td>Retrieves an array of elements representing the annotations associated with this element.</td>
+    </tr>
+    <tr>
+      <td>FSUIAIntArray</td>
+      <td>Annotation Types</td>
+      <td>Retrieves an array of annotation type identifiers indicating the types of annotations that are associated with this element.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>AriaProperties</td>
+      <td>Retrieves the value of the ARIA properties of the element.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>AriaRole</td>
+      <td>Retrieves the ARIA role of the element.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>AutomationId</td>
+      <td>Retrieves the UI Automation identifier of the element.</td>
+    </tr>
+    <tr>
+      <td>FSUIARect</td>
+      <td>BoundingRectangle</td>
+      <td>Retrieves the coordinates of the rectangle that completely encloses the element.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>ClassName</td>
+      <td>Retrieves the class name of the element.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray</td>
+      <td>ControllerFor</td>
+      <td>Retrieves an array of elements for which this element serves as the controller.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>ControlType</td>
+      <td>Retrieves the control type of the element.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>Culture</td>
+      <td>Retrieves the culture identifier for the element.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray</td>
+      <td>DescribedBy</td>
+      <td>Retrieves an array of elements that describe this element.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray</td>
+      <td>FlowsFrom</td>
+      <td>Retrieves an array of elements that indicates the reading order before the current element.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray</td>
+      <td>FlowsTo</td>
+      <td>Retrieves an array of elements whose order suggests the reading order after the current element.</td>
+    </tr>
+    <tr>
+      <td>string</td>
+      <td>FrameworkID</td>
+      <td>Retrieves the name of the underlying UI framework.</td>
+    </tr>
+    <tr>
+      <td>string</td>
+      <td>FullDescription</td>
+      <td>Returns a localized string which can contain extended description text for an element.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>HasKeyboardFocus</td>
+      <td>Retrieves a value that indicates whether the element has keyboard focus.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>HelpText</td>
+      <td>Retrieves the help text for the element.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>IsContentElement</td>
+      <td>Retrieves a value that indicates whether the element is a content element.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>IsControlElement</td>
+      <td>Retrieves a value indicating whether the UI element is a control.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>IsDataValidForForm</td>
+      <td>Retrieves a value that indicates whether the element contains valid data for the form.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>IsEnabled</td>
+      <td>Retrieves a value that indicates whether the UI Automation element is enabled.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>IsKeyboardFocusable</td>
+      <td>Retrieves a value that indicates whether the UI Automation element can accept keyboard focus.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>IsOffscreen</td>
+      <td>Retrieves a value that indicates whether the element is off screen.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>IsPassword</td>
+      <td>Retrieves a value that indicates whether the element contains a disguised password.</td>
+    </tr>
+	<tr>
+	<td>bool</td>
+	<td>IsPeripheral</td>
+	<td>Retrieves the peripheral UI indicator for the element.</td>
+	</tr>
+    <tr>
+      <td>bool </td>
+      <td>IsRequiredForForm</td>
+      <td>Retrieves a value that indicates whether the element is required to be filled out on a form.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>ItemStatus</td>
+      <td>Retrieves a description of the status of an item within an element.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>ItemType</td>
+      <td>Retrieves a string describing the type of the item represented by a UI element.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElement</td>
+      <td>LabeledBy</td>
+      <td>Retrieves the element that contains the text label for this element.</td>
+    </tr>
+    <tr>
+      <td>LandmarkTypeID</td>
+      <td>LandmarkType</td>
+      <td>Returns the landmark type identifier associated with an element.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>Level</td>
+      <td>Returns the 1-based integer for the level in the hierarchical or broken hierarchical structure for the element.</td>
+    </tr>
+    <tr>
+      <td>LiveSetting</td>
+      <td>LiveSetting</td>
+      <td>Indicates the type of notifications, if any, that the element sends when the content of the element changes.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>LocalizedControlType</td>
+      <td>Retrieves a localized description of the UI element's control type.</td>
+    </tr>
+    <tr>
+      <td>string</td>
+      <td>LocalizedLandmarkType</td>
+      <td>Returns a text string describing the type of landmark that the element represents.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>Name </td>
+      <td>Retrieves the name of the UI element.</td>
+    </tr>
+    <tr>
+      <td>handle </td>
+      <td>NativeWindowHandle</td>
+      <td>Retrieves the window handle of the element.</td>
+    </tr>
+    <tr>
+      <td>bool</td>
+      <td>OptimizeForVisualContent</td>
+      <td>Indicates whether the provider exposes only elements that are visible.</td>
+    </tr>
+    <tr>
+      <td>OrientationTypeID</td>
+      <td>Orientation </td>
+      <td>Retrieves the orientation of the element.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>PositionInSet</td>
+      <td>Returns the 1-based integer for the ordinal position in the set for the element.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>ProcessId</td>
+      <td>Retrieves the ID of the process that hosts the element.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>ProviderDescription</td>
+      <td>Retrieves a description of the UI Automation provider for this element.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>SizeOfSet</td>
+      <td>Returns the 1-based integer for the size of the set where the element is located.</td>
+    </tr>
+  </table>
+  <h3>FSUIAExpandCollapse</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIAExpandCollapse object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>void Collapse(); </td>
+      <td>Hides all child nodes, controls, or content of the element.</td>
+    </tr>
+    <tr>
+      <td>void Expand(); </td>
+      <td>Displays all child nodes, controls, or content of the element.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIAExpandCollapse object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>ExpandCollapseState</td>
+      <td>ExpandCollapseState</td>
+      <td>Retrieves a value that indicates the state, expanded or collapsed, of the element.</td>
+    </tr>
+  </table>
+  <h3>FSUIAGrid</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIAGrid object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIAElement GetItem( int, int ); </td>
+      <td>Retrieves a UI Automation element representing an item in the grid. Parameter 1 is the zero-based index of a row, Parameter 2 is the zero-based index of a column.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIAGrid object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>ColumnCount</td>
+      <td>The number of columns in the grid.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>RowCount</td>
+      <td>Retrieves the number of rows in the grid.</td>
+    </tr>
+  </table>
+  <h3>FSUIAGridItem</h3>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIAGridItem object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>Column </td>
+      <td>Retrieves the zero-based index of the column that contains the item.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>ColumnSpan</td>
+      <td>Retrieves the number of columns spanned by the grid item.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElement</td>
+      <td>ContainingGrid</td>
+      <td>Retrieves the element that contains the grid item.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>Row </td>
+      <td>Retrieves the zero-based index of the row that contains the grid item.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>RowSpan</td>
+      <td>Retrieves the number of rows spanned by the grid item.</td>
+    </tr>
+  </table>
+  <h3>FSUIAInvoke</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIAInvoke object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool Invoke(); </td>
+      <td>Invokes the action of a control, such as a button click.</td>
+    </tr>
+  </table>
+  <h3>FSUIAItemContainer</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIAItemContainer object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIAElement FindItemByProperty( FSUIAElement, PropertyID, variant ); </td>
+      <td>Retrieves an element within a containing element, based on a specified property value.</td>
+    </tr>
+  </table>
+  <h3>FSUIALegacyIAccessible</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIALegacyIAccessible object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>void DoDefaultAction(); </td>
+      <td>Performs the Microsoft Active Accessibility default action for the element.</td>
+    </tr>
+    <tr>
+      <td>object GetIAccessible(); </td>
+      <td>Retrieves an IAccessible object that corresponds to the UI Automation element.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray GetSelection(); </td>
+      <td>Retrieves the Microsoft Active Accessibility property that identifies the selected children of this element.</td>
+    </tr>
+    <tr>
+      <td>bool Select(LegacySelectionFlags ); </td>
+      <td>Performs a Microsoft Active Accessibility selection.</td>
+    </tr>
+    <tr>
+      <td>bool SetValue( string ); </td>
+      <td>Sets the Microsoft Active Accessibility value property for the element.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIALegacyIAccessible object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>ChildID</td>
+      <td>Retrieves the Microsoft Active Accessibility child identifier for the element.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>DefaultAction</td>
+      <td>Retrieves the Microsoft Active Accessibility default action for the element.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>Description </td>
+      <td>Retrieves the Microsoft Active Accessibility description of the element.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>Help </td>
+      <td>Retrieves the Microsoft Active Accessibility help string for the element.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>KeyboardShortcut</td>
+      <td>Retrieves the Microsoft Active Accessibility keyboard shortcut property for the element.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>Name </td>
+      <td>Retrieves the Microsoft Active Accessibility name property of the element.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>Role </td>
+      <td>Retrieves the Microsoft Active Accessibility role identifier of the element.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>State </td>
+      <td>Retrieves the Microsoft Active Accessibility state identifier for the element.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>Value </td>
+      <td>Retrieves the Microsoft Active Accessibility value property.</td>
+    </tr>
+  </table>
+  <h3>FSUIAMultipleView</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIAMultipleView object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIAIntArray GetSupportedViews(); </td>
+      <td>Retrieves a collection of control-specific view identifiers.</td>
+    </tr>
+    <tr>
+      <td>string GetViewName( int ); </td>
+      <td>Retrieves the name of a control-specific view.</td>
+    </tr>
+    <tr>
+      <td>bool SetCurrentView( int ); </td>
+      <td>Sets the view of the control.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIAMultipleView object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>CurrentView</td>
+      <td>Retrieves the control-specific identifier of the current view of the control.</td>
+    </tr>
+  </table>
+  <h3>FSUIARangeValue</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIARangeValue object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool SetValue( int ); </td>
+      <td>Sets the value of the control.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIARangeValue object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>IsReadOnly</td>
+      <td>Indicates whether the value of the element can be changed.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>LargeChange</td>
+      <td>Retrieves the value that is added to or subtracted from the value of the control when a large change is made, such as when the <strong>PAGE DOWN</strong> key is pressed.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>Maximum </td>
+      <td>Retrieves the maximum value of the control.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>Minimum </td>
+      <td>Retrieves the minimum value of the control.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>SmallChange</td>
+      <td>Retrieves the value that is added to or subtracted from the value of the control when a small change is made, such as when an <strong>ARROW</strong> key is pressed.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>Value </td>
+      <td>Retrieves the value of the control.</td>
+    </tr>
+  </table>
+  <h3>FSUIARect</h3>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIARect object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>Bottom </td>
+      <td>The bottom edge of the rectangle.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>Left </td>
+      <td>The left edge of the rectangle.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>Right </td>
+      <td>The right edge of the rectangle.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>Top </td>
+      <td>The top edge of the rectangle.</td>
+    </tr>
+  </table>
+  <h3>FSUIAScroll</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIAScroll object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool Scroll(ScrollAmountID, ScrollAmountID ); </td>
+      <td>Scrolls the visible region of the content area horizontally and vertically. Parameter 1 is horizontal. Parameter 2 is vertical.</td>
+    </tr>
+    <tr>
+      <td>bool SetScrollPercent( int, int ); </td>
+      <td>Sets the horizontal and vertical scroll positions as a percentage of the total content area within the UI Automation element. Parameter 1 is horizontal. Parameter 2 is vertical.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIAScroll object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>HorizontallyScrollable</td>
+      <td>Indicates whether the element can scroll horizontally.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>HorizontalScrollPercent</td>
+      <td>Retrieves the horizontal scroll position.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>HorizontalViewSize</td>
+      <td>Retrieves the horizontal size of the viewable region of a scrollable element, expressed as a percentage of the total content area within the element.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>VerticallyScrollable</td>
+      <td>Indicates whether the element can scroll vertically.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>VerticalScrollPercent</td>
+      <td>Retrieves the vertical scroll position.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>VerticalViewSize</td>
+      <td>Retrieves the vertical size of the viewable region of a scrollable element, expressed as a percentage of the total content area within the element.</td>
+    </tr>
+  </table>
+  <h3>FSUIAScrollItem</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIAScrollItem object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>void ScrollIntoView(); </td>
+      <td>Scrolls the content area of a container object to display the UI Automation element within the visible region (viewport) of the container.</td>
+    </tr>
+  </table>
+  <h3>FSUIASelection</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for FSUIASelection objects.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray GetSelection(); </td>
+      <td>Retrieves the selected elements in the container.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for FSUIASelection objects.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>CanSelectMultiple</td>
+      <td>Indicates whether more than one item in the container can be selected at one time.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>IsSelectionRequired</td>
+      <td>Indicates whether at least one item must be selected at all times.</td>
+    </tr>
+  </table>
+  <h3>FSUIASelectionItem</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIASelectionItem object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool AddToSelection(); </td>
+      <td>Adds the current element to the collection of selected items.</td>
+    </tr>
+    <tr>
+      <td>bool RemoveFromSelection(); </td>
+      <td>Removes this element from the selection.</td>
+    </tr>
+    <tr>
+      <td>void Select(); </td>
+      <td>Clears any selected items and then selects the current element.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIASelectionItem object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>IsSelected</td>
+      <td>Indicates whether this item is selected.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElement</td>
+      <td>SelectionContainer</td>
+      <td>Retrieves the element that supports IUIAutomationSelectionPattern and acts as the container for this item.</td>
+    </tr>
+  </table>
+  <h3>FSUIASpreadsheet</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIASpreadsheet object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIAElement GetItemByName( string ); </td>
+      <td>Retrieves a UI Automation element that represents the spreadsheet cell that has the specified name, for instance, &#8220;A1&#8221;.</td>
+    </tr>
+  </table>
+  <h3>FSUIASpreadsheetItem</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIASpreadsheetItem object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray GetAnnotationObjects(); </td>
+      <td>Retrieves an array of elements representing the annotations associated with this spreadsheet cell.</td>
+    </tr>
+    <tr>
+      <td>FSUIAIntArray GetAnnotationTypes(); </td>
+      <td>Retrieves an array of annotation type identifiers indicating the types of annotations that are associated with this spreadsheet cell.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIASpreadsheetItem object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>Formula </td>
+      <td>Retrieves the formula for this cell.</td>
+    </tr>
+  </table>
+  <h3>FSUIAStyles</h3>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIAStyles object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>ExtendedProperties</td>
+      <td>Retrieves a localized string that contains the list of extended properties for an element in a document.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>FillColor</td>
+      <td>Retrieves the fill color of an element in a document.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>FillPatternColor</td>
+      <td>Retrieves the color of the pattern used to fill an element in a document.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>Shape </td>
+      <td>Retrieves the shape of an element in a document.</td>
+    </tr>
+    <tr>
+      <td>StyleID</td>
+      <td>StyleID</td>
+      <td>Retrieves the identifier of the visual style associated with an element in a document.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>StyleName</td>
+      <td>Retrieves the name of the visual style associated with an element in a document.</td>
+    </tr>
+  </table>
+  <h3>FSUIASynchronizedInput</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIASynchronizedInput object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool Cancel(); </td>
+      <td>Causes the UI Automation provider to stop listening for mouse or keyboard input.</td>
+    </tr>
+    <tr>
+      <td>bool StartListening(SynchronizedInputType ); </td>
+      <td>Causes the UI Automation provider to start listening for mouse or keyboard input.</td>
+    </tr>
+  </table>
+  <h3>FSUIATable</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIATable object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray GetColumnHeaders(); </td>
+      <td>Retrieves a collection of UI Automation elements representing all the column headers in a table.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray GetRowHeaders(); </td>
+      <td>Retrieves a collection of UI Automation elements representing all the row headers in a table.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIATable object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>RowOrColumnMajor</td>
+      <td>RowOrColumnMajor</td>
+      <td>Retrieves the primary direction of traversal for the table.</td>
+    </tr>
+  </table>
+  <h3>FSUIATableItem</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIATableItem object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray GetColumnHeaderItems(); </td>
+      <td>Retrieves the column headers associated with a table item or cell.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray GetRowHeaderItems(); </td>
+      <td>Retrieves the row headers associated with a table item or cell.</td>
+    </tr>
+  </table>
+  <h3>FSUIAText</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIAText object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIATextRange GetCaretRange( ByRef int ); </td>
+      <td>Retrieves a zero-length text range at the location of the caret that belongs to the text-based control. Parameter 1 is a reference to an int that indicates whether the text-based control that contains the caret has keyboard focus; 0 is false, otherwise true.</td>
+    </tr>
+    <tr>
+      <td>FSUIATextRangeArray GetSelection(); </td>
+      <td>Retrieves a collection of text ranges that represents the currently selected text in a text-based control.</td>
+    </tr>
+    <tr>
+      <td>FSUIATextRangeArray GetVisibleRanges(); </td>
+      <td>Retrieves an array of disjoint text ranges from a text-based control where each text range represents a contiguous span of visible text.</td>
+    </tr>
+    <tr>
+      <td>FSUIATextRange RangeFromAnnotation( FSUIAElement ); </td>
+      <td>Retrieves a text range containing the text that is the target of the annotation associated with the specified annotation element.</td>
+    </tr>
+    <tr>
+      <td>FSUIATextRange RangeFromChild( FSUIAElement ); </td>
+      <td>Retrieves a text range enclosing a child element such as an image, hyperlink, Microsoft Excel spreadsheet, or other embedded object.</td>
+    </tr>
+    <tr>
+      <td>FSUIATextRange RangeFromPoint( int, int ); </td>
+      <td>Retrieves the degenerate (empty) text range nearest to the specified screen coordinates. Parameter 1 is the x coordinate. Parameter 2 is the y coordinate.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIAText object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIATextRange</td>
+      <td>DocumentRange</td>
+      <td>Retrieves a text range that encloses the main text of a document.</td>
+    </tr>
+    <tr>
+      <td>SupportedTextSelectionID</td>
+      <td>SupportedTextSelection</td>
+      <td>Retrieves a value that specifies the type of text selection that is supported by the control.</td>
+    </tr>
+  </table>
+  <h3>FSUIATextChild</h3>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIATextChild object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIAElement</td>
+      <td>TextContainer</td>
+      <td>Retrieves this element's nearest ancestor element that supports the Text control pattern. </td>
+    </tr>
+    <tr>
+      <td>FSUIATextRange</td>
+      <td>TextRange</td>
+      <td>Retrieves a text range that encloses this child element.</td>
+    </tr>
+  </table>
+  <h3>FSUIATextEdit</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIATextEdit object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIAElement GetActiveComposition(); </td>
+      <td>Returns the active composition.</td>
+    </tr>
+    <tr>
+      <td>FSUIATextRange GetConversionTarget(); </td>
+      <td>Returns the current conversion target range.</td>
+    </tr>
+  </table>
+  <h3>FSUIATextRange</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIATextRange object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool AddToSelection(); </td>
+      <td>Adds the text range to the collection of selected text ranges in a control that supports multiple, disjoint spans of selected text.</td>
+    </tr>
+    <tr>
+      <td>FSUIATextRange Clone(); </td>
+      <td>Retrieves a new IUIAutomationTextRange identical to the original and inheriting all properties of the original.</td>
+    </tr>
+    <tr>
+      <td>bool Compare( FSUIATextRange ); </td>
+      <td>Retrieves a value that specifies whether this text range has the same endpoints as another text range.</td>
+    </tr>
+    <tr>
+      <td>int CompareEndPoints( Endpoint, FSUIATextRange, Endpoint ); </td>
+      <td>Retrieves a value that specifies whether the start or end endpoint of this text range is the same as the start or end endpoint of another text range.</td>
+    </tr>
+    <tr>
+      <td>bool ExpandToEnclosingUnit( TextUnit ); </td>
+      <td>Normalizes the text range by the specified text unit. The range is expanded if it is smaller than the specified unit, or shortened if it is longer than the specified unit.</td>
+    </tr>
+    <tr>
+      <td>FSUIATextRange FindAttribute( TextAttributeID, variant, bool ); </td>
+      <td>Retrieves a text range subset that has the specified text attribute value. Parameter 3 should be set to true if the search is to be done backward; otherwise false.</td>
+    </tr>
+    <tr>
+      <td>FSUIATextRange FindText( string, bool, bool ); </td>
+      <td>Retrieves a text range subset that contains the specified text. Parameter 2 should be set to true if the search is to be done backward; otherwise false. Parameter 3 should be set to true if the search is to be case-insensitive; otherwise false.</td>
+    </tr>
+    <tr>
+      <td>variant GetAttributeValue( TextAttributeID ); </td>
+      <td>Retrieves the value of the specified text attribute across the entire text range.</td>
+    </tr>
+    <tr>
+      <td>FSUIARectArray GetBoundingRectangles(); </td>
+      <td>Retrieves a collection of bounding rectangles for each fully or partially visible line of text in a text range.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElementArray GetChildren(); </td>
+      <td>Retrieves a collection of all embedded objects that fall within the text range.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElement GetEnclosingElement(); </td>
+      <td>Returns the innermost UI Automation element that encloses the text range.</td>
+    </tr>
+    <tr>
+      <td>string GetText( int ); </td>
+      <td>Returns the plain text of the text range. Parameter 2 is the maximum length in characters of the text to retrieve.</td>
+    </tr>
+    <tr>
+      <td>int Move( TextUnit, int ); </td>
+      <td>Moves the text range forward or backward by the specified number of text units. Negative values for parameter 2 will move the range backward. Returns the number of units actually moved.</td>
+    </tr>
+    <tr>
+      <td>bool MoveEndpointByRange( Endpoint, FSUIATextRange, Endpoint ); </td>
+      <td>Moves one endpoint of the current text range to the specified endpoint of a second text range.</td>
+    </tr>
+    <tr>
+      <td>int MoveEndpointByUnit( Endpoint, TextUnit, int ); </td>
+      <td>Moves one endpoint of the text range the specified number of text units within the document range. Negative values for parameter 3 will move the range backward. Returns the number of units actually moved.</td>
+    </tr>
+    <tr>
+      <td>bool RemoveFromSelection(); </td>
+      <td>Removes the text range from an existing collection of selected text in a text container that supports multiple, disjoint selections.</td>
+    </tr>
+    <tr>
+      <td>bool ScrollIntoView( bool ); </td>
+      <td>Causes the text control to scroll until the text range is visible in the viewport. Parameter 1 should be true if the text control should be scrolled so that the text range is flush with the top of the viewport; false if it should be flush with the bottom of the viewport.</td>
+    </tr>
+    <tr>
+      <td>bool Select(); </td>
+      <td>Selects the span of text that corresponds to this text range, and removes any previous selection.</td>
+    </tr>
+    <tr>
+      <td>bool ShowContextMenu(); </td>
+      <td>Programmatically invokes a context menu on the target element.</td>
+    </tr>
+  </table>
+  <h3>FSUIAToggle</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIAToggle object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>void Toggle(); </td>
+      <td>Cycles through the toggle states of the control.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIAToggle object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>ToggleState</td>
+      <td>ToggleState</td>
+      <td>Retrieves the toggled state of the control.</td>
+    </tr>
+  </table>
+  <h3>FSUIATransform</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIATransform object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool Move( int, int ); </td>
+      <td>Moves the UI Automation element. Parameter 1 is the screen coordinates of the left side of the control. Parameter 2 is the screen coordinates of the top of the control.</td>
+    </tr>
+    <tr>
+      <td>bool Resize( int, int ); </td>
+      <td>Resizes the UI Automation element. Parameter 1 is the new width of the window, in pixels. Parameter 2 is the new height of the window, in pixels.</td>
+    </tr>
+    <tr>
+      <td>bool Rotate( int ); </td>
+      <td>Rotates the UI Automation element. Parameter 1 is the number of degrees to rotate the element. A positive number rotates clockwise; a negative number rotates counterclockwise.</td>
+    </tr>
+    <tr>
+      <td>bool Zoom( int ); </td>
+      <td>Zooms the viewport of the control. Parameter 1 is the amount to zoom the viewport, specified as a percentage. Positive values increase the zoom level, and negative values decrease it. The control zooms its viewport to the nearest supported value.</td>
+    </tr>
+    <tr>
+      <td>bool ZoomByUnit(ZoomUnit ); </td>
+      <td>Zooms the viewport of the control by the specified unit.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIATransform object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>CanMove</td>
+      <td>Indicates whether the element can be moved.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>CanResize</td>
+      <td>Indicates whether the element can be moved.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>CanRotate</td>
+      <td>Indicates whether the element can be rotated.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>CanZoom</td>
+      <td>Indicates whether the control supports zooming of its viewport.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>ZoomLevel</td>
+      <td>Retrieves the zoom level of the control's viewport.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>ZoomMaximum</td>
+      <td>Retrieves the maximum zoom level of the control's viewport.</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>ZoomMinimum</td>
+      <td>Retrieves the minimum zoom level of the control's viewport.</td>
+    </tr>
+  </table>
+  <h3>FSUIATreeWalker</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIATreeWalker object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool GoToFirstChild(); </td>
+      <td>Moves the current element to its first child. Returns true if the move succeeded. Otherwise false.</td>
+    </tr>
+    <tr>
+      <td>bool GoToNextSibling(); </td>
+      <td>Moves the current element to its next sibling. Returns true if the move succeeded. Otherwise false.</td>
+    </tr>
+    <tr>
+      <td>bool GoToParent(); </td>
+      <td>Moves the current element to its parent. Returns true if the move succeeded. Otherwise false.</td>
+    </tr>
+    <tr>
+      <td>bool GoToPriorSibling(); </td>
+      <td>Moves the current element to its prior sibling. Returns true if the move succeeded. Otherwise false.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIATreeWalker object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>FSUIACondition</td>
+      <td>Condition </td>
+      <td>Retrieves the condition that specifies items to walk in the tree.</td>
+    </tr>
+    <tr>
+      <td>FSUIAElement</td>
+      <td>CurrentElement</td>
+      <td>An element in the UIA tree. (get/put)</td>
+    </tr>
+  </table>
+  <h3>FSUIAValue</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIAValue object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool SetValue( string );</td>
+      <td>Sets the value of an element.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIAValue object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>IsReadOnly</td>
+      <td>Indicates whether the value of the element is read-only.</td>
+    </tr>
+    <tr>
+      <td>string </td>
+      <td>Value </td>
+      <td>Retrieves the value of the element.</td>
+    </tr>
+  </table>
+  <h3>FSUIAVirtualizedItem</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIAVirtualizedItem object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool Realize(); </td>
+      <td>Creates a full UI Automation element for a virtualized item.</td>
+    </tr>
+  </table>
+  <h3>FSUIAWindow</h3>
+  <h4>Methods</h4>
+  <table border=1 cellpadding=5 summary="Table of methods for the FSUIAWindow object.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool Close(); </td>
+      <td>Closes the window.</td>
+    </tr>
+    <tr>
+      <td>bool SetWindowVisualState(WindowVisualState ); </td>
+      <td>Minimizes, maximizes, or restores the window.</td>
+    </tr>
+    <tr>
+      <td>bool WaitForInputIdle( int ); </td>
+      <td>Causes the calling code to block for the specified time or until the associated process enters an idle state, whichever completes first.</td>
+    </tr>
+  </table>
+  <h4>Properties</h4>
+  <table border=1 cellpadding=5 summary="Table of properties for the FSUIAWindow object.">
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>CanMaximize</td>
+      <td>Indicates whether the window can be maximized.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>CanMinimize</td>
+      <td>Indicates whether the window can be minimized.</td>
+    </tr>
+    <tr>
+      <td>WindowInteractionState</td>
+      <td>InteractionState</td>
+      <td>Retrieves the current state of the window for the purposes of user interaction.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>IsModal</td>
+      <td>Indicates whether the window is modal.</td>
+    </tr>
+    <tr>
+      <td>bool </td>
+      <td>IsTopmost</td>
+      <td>Indicates whether the window is the topmost element in the z-order.</td>
+    </tr>
+    <tr>
+      <td>WindowVisualState</td>
+      <td>VisualState</td>
+      <td>Retrieves the visual state of the window; that is, whether it is in the normal, maximized, or minimized state.</td>
+    </tr>
+  </table>
+  <h2><a name="events"></a>Events</h2>
+  <p>Scripts may register to receive UIA events by calling one of the add-event-handler methods on an FSUIA object.</p>
+  <p><strong>Begin example</strong></p>
+  <p><code>var object events = CreateObjectEx (&quot;FreedomSci.UIA&quot;, false, &quot;UIAScriptAPI.x.manifest&quot; ); <br>
+    var object element = events.GetFocusedElement(); <br>
+    events.AddPropertyChangedEventHandler(UIA_NamePropertyId, element, TreeScope_Element | TreeScope_Descendants )</code></p>
+  <p><strong>End example</strong></p>
+  <p>The same FSUIA object must then be passed to the JAWS built-in function <strong>ComAttachEvents</strong>.</p>
+  <p>Note the second parameter below. This string will be prepended to the event callback function in the scripts.</p>
+  <p><strong>Begin example</strong></p>
+  <p><code>ComAttachEvents( events, &#8220;UIA_&#8221; );</code></p>
+  <p><strong>EndExample</strong></p>
+  <p>Now, when a UIA property changed event occurs for the name property, the function <strong>UIA_PropertyChangedEvent</strong> in the JAWS scripts will be called.</p>
+  <p>Finally, to stop receiving events, the FSUIA object must be set to a null object.</p>
+  <p><strong>Begin example</strong></p>
+  <p><code>var object nullObject; <br>
+    events = nullObject;</code></p>
+  <p><strong>End example</strong></p>
+  <div class="blockdl">
+  <p><strong>Note:</strong> In the examples above, the FSUIA object named events would typically be declared as a global variable. If it were declared inside a function, when the function ended, the object would automatically be set to null, and any previously registered events would be unregistered before JAWS ever had a chance to receive them. </p>
+    </div>
+  <h3>Event callback functions</h3>
+  <p>The following table gives the names and parameter types of the available event callback functions.</p>
+  <table border=1 cellpadding=5 summary="Table of event callback functions.">
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+    <tr>
+      <td>AutomationEvent( FSUIAElement, EventID ); </td>
+      <td>The automation event callback. Parameter 1 is the element for which the event occurred. Parameter 2 is the EventID.</td>
+    </tr>
+    <tr>
+      <td>FocusChangedEvent(FSUIAElement ); </td>
+      <td>The focus changed event callback. Parameter 1 is the new element with focus.</td>
+    </tr>
+    <tr>
+      <td>PropertyChangedEvent( FSUIAElement, PropertyID, variant ); </td>
+      <td>The property changed event callback. Parameter 1 is the element for which the event occurred. Parameter 2 is the property ID for the property that changed. Parameter 3 is the new value for the specified property.</td>
+    </tr>
+    <tr>
+      <td>StructureChangedEvent( FSUIAElement, StructureChangeTypeID, FSUIAIntArray ); </td>
+      <td>The structure changed event callback. Parameter 1 is the element for which the event occurred. Parameter 2 is the type of structure change. Parameter 3 is the runtime ID of the element that changes. Parameter 3 is only valid when the StructureTypeID in parameter 2 is StructureChangeType_ChildRemoved.</td>
+    </tr>
+	<tr>
+	<td>TextEditTextChangedEvent(FSUIAElement, TextEditChangeType, FSUIAStringArray);</td>
+	<td>The text edit changed event callback. Parameter 1 is the element for which the event occurred. Parameter 2 is the type of text-edit change that occurred. Parameter 3 is the event data passed by the event. Parameter 3 contains different payloads for each text-edit change type. For the TextEditChangeType_AutoCorrect, the data is the new corrected string. For the TextEditChangeType_Composition, the data is the updated string in the composition (only the part that changed). For the TextEditChangeType_CompositionFinalized, the data is the finalized string of the completed composition (this may be empty if composition was canceled or deleted).</td>
+	</tr>
+  </table>
+</div>
+</div>
+
+        </div>
+        <hr class="medium" aria-hidden="true" />
+        <div class="footer" style="display:none;">
+            <div class="col" style="width: 250px;">
+                <strong>&copy;2020 Freedom Scientific, Inc.</strong><br />
+                800-444-4443<br />
+                727-803-8000<br />
+            </div>
+            <div class="col" style="padding-left: 40px; width: 200px;">
+                <a href="/About/Index/GSAAdvantage" target="_blank">GSA Advantage</a><br />
+                <a href="/About/Index/AccessibilityPolicy">Accessibility Policy</a><br />
+                <a href="/About/Index/ConditionsOfUse">Conditions of Use</a><br />
+                <a href="/About/Index/PrivacyPolicy">Privacy Policy</a>
+            </div>
+            <div class="col" style="padding-left: 40px; width: 200px;">
+                <a href="/About/Index/Careers">Careers</a><br />
+                <a href="/About/ContactUs">Contact Us</a><br />
+                <a href="/About">About</a>
+            </div>
+            <div class="col" style="padding-left:0px; width:200px; vertical-align:top">
+                <img src="/Content/Images/CEA-Member-Logo.png" alt="Consumer Technology Association member" width="90" height="60" style="padding-right:10px" /><img src="/Content/Images/Part_of_VFO.png" alt="Part of VFO" />
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+<footer id="colophon" class="site-footer">
+
+
+
+ <div class="footer-wrap" style="max-width:1600px; margin:0 auto !important;">
+
+    <div class="row">
+
+      <div class="col-md-4 col-sm-6">
+
+        <div class="footer-logo"><img src="https://www.freedomscientific.com/assets/images/freedom-scientific-logo.png" alt="Freedom Scientific"></div>
+
+        <p>Freedom Scientific is the largest worldwide manufacturer of assistive technology products for those with vision impairments or learning disabilities. <br /><strong><a href="https://www.freedomscientific.com/about/" alt="" />Read More About Freedom Scientific</a></strong></p>
+
+      </div>
+
+
+
+      <div class="col-md-3 col-sm-6 bluetop footermain">
+
+        <ul class="footer-links">
+
+          <li><a href="/" alt="Back to Home" />Home</a></li>
+
+          <li><a href="//www.freedomscientific.com/about/" alt="About Freedom Scientific" />About Us</a></li>
+
+          <li><a href="//www.freedomscientific.com/careers/" alt="Careers" />Careers</a></li>
+
+          <li><a href="//blog.freedomscientific.com/" target="_blank" alt="Freedom Scientific Blog" />Blog</a></li>
+
+          <li><a href="//www.freedomscientific.com/contact-us/" alt="Contact Us" />Contact Us</a></li>
+
+          <li><a href="https://support.freedomscientific.com/about/mediacenter" alt="media center" />Media Center</a></li>
+
+        </ul>
+
+      </div>
+
+      <div class="col-md-3 col-sm-6 bluetop footermain">
+
+        <ul class="footer-links">
+
+          <li><a href="//www.freedomscientific.com/GSA-Advantage/" alt="GSA Advantage" />GSA Advantage </a></li>
+
+          <li><a href="//www.freedomscientific.com/privacy-policy/" alt="Privacy Policy" />Privacy Policy</a></li>
+
+          <li><a href="//www.freedomscientific.com/accessibility-policy/" alt="Accessibility Policy" />Accessibility Policy</a></li>
+
+          <li><a href="//www.freedomscientific.com/Terms-and-conditions/" alt="Conditions of Use" />Conditions of Use</a></li>
+
+        </ul>
+
+        <div class="clearfix"></div>
+
+      </div>
+
+      <div class="col-md-2 col-sm-6 footermain">
+
+        <h3>Contact Us</h3>
+
+        <div class="info">
+
+ <a href="tel:800-444-4443" alt="Call Toll Free Number" />(800) 444-4443</a></div>
+
+        <div class="info">
+
+ <a href="tel:727-803-8000" alt="Call local number" />(727) 803-8000</a></div>
+
+ <br />
+
+ <a href="https://www.facebook.com/FreedomScientificInc"><img src="https://www.freedomscientific.com/assets/images/social-facebook.png" alt="Freedom Scientific Facebook" width="50px" /></a>
+
+        <a href="https://twitter.com/FreedomSci"><img src="https://www.freedomscientific.com/assets/images/social-twitter.png" alt="Freedom Scientific Twitter" width="50px" /></a>
+
+        <br /><br />
+
+      </div>
+
+    </div>
+
+    <center><div class="copyright">Copyright &copy; Freedom Scientific Inc. - <a href="https://www.vispero.com" target="_blank" />A Vispero Brand</a> - All Rights Reserved.</div>
+</center>
+
+
+</div>
+
+
+
+</footer><!-- #colophon -->
+
+<!--footer end-->
+
+    <script src="/Scripts/MainMenu.min.js?v=1.3" type="text/javascript"></script>
+    <script src="/Scripts/fsCookiesFunctions.min.js" type="text/javascript"></script>
+    <script src="/Scripts/fsAriaCarousel.min.js?v1.0" type="text/javascript"></script>
+    <script>
+        function getInternetExplorerVersion() { var rv = -1; if (navigator.appName == 'Microsoft Internet Explorer') { var ua = navigator.userAgent; var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})"); if (re.exec(ua) != null) rv = parseFloat(RegExp.$1); } return rv; } $(document).ready(function () { $('.menu-hidden-description-parent').text('\xA0' + 'submenu.'); $("#skip-link").blur(function () { $("#skip-div").addClass("sr-hidden"); }); $("#skip-link").focus(function () { $("#skip-div").removeClass("sr-hidden"); }); var menu1 = new menubar('mb1', false); var $anchor = $("#main-content-anchor"); if ($anchor.length == 0 || $anchor == null) { var $firstH1 = $("h1").first(); var html = $firstH1.html(); $firstH1.html("<a name='main-content-anchor' id='main-content-anchor'></a>" + html); } var ieVersion = getInternetExplorerVersion(); if (ieVersion > 0) { $('html').addClass('ie' + ieVersion); } $(".menu-parent").each(function () { var link = $(this).data("section").toLowerCase(); if (window.location.href.toLowerCase().indexOf(link) >= 0 && link != "/") { $(this).addClass("active"); } else if (link == "/" && $("#home-page").length > 0) { $(this).addClass("active"); } }); $(".carousel").freedomScientificAriaCarousel(); });
+    </script>
+    <script>
+    /* To make sure JAWS is not speaking Region in forms we need to remove the role='main' attribute. The script is searching for the form and if found the attribuet is removed.*/$(document).ready(function () {if ($('form')[1] != null) {$('#main-div-layout').removeAttr("role")}});
+    </script>
+
+    
+</body>
+</html>

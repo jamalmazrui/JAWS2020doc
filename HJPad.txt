@@ -1,0 +1,899 @@
+﻿JAWS 5.0 HJPad
+
+Table of Contents
+
+Welcome to HJPad
+
+What is HJPad?
+
+Sample Dialogs
+
+Single Page 1
+
+Single Page 2
+
+Multi-Page
+
+List View
+
+Tree View
+
+Clearing the Sample Dialogs
+
+Customizing the HJPad Window
+
+To Show or Hide the Standard Bar
+
+To Show or Hide the Format Bar
+
+To Show or Hide the Ruler
+
+Working With Documents
+
+To Create a New Document
+
+To Open a Document
+
+To Save Changes to a Document
+
+Working With Text
+
+To Search for and Replace Text
+
+To Search for Text
+
+To Insert the Current Date and Time
+
+To Undo Your Last Action
+
+To Cut Text
+
+To Copy Text
+
+Formatting Text
+
+To Change the Way Text Wraps on Your Screen
+
+To Change a Font Type, Style, or Size
+
+To Format a Paragraph
+
+To Set Tabs in Paragraphs
+
+Spell Checking
+
+Check Spelling Dialog
+
+Dictionaries Dialog
+
+Options Dialog
+
+New Dictionary Dialog
+
+Printing
+
+To Set Page Margins
+
+To Change Printers and Printing Options
+
+What is HJPad?
+
+Freedom Scientific has developed HJPad as a training tool for you to use along with the Basic Training Tutorial that ships with JAWS. Much of the Basic Training Tutorial is built around this application to provide a safe environment for you to practice the skills and techniques taught in the tutorials and used throughout Windows. Teachers and students will discover that HJPad is a convenient word processor and a valuable training tool for learning basic Windows concepts.
+
+HJPad has five sample dialogs designed as separate skills lessons to teach you how to operate the many controls found in Windows. Single Page 1, the first of these sample dialogs, is a good place to begin learning how controls work with the confidence that you will not be altering valuable information in an application. You will encounter nine different controls in Single Page 1 as you are asked to fill out information about yourself and your computer experience. After you have completed this dialog, you have the choice to clear all your work and start over again, or move on to the next sample dialog.
+
+We hope students and teachers will enjoy this training application and learn a lot from the exercises it offers.
+
+The Training Department at Freedom Scientific.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Single Page 1
+
+We have assembled nine different controls in this dialog that are common in many Windows applications. The first part of this dialog asks you to complete personal information about yourself, such as your name and address. The last portion of this dialog asks you information about your computer experience, such as years of experience and the type of software you have used in the past.
+
+To move from control to control in this dialog, press the TAB key or to reverse the direction press the key combination SHIFT+TAB. When you finish Single Page 1 you can choose the OK button to save your work and move on to the next sample dialog or you can choose the Clear Form button that clears your entries so you can start over again.
+
+Help is available to you at all times when operating this dialog. Pressing INSERT+F1 activates JAWS Screen Sensitive Help, which identifies the type of control you have landed on and what keystrokes operate it.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Single Page 2
+
+In this dialog we will introduce three new window controls and ask you to complete similar personal information as in Single Page 1. In this dialog you will learn to operate a button that opens a dialog, choose your state from a list box, and enter your phone number in an edit field that contains input masking.
+
+To move from control to control in this dialog, press the TAB key or to reverse the direction press the key combination SHIFT+TAB. When you finish Single Page 2 you can choose the OK button to save your work and move on to the next sample dialog or you can choose the Clear Form button that clears your entries so you can start over again.
+
+Help is available to you at all times when operating this dialog. Pressing INSERT+F1 activates JAWS Screen Sensitive Help, which identifies the type of control you have landed on and what keystrokes operate it.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Multi-Page
+
+Use this multi-page dialog as a checklist to monitor and track your progress on over one hundred skills that are listed in several dialog pages. When you feel you have achieved a good understanding of a certain skill open the multi-page dialog and move to one of the six pages that contains the list of check boxes you want. Tab to the skill you want to check and press the SPACEBAR. To move to the next page, press the key combination CTRL+TAB or to reverse the direction press the key combination CTRL+SHIFT+TAB. Choose the Apply button to save your entries for the multi-page.
+
+Help is available to you at all times when operating the multi-page dialog. Pressing INSERT+F1 activates JAWS Screen Sensitive Help, which identifies the type of control you have landed on and what keystrokes operate it.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+List View
+
+A list view is a control that presents a list typically displaying files, folders or programs. We have constructed this dialog to give you experience navigating a list view while you track your progress on the skills taught in the JAWS Basic Training Tutorial. The list view control is used throughout the Windows operating system and is one of the controls used to navigate in Windows Explorer, the built-in file management programs in the Windows operating system.
+
+In the list view, you track your progress differently than you do in the sample multi-page, which tracks the same skills. Move to a list view item that you feel you have a good understanding and press the letter C to toggle the status from "not complete" to "complete". If there is a list view item that you feel you do not have a good understanding of and could use more practice, press the letter N to mark it "not complete".
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Tree View
+
+A tree view is a control that presents a hierarchical structure to views displaying files and folders or books and topics. We have constructed this tree view to give you experience navigating its structure while learning functional and physical descriptions of over twenty menu, drop-down menu, and dialog controls. Similar tree view controls are used in Windows Explorer and the Windows help system.
+
+Items in the tree view can be expanded or collapsed. If the tree view item is expanded, you can view the entire contents of that item as you move within the tree view. If an item is collapsed, its contents are not visible in the tree view. Pressing the RIGHT ARROW expands a tree view item and pressing the LEFT ARROW collapses a tree view item.
+
+Help is available to you at all times when operating the tree view. Pressing INSERT+F1 activates JAWS Screen Sensitive Help, which identifies what level of the tree view you are on and what keystrokes operate it.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Clearing the Sample Dialogs
+
+Follow these steps:
+
+1.    On the Tools menu, choose Sample Dialogs submenu.
+
+2.    Down arrow to Clear Samples menu item.
+
+3.    Press ENTER.
+
+Notes
+
+All sample dialogs listed in the Sample Dialogs submenu will be cleared when this menu item is chosen.
+
+If you wish to clear Single Page 1 or Single Page 2 individually, choose the Clear Form button
+
+ 
+
+ 
+
+  ------ --- --------------
+  Back       Next Section
+  ------ --- --------------
+
+To Show or Hide the Standard Bar
+
+Follow these steps:
+
+1.    On the View menu, choose Toolbars submenu.
+
+2.    Press ENTER to toggle the status of the Standard bar.
+
+Notes:
+
+You can drag the Format bar and the Standard toolbar to any location in the HJPad window.
+
+JAWS will announce "checked" when the Standard toolbar is currently displayed in the HJPad window.
+
+JAWS will not announce "checked" if the Standard toolbar is not displayed in the HJPad window.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+To Show or Hide the Format Bar
+
+Follow these steps:
+
+1.    On the View menu, choose Toolbar submenu.
+
+2.    Move to the Format menu item.
+
+3.    Press ENTER to toggle the Format bar.
+
+Notes
+
+You can drag the Format bar and the Standard toolbar to any location in the HJPad window.
+
+JAWS will announce "checked" when the Format bar is displayed in the HJPad window.
+
+JAWS will not announce "checked" when the Format bar is not displayed in the HJPad window.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+To Show or Hide the Ruler
+
+Follow these steps:
+
+1.    On the View menu, down arrow to Ruler.
+
+2.    Press ENTER to toggle the status of the Ruler.
+
+Notes
+
+JAWS will announce "checked" when the Ruler is currently displayed in the HJPad window.
+
+JAWS will not announce "checked" if the Ruler is not displayed in the HJPad window.
+
+ 
+
+ 
+
+  ------ --- --------------
+  Back       Next Section
+  ------ --- --------------
+
+To Create a New Document
+
+Follow these steps:
+
+1.    Open the File menu, choose New.
+
+2.    Select the file type you want to create and press ENTER.
+
+3.    Begin typing in your new document.
+
+4.    Save your new file when you have completed editing.
+
+Tip: Pressing the key combination CTRL+N opens the New dialog without having to open the File menu.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+To Open a Document
+
+Follow these steps:
+
+1.    Open the File menu, choose Open.
+
+2.    TAB to the Look In combo box, choose the drive that contains the document you want to open.
+
+3.    Tab to the list view, choose the folder that contains the document you want to open.
+
+4.    Select the document's name, or type it in the File Name edit box.
+
+Tips and Notes
+
+If you don't find what you're looking for, choose a different file type in the Files of Type edit box.
+
+To open a document you opened recently, select its name from the File menu and press ENTER.
+
+Pressing the key combination CTRL+O opens the Open dialog without having to open the File menu.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+To Save Changes to a Document
+
+Follow these steps:
+
+1.    Open the File menu, choose Save.
+
+2.    Type the name of the file you want to save.
+
+3.    Tab to the Save in combo box, choose the drive where you wish to save your file.
+
+4.    Tab to the list view, choose the folder where you wish to save your file.
+
+5.    Tab to the Save as type combo box; choose the file type of the file you are saving.
+
+Tips and Notes
+
+To save an existing document with a new name, choose Save As, and type a new name in the File Name edit box.
+
+Pressing the key combination CTRL+S opens the Save As dialog without having to open the File menu.
+
+ 
+
+ 
+
+  ------ --- --------------
+  Back       Next Section
+  ------ --- --------------
+
+To Search for and Replace Text
+
+Follow these steps:
+
+1.    In the document, place your cursor where you want to start replacing text.
+
+2.    On the Edit menu, choose Replace.
+
+3.    Enter the text you want to find in the Find What edit box.
+
+4.    Tab to the Replace With edit box and type the text you want to replace it with.
+
+Tips and Notes
+
+To replace each instance of the text individually, choose Find Next and then choose Replace.
+
+To replace all instances of the text, choose Replace All.
+
+Pressing the key combination CTRL+H opens the Replace dialog.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+To Search for Text
+
+Follow these steps:
+
+1.    In the document, place your cursor at the location where you want to start searching.
+
+2.    On the Edit menu, choose Find.
+
+3.    Enter the text you wish to search for in the Find What box.
+
+4.    To find additional instance of the same text, continue to choose Find Next.
+
+Tips and Notes
+
+To search for more instances of the same text after you have closed the Find dialog, press F3
+
+To search for and replace text, choose Replace instead of Find on the Edit menu.
+
+To open the Find dialog, press the key combination CTRL+F.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+To Insert the Current Date and Time
+
+Follow these steps:
+
+1.    In the document, place your cursor at the location where you want the date and time to appear.
+
+2.    On the Insert menu, choose Date and Time.
+
+3.    Choose the date and time format from the Available formats list box.
+
+4.    Press the ENTER key to insert the date and time.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+To Undo Your Last Action
+
+Two techniques to undo your last action:
+
+On the Edit menu, choose Undo.
+
+Press the key combination CTRL+Z.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+To Cut Text
+
+Follow these steps:
+
+1.    Select the text you want to delete using any of the text selection key combinations.
+
+2.    On the Edit menu, choose Cut.
+
+Tips and Notes
+
+Use the key combination CTRL+X to cut selected text to the Clipboard.
+
+To cancel a selection, press an arrow key.
+
+To select the entire document, press the key combination CTRL+A.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+To Copy Text
+
+Follow these steps:
+
+1.    Select the text that you want to copy to your Clipboard.
+
+2.    On the Edit menu, choose Copy.
+
+3.    Move to the location in your document where you wish to insert your text.
+
+4.    On the Edit menu, choose Paste.
+
+Tips:
+
+After you select text, pressing the key combination CTRL+C copies selected text to the Clipboard.
+
+Pressing the key combination CTRL+V, pastes selected text from your Clipboard to a location you specify.
+
+ 
+
+ 
+
+  ------ --- --------------
+  Back       Next Section
+  ------ --- --------------
+
+To Change the Way Text Wraps on Your Screen
+
+Follow these steps:
+
+1.    On the View menu, choose Options.
+
+2.    On the Display page, choose the radio button that selects how you want your text to wrap.
+
+3.    Press ENTER.
+
+Tips and Notes
+
+The wrapping options only affect how text appears on your screen. When printed, the document uses the margin settings specified in Page Setup.
+
+Pressing the key combination CTRL+TAB moves you between pages in a multi-page dialog.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+To Change a Font Type, Style, or Size
+
+Follow these steps:
+
+1.    Select the text you want to format.
+
+2.    Open the Format menu, choose Font.
+
+3.    Choose the options you want from within this dialog.
+
+Tips and Notes:
+
+You can specify the font for new text by changing the font settings before you begin to type.
+
+To change the font for an entire document, choose the Edit menu, then choose Select All and then choose the Format menu.
+
+Pressing the key combination CTRL+A, selects all the text in your document.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+To Format a Paragraph
+
+Follow these steps:
+
+1.    Position your cursor within the paragraph you want to format.
+
+2.    On the Format menu, choose Paragraph.
+
+3.    Choose the alignment and indents you want from this dialog.
+
+Notes
+
+To define paragraph formatting for a new document, change the format settings before you begin to type.
+
+You can specify the indentation of the first line of the paragraph.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+To Set Tabs in Paragraphs
+
+Follow these steps:
+
+1.    Select the paragraph you want to set tabs for.
+
+2.    On the Format menu, choose Tabs.
+
+3.    To set a tab stop, enter the position in the Tab Stop Position list box, and then choose Set.
+
+Notes
+
+To delete a tab stop, tab to the Tab Sop Position list box, then choose Clear.
+
+To delete all tab stops in the selected paragraph, choose Clear All.
+
+To set tab stops by using the ruler, click the ruler at each increment where you want to put a tab stop.
+
+To delete tab stops by using the ruler, drag them off the ruler.
+
+ 
+
+ 
+
+  ------ --- --------------
+  Back       Next Section
+  ------ --- --------------
+
+Check Spelling Dialog
+
+The Check Spelling Dialog appears if a word requiring your attention is detected. You can use the dialog to specify whether the word should be ignored or replaced.
+
+Note that the labels of some buttons and text boxes in the dialog change according to the context.
+
+Add Button
+
+Causes the reported word to be added to the dictionary selected in the Add Words To list. Use the add button if a correctly spelled word you use often is reported as a misspelling (e.g., your family name). If the word is not used frequently, you may want to select the Ignore or Ignore All buttons instead. This button is enabled only if a user dictionary has been selected in the Add Words To list.
+
+Add Words To List
+
+Indicates which user dictionary words will be added to when you select the Add button. The Add Words To list shows all user dictionaries currently open. You can open or close other dictionaries via the Dictionaries Dialog, which is accessible by selecting the Dictionaries button.
+
+Cancel Button
+
+Stops the current spelling check.
+
+Capitalization Box
+
+Contains an uncapitalized word that exists in the dictionaries in capitalized form only. You can edit the word in this box or select a suggestion from the list, then choose the Change button to correct the word, or press the Ignore button to skip the word.
+
+Change Button
+
+Causes the reported word to be replaced. If the problem word was edited, the edited word is used as the replacement. Otherwise, the selected suggestion is used as the replacement. Only this occurrence of the reported word is replaced. If you want this and all following occurrences of the word replaced, select the Change All button.
+
+Change All Button
+
+Causes this and all following occurrences of the reported word to be replaced. If the problem word was edited, the edited word is used as the replacement. Otherwise, the selected suggestion is used as the replacement. If you want only this occurrence of the word to be replaced, use the Change button. If the reported word is one you frequently misspell, you might consider adding it to a user dictionary via the Dictionaries Dialog. You can display the Dictionaries dialog by selecting the Dictionaries button.
+
+Consider Changing Box
+
+Contains a word that may be misspelled or otherwise incorrect, and is presented with a candidate replacement word. You can change the word by selecting the Change button, or skip it by selecting the Ignore button.
+
+Delete Button
+
+Removes the word from the text. This button appears when a doubled word has been detected, or when the contents of the problem-word box are deleted.
+
+Dictionaries Button
+
+Causes the Dictionaries Dialog to be displayed. You can use the Dictionaries dialog to open or close user dictionaries, and to edit the contents of user dictionaries.
+
+Ignore Button
+
+Causes this occurrence of a misspelled word to be skipped. If the same misspelled word appears later, it will be reported again.
+
+Ignore All Button
+
+Causes this and all further occurrences of a misspelled word to be skipped. You might use this button if the word reported as a misspelling is actually spelled correctly. If the word is one you use frequently, you may wish to ignore it permanently by selecting the Add button.
+
+Not in Dictionary box
+
+Indicates that a misspelled word was detected. The word is considered misspelled because it could not be located in any open dictionaries, or was marked with an exclude action. You can edit the word in this box or select a suggestion from the list, then choose the Change button to correct the word, or press the Ignore button to skip the word.
+
+Options Button
+
+Displays the Options Dialog. You can use the Options dialog to set spelling-checker options.
+
+Suggest Button
+
+Search more thoroughly for suggested replacements for the current misspelled word. Each time you press the Suggest button, a "deeper" search is made. The Suggest button is disabled once all possible suggestions have been located.
+
+Suggestions List
+
+Contains a list of suggested replacements for the word reported as misspelled. Subsequent presses of the Suggest button may yield more suggestions. The word selected in the Suggestions list will be used as the replacement when the Change or Change All buttons are pressed, unless the word in the problem box was edited.
+
+Undo Button
+
+Removes the last change made. The Undo button can be pressed several times to remove the last several changes.
+
+Undo Edit Button
+
+Remove any changes made to the text in the problem box. This button appears only if the text in the problem box has been changed.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Dictionaries Dialog
+
+The Dictionaries Dialog allows you to open and close user dictionaries, and to edit the contents of an open user dictionary. The contents of dictionaries are saved in files. You can open some or your entire user dictionary files at any time. Only open dictionaries are searched during a spelling check.
+
+Action List
+
+Used to select an action that is associated with words in the dictionary. The action tells the spelling checker what to do when it finds a word in the dictionary. The following actions can be selected:
+
+Auto Change (use case of checked word)
+
+This action allows you to automatically replace one word with another. For example, if you often type recieve instead of receive, you might enter the word recieve with receive as the other word and "Auto change (use case of checked word)" as the action. The spelling checker will automatically correct recieve wherever it appears. If recieve was capitalized (Recieve), the spelling checker would automatically replace it with Receive. Note that the replacement is made automatically only if the "Auto Change" option is enabled (see the Options Dialog for information on the Auto Change option).
+
+Auto Change (use case of other word)
+
+This action allows you to automatically replace one word with another, always with the same case pattern as the other word. This action is useful for automatically expanding abbreviations. For example, you could enter the word TBD with to be determined as the other word and "Auto change (use case of other word)" as the action. The spelling checker will automatically replace TBD with to be determined wherever it appears. Note that the replacement is made automatically only if the "Auto Change" option is enabled (see the Options Dialog for information on the Auto Change option).
+
+Conditionally Change (use case of checked word)
+
+This action allows you to optionally replace one word with another. For example, if you often type recieve instead of receive, you might enter the word recieve with receive as the other word and "Auto change (use case of checked word)" as the action. The spelling checker will ask if you want to replace recieve with receive. If recieve was capitalized (Recieve), the spelling checker would ask if you wanted to replace it with Receive.
+
+Conditionally Change (use case of other word)
+
+This action allows you to optionally replace one word with another, always with the same case pattern as the other word. This action is useful for optionally expanding abbreviations. For example, you could enter the word TBD with to be determined as the other word and "Conditionally change (use case of other word)" as the action. The spelling checker will ask if you want to replace TBD with to be determined.
+
+Exclude (treat as misspelled)
+
+This action tells the spelling checker that the word is misspelled, even if it is listed in another dictionary. Words marked with this action will never be offered as suggestions for misspelled words, and they will be reported as misspellings when they are encountered by the spelling checker. Note that the spelling checker looks up words in user dictionaries in the order in which they appear in the Files list. If you want to exclude a word, make sure it doesn't appear in a previous user dictionary.
+
+Ignore (skip)
+
+This action tells the spelling checker that the word is spelled correctly, and so can be skipped over. This is the most common action.
+
+Add File Button
+
+Opens a user dictionary file. When you select the Add File button, a dialog appears which you can use to select the dictionary file to open. The set of open dictionary files is remembered, so once you add a dictionary file you don't need to add it again. If you need to create a new user dictionary, use the New button. You can open other applications' user dictionary files.
+
+Add Word Button
+
+Causes the word entered in the edit area of the Words list to be added to the currently selected dictionary. The currently selected action and other word are associated with the word. You can use the Add Word button to change the action or other word associated with a word. Note that the Add Word button is enabled only when a new word is typed in the edit area of the Words list. The words you add may contain virtually any character, but only words that contain embedded periods should have trailing periods (e.g., U.S.A. is OK, but USA. is not).
+
+Close Button 
+
+Closes the Dictionaries dialog.
+
+Delete Word Button 
+
+Causes the word appearing in the edit area of the Words list to be removed from the currently selected dictionary. The associated action and other word are also removed.
+
+Export Button 
+
+Saves the contents of the currently selected dictionary to a text file. When you select the Export button, a dialog appears which you can use to select the name of the text file to which words in the dictionary will be exported. The words are written to the file one per line.
+
+Files List 
+
+Contains the list of open dictionary files. When you select a file from the list, its contents are displayed in the Words list.
+
+Import Button
+
+Adds the words contained within a text file to the currently selected dictionary. When you select the Import button, a dialog appears which you can use to select the text file to be imported. Each word in the selected file is loaded into the dictionary. Note that importing a large list of words may take some time.
+
+Language
+
+Displays the language (e.g., English or French) of the words in the currently selected dictionary.
+
+New Button 
+
+Creates a new user dictionary file. When you select the New button, a dialog appears which you can use to specify attributes of the new dictionary. See the New Dictionary Dialog for details.
+
+Other Word Box
+
+Contains an alternate word associated with the currently selected word. The other word is used in the "Auto change" and "Conditionally change" actions to supply a replacement word. You can enter more than one word in the Other Word box, but the total length should be limited to 63 characters.
+
+Remove File button 
+
+Closes the currently selected dictionary file. Closed dictionaries are not checked during a spelling check. Although the file is closed, it is not deleted. Closed dictionary files can be later reopened using the Add File button.
+
+Words List
+
+Contains the list of words in the currently selected user dictionary.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Options Dialog
+
+You can use the Options Dialog to specify various spelling-checker options. These options affect the way the spelling checker operates.
+
+ 
+
+Ignore Capitalized Words
+
+When enabled, any words beginning with a capital letter are ignored (i.e., are skipped over without being checked). You might enable this option if the text being checked contains many proper names.
+
+ 
+
+Ignore All-Caps Words
+
+When enabled, any words containing all capital letters are ignored (i.e., are skipped without being checked). You might enable this option if the text being checked contains many acronyms.
+
+Ignore Words with Numbers
+
+When enabled, any words containing embedded digits are ignored (i.e., are skipped without being checked). Examples of such words include Win95 and Q4. You might enable this option if the text being checked contains many code words or other symbols containing digits.
+
+Ignore Words with Mixed Case
+
+When enabled, any words containing an unusual mixture of upper- and lower-case letters are ignored (i.e., are skipped without being checked). Examples of such words include MicroHouse and CapsLock. You might enable this option if the text being checked contains many variable names or other symbols which use case changes to distinguish words.
+
+Ignore Domain Names
+
+When enabled, any words that appear to be Internet domain names (such as wintertree-software.com) are ignored (i.e., are skipped without being checked).
+
+Report Doubled Words
+
+When enabled, any word appearing twice in a row is reported via the link Check-Spelling Dialog.
+
+Case Sensitive
+
+When enabled, a distinction is made between capitalized and non-capitalized words. For example, canada is considered different from Canada, so canada would be reported as a misspelling. When the option is disabled, Canada and Canada are considered identical. Note that the performance of the spelling checker will be reduced if this option is disabled.
+
+Phonetic Suggestions
+
+When enabled, suggestions are made based on phonetic (sounds-like) similarity to the misspelled word. This option tends to improve suggestions for badly misspelled words. Enabling this option will increase the time required to locate suggestions. Note that either this option or the Typographical Suggestions option must be enabled or no suggestions will be offered.
+
+Typographical Suggestions
+
+When enabled, suggestions are made based on typographical (looks-like) similarity to the misspelled word. This option is appropriate for people who are generally good spellers. Note that either this option or the Phonetic Suggestions option must be enabled or no suggestions will be offered.
+
+Suggest Split Words
+
+When enabled, two separate words will be suggested as a replacement for a misspelling containing two joined words. For example, is the would be suggested as a replacement for isthe.
+
+Auto Correct
+
+When enabled, words marked with "Auto Change" actions will automatically be changed to their specified replacements. When disabled, you will be prompted before the words are changed.
+
+Suggestions
+
+Determines the speed and accuracy of the initial search for suggested replacements for misspelled words. When a misspelled word is detected, a search is automatically made for suggestions. This option controls the speed and accuracy of this automatic search. Pressing the Suggest button in the Check-Spelling Dialog causes an increasingly more accurate (but slower) search for suggestions.
+
+OK Button
+
+Closes the Options Dialog, and saves any changes made to the option settings.
+
+Cancel Button
+
+Closes the Options Dialog, and discards any changes made to the option settings.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+New Dictionary Dialog
+
+You can use the New Dictionary Dialog to specify the attributes of a new user dictionary.
+
+Browse Button
+
+Displays a dialog that shows the names of other user dictionary files. You can use the dialog to view the names of existing dictionary files, and to enter the name of the new dictionary file.
+
+Close Button
+
+Closes the New Dictionary Dialog without creating a new dictionary.
+
+File Name Box
+
+Contains the name of the disk file used to hold the contents of the new dictionary. You can enter a name here or use the Browse button to display a dialog showing the names of other dictionary files.
+
+Language List
+
+Specifies the language (e.g., French, English) of the words the new user dictionary will contain. If the language you want to use is not listed, select "Any."
+
+OK Button
+
+Closes the New Dictionary dialog and creates the new dictionary.
+
+ 
+
+ 
+
+  ------ --- --------------
+  Back       Next Section
+  ------ --- --------------
+
+To Set Page Margins
+
+Follow these steps:
+
+1.    On the File menu, choose Page Setup.
+
+2.    Enter the new margin settings.
+
+Note: You can set margin settings for the left, right, top, and bottom.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+To Change Printers and Printing Options
+
+Follow these steps:
+
+1.    On the File menu, choose Page Setup.
+
+2.    To change paper size, page orientation, or margins, make the appropriate modifications.
+
+3.    To change printers, choose Printer and then select a printer in the Name list.
+
+ 
+
+  ------ --- ---
+  Back        
+  ------ --- ---
+
+ 

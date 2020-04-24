@@ -1,0 +1,123 @@
+﻿
+
+Convert Verbosity Settings to Options
+
+This document covers conversion of JAWS Script Verbosity Options to the new User Options Tree view.
+
+New Main Script and Old Main Script
+
+The new script assigned to INSERT+V is called: AdjustJAWSOptions.
+
+You can still use the old AdjustJAWSVerbosity script, simply by attaching the relevant keys in Keyboard Manager. 
+
+The Main Function and Simplest Conversion
+
+The new function to call in your script is named OptionsTreeCore.
+
+The simplest way to convert your verbosity settings to Options is simply to build your list and pass it as the only necessary parameter to the OptionsTreeCore function.
+
+Sample Code:
+
+Script AdjustJAWSOptions ()
+
+var
+
+string strList
+
+;todo: setup / establish relevant structure
+
+Let strList = Option1+_DLG_SEPARATOR+Option2+_DLG_SEPARATOR;Carry on with list build:
+
+OptionsTreeCore (strList)
+
+EndScript
+
+What You Get:
+
+Now, when you bring up the Adjust JAWS Options tree view, notice you have a node or category at the top, named after your configuration, containing your options. 
+
+Example category name: "MyApp Options" where MyApp is the name of your configuration.
+
+The Help Edit Window
+
+You probably noticed the Help Edit window was empty. 
+
+You need to create a custom version of a UserOption function for the category, and a help callback for each member of your list.
+
+The Category Help
+
+There's a function in UserOptions.jss defined as follows:
+
+string Function NodeHlp (string sNodeName)
+
+Simply add your if condition to see that the Node Name is the display text of your category name, and return you help message:
+
+Sample code:
+
+string Function NodeHlp (string sNodeName)
+
+If StringContains (sNodeName, GetActiveConfiguration()) then
+
+     ;Todo: return help string as message
+
+Else
+
+     Return NodeHlp (sNodeName)
+
+EndIf
+
+EndFunction
+
+Note that for purposes of localization for foreign languages, we checked against the value of GetActiveConfiguration.
+
+Callbacks for Individual Options
+
+Each option needs to have a companion help function.
+
+If you're doing this, you already know to create a string function to optionally set a setting, and always display human-readable text for the value.
+
+To populate the help window, you need to create a companion hlp function.
+
+This may or may not contain conditional code, but it must return a help string for the read-only help edit window.
+
+Example functions:
+
+string Function Option1 (int iRetCurVal)
+
+;Todo: Set data and return human-readable value
+
+EndFunction
+
+ 
+
+string Function Option1Hlp (int iRetCurVal)
+
+;Todo: Return val in @msg format for edit window
+
+EndFunction
+
+Situations where you have options whose settings depend upon one another, you probably want to add conditional help in your return string.  For example, when the human-readable text returns "Unavailable" you may want to explain why in the help window.  We have done this in numerous places in Default UserOptions.jss.
+
+Extra Stuff
+
+If you want to make options explicit to specific categories, study the optional parameters to OptionsTreeCore.
+
+The first Optional parameter, iRetNodeSettings, is off by default, which means the incoming string in parameter 1 is examined for node paths.
+
+Any items that have  node paths are left alone. All those that do not are given the node mentioned earlier.
+
+Switch this on, especially if you have objects in your list you explicitly want to be at level zero - no path.
+
+For debugging purposes, it's a good parameter to leave off, as you can quickly find items without paths, since they'll be placed under the Configuration Name's category.
+
+The simplest way to assign paths is use the function ConvertListToNodeList.
+
+The first parameter is the list parameter taken reference.  This will be converted into a list with path strings.  The second parameter is the absolute path for the specific group of items in the node category.  See how we've used this by studying the TreeCoreGet*Options functions in UserOptions.jss.
+
+The third parameter is an optional name to give to all items in the incoming string (your list) that have no path strings. 
+
+So, if you pass the list parameter, 0 to the second parameter, and a node name to the third parameter of OptionsTreeCore, you can specify a node name for all your items.
+
+ 
+
+ 

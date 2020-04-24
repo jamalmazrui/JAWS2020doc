@@ -1,0 +1,2929 @@
+﻿JAWS Settings Center
+
+Table of Contents
+
+Settings Center Overview
+
+User
+
+User Options Group
+
+Web/HTML/PDFs
+
+Web/HTML/PDF Group
+
+Forms Mode
+
+Forms Mode Group
+
+Text Processing
+
+Text Processing Group
+
+Speech Verbosity
+
+Speech Verbosity Group
+
+Speech On Demand
+
+Speech On Demand
+
+Speech and Sounds Schemes
+
+Speech and Sounds Schemes
+
+Edit Scheme Dialog
+
+Say All
+
+Say All Options Group
+
+Graphics and Symbols
+
+Graphics and Symbols Group
+
+Braille
+
+General Braille Options
+
+Braille Marking
+
+Braille Marking Options
+
+Cursor
+
+Cursor Settings
+
+Flash Messages
+
+Flash Messages
+
+Structured Mode
+
+Structured Mode
+
+Advanced
+
+Advanced Options
+
+Caret and Cursor
+
+Caret and Cursor Group
+
+Synthesizer
+
+Synthesizer Group
+
+Punctuation
+
+Customize Punctuation
+
+Voice Aliases
+
+Voice Aliases
+
+Window Classes
+
+Window Classes Group
+
+Keyboard
+
+Keyboard Group
+
+Custom Highlight
+
+Custom Highlight Options
+
+Assigning Custom Highlight Colors
+
+Custom Highlight Colors
+
+Research It
+
+Research It Group
+
+Text Analyzer
+
+Text Analyzer Group
+
+Convenient OCR
+
+Convenient OCR Group
+
+Gestures
+
+Gestures Group
+
+Mouse Echo
+
+Mouse Echo Group
+
+Visual Tracking
+
+Visual Tracking Group
+
+Miscellaneous
+
+Miscellaneous Group
+
+Settings Center Overview
+
+Note: For quick start procedures, see Using Settings Center. For general navigation and editing, see keystrokes. To learn more about Settings Center, continue reading.
+
+JAWS Settings Center provides a consistent interface and central access point for JAWS features and settings. Changes made to settings are saved in configuration files. The Settings Center dialog box is made up of the items described below. Press TAB or SHIFT+TAB to move through different areas of the dialog box.
+
+·         Application combo box: Select an application from the list to modify its settings for use with JAWS. To retrieve the JAWS default settings, press CTRL+SHIFT+D. To retrieve application settings, press SHIFT+TAB to move focus to the Application combo box. Next, select the application from the combo box, and then press TAB to move focus back to the tree view pane.
+
+·         Search edit box: Press CTRL+E to move focus to the Search box. Type a search word or phrase in the edit box to reduce the number of items that appear in the tree view list. Press DOWN ARROW to move to search results, and then press ENTER to move focus directly to that item in the tree view. 
+
+·         Settings tree view pane: Use the tree view pane to select and change settings for the selected application. To retrieve the JAWS default settings, press CTRL+SHIFT+D. To retrieve application settings, press SHIFT+TAB twice to move focus to the Application combo box. Next, select the application from the combo box, and then press TAB to move focus back to the tree view pane. For a brief description of the item selected in the tree view, press TAB to move focus to the read-only edit box. Use the Say Line or Say All commands to read the help message. To vertically scroll through the tree view, use the UP and DOWN ARROW keys, PAGE UP and PAGE DOWN keys, or first letter navigation. Use the RIGHT ARROW and LEFT ARROW keys to expand or collapse tree view groups. Use the SPACEBAR to move through and change settings for each option.
+
+·         Configuration display pane: As you move through the tree view, a sighted user can simultaneously track cursor movement using the configuration display pane. Press F6 to switch between the tree view and this pane. This is necessary when typing in an edit or edit spin box.
+
+·         Help message pane: Displays context-sensitive help for the item currently selected in the tree view. Use the Say Line or Say All commands to read the help message.
+
+·         Apply, OK, and Cancel: Use Apply to make changes. Use OK to save changes and close Settings Center. Use Cancel to close Settings Center without saving changes.
+
+Keystrokes to Navigate Settings Center
+
+Use the following keystrokes to navigate, select, and edit areas and items within Settings Center.
+
+Settings Center Window Navigation
+
+·         Press TAB or SHIFT+TAB to move through different areas of the Settings Center dialog box.
+
+·         Press F6 to move to the configuration display pane.
+
+Applications List Navigation
+
+·         Press SHIFT+TAB until focus moves to the Applications combo box.
+
+·         Press any ARROW Key to select items in the Applications list.
+
+·         Use first letter navigation to select items in the list.
+
+·         Press TAB or SHIFT+TAB to move focus away from the combo box.
+
+Search Box Navigation
+
+·         Press CTRL+E to move focus to the Search box.
+
+Tree View Navigation
+
+·         Press UP ARROW or DOWN ARROW to move up or down the tree view.
+
+·         Press RIGHT ARROW or LEFT ARROW to expand or collapse a tree view group.
+
+·         Use first letter navigation to select a group or item in the tree view.
+
+·         Press SPACEBAR or ENTER to modify the state of the items while focused on them in the tree view. This works for options such as radio button, check boxes, or buttons without having to press F6 to move to the configuration pane to adjust them.
+
+·         Press CTRL+SHIFT+D to load the Default.jcf file and apply changes globally.
+
+·         When searching for an item in Settings Center, search results display in the tree view. Press ENTER on any entry to restore the full tree view and then move directly to that item.  Pressing ESC when on search results, restores the full tree view to the last item prior to the search.
+
+·         Press F6 to move to the configuration display pane. Press F6 again to return to the tree view.
+
+Configuration Display Pane Navigation
+
+·         Press F6 to move focus to this pane. This is required to change the value of an edit box. Press F6 again to move focus to the tree view.
+
+·         To jump to an item, press ALT along with its access key. For example, in the Forms Mode group, press ALT+A to move focus to the Auto radio button.
+
+·         Press any ARROW Key to select items in a list box or radio button group, or move between items in a group.
+
+·         Press TAB to move between items in the display pane.
+
+Help Message Pane Navigation
+
+·         Use the Say Line or Say All commands to read help messages for the item currently selected in the tree view.
+
+Using Settings Center
+
+To use Settings Center, do the following:
+
+1.    Press INSERT+F2, and select Settings Center. Settings will appear for the application that has focus. The cursor will be in the Search edit box.
+
+2.    If you know the setting that you want to change, type a term for it in the edit box. For example, type the word "braille" without the quotes for a filtered list of braille settings. Next, press DOWN ARROW to move to the filtered results in the tree view.
+
+Note: To load the default JAWS settings, press CTRL+SHIFT+D, and then search for the setting as previously described.
+ 
+ To select a different application, press SHIFT+TAB to move to the Application edit box. Use ARROW Keys or first letter navigation to select the application, and then press CTRL+E to search for the setting as previously described.
+
+3.    Press SPACEBAR to select check boxes, radio buttons, or other buttons, and press F6 to switch between an edit box and the tree view to change settings.
+
+4.    Choose Apply to apply changes and remain in Settings Center, OK to save changes and exit Settings Center, or Cancel to close Settings Center without saving changes. The new settings are saved to the appropriate JCF file.
+
+JAWS Configuration Files
+
+JAWS configuration files (JCF) store settings for both JAWS and other software applications. The full configuration file name is determined by the application to which the settings will apply. For example, the executable file that runs Word is Microsoft Word.exe so the settings file for Word is Microsoft Word.jcf.
+
+One of the most powerful features of JAWS is that settings can be applied globally or on an application specific level. Application specific settings are saved using the application name with the .jcf extension, such as Microsoft Word.jcf. Global settings are saved in the Default.jcf file. Application specific settings can override global settings, so if you change a setting in Default.jcf and some of your programs do not reflect this change, make the change in the .jcf files for those programs as well.
+
+Shared Files
+
+JAWS allows you to have both user and shared versions of the configuration files. JAWS applies the settings in user configuration files only when a particular user is logged on to the computer. The settings in shared files apply to all users on the computer or network. This allows system administrators to configure JAWS for all users on a network or computer. If a user creates a modified version of a shared file, those settings override the shared settings while that user is logged on the computer.
+
+When you choose the Open command on the File menu, you can select "Shared Configurations" in the Look In list box to find a shared file that you want to view or modify. JAWS stores shared configuration files in Documents and Settings\All Users\Application Data\Freedom Scientific\JAWS\[Version Number]\Settings\Enu.
+
+Tip: You can quickly view user and shared files by using the shortcuts in the Explore JAWS folder located in the JAWS program group.
+
+ 
+
+ 
+
+  ------ --- -------
+  Back        Next
+  ------ --- -------
+
+ 
+
+User Options Group
+
+Use the options in this group to control keyboard input and screen feedback. Experienced users may prefer to have keyboard echo off or set to words only, where new users may find it helpful to hear characters spoken while typing. Typing echo and typing interruption are examples of keyboard input. Screen feedback examples are screen echo and progress bar announcement.
+
+Progress Bar Updates Announcement
+
+Programs often use progress bars to show the status of a process, such as an installation. Select an interval in this list to determine how often JAWS announces the state of progress bars during a process. Select "Announce All" if you want JAWS to read progress bars each time they change. Select "Off" if you do not want JAWS to announce progress bar information.
+
+Tip: To hear the name and status of a progress bar at any time, press INSERT+TAB.
+
+Typing Echo
+
+This group box allows you to select to have the information you type echoed in one of several ways. The default is to echo your typing by character. Set your preferences by selecting one of four radio buttons:
+
+·         Off: Select this option if you do not wish to hear typing echoed.
+
+·         Characters: Each character you type is echoed.
+
+·         Words: Each word you type is echoed after pressing SPACEBAR or ENTER.
+
+·         Characters and Words: Characters are echoed as you type them and words are echoed after you press SPACEBAR or ENTER.
+
+Screen Echo
+
+This Group box allows you to select what information is echoed as it changes on the screen.
+
+·         Echo No Text: Changes to displayed text are not echoed.
+
+·         Echo Highlighted Text: Changes to highlighted text are echoed.
+
+·         Echo All Text: Changes to any displayed text are echoed.
+
+Typing Interrupt
+
+When this checkbox is checked, pressing typing keys such as letters and numbers interrupts speech. This option is checked by default.
+
+INSERT Key Mode
+
+When this checkbox is selected, the INSERT key functions as a sticky key. Any key pressed immediately after pressing the INSERT key is treated as if it were pressed in combination with the INSERT key. This checkbox is cleared by default.
+
+Key Repeat
+
+When this checkbox is checked, a key that is held down is repeated. This checkbox is cleared by default.
+
+Show Virtual Viewer On Screen
+
+Use this check box to specify if the Virtual Viewer is visually displayed on the screen when INSERT+F1 and other helpful messages are accessed. It may be helpful in training environments to show the Virtual Viewer. However, in a presentation application like PowerPoint, it might disrupt your presentation to display the Virtual Viewer. JAWS functions the same in these messages whether or not the Virtual Viewer is displayed.
+
+Lower the Volume of Other Programs While JAWS is Speaking
+
+When this check box is selected, audio from other programs will be reduced while JAWS is speaking. This is commonly referred to as audio ducking. This check box is cleared by default and is only available if JAWS is running in Windows 8 or later.
+
+You can also press INSERT+SPACEBAR, followed by D to toggle this feature. If audio ducking is off by default, it will turn it on, and if it is on by default, it will turn it off. The current setting will remain in effect until you press the layered keystroke again, or JAWS is restarted.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Web/HTML/PDF Group
+
+The items in this group control numerous options for reading and navigating text, images, links, headings, regions, frames, lists, and tables for web pages, HTML files, and PDF files.
+
+·         Reading Group
+
+·         Navigation Group
+
+·         Images / Graphics Group
+
+·         Links Group
+
+·         Headings and Frames Group
+
+·         Tables Group
+
+·         Miscellaneous Group
+
+Reading Group
+
+Web Verbosity Level
+
+Use this combo box to select a Virtual Cursor verbosity level. The verbosity level determines the amount of information spoken by JAWS when the Virtual Cursor is active. The available options are:
+
+·         High - JAWS speaks the most information about elements on the page or inside a document. Everything except the start and end of application and document regions is announced at this level.
+
+·         Medium - This level is configured to provide the best user experience on most pages and documents and is the default verbosity level. By default, JAWS will not indicate the start and end for flash objects or frames, and only the start and end of navigation and main regions is announced. Note that the name and type for all regions is still announced when using the R and SHIFT+R Navigation Quick Keys to move by region or the O and SHIFT+O Navigation Quick Keys to move by article.
+
+·         Low - JAWS speaks as little structural information as possible about the elements on a page or inside a document. By default, only the start and end of tables and grids is announced at this level.
+
+Configure Web Verbosity Levels
+
+This series of buttons lets you customize the High, Medium, and Low verbosity settings for the Virtual Cursor. Each verbosity level contains default factory settings. Choose any of the three verbosity level buttons, and then toggle on or off any of these settings. This allows you to start with a basic configuration and modify it to your liking.
+
+Note: If you turn off any region announcements, you will still hear the name and type of a region when using the R and SHIFT+R Navigation Quick Keys. In addition, if JAWS is configured to announce the start and end of forms, this information is not spoken if the form is not labelled and R or SHIFT+R will not move to any unlabelled form regions.
+
+Skip Blank Lines While Navigating
+
+When selected, JAWS and Fusion will skip over blank lines while navigating using the Virtual Cursor. This improves reading when navigating web pages, PDF documents, Help Files, and the JAWS Results Viewer without announcing all the blank lines. Clear this checkbox if you want to hear blank lines as you navigate text.
+
+This check box is selected by default for all applications except Outlook and Thunderbird.
+
+Document and Web Pages Automatically Read When Loaded
+
+When selected, JAWS automatically begins reading web pages and PDF documents when loaded. Clear this check box if you do not want JAWS to automatically begin reading. Disabling this option is especially useful if you are using JAWS in conjunction with screen magnification software as the focus is not unexpectedly moved back to the top while you are using the mouse to navigate through the document. This checkbox is selected by default when only JAWS is running and is cleared by default when using Fusion or FSReader.
+
+Enable Flexible Web
+
+Use this setting to enable or disable the Flexible Web feature. You can access Flexible Web from Internet Explorer, Firefox, or Chrome by pressing INSERT+SPACEBAR, X. This check box is selected by default. This setting is only available in the JAWS default settings (CTRL+SHIFT+D).
+
+Skip Past Repeated Text on New Pages
+
+If this checkbox is selected, JAWS skips past repeated text often found on multiple pages within the same web site. The Virtual PC cursor is placed at the beginning of new text on each page. This check box is selected by default.
+
+Expand Abbreviations
+
+When Expand Abbreviations is selected, if a title attribute is present for an abbreviation, JAWS reads the title text instead of the on screen text. By default, JAWS reads the on screen text.
+
+Expand Acronyms
+
+When Expand Acronyms is selected, if a title attribute is present for an acronym, JAWS reads the title text instead of the on screen text. By default, JAWS reads the on screen text.
+
+Speak Access Keys within Web Pages
+
+JAWS announces access keys assigned to HTML elements using the HTML Access key attribute. Access keys let you move directly to an item such as a link or form control. Clear this check box if you do not want JAWS to announce access keys in web pages. This check box is selected by default.
+
+Custom PlaceMarker Page Summary
+
+Use this feature to automatically list each PlaceMarker on an HTML page and its associated text. If you do not want JAWS to provide this custom page summary, select Off. Select Speak Only if you want JAWS to read the name of each PlaceMarker on the current page as well as the text that appears near the PlaceMarker's location. If you select Virtualize Information, JAWS displays the PlaceMarker information for the page in the Virtual Viewer. The Virtual Viewer provides a link with the name of the PlaceMarker and the text that appears near the PlaceMarker's location on the page.
+
+Tip: For information on using the PlaceMarkers feature, refer to the help topic PlaceMarkers.
+
+Navigation Group
+
+Smart Navigation Mode
+
+Smart Navigation offers a more efficient way to navigate in web-based applications, tables, and forms. The following options are available:
+
+·         Controls: Controls, including, but not limited to, buttons, links, edit fields, list boxes, tree views, and headings, are treated as single units when navigating by character or word, like moving through a menu bar with RIGHT and LEFT ARROW. Performing a Say Character, Say Word, and Say Line command twice quickly while focused on a control will switch to character and word navigation so you can use the traditional navigation by character, word, line, sentence, and paragraph to review a control, such as the text of a button or link, in greater detail. Smart Navigation by controls automatically resumes when you move to another control using TAB or UP or DOWN ARROW. If you encounter a table, you will still use the table reading commands (CTRL+ALT+ARROW keys) or the Table layer (INSERT+SPACEBAR, T) to navigate the table.
+
+·         Controls and Tables: If focused inside of a table, the RIGHT and LEFT ARROW keys move between columns while the UP and DOWN ARROW keys move between rows. When focused in a cell and it contains any controls, such as a heading, or an edit field, pressing the Say Character, Say Word, or Say Line commands twice quickly will switch to control navigation, and performing these commands again twice quickly will switch to character and word navigation. If the cell does not contain controls, you can only switch to character and word navigation. Moving focus away from the current table cell using LEFT or RIGHT ARROW will switch back to the prior navigation level, for example, pressing RIGHT ARROW while in character and word navigation will return to Smart Navigation in tables as soon as you move to a different cell. If you are not in a table, navigation is the same as the Controls option.
+
+·         Off: Navigating by character or word in virtual documents works as it always has in JAWS. This is the default setting.
+
+Anytime you are using Smart Navigation, either set to Controls or Controls and Tables, JAWS will work in Screen Layout. This presents pages in the virtual buffer similar to how they appear visually on the screen. Toolbar buttons or other lists of controls that are visually laid out horizontally on the screen are displayed on one line in the virtual document, allowing a single press of the DOWN ARROW to skip the entire toolbar instead of having to move from button to button to get past it.
+
+To temporarily toggle Smart Navigation on or off, press INSERT+X. This also modifies the Document Presentation Mode setting appropriately. When INSERT+X is pressed to turn on Smart Navigation, JAWS automatically switches to Screen Layout. When Smart Navigation is turned off, JAWS switches back to Simple Layout. When you use INSERT+X to temporarily toggle Smart Navigation, it will revert back to the prior setting if you perform an action that moves focus away from the current browser window, such as pressing ALT+TAB.
+
+Document Presentation Mode
+
+Document Presentation Mode allows you to change how JAWS structures HTML pages and other virtual documents (such as PDF documents) in the virtual buffer. If you select "Simple Layout," links, form fields, buttons, and other page controls are displayed on a separate line. This is the default layout if Smart Navigation is not enabled. If you select "Screen Layout," pages are rendered in the virtual buffer in a way that is more similar to what a sighted user sees on the screen. If page controls visually appear on the same line, then they will appear on the same line in the virtual buffer. In addition, all items in a single table row are displayed on the same line, and each column is separated by a vertical bar. When you move up or down by line, the cursor stays in the correct column. Your current row and column position is also shown in braille. Screen Layout mode helps you better understand the overall table design as well as the relationship between table cells in each row. Screen Layout is used when Smart Navigation is set to Controls or Controls and Tables and cannot be changed while Smart Navigation is active.
+
+This feature is especially useful for copying and pasting table information from virtual documents. Because all text in the row appears on the same line, you can easily select all the text in every cell in a row with SHIFT+DOWN ARROW. Alternatively, you can press F8 to select the entire table (if you are at the beginning). When you copy and paste the row(s) or table into another document, the text of each cell is separated by a vertical bar to preserve readability. You can even use the enhanced functionality of FSClipboard to copy non-contiguous rows or rows from different tables and then paste them all into another document.
+
+Maximum Line Length
+
+This setting determines how long a single line will be when viewing an HTML page in Document Presentation Mode. This can help you read lengthy tables easier because all the content from each row in the table can fit on a single line. The increased line length stops JAWS from rendering rows across multiple lines. If you switch to Simple Layout mode, JAWS will render the page using the normal maximum line length. The default line length in Document Presentation Mode is 400 characters, which is enough to fit most table rows on one line.
+
+Text Block Length
+
+When you press INSERT+ENTER for MoveToNext NonLinkText, JAWS looks for a block of text - not part of a link - equal to or greater than the number of characters specified in this edit box. The default value is 25.
+
+Lines Per Page
+
+This setting determines how many lines the Virtual PC cursor moves when pressing PAGE UP or PAGE DOWN. The default value is 24.
+
+Maximum Line Length
+
+This setting determines how many characters the Virtual PC cursor treats as one line of text. The default value is 150.
+
+Screen Track Virtual Cursor
+
+If this check box is selected, the screen tracks with the Virtual PC cursor. If not selected, the Virtual PC cursor can still access all information in an HTML document, but the on screen display does not track as the virtual PC cursor moves through the document. This check box is selected by default.
+
+Wrap Navigation
+
+If this item is selected, quick key navigation commands wrap when they reach the beginning or end of an HTML document. If the check box is cleared, JAWS speaks a message informing you that no more matches are found, such as no more tables. This item is selected by default.
+
+ Images / Graphics Group
+
+Include Images
+
+Use these radio buttons to specify how you want JAWS to announce graphics within HTML documents.
+
+·         Select All Images to have JAWS announce all graphics in a document. If a graphic has a label, the label is read. If it does not have a label, JAWS assigns and reads a unique number that identifies the graphic.
+
+·         Select Labeled Images to have JAWS only announce labeled graphics.
+
+·         If you select No Images, JAWS will not announce any graphics in the document.
+
+For an Image Group
+
+This series of radio buttons determines what information JAWS announces when graphics are encountered on Web pages. JAWS gathers the information from the HTML "IMG" element's attributes, such as Alt, Title, or Src. Specify which information JAWS should first look for, indicate to use the information that is longest, or specify a custom search order JAWS uses when looking for information. If no other information is found, JAWS uses the information from the Src attribute, which includes the graphic file name.
+
+·         Title: When this option is selected, JAWS first looks for and speaks information provided by the HTML Title attribute. If no Title attribute is found, JAWS looks for Alt attribute information and speaks it. Title text is not displayed on the screen.
+
+·         Alt Text: When this option is selected, JAWS first looks for and speaks information provided by the HTML Alt attribute. If no Alt attribute is found, JAWS looks for Title attribute information and speaks it. Alt text is not displayed on the screen. This is the default option.
+
+·         Tooltip: When this option is selected, JAWS looks for "OnMouseOver quoted text," Alt text, then Title text. JAWS speaks the first information found. "OnMouseOver" attributes are often used to run script functions to display tooltips containing useful information. "OnMouseOver quoted text" is text provided through a function in the "OnMouseOver" HTML attribute, in the form of: OnMouseOver="myfunction('information about graphic')". If more complex script code is referenced in the "OnMouseOver" attribute, the information is ignored.
+
+·         Longest of Above: The longest string of information is spoken for each graphic.
+
+·         The first attribute found in the order list: This option allows you to specify the order in which JAWS searches for information about graphics. Once this option is selected, the Define Graphic Option Search Order edit field is enabled, and is used to specify the custom search order.
+
+Unlabeled Image Links
+
+These radio buttons determine how JAWS should announce graphical links if no alt tags or other identifying information is available. By default, JAWS speaks the image source information, which includes the file name of the image.
+
+Links Group
+
+Filter Consecutive Duplicate Links
+
+Select this check box so that JAWS only announces the text link when two consecutive Web page links, typically a graphical link and text link, point to the same URL. This check box is selected by default in Internet Explorer and cleared by default in Chrome and Firefox.
+
+When selected, JAWS will only announce the text link when you navigate the Web page using ARROW Keys. When you navigate the Web page using TAB or SHIFT+TAB, JAWS will announce both links. Note that both links will appear in the list of links when you press INSERT+F7.
+
+Say Link Type
+
+If this check box is selected, JAWS announces the type of links encountered when navigating through HTML documents. This check box is selected by default.
+
+Identify Same Page Links
+
+If this check box is selected, JAWS announces when links point to other locations on the same page by stating "same page link." This check box is selected by default.
+
+For a Text Link Group
+
+This series of radio buttons determines what information JAWS speaks when a text-based link is encountered. The following options are available:
+
+·         Title: When this option is selected, JAWS first looks for and speaks information provided by the HTML Title attribute. This text is not displayed on the screen. If no Title text is found, JAWS reads the on screen text.
+
+·         Screen Text: JAWS reads the on screen text. This is the default option.
+
+·         Tooltip: When this option is selected, JAWS looks for "OnMouseOver quoted text" and speaks it. "OnMouseOver" attributes are often used to run script functions to display tooltips containing useful information. If no OnMouseOver quoted text is found, JAWS speaks the on screen text for the link. "OnMouseOver quoted text" is text provided through a function in the "OnMouseOver" HTML attribute, in the form of: OnMouseOver="myfunction('information about link')". If more complex script code is referenced in the "OnMouseOver" attribute, the information is ignored.
+
+·         Longest of Above: JAWS speaks the longest string of information for each link.
+
+·         The first attribute found in the order list: This option allows you to specify the order in which JAWS searches for information about links. Once this option is selected, the Order List edit field is available, and is used to specify the custom search order.
+
+Include Image Links
+
+Graphics are often used as links. This series of radio buttons determines which graphical links are announced. The following options are available:
+
+·         All Image Links: All graphical links are announced. This is the default option.
+
+·         Labeled Image Links: Graphical links that have Alternate text specified within the HTML document are announced.
+
+·         No Image Links: Graphical links are not announced.
+
+Identify Image Map Links
+
+Sections of images are often mapped out by coordinates and used as links. This series of radio buttons determines which image map links are announced. The following options are available:
+
+·         All Image Map Links: All image map links are announced. This is the default option.
+
+·         Labeled Image Map Links: Image map links that have Alternate text specified within the HTML document are announced.
+
+·         No Image Map Links: Image map links are not announced.
+
+Headings and Frames Group
+
+Heading Navigation Using 1-6
+
+Use the radio buttons in this group to determine what happens during heading navigation when using the numbers row to navigate to headings at a given level. The following choices are available:
+
+·         Restrict to Section - Restricts navigation to finding headings with an equal or lower precedence. For example, searching for a heading at level 3 (h3) when the next heading is an h2 will stop since the h2 indicates the start of a new section whose level has a higher precedence than the heading you are searching for.
+
+·         Speak Ancestor Headings when Jumping to a New Section - This setting will find the next heading with the given level, but if it is under a different higher precedence heading, the immediately higher precedence heading will be read so you know that the new heading belongs to a different section.
+
+·         Play Sound when Jumping to a New Section - Heading navigation will find the next heading with the given level, but if it is under a different higher precedence heading, a sound plays to indicate that the heading belongs to a different section.
+
+By default, you can move through heading levels using the numbers row without restriction and JAWS speaks the heading level for the new section when it changes.
+
+Indicate Headings
+
+Use these radio buttons to specify how you want JAWS to indicate headings. By default, headings are announced with the level indicated. When used properly, headings indicate the relationship of each section of the page to the page as a whole.
+
+Choose one of the following options:
+
+·         No Headings - Select this radio button if you do not want JAWS to announce headings.
+
+·         Headings Only - Select this radio button if you want JAWS to say, "Heading," when you move to a heading, but you do not want JAWS to announce the heading's level.
+
+·         Headings with Level - Select this radio button if you want JAWS to say, "Heading," followed by the heading's level when you move to a heading. This is the default setting.
+
+·         Play Sound - Select this radio button if you want JAWS to play a sound when you move to a heading. You can assign a different sound to each heading level. Use the Speech and Sounds Manager to choose which sounds you want to use.
+
+·         Speak Heading Using Voice - Select this radio button if you want JAWS to use a different voice when reading headings. You can assign a different voice to each heading level. Use the Speech and Sounds Manager to choose which voice aliases you want to use.
+
+Ignore Inline Frames
+
+Set JAWS to ignore inline frames if you do not wish to hear the information within them. Inline frames are often used to display advertisements. However, some web pages do use inline frames for important information. By default, JAWS reads the content of inline frames.
+
+Tables Group
+
+Indicate ColSpan for Braille
+
+If you select this check box, JAWS inserts one vertical bar per column span between table cells. This can help you read HTML tables with cells that span multiple columns. For example, if a table cell spans two columns, the contents of that cell will be followed by two vertical bars on your braille display. This provides you with a better representation of the visual layout of HTML tables. This check box is selected by default.
+
+Table Presentation Information
+
+JAWS can be set to detect only data tables, or to detect all tables, including tables used to format the layout of the page. The nesting level of each table is also announced. Tables are often used to provide page layout formatting, so setting this option to All Tables can provide a lot of information on some pages. The default setting is For Data Tables Only.
+
+Miscellaneous Group
+
+Ignore Flash on Web Pages
+
+This checkbox is cleared by default so you can read Flash animations when they are encountered on the web. If you prefer not to read Flash animations, place a check in this box to set JAWS to ignore them when they are encountered.
+
+For a Form Field Prompt Speak
+
+This set of radio buttons determines how JAWS finds prompts for form fields. JAWS accesses form information from either the label, title or alt attributes. Use this item to tell JAWS which attribute or combination to use when speaking form field prompt information. The default is to use labels.
+
+Page Refresh Filter
+
+Web pages are sometimes set to automatically refresh and update information. This can cause JAWS to start reading over from the beginning of the page, and make it very difficult to use. To control how frequently the page content refreshes, use the Page Refresh Filter command. Select Refresh As Needed to refresh the page based on how often components on the page automatically update. This is the default setting. Select Refresh Every 60 Seconds to refresh the page at 60-second intervals. Select Suppress All Refreshes to never refresh the current page as long as it has focus. Note: If you select Suppress All Refreshes, certain pages may perform or read poorly. It is recommended that you only suppress all refreshes for pages that are difficult to use. To do this, open the page in Internet Explorer, and use the Personalized Web Settings feature.
+
+Link Activation
+
+This option affects how links are activated when you press the ENTER key in a virtual document.
+
+When this option is set to Enter simulates mouse click, pressing the ENTER key on a link actually simulates a left mouse click on the link. This is how JAWS behaved prior to version 15.
+
+When this option is set to Enter sends Enter key, pressing the ENTER key on a link instead causes the ENTER key to be passed on to the system. You may want to choose this setting if pressing ENTER does not activate a Web element unless you first press INSERT+3 to enable the Pass Key Through feature.
+
+The default setting is Enter simulates mouse click.
+
+For a Button Text Options
+
+Select the information JAWS speaks for buttons found in forms on Web pages. JAWS can use Title text, Screen text, ALT text, the Value attribute, or the longest string of information. Screen text is the default.
+
+Indicate Element Attribute
+
+Select this check box to have JAWS indicate the attribute of HTML elements on Web pages. The attributes that JAWS announces are determined by the Attributes page in Speech and Sounds Schemes. Clearing this check box suppresses announcements by JAWS of all the attributes that have been enabled using Speech and Sounds Schemes. To suppress or change such announcements, the recommended method is to open the Attributes page of Speech and Sounds Schemes and change the behavior for the desired attributes. This check box is selected by default.
+
+Allow Web Application Reserved Keystrokes
+
+Certain interactive Web sites may offer keyboard shortcuts to perform some common tasks. For example, on the Facebook Web site you can press P to post a status, L to like a story, C to comment on a story, or J and K to scroll between News Feed stories. However, these keystrokes also conflict with JAWS Navigation Quick Keys. When this check box is selected, any JAWS keystrokes that are also defined as keystrokes by a Web site will perform the site specific task instead of the JAWS command. For this to work correctly, the page must also include a line of code that tells JAWS what keystrokes are defined by the web site. If this information is not available, all JAWS commands will continue to work as expected. This check box is selected by default.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Forms Mode Group
+
+Forms Mode is needed when working with HTML content in a browser and you need to input information. Since JAWS uses a “Virtual Mode” to navigate, you can normally press letters to navigate between Headings, Paragraphs, Tables, etc. But when you need to type in text or use the ARROW keys to select items in a Combo Box, you need another mode refered to as Forms Mode. Use the options in this group to configure Forms Mode operation. Form settings are located in the Forms Mode group in Settings Center.
+
+Select Forms Mode (Auto, Semi-auto, or Manual)
+
+Use the radio buttons in this group to select how you wish to get in and out of Forms Mode.
+
+When set to Auto, JAWS automatically enters Forms Mode when you press TAB, SHIFT+TAB, or the ARROW keys to move to a control that requires Forms Mode in order to interact with it, such as an edit field or combo box. To indicate you have entered Forms Mode, you will hear a "pop" sound, or you can use the status cells in Braille. When you finish working with a control, you can press ESC to exit Forms Mode, or press UP or DOWN ARROW to move away from the control and exit Forms Mode. This functionality can be very useful for new and sighted JAWS users and is the default setting.
+
+Selecting Manual prevents JAWS from ever putting you into forms mode as you navigate using any of the commands including the TAB Key. This means that when you move into an edit field or combo box control, you must press ENTER first to type text or select a value. To manually exit Forms Mode, press NUM PAD PLUS or ESC.
+
+Semi-auto is a mode in between Auto and Manual. You will only enter Forms Mode if you land on a control while navigating with TAB or SHIFT+TAB. Forms Mode will not be activated if you navigate with the ARROW keys or Navigation Quick Keys. You must manually exit Forms Mode when Semi-auto is active. Semi-auto and Manual Forms Mode may be better suited for experienced users, or when using Smart Navigation.
+
+Note: When Forms Mode is on, using the Say Line or Say All commands read all text on the current line. This includes labels and descriptions.
+
+Navigation Quick Key Delay
+
+Use this combo box to set how long it takes before Forms Mode becomes active when using Navigation Quick Keys to move between form items. For example, if the delay is 3 seconds, and you press E to move to the next edit box, Forms Mode does not turn on until this interval passes. You will then hear an announcement or sound indicating that Forms Mode is on, which means that you can now type in the edit box. Delays range from 0.5 seconds to 5 seconds and Never. Never is the default setting, which means that you must press ENTER to start Forms Mode after moving to a control with Navigation Quick Keys. This option is unavailable if Forms Mode is set to Manual or Semi-auto.
+
+Disable Forms Mode Off When New Page Loads
+
+Use this check box to determine what happens when content on the current HTML page is updated or refreshed while in Forms Mode. When selected, a page refresh or update will automatically exit Forms Mode. When cleared, Forms Mode remains active regardless of a page refresh or update. The check box is selected by default. It is only available when JAWS is configured for Manual Forms Mode.
+
+Enable Sound Notifications
+
+JAWS can use sounds to indicate when it switches between Virtual Mode and Forms Mode instead of speaking the traditional messages, Forms Mode On and Forms Mode Off. Clear this check box if you do not want to hear sounds and would prefer to hear the traditional spoken messages. This check box is selected by default and is available for both Auto and Manual modes.
+
+Select Sound for Entering Forms Mode
+
+Choose this button to browse through a list of available WAV files to let you know when you enter a form field. This option is not available if sound notification is turned off.
+
+Select Sound for Leaving Forms Mode
+
+Choose this button to browse through a list of available WAV files to let you know when you exit a form field. This option is not available if sound notification is turned off.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Text Processing Group
+
+Use the options in this group to determine how JAWS reads text. This includes how to announce capitalization, announce list items, numbers, and dates, indicate new lines, and more.
+
+General
+
+Filter Repeated Characters
+
+This list allows you to determine how many times a character is spoken when an uninterrupted series of repeating characters is encountered. You can choose from the following options: Three, Four, Five, Six, All, or count. Three is the default.
+
+Indicate Capitalization
+
+Use this list to tell JAWS when to indicate capitalization. By default, JAWS only announces capitalization when reading by character or spelling words or lines.
+
+List Item
+
+Choose one of the following to determine how list box items are described:
+
+·         Say None: this option silences reading of list box descriptions.
+
+·         Say Selected: If this option is selected, JAWS only tells you when list box items are selected.
+
+·         Say Not Selected: If this option is selected, JAWS only tells you when list box items are not selected. This is the default option.
+
+·         Say Both: If this option is selected, JAWS tells you when list box items are selected, and when they are not selected.
+
+Spell Alphanumeric Data
+
+Choose one of the following to determine how JAWS reads alphanumeric information:
+
+·         Off: This is the default setting. When selected, JAWS reads the text as it appears. For example, JAWS will read the license plate number 123RON as one hundred twenty-three Ron.
+
+·         Spell: JAWS spells alphanumeric data. For example, JAWS reads 123RON as 1 2 3 R O N.
+
+·         Spell Phonetically: JAWS uses the phonetic alphabet to spell alphanumeric data. For example, JAWS reads 123RON as 1 2 3 Romeo Oscar November.
+
+Indicate New Lines When
+
+In the Speech and Sounds Manager, you can specify text or a sound that you want to hear when you move to a new line of text while typing or reading. Select one or more of the following check boxes to specify when JAWS should indicate a new line:
+
+·         Editor Wraps Text While Typing: JAWS indicates new lines when your editor or word processor wraps text to the next line while you are typing.
+
+·         User Navigates Left or Right Across a Line Break: JAWS indicates new lines when you are reading by word or character.
+
+·         User Reads Text Containing NewLine Characters: JAWS indicates new lines when you are using the standard JAWS reading commands and encounter the special character that represents the beginning of a new line of text.
+
+·         During Say All: JAWS indicates when it moves to a new line when reading by Say All.
+
+Smart Word Reading
+
+In previous releases, when issuing the Say Word command, JAWS would only read the current word or character when the cursor was positioned on a text unit, such as a compound word, telephone number, date, time, or math equation. Now with Smart Word Reading enabled, JAWS reads the entire text unit when the Say Word command is issued.
+
+Note: The Smart Word Reading feature is application dependent. So, if Microsoft Word normally reads the entire text unit as one word or number, then JAWS will do the same. Likewise, if an application, such as WordPad, reads each component of the text unit, then JAWS will do the same.
+
+For example, in the sentence, “She is my sister-in-law,” if the cursor is placed anywhere on the word “sister,” JAWS would say “sister.” However, with Smart Word Reading, JAWS will say the entire compound word, “sister-in-law.”
+
+Likewise, in the sentence, “The appointment was at 2:00 P.M.,” JAWS would say “colon” if the cursor was placed between the digit 2 and the colon. Now with Smart Word Reading, JAWS will say the entire text unit as two o’clock.
+
+As a final example, let’s look at how JAWS reads a telephone number. If the cursor is placed between the dash and the 444 in the telephone number 1-800-444-4443, previous JAWS versions would say, “444.” With Smart Word Reading, JAWS reads the entire telephone number as, “1-800-444-4443.”
+
+Mixed Case Processing
+
+If this check box is selected, words with capital letters in the middle of them are spoken as if there are two words. For example, SayAll is read as "Say All" instead of as "sayall." This check box is selected by default.
+
+Use Dictionary
+
+If this check box is selected, words are processed through a global or application specific dictionary to determine proper pronunciation. For more information, please see Dictionary Manager. This check box is selected by default.
+
+Spell Phonetically Always
+
+When this check box is cleared, using the commands to spell the current word or line (INSERT+NUM PAD 5 or INSERT+UP ARROW twice quickly) causes JAWS to speak each character as expected. When selected, you will always get phonetic representation for each character in the word or line as they are spelled. For example, when pressing INSERT+NUM PAD 5 twice quickly to spell "JAWS," the word would be read as Juliet Alpha Whiskey Sierra. This check box is cleared by default.
+
+When Pausing After Character Navigation, Speak Character Phonetically
+
+While navigating text by character, it may be helpful to hear the phonetic representation for a particular letter. When this option is enabled, pausing on a letter for a brief period of time will allow JAWS to speak it phonetically.
+
+JAWS also offers a manual option to speak phonetics continuously as you navigate by character. Pressing the Say Character keystroke twice quickly toggles this feature on and off. If you are using the manual option for all letters, the pause announcement will not occur.
+
+By default, phonetic announcements will happen if you pause for one and a half seconds when navigating by character.
+
+Enhanced Edit Support
+
+If you select this check box, JAWS provides enhanced support for edit and rich edit areas. This feature allows for increased accuracy while reading text in these areas. In addition, enhanced edit support allows JAWS to recognize an extended selection of text attributes and better detect languages automatically. However, you may experience reduced responsiveness while using certain programs. This check box is cleared by default.
+
+Say Item State First
+
+If this check box is selected, the list item state is spoken before the item name. If this check box is cleared, the list item state is spoken after the item name. This check box is selected by default.
+
+Say Window Type First
+
+If this check box is selected, the window type is spoken before the window title or text. An example of a window type is "dialog." This check box is cleared by default.
+
+Say Window State First
+
+If this check box is selected, the window state is spoken before the window title or text. For example, JAWS would say, "Not Checked Match Case check box," instead of, "Match Case check box Not Checked." This check box is cleared by default.
+
+Say Indented Characters
+
+If this check box is selected, changes in indentation are indicated, according to rules set in the Speech and Sounds Manager. The Speech and Sounds manager dialog allows you to customize how JAWS indicates indentation, but this check box controls whether the indication is on or off. This check box is cleared by default.
+
+Number and Date Processing
+
+Numeric Date Processing
+
+Choose one of the following to determine how JAWS speaks dates written in numeric formats:
+
+·         No Translation: If this option is selected, numeric dates are read as numbers. This option is selected by default.
+
+·         Some Translation: If this option is selected, numeric dates of month followed by day followed by year and separated by slashes or dashes are translated. For example, 03-16-00 is read as "March sixteenth two thousand."
+
+·         Extended Translation: If this option is selected, numeric dates of month followed by day and separated by slashes or dashes are translated – in addition to those dates translated with Some Translation selected. For example, 03-16 is read as "March sixteen."
+
+With extended translation selected, many numeric fractions are read as dates. For example, 1/3 is read as "January three."
+
+JAWS Date Processing now honors Windows Regional Settings and uses the Windows Regional Settings date separator character for determining what is treated as a date. For example, "17/8/2002" is read "17 August 2002" if Regional settings are set to Australian English, but is not recognized as a date if set to English US. The date "3/2/2002" is recognized as "March 2, 2002" if Regional Settings are set to English US, but is recognized as "February 3, 2002" if set to Australian English.
+
+Note: Unless the date separator character is defined as the DASH symbol by the Regional Settings of Windows, it is not recognized as a date separator.
+
+Number Processing
+
+Choose one of the following to determine how numbers are read:
+
+·         Controlled by Synthesizer: If this option is selected, the current synthesizer determines how numbers are read. This is the default option.
+
+·         Single Digits: If this option is selected, numbers are read as a series of single numbers. For example, 123 is read "one two three."
+
+·         Pairs: If this option is selected, numbers are read as a series of paired numbers. For example, 1050 is read as "ten fifty." If the number has an odd number of digits, the first digit is read as a single digit and the rest are paired. For example, 123 is read "one twenty three."
+
+·         Full Numbers: If this option is selected, numbers are always read as complete numbers. For example, 123 is read as "one hundred twenty three."
+
+Speak Single Digits if Number Contains
+
+Note: This control is used in conjunction with the Number Processing combo box. This means that JAWS first considers the value for the Number Processing combo box, then the Speak Single Digits if Number Contains combo box when reading a number string.
+
+Use this combo box to set a threshold value for JAWS so that a number string is read as individual digits. For example, if a string contains five or more digits, JAWS will announce each digit as a standalone number. The string 54321 is read as 5 4 3 2 1.
+
+This is useful when reading long number strings such as telephone numbers, serial numbers, and part numbers. Note that this rule will apply under the following conditions: the number string is not preceded by or followed by an alpha character, and it does not contain a dash, colon, decimal, or slash to separate the digits similar to what is used for telephone, time, or date formatting. If you want to override the dash exception of this rule, select the Dashes check box that is located below this combo box.
+
+Select one of the following from this combo box:
+
+·         Five or more digits (default)
+
+·         Six or more digits
+
+·         Seven or more digits
+
+·         Eight or more digits
+
+·         Controlled by Synthesizer: When selected, the current synthesizer determines how numbers are read.
+
+If Number Contains Dashes
+
+Note: This control, like the Speak Single Digits if Number Contains combo box, is used in conjunction with the Number Processing combo box. This means that JAWS considers processing numbers based on the value of the Number Processing control. However, if this check box is selected, numbers that contain dashes without spaces will be read as single digits.
+
+Select this check box so that number strings containing dashes are read by JAWS as individual digits. This will apply when the dash is preceded by and followed by a digit similar to telephone number formatting. The check box is selected by default.
+
+Speak Dollars
+
+If this check box is selected, numbers preceded by a dollar sign ($) are read in the format of number of dollars and number of cents. For example, $9.95 is read as "nine dollars and ninety five cents." For monetary values less than a dollar to be read in this fashion, the zero for the dollars must be present. For example, $0.02 is read as "two cents." This check box is cleared by default.
+
+Proofing
+
+Detect Spelling While Navigating
+
+Use this combo box to choose how spelling errors are indicated while reading a document. The following options are available:
+
+·         Off - JAWS will not indicate spelling errors.
+
+·         Play Sound - A buzzer is heard when you navigate into a misspelled word.
+
+·         Say Misspelled - JAWS says "misspelled" when you navigate into an error. This is the default setting.
+
+Detect Spelling While Typing
+
+This check box allows you to choose how spelling errors are indicated while typing. When cleared, no spelling errors will be indicated. When selected, a sound will be played as soon as the application detects that you have either mistyped or corrected a word. This check box is selected by default.
+
+Speak Spelling Error Count
+
+Select this Check box to hear the number of spelling errors prior to hearing the text of the line when reading by line. This check box is cleared by default and is not available if the Detect Spelling While Navigating is off.
+
+Grammar and Advanced Proofing
+
+When selected, JAWS speaks a message to indicate when you navigate into or out of grammatical or advanced proofing errors. This check box is cleared by default.
+
+Speak Grammar/Proofing Error Count
+
+Select this check box to hear the number of grammatical or proofing errors prior to hearing the text of the line when reading by line. This check box is cleared by default and is not available if grammar and advanced proofing detection is off.
+
+Apply Options During Say All
+
+Select this check box to have JAWS indicate spelling and grammar errors when reading a document using Say All (INSERT+DOWN ARROW). This check box is cleared by default and is not available if both spelling and grammar detection are off.
+
+Underline Spelling Errors
+
+Select this check box to mark spelling errors in Braille using dots 7 and 8. This check box is selected by default.
+
+Underline Grammatical and Advanced Proofing Errors
+
+Select this check box to mark grammatical and proofing errors in Braille using dots 7 and 8. This check box is cleared by default.
+
+Filter Control Characters Such as Page Breaks
+
+Clear this check box to allow Braille output for various control characters such as page breaks. Depending on the application you are using, different control characters could be displayed. These will be presented for both Computer Braille or Contracted Braille output. This check box is selected by default.
+
+Language Processing
+
+Detect Language
+
+This group of radio buttons allows you to configure automatic language detection.
+
+Select “Based On Markup of document and web page” to have JAWS detect changes in languages within documents which support language tags and then read using the appropriate synthesizer voice for that language. For example, if JAWS finds Spanish tags on a Web page, that text is spoken using a Spanish voice. Language detection works with synthesizers, such as Eloquence or Vocalizer Expressive, that support multiple languages. For Vocalizer Expressive, you must install voices for a particular language for this detection to work properly.
+
+Select “Based On Text (Vocalizer Expressive only)” to have JAWS detect the language based on the types of text characters used in the document and read using the appropriate Vocalizer Expressive voice. For example, if JAWS detects Arabic characters and you have installed an Arabic Vocalizer Expressive Voice, JAWS will switch to the Arabic voice for reading.
+
+Select "Off" if you do not want JAWS to change the synthesizer language when reading text written in another language.
+
+When Detect Language Based On Text
+
+This group of radio buttons lets you determine how numbers are spoken when language detection is set to “Based On Text.” You can choose to have numbers spoken using the primary voice, or you can have numbers read using a voice that matches the language context of the numbers.
+
+The default is to read numbers using the primary voice.
+
+Enhanced right-to-left (RTL) support
+
+Select this check box to make sure that right-to-left text is spoken in the correct order by the synthesizer.
+
+This check box is cleared by default for all languages except Arabic and Hebrew.
+
+Generalize Dialect
+
+This check box determines if JAWS switches to a different language to account for dialects within the same base language. For example, if this feature is selected, and JAWS is reading, in English, a Web page that supports U.S. English, U.K. English, and Australian English, JAWS will not switch between languages since the base language is English. However, if JAWS encounters another language, such as German or French, it will switch to that language.
+
+This check box is selected by default and is only available when language detection is set to “Based On Markup of document and web page.”
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Speech Verbosity Group
+
+Use the options in this group to set the verbosity level. Verbosity determines the amount of information spoken by JAWS. Each verbosity level is preset to give a different amount of detail. Each level can be further customized to give only the information you want to hear. The default selection is Beginner, which gives the most detailed information, while Intermediate and Advanced levels provide fewer details. The group contains a set of radio buttons that allow you to select your desired verbosity level, and three buttons that open a preferences dialog for each verbosity level. Each button takes you to a similar dialog, but it is specific to the verbosity level stated on the button. This will be indicated in the title bar, i.e., Beginner Preferences.
+
+To access the speech verbosity settings, do the following:
+
+1.    Open Settings Center, and type "Verbosity Level" without the quotes in the Search edit box.
+
+2.    Press DOWN ARROW to move to the filtered results in the tree view, and select Verbosity Level.
+
+Beginner, Intermediate, or Advanced Preferences
+
+The preferences dialogs allow you to adjust how much information JAWS speaks in two ways. You can enable or turn off certain types of information spoken by JAWS, and you can determine if the messages spoken are brief or detailed.
+
+Items to be Spoken
+
+This is a list of the JAWS Messages that can be enabled or turned off for each selected verbosity level. The list is different for each level. These items are based on Speech Output Types.
+
+Message Length
+
+Message Length can be adjusted with two radio buttons, Long and Short. Select Short if you wish to hear brief messages, and select Long if you wish to hear detailed messages. For example, when you select text in a document and press CTRL+C to copy it to the Clipboard, if Message Length is set to Short, JAWS would say, "Copied." If Message Length is set to Long, JAWS would say, "Copied selected text to clipboard."
+
+Tip: If you are new to Windows, JAWS, or a specific application, it can be very helpful to leave Message Length set to Long. As you become more familiar with a specific application, or with JAWS and Windows in general, setting Message Length to Short can save time and boost productivity.
+
+Things spoken that are affected by Message Length are:
+
+·         JAWS Messages
+
+·         Status Messages
+
+·         JAWS Error Messages
+
+·         Application Start Messages
+
+·         Smart Help Messages
+
+·         Help Messages
+
+Note: Help Messages are not listed and cannot be turned off in the "Items to be Spoken" list box, but they are affected by the Long or Short Message Length selection.
+
+Restore Factory Settings
+
+Restore Factory Settings clears preferences for the current verbosity level only in the current JCF file. If you are in Default.jcf, original factory settings are restored. Although this dialog reflects this change, the actual change back to default settings does not take place until you save the JCF file.
+
+Note: When you exit any of the Preferences Dialogs, which control will have focus in the Verbosity Options Dialog depends on how you opened the Preferences Dialog. If you pressed a hot key to bring up Preferences from the Verbosity Options dialog, when you leave Preferences you will land on the control that previously had focus. If you used TAB to move to the button and pressed ENTER to open Preferences, focus is put on the OK button when you return to the Verbosity Options dialog.
+
+Enable Speech History
+
+If this check box is selected, JAWS will retain a history of the last 50 items spoken by the speech synthesizer in order to review in the event you need to listen to it again or read it in detail. To view the history, press INSERT+SPACEBAR, followed by H. This will place the history in a window where you can navigate and read it in detail. If you would like to clear the current content of the history, you can do so by pressing INSERT+SPACEBAR, followed by SHIFT+H. This setting is enabled by default.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Speech On Demand
+
+Speech On Demand is a feature that allows you to limit the amount of JAWS speech you hear as you navigate windows and documents or perform other actions using hot keys. By default, when using Speech On Demand, JAWS only announces actions that are associated with a limited set of hot keys. In addition, mouse echo and typing echo are still available, which allows JAWS to read text that you point to with the mouse pointer and speak characters and words as you type. You can quickly toggle between Speech On Demand and full speech using a convenient layered command, or even make Speech On Demand the default speech mode when JAWS starts.
+
+For JAWS users who rely heavily on Braille or for users of Fusion that can see well enough to use the screen for tracking focus, too much speech can be overwhelming while navigating using the keyboard and mouse. However, users still want to be able to use speech to read once they have moved to a location on the screen, or just checking a Window Title, column heading in a table or spread sheet, or even reading the time from the System tray. In both these situations, Speech On Demand can be very helpful. You will find that switching applications with ALT+TAB or using ARROW keys to move through a document are silenced. Speech is only triggered when using a limited set of reading commands such as speaking the current character, word, line, paragraph, or doing a Say All. You also have the option to completely turn off speech.
+
+Layered commands to toggle Speech On Demand or Mute Speech:
+
+·         Press INSERT+SPACEBAR followed by S to toggle the speech mode between Full Speech and either Speech On Demand (the default) or Mute Speech.
+
+·         Press INSERT+SPACEBAR followed by SHIFT+S while Full Speech is disabled to toggle between Speech On Demand and Mute Speech.
+
+By default, JAWS always returns to Full Speech when restarted after these keystrokes have been used. To make permanent changes to the default settings, do the following:
+
+1.    Press INSERT+F2, and select Settings Center.
+
+2.    If you want changes to only apply to a particular application, select it from the Application list. Otherwise, press CTRL+SHIFT+D to load the default settings file.
+
+3.    In the tree view, expand the Speech Options group.
+
+4.    Press the SPACEBAR on Speech Mode to change the default choice between Less Speech or Full Speech. Full Speech is selected by default.
+
+5.    Press the SPACEBAR on Less Speech Options to change the default choice between Mute Speech or Speech On Demand. Speech On Demand is selected by default.
+
+6.    If you do not want to hear JAWS generated sounds while Speech On Demand or Mute Speech is active, press RIGHT ARROW while focused on the Less Speech Options radio button group and then use the SPACEBAR to clear the Play JAWS Sounds check box. This includes the sound heard when pressing INSERT+SPACEBAR to perform a layered keystroke as well as the sound heard when completing an address in Outlook.
+
+7.    Expand the Speech On Demand Options group.
+
+8.    If you do not want any reading hot keys to speak with Speech On Demand active, use the SPACEBAR to clear the Allow Reading Commands check box. Reading commands are spoken by default.
+
+9.    If JAWS Mouse Echo is enabled and you want to hear text as you move the mouse with Speech On Demand active, use the SPACEBAR to select the Allow Mouse Echo checkbox. This checkbox is cleared by default.
+
+10. If JAWS Typing Echo is set to Characters, Words, or Characters and Words and you want to hear what you are typing with Speech On Demand active, use the SPACEBAR to select the Allow Typing Echo check box. This checkbox is cleared by default.
+
+11. Choose OK to save your changes and close Settings Center.
+
+Note: When set to Speech On Demand or Mute Speech, all sounds played by JAWS are also muted. This includes the sound heard when pressing INSERT+SPACEBAR to enter Layered Keys mode as well as the sound heard when completing an address in Outlook.
+
+Designated Reading Commands
+
+The tables below list the preset designated reading commands for Speech On Demand. These include commands available in all applications as well as commands specific to Word, Excel, and Outlook.
+
+  ------------------------------------------------------------------------------------------------- -----------------------------------------------
+  Description                                                                                       Command
+  Keyboard Help                                                                                     INSERT+1
+  Say All                                                                                           INSERT+DOWN ARROW
+  Read current character                                                                            NUM PAD 5
+  Read current word                                                                                 INSERT+NUM PAD 5
+  Read current line                                                                                 INSERT+UP ARROW
+  Read from the beginning of the current line to the active cursor                                  INSERT+HOME
+  Read from the active cursor to the end of the current line                                        INSERT+PAGE UP
+  Read current sentence                                                                             ALT+NUM PAD 5
+  Read current paragraph                                                                            CTRL+NUM PAD 5
+  Read current table cell                                                                           ALT+CTRL+NUM PAD 5
+  Read prompt for current control                                                                   INSERT+TAB
+  Read window title                                                                                 INSERT+T
+  Read bottom line of window                                                                        INSERT+PAGE DOWN
+  Read top line of window                                                                           INSERT+END
+  Read selected text                                                                                INSERT+SHIFT+DOWN ARROW
+  Say system time                                                                                   INSERT+F12
+  Increase voice rate and save                                                                      ALT+CTRL+WINDOWS Key+PAGE UP
+  Temporarily increase voice rate (previously saved rate is restored when switching applications)   ALT+CTRL+PAGE UP
+  Decrease voice rate and save                                                                      ALT+CTRL+WINDOWS Key+PAGE DOWN
+  Temporarily decrease voice rate (previously saved rate is restored when switching applications)   ALT+CTRL+PAGE DOWN
+  Repeat last Skype notification                                                                    INSERT+SPACEBAR followed by SHIFT+R
+  Restrict current cursor                                                                           INSERT+R
+  Read contents of dialog box                                                                       INSERT+B
+  Read word in context                                                                              INSERT+C
+  Say current access key                                                                            SHIFT+NUM PAD 5
+  Say color                                                                                         INSERT+5
+  Description                                                                                       Command
+  Say cell navigated to in formula                                                                  CTRL+NUM PAD 5
+  Say input message for current cell                                                                CTRL+SHIFT+V
+  Read current row                                                                                  INSERT+SHIFT+UP ARROW
+  Read from the beginning of the row to the current cell                                            INSERT+SHIFT+HOME
+  Read from the current cell to the end of the row                                                  INSERT+SHIFT+PAGE UP
+  Read current column                                                                               CTRL+INSERT+UP ARROW
+  Read from top of column to the current cell                                                       CTRL+INSERT+HOME
+  Read from current cell to the bottom of the column                                                CTRL+INSERT+PAGE UP
+  Say coordinates of active cell                                                                    INSERT+C
+  Say formula                                                                                       CTRL+INSERT+F2
+  Report gridline status                                                                            ALT+SHIFT+G
+  Read row total                                                                                    INSERT+DELETE
+  Read column total                                                                                 INSERT+ENTER
+  Say column title                                                                                  ALT+INSERT+SHIFT+C
+  Say row title                                                                                     ALT+INSERT+SHIFT+R
+  Say coordinates for the range of visible cells                                                    ALT+SHIFT+V
+  Read cell comment                                                                                 ALT+SHIFT+APOSTROPHE
+  Describe cell border                                                                              ALT+SHIFT+B
+  Read cell hyperlink                                                                               ALT+SHIFT+H
+  Read monitor cells                                                                                ALT+SHIFT+1 through 0
+  Description                                                                                       Command
+  Toggle Navigation Quick Keys                                                                      INSERT+Z
+  Read mistake and suggestion                                                                       INSERT+F7
+  Say line and column                                                                               INSERT+DELETE
+  Say column title                                                                                  ALT+INSERT+SHIFT+C
+  Say row title                                                                                     ALT+INSERT+SHIFT+R
+  Read current column                                                                               ALT+WINDOWS Key+PERIOD
+  Read current row                                                                                  ALT+WINDOWS Key+COMMA
+  Say first cell in column                                                                          INSERT+SPACEBAR followed by T, and then ALT+1
+  Say first cell in row                                                                             INSERT+SPACEBAR followed by T, and then ALT+5
+  Say field                                                                                         CTRL+INSERT+NUM PAD 5
+  Announce comment                                                                                  ALT+SHIFT+APOSTROPHE
+  Announce footnote                                                                                 ALT+SHIFT+E
+  Announce revision                                                                                 CTRL+INSERT+R
+  Describe border around the currently selected text                                                ALT+SHIFT+B
+  Say language in use                                                                               ALT+CTRL+A
+  Description                                                                                       Command
+  Read mistake and suggestion                                                                       INSERT+F7
+  Read Outlook headers                                                                              ALT+1 through 0
+  Read current row                                                                                  ALT+WINDOWS Key+NUM PAD 5
+  Read current column                                                                               ALT+WINDOWS Key+PERIOD
+  Say field                                                                                         CTRL+INSERT+NUM PAD 5
+  Toggle Navigation Quick Keys                                                                      INSERT+Z
+  Announce Outlook Info Bar                                                                         CTRL+INSERT+I
+  Say language in use                                                                               ALT+CTRL+A
+  ------------------------------------------------------------------------------------------------- -----------------------------------------------
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Speech and Sounds Schemes Group
+
+Use the Speech and Sounds Schemes group to customize how JAWS provides you with different types of information. For example, you can easily configure JAWS to play an ascending tone when it encounters a check box that is selected, a descending tone for check boxes that are not selected, and say "type here" every time it encounters an edit field. If you work with documents that contain text in another language, and that text is always bold, you can make JAWS switch to a specific language when it encounters bolded text. There are many possibilities, depending on your needs.
+
+You can save your speech and sound settings as a scheme. Schemes are lists of Speech Manager rules, saved as .smf files, located in the C:\Users\User Name\AppData\Roaming\Freedom Scientific\JAWS\Version Number\Settings\ENU folder. You can create and save several schemes, however, only one scheme is active at a time.
+
+To change speech and sound settings, open the Speech and Sounds Schemes group in Settings Center.
+
+Selecting, Editing, and Creating Schemes
+
+JAWS comes with several schemes by default. The classic scheme sets JAWS to behave as it always has, and is a good starting point. The other schemes use the Classic scheme as a foundation and add additional information, useful for things such as proofreading documents. Use the Speech and Sounds Manager to select, edit, save, or create schemes. For example:
+
+·         To make a different scheme active, select it from the scheme list. Press INSERT+T to read the title bar, and JAWS announces the active scheme. To edit the active scheme, TAB to and activate the Edit Current Scheme button. After editing a scheme, be sure to save the changes by activating the Save Current Scheme button.
+
+·         To save a copy of the current scheme under a different name, activate the Save Current Scheme As button. This creates a copy of the active scheme with a name you choose, allowing you to make modifications to the new scheme without changing the old one.
+
+·         To create a new scheme, activate the Create New Scheme button. This creates a new scheme based on the Classic Scheme settings. To make changes to the new scheme, select it in the schemes list and activate the Edit Current Scheme button. Refer to the help topic Edit Scheme Dialog for more information on creating or modifying a scheme.
+
+·         To delete a scheme, select it from the list, then activate the Delete Scheme button. You cannot delete the Classic Scheme.
+
+Tip: You can use training mode to familiarize yourself with how the active scheme uses sounds to provide information. See Training Mode below for more information.
+
+Changing Schemes On the Fly
+
+In addition to changing schemes permanently through Settings Center, JAWS offers a way to quickly and temporarily change schemes. To do this, press ALT+INSERT+S, then select the scheme to use and press ENTER.
+
+Training Mode
+
+Training mode helps you familiarize yourself with how a scheme uses sounds to provide information. When training mode is on, JAWS announces detailed information for items, states, and attributes as well as the sounds assigned to them in the active scheme. You hear the sound, and then JAWS announces the same information you hear when using the "Classic" scheme.
+
+Tip: Training mode also announces information for items, states, and attributes that the scheme ignores.
+
+Since the sound assignments made by the scheme's creator may not be immediately obvious, training mode can help you determine the purpose of each sound. For example, if a scheme uses two different sounds to indicate the state of a check box, you might not be able to tell which sound indicates that the check box is selected. If training mode is on, JAWS plays the sound and then says, "checked" or "not checked."
+
+To turn training mode on or off:
+
+1.    Press ALT+INSERT+S.
+
+2.    To turn training mode on, select "Toggle Speech and Sounds Training Mode On." If you want to turn training mode off, select "Toggle Speech and Sounds Training Mode Off."
+
+3.    Press ENTER.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Edit Scheme Dialog
+
+Except for the general page, each page of this multi-page dialog controls a different information type. Most pages contain a list of rules for the information type they cover. One rule that exists in almost all pages is the default rule. The behavior assigned to the default rule applies when no other rules match a situation. You can change the behavior of default rules, but you cannot remove them. The pages on this dialog include:
+
+·         General
+
+·         Control Type
+
+·         Control State
+
+·         Attributes
+
+·         Font Name
+
+·         Font Size
+
+·         Color
+
+·         Indentation
+
+·         HTML
+
+·         Misc
+
+For each item under each of the information types, any or all of the following choices may be available for you to choose how JAWS indicates the selected item.
+
+·         Speak Item
+
+·         Play Sound
+
+·         Change Voice
+
+·         Change Language
+
+·         Ignore
+
+ General 
+
+The general page contains the scheme description. JAWS reads this description as you arrow through the list of schemes on the main Speech and Sounds Manager page. Here, you can edit the description for the scheme.
+
+ Control Type 
+
+This page lists all available control types, such as buttons, list boxes, and radio buttons, and allows you to customize behavior for any or all of them. For example, you could choose to have JAWS play a sound when you move to an edit box, instead of speaking "edit." The behavior set here does not affect how JAWS reads control prompts or the status of the control.
+
+To modify a control type, do the following:
+
+1.    Press CTRL+TAB to move to and open the Control Type page.
+
+2.    Select a control from the Control Types list box.
+
+3.    Press TAB to move to the group of radio buttons that control speech and sound behavior. Select the action JAWS should take when you encounter the selected control.
+
+4.    Press TAB to move to any other buttons or edit fields that become available when you select the desired item.
+
+5.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+ Control State 
+
+This page lists the available control states, allowing you to adjust how JAWS indicates each of them. For example, you could instruct JAWS to say a different word or phrase when you encounter an item that is disabled. Other examples of control states are checked, unchecked, grayed, and visited.
+
+To modify a control state, do the following:
+
+1.    Press CTRL+TAB to move to and open the Control State page.
+
+2.    Select an item from the Control States list box.
+
+3.    Press TAB to move to the group of radio buttons that control speech and sound behavior. Select the action JAWS should take when you encounter the selected control.
+
+4.    Press TAB to move to any other buttons or edit fields that become available when you select the desired item.
+
+5.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+ Attributes 
+
+The attributes page allows you to modify how JAWS indicates a text attribute or a combination of text attributes. Attributes are items such as bold, italic, underline, strikethrough, highlight, graphic, and so on. For example, you can make JAWS read bold, underlined text in a deeper voice.
+
+To add a new attribute combination, do the following:
+
+1.    Press CTRL+TAB to move to and open the Attributes page.
+
+2.    Choose the Add button and press SPACEBAR to open the Add Attribute dialog box.
+
+3.    Press SPACEBAR to select the items you want included in this attribute combination, and then choose Next.
+
+4.    The Select Behavior dialog box appears. Select a speech or sound behavior from the radio button list and then choose Next to continue.
+
+5.    A series of dialog boxes will open based on the type of behavior previously selected. Continue to select items or complete any edit fields as requested by the dialog box prompts. Choose the Next or Finish buttons to continue through these dialog boxes. When you are finished, the new attribute combination appears in the Attributes list.
+
+6.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+To modify an existing attribute combination, do the following:
+
+1.    Select the appropriate item from the list
+
+2.    Press TAB to move to the group of radio buttons that control speech and sound behavior, and, if you like, select a new behavior.
+
+3.    Press TAB to move to and then choose the Modify button.
+
+4.    In the Modify Attribute dialog box, press SPACEBAR to select the items you want included in this attribute combination and then choose Next.
+
+5.    Press TAB to move to any other buttons or edit fields that become available when you select the desired item.
+
+6.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+To delete an attribute combination, do the following:
+
+1.    Select the appropriate item from the list
+
+2.    Press TAB to move to and select the Delete button.
+
+3.    Choose Yes to confirm the deletion.
+
+4.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+ Font Name 
+
+This page allows you to assign behaviors to specific fonts. The list of font names contains only those fonts to which behaviors have been assigned.
+
+To add a font rule, do the following:
+
+1.    Press CTRL+TAB to move to and open the Font Name page.
+
+2.    Choose the Add button and press SPACEBAR to open the Add Font dialog box.
+
+3.    A list of all fonts installed on your computer appears. Select a font name from this list, and then choose Next.
+
+4.    The Select Behavior dialog box appears. Select a speech or sound behavior from the radio button list and then choose Next to continue.
+
+5.    A series of dialog boxes will open based on the type of behavior previously selected. Continue to select items or complete any edit fields as requested by the dialog box prompts. Choose the Next or Finish buttons to continue through these dialog boxes. When you are finished, the rule appears in the Font Name list.
+
+6.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+To modify a font rule, do the following:
+
+1.    Select a font rule from the list
+
+2.    Press TAB to move to the group of radio buttons that control speech and sound behavior, and, if you like, select a new behavior.
+
+3.    Press TAB to move to and then choose the Modify button.
+
+4.    In the Modify Font Name dialog box, select a font and then choose Next.
+
+5.    Press TAB to move to any other buttons or edit fields that become available when you select the desired item.
+
+6.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+To delete a font rule, do the following:
+
+1.    Select the appropriate item from the list
+
+2.    Press TAB to move to and select the Delete button.
+
+3.    Choose Yes to confirm the deletion.
+
+4.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+ Font Size 
+
+This page allows you to assign behaviors to font size ranges. Each rule specifies the upper limit of the font size range for which it applies. If only two rules exist in the list, one of which being the default and the other specifying a font size of 10, any text with a font size of 10 or below would fall under the rule with the font size 10. Any text with font size 11 or more would fall under the default rule.
+
+To add a font size rule, do the following:
+
+1.    Press CTRL+TAB to move to and open the Font Size page.
+
+2.    Choose the Add button and press SPACEBAR to open the Add Font Size dialog box.
+
+3.    In the edit box, type a value, and then choose Next.
+
+4.    The Select Behavior dialog box appears. Select a speech or sound behavior from the radio button list and then choose Next to continue.
+
+5.    A series of dialog boxes will open based on the type of behavior previously selected. Continue to select items or complete any edit fields as requested by the dialog box prompts. Choose the Next or Finish buttons to continue through these dialog boxes. When you are finished, the new rule appears in the Font Size list.
+
+6.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+To modify a font size rule, do the following:
+
+1.    Select a font size rule from the list
+
+2.    Press TAB to move to the group of radio buttons that control speech and sound behavior, and, if you like, select a new behavior.
+
+3.    Press TAB to move to and then choose the Modify button.
+
+4.    In the Modify Font Size dialog box, type a new value and then choose Next.
+
+5.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+To delete a font size rule, do the following:
+
+1.    Select the appropriate item from the list
+
+2.    Press TAB to move to and select the Delete button.
+
+3.    Choose Yes to confirm the deletion.
+
+4.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+ Color 
+
+This page allows you to assign behaviors to specific color combinations. The list of colors contains only those combinations to which behaviors have been assigned.
+
+To add a color rule, do the following:
+
+1.    Press CTRL+TAB to move to and open the Color page.
+
+2.    Choose the Add button and press SPACEBAR to open the Color dialog box.
+
+3.    Select a foreground color and then choose Next.
+
+4.    Select a background color and then choose Next.
+
+5.    The Select Behavior dialog box appears. Select a speech or sound behavior from the radio button list and then choose Next to continue.
+
+6.    A series of dialog boxes will open based on the type of behavior previously selected. Continue to select items or complete any edit fields as requested by the dialog box prompts. Choose the Next or Finish buttons to continue through these dialog boxes. When you are finished, the new rule appears in the Color list.
+
+7.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+To modify a color rule, do the following:
+
+1.    Select a color rule from the list
+
+2.    Press TAB to move to the group of radio buttons that control speech and sound behavior, and select a new behavior.
+
+3.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+To delete a color rule, do the following:
+
+1.    Select the appropriate item from the list
+
+2.    Press TAB to move to and select the Delete button.
+
+3.    Choose Yes to confirm the deletion.
+
+4.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+ Indentation 
+
+This page allows you to assign behaviors to indented text. Each rule specifies the amount of indentation in spaces for which it applies. If you want JAWS to indicate indentation in the active program using these behaviors, you must press INSERT+V and turn on Indentation Indication.
+
+To add an indentation rule:
+
+1.    Press CTRL+TAB to move to and open the Indentation page.
+
+2.    Choose the Add button and press SPACEBAR to open the Add Indentation dialog box.
+
+3.    In the edit box, type a value, and then choose Next.
+
+4.    The Select Behavior dialog box appears. Select a speech or sound behavior from the radio button list and then choose Next to continue.
+
+5.    A series of dialog boxes will open based on the type of behavior previously selected. Continue to select items or complete any edit fields as requested by the dialog box prompts. Choose the Next or Finish buttons to continue through these dialog boxes. When you are finished, the new rule appears in the Indentation list.
+
+6.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+To modify an indentation rule, do the following:
+
+1.    Select an indentation rule from the list
+
+2.    Press TAB to move to the group of radio buttons that control speech and sound behavior, and, if you like, select a new behavior.
+
+3.    Press TAB to move to and then choose the Modify button.
+
+4.    In the Modify Indentation dialog box, type a new value and then choose Next.
+
+5.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+To delete a rule, do the following:
+
+1.    Select the appropriate item from the list
+
+2.    Press TAB to move to and select the Delete button.
+
+3.    Choose Yes to confirm the deletion.
+
+4.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+ HTML 
+
+The HTML page allows you to assign behaviors to specific HTML element attributes. An attribute is a setting or parameter that is added to an HTML tag in the source code. You can add any HTML attribute to the list and assign a behavior to it. JAWS can speak or play a sound whenever you encounter a tag with a certain attribute, or you can choose to have JAWS ignore attributes. By default, JAWS announces the OnClick and OnMouseOver attributes.
+
+To add an HTML attribute:
+
+1.    Press CTRL+TAB to move to and open the Indentation page.
+
+2.    Choose the Add button and press SPACEBAR to open the Add HTML Element Attribute dialog box.
+
+3.    In the edit box, type the name of the attribute as it appears in HTML source code and choose Next.
+
+4.    The Select Behavior dialog box appears. Select a speech or sound behavior from the radio button list and then choose Next to continue.
+
+5.    A series of dialog boxes will open based on the type of behavior previously selected. Continue to select items or complete any edit fields as requested by the dialog box prompts. Choose the Next or Finish buttons to continue through these dialog boxes. When you are finished, the new rule appears in the HTML Attribute list.
+
+6.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+To modify the behavior of an HTML attribute, do the following:
+
+1.    Select a rule from the list
+
+2.    Press TAB to move to the group of radio buttons that control speech and sound behavior, and, if you like, select a new behavior.
+
+3.    Press TAB to move to the Select Voice Alias or Select Wave File buttons to change the speech or sound associated with the behavior.
+
+4.    Press TAB to move to and then choose the Modify button.
+
+5.    In the Modify HTML Element Attribute dialog box, type a new value and then choose Next.
+
+6.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+To delete an attribute, do the following:
+
+1.    Select the appropriate item from the list
+
+2.    Press TAB to move to and select the Delete button.
+
+3.    Choose Yes to confirm the deletion.
+
+4.    Select OK to exit the dialog box, or press CTRL+TAB to move to another page.
+
+ Misc 
+
+This page contains the following miscellaneous items that you can assign behaviors to:
+
+·         AllCaps - This behavior applies to text that appears in all capital letters. The behavior assigned to this item is also dependent on the corresponding item in the Text Processing dialog box.
+
+·         Borders - This behavior applies to text with a border.
+
+·         Cap - Applies to capital letters. The behavior assigned to this item is also dependent on the corresponding item in the Text Processing dialog box.
+
+·         NewLine - This behavior applies when you move to a new line of text.
+
+·         NewParagraph - This behavior applies when you move to the beginning of a new paragraph.
+
+·         Quote - This behavior applies to quoted text.
+
+·         Repetition - This behavior applies when JAWS encounters repeated characters.
+
+·         Shading - This behavior applies to text with background shading.
+
+·         Spell - This behavior applies when you use JAWS to spell a word.
+
+Available Behaviors
+
+Any or all of the following behaviors may be available when modifying items in the Edit Scheme dialog. Not all options are available for every item. The particular affect of a behavior may vary on some items.
+
+Speak Item
+
+When this behavior is selected, JAWS speaks the item as normal. However, you can select a voice alias to use, and/or enter a different word or phrase to speak.
+
+Play Sound
+
+When this behavior is selected, JAWS will play the specified sound file instead of speaking the selected item. The sound must be in .wav format, and located in the sounds subdirectory of your JAWS settings directory. When you activate the Select Sound button, a dialog appears allowing you to choose a sound to play. If you navigate to a different directory to select a sound, JAWS copies the sound file into the sounds directory automatically. Several sound files have been included with JAWS.
+
+Change Voice
+
+When this behavior is selected, JAWS will not speak the indicated item if it is additional information added to the visible text, such as control type or a text attribute. Instead, JAWS speaks the actual text using the voice alias you specify.
+
+Change Language
+
+When this behavior is selected, JAWS will not speak the indicated item if it is additional information added to the visible text, such as a text attribute. Instead, JAWS speaks the actual text using the specified synthesizer language.
+
+Ignore
+
+When this behavior is selected, JAWS ignores the existence of the specified item, but not the associated text. This is often useful in combination with other rules, if you want to be aware of some changes but not others.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Say All Group
+
+Say All Reads
+
+When reading with the Say All command (INSERT+DOWN ARROW), JAWS inserts a slight pause between passages of text such as sentences and paragraphs. Use the radio buttons and check boxes in this group to define where and how JAWS pauses while reading with Say All.
+
+·         Line with Pauses: This option reads by line, pausing slightly at the end of each line.
+
+·         Line without Pauses: This option allows for smoother reading.
+
+·         Sentence: Select this radio button for applications in which Say All sounds choppy. This option adds pauses to the end of sentences, and makes the reading sound smoother.
+
+·         Paragraph: This option is very useful in large documents as you can press the right SHIFT key to quickly move through the paragraphs without needing to interrupt Say All.
+
+Select Scheme
+
+This allows you to load a different scheme to use during Say All reading. It applies only to HTML and Word documents. The Say All Text With Sounds scheme speaks the text of links and headings, but plays a subtle sound instead of announcing links and headings. The Say All Text Only scheme gives no indication of links and headings, it merely speaks the text of the links and headings. Note that you can also use the Add/Remove button to add and delete other schemes for use with Say All Reading.
+
+Add/Remove
+
+Choose Add/Remove to open the Select Say All Schemes dialog box. It contains a list of factory speech and sound schemes that you can add to or remove from the Say All Scheme group. To add a scheme to the list, select its check box and choose OK. To remove a scheme from the list, clear its check box and choose OK. Press SPACEBAR to open the dialog box.
+
+Say Blank Lines During Say All
+
+When this checkbox is selected, blank lines are announced when using the Say All command. This checkbox is cleared by default.
+
+Indicate Caps During Say All
+
+Select this check box to have JAWS announce capitalization when reading with Say All. JAWS announces "cap" for single capital letters, and "all cap" for capitalized words. This check box is cleared by default.
+
+Enable Shift Keys for Fast Forward and Rewind During Say All
+
+When this check box is selected, pressing the right SHIFT key skips to the next Say All element (for example, line, sentence, and paragraph). Pressing the left SHIFT key moves back to the previous element. This item is checked by default. Any of the pause values selected in the Say All group will affect the element length by which the right SHIFT key moves forward through a document, as well as the element length left SHIFT moves back through a document.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Graphics and Symbols
+
+Use these options to specify how graphics and special symbols are announced.
+
+Announce Special Symbols When
+
+Use this list to determine when JAWS announces the numerical value of special characters, such as copyright, registered, and trademark, that are usually ignored by default.
+
+·         Never: JAWS reads special characters using the currently selected speech synthesizer and does not announce their numeric value.
+
+·         Type Echo, Say Char, Spell Word: JAWS announces the numerical value of special characters when you type, read by character (LEFT ARROW or RIGHT ARROW), or spell a word (INSERT+NUM PAD 5 pressed twice quickly).
+
+·         Also Say Word: JAWS announces the numerical value of special characters when you type, spell a word, or read by character or word (INSERT+LEFT ARROW, INSERT+RIGHT ARROW, INSERT+NUM PAD 5).
+
+ 
+
+·         Also Say All: JAWS announces the numerical value of special characters when you type, spell a word, read by character, word, or line, or use the Say All command (INSERT+DOWN ARROW).
+
+Speak Character Value in Hex
+
+If you select this check box, JAWS announces the hexadecimal value of the current character instead of the ASCII value when you press NUM PAD 5 three times quickly. This check box is cleared by default.
+
+Speak Character Value as Sequence of Multibyte Values
+
+This option determines how JAWS speaks the value of unicode characters. If you clear this check box, JAWS speaks the value of characters as is (for example, "u+627 hex"). If you select this check box, JAWS converts the character into a sequence (according to the current active codepage) and speaks the value of each of the component characters. This check box is cleared by default.
+
+Graphic Verbosity
+
+Use these radio buttons to determine if JAWS announces when images are encountered, and which images are announced.
+
+·         No Graphics: If this option is selected, JAWS does not announce graphics as they are encountered.
+
+·         Labeled Graphics: If this option is selected, JAWS only announces graphics that have been labeled with the graphics labeler. For more information, please see Graphics Labeler.
+
+·         All Graphics: If this option is selected, JAWS announces all graphics as they are encountered. JAWS reads the labels for the graphics, if they are assigned. If no labels are assigned for a graphic, JAWS assigns a unique number. This is the default option.
+
+Graphic Recognition Dimensions
+
+The edit boxes in this group box allow you to specify the size in pixels for graphics you want JAWS to recognize.
+
+Minimum Height
+
+JAWS does not recognize graphics with a height less than the value in this edit box. The default value is 10 pixels.
+
+Maximum Height
+
+JAWS does not recognize graphics with a height greater than the value in this edit box. The default value is 64 pixels.
+
+Minimum Width
+
+JAWS does not recognize graphics with a width less than the value in this edit box. The default value is 10 pixels.
+
+Maximum Width
+
+JAWS does not recognize graphics with a width greater than the value in this edit box. The default value is 64 pixels.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+General Braille Options
+
+Use these options to configure basic braille and contracted braille operation. These options include items such as braille translation selection, braille cursor behavior, and panning modes.
+
+Translation
+
+Use the options in this group to configure Braille translation settings.
+
+Language
+
+Use this combo box to specify the Braille language. JAWS has the ability to display Braille in a variety of languages including English, Spanish, Finnish, and French, just to name a few. English - United States is the default selection.
+
+Output
+
+Use this combo box to configure the output mode for reading Braille on your display. The first option is always Computer Braille. The other available options depend on the currently selected language. For example, when the language is set to English United States, the available output modes are U.S. English Grade 1, U.S. English Grade 2, Unified English Braille Grade 1, and Unified English Braille Grade 2. If you set the language to French, the available modes are French Grade 1 and French Grade 2. The default output mode is Computer Braille.
+
+Input
+
+Use this combo box to specify the input mode used when typing Braille from the Perkins-style keyboard on your display. The first option is always Computer Braille. The other available option depends on the currently selected output mode. For instance, if you have chosen to display Unified English Braille Grade 2, then you can choose to type in either Computer Braille or Unified English Braille Grade 2. The default input mode is Computer Braille. This setting is not available if the selected output mode is Computer Braille, or the selected output mode does not support input.
+
+Show Current Word in Computer Braille
+
+Select this check box to have the word at the current cursor position display in computer braille. Clear this check box to display the word in contracted braille. The check box is selected by default. The Show Current Word in Computer Braille check box is available only when the output mode is Grade 1 or Grade 2 and the input mode is Computer Braille.
+
+Suppress Capital Signs
+
+In contracted braille, JAWS indicates capital letters by preceding them with the DOT 6 character. If you select this check box, JAWS does not use capital indication in order to preserve space on your braille display. This check box is cleared by default. This check box is not available when the output mode is Computer Braille.
+
+Computer Braille Tables
+
+When the output mode is set to Computer Braille, activate this button to open the Braille Tables dialog box. Use it to set the primary braille table as well as select preferred tables you can switch to if you need to view text in other languages. The braille table determines which dots are shown on your braille display for a given character.
+
+Once you have configured the braille tables you want to use as preferred tables, you can switch between them using the Preferred Translation Table option located in the Braille Options group in Quick Settings. Alternatively, you can press DOTS 2-3-4-5-7 CHORD from the Perkins-style keyboard on your braille display to quickly cycle between your prefered braille tables.
+
+Braille Mode
+
+This edit combo box is used to determine the format of the information sent to the braille display. The following options are available:
+
+·         Line: In this mode, the line of text at the current cursor position is sent to the braille display.
+
+·         Structured: In this mode, information relevant to the current cursor position is sent to the braille display. This is the default setting.
+
+·         Speech Output: In this mode, the same information is sent to the braille display as is sent to the synthesizer.
+
+Panning
+
+Use the options in this group to define a Panning mode when using your braille display.
+
+User Pan Mode
+
+Panning with your braille display generally moves the display to the left or right by the length of the display. You do this by pressing a panning key on your braille display. Select one of the following to choose how JAWS updates your braille display when panning:
+
+·         Best Fit - Ensures that words are not cut off when panning.
+
+·         Fixed Increment - Ensures your braille display always pans the exact number of cells available on your display.
+
+·         Maximize Text - Shows the maximum amount of text that can fit on your braille display. JAWS allows partial text from surrounding words to appear on the display in order to provide more context information.
+
+·         Automatic - Allows JAWS to choose the best method for showing text on your braille display. JAWS uses the Best Fit method and switches to Maximize Text when you read a structured representation for a control in Structured mode.
+
+Auto Pan Mode
+
+This setting determines how the content of the braille display is updated when the active cursor moves outside the area currently displayed. Select one of the following:
+
+·         Off - Select this option to turn off automatic panning.
+
+·         Match Manual Panning - JAWS pans the braille display using the same method specified in the User Pan list.
+
+·         Automatic - Select this option to allow JAWS to choose the best method for showing text on your braille display.
+
+Auto Advance Maximum Interval
+
+Select the maximum length of time (in milliseconds) that you want JAWS to wait before panning your braille display while you are reading in Auto Advance mode. JAWS displays the text for the length of time specified and then automatically pans to the next block of text. You can choose any value between 500 to 20,000 milliseconds. 1,000 milliseconds are equivalent to 1 second.
+
+Tip: For information on starting Auto Advance mode, see JAWS and Braille Overview and refer to the Help topic for your specific model of Freedom Scientific braille display.
+
+Braille Presentation and Panning
+
+Select an item in the combo box to determine the braille cursor’s panning behavior. You can apply this as the JAWS default or only to specific applications. JAWS uses the Off Screen Model (OSM) and the Document Object Model (DOM) methods to determine the extent of braille cursor movement and control when panning. The advantage of OSM is that the braille cursor can freely navigate the computer screen; however, it does not provide enough detailed information for some applications. The advantage of the DOM is that it provides accurate details, but limits braille cursor navigation to the visible part of the current document.
+
+Word and Outlook use a mix of the two methods to maximize both screen details and navigation of the braille cursor.
+
+Select one of the following OSM or DOM methods to control braille cursor panning for an application or JAWS default:
+
+·         Always Use DOM if Available - The DOM process is used to navigate the application. When using DOM, navigation is restricted to the application. If DOM cannot be used with the application, JAWS reverts to OSM.  
+
+·         Use DOM Except in Edit Control - The DOM process is always used to navigate the application except when focus moves into an edit control. OSM is then used for the control. This is legacy behavior used by JAWS versions 11.0.756 and earlier. This is the default setting for JAWS and other applications excluding Word and Outlook.
+
+·         Use DOM Except When Away From Focus - The DOM process is used to navigate and provide accurate information at the current braille cursor position. If you pan away from this position, the OSM method starts and allows easy navigation of the braille cursor through the application and computer screen. If you press any key on the computer keyboard, the braille cursor returns to the original active cursor position and switches to DOM operation. Note that if the Active follows Braille option is on, panning remains in the document because the active cursor will follow the Braille cursor’s movement.
+
+·         Always Use OSM (Screen Presentation) - The OSM method always overrides DOM operation, even when DOM can be used in the document.
+
+Reverse Panning Buttons
+
+Select this check box to switch the direction of left and right panning buttons on a braille display. This means that when you press a left Navrow or panning button, panning advances to the right. Likewise, when you press a right Navrow or panning button, panning advances to the left. Clear this check box to restore normal panning operation. This check box is cleared by default.
+
+Active Cursor Follows Braille Display
+
+If selected, the braille display and the active cursor are linked together, so that when you pan the braille display, the active cursor also moves. However, you cannot pan the braille display where the active cursor cannot move. For example, with the PC cursor active, you cannot read down to the status line of a window. This check box is cleared by default.
+
+Braille Display Follows Active Cursor
+
+If selected, the braille cursor follows as you move the active cursor, but is not limited to where the active cursor can move. For example, when moving through a dialog, the braille cursor moves to each control as you TAB to it.
+
+Note: In Structured mode, the braille cursor always follows the active cursor, even if you do not select this check box.
+
+Display Text in 8 Dot Braille Mode
+
+If this check box is selected, the display uses 8 dot braille. This check box is selected by default.
+
+Enable Braille Sleep Mode
+
+If this check box is selected, the braille driver is turned off. This can be used to disable braille support in certain applications. This check box is cleared by default.
+
+Enable Word Wrap
+
+If you select this check box, JAWS does not split a word that is too large to be shown on the braille display. When you pan to the next increment, you can read the word in its entirety. If you clear this check box, JAWS displays as much of the word as possible, but a portion may be cut off. JAWS shows the remainder of the word when you pan to the next increment. This check box is selected by default.
+
+Auto Detect Braille Display Using Bluetooth
+
+When on, JAWS detects and begins sending information to Bluetooth displays as they come in range without the need to restart JAWS. The default setting is off, which means that Bluetooth displays will only be detected when JAWS first starts. If you change this setting, you will need to restart JAWS for the change to take effect.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Braille Marking
+
+Use the Braille Marking check boxes to select the text attributes that you want to identify for a block of text on the braille display. These attributes include highlight, bold, underline, italic, strikeout, color, and script defined markings. This information is provided using DOTS 7 and 8 on the braille display. If multiple attributes are assigned to a block of text, the braille display cycles through each attribute as defined using the Dot Pattern Values option and the Attribute Rotation Rate option. To use Attribute mode, you must have a braille display with status cells.
+
+Braille marking attributes are located in Settings Center in the Braille Marking group.
+
+To select attributes, do the following:
+
+1.    Open Settings Center, and type "Braille Marking" without the quotes in the Search edit box.
+
+2.    Press DOWN ARROW to move to Braille Marking in the filtered results in the tree view.
+
+3.    Press ENTER to move the Braille Marking group in the tree view.
+
+4.    Use the UP and DOWN ARROWS to move to an item, and press SPACEBAR to select it.
+
+5.    Choose OK to save changes to the selected application's JCF file, and close Settings Center.
+
+ 
+
+Define Braille Color Marking
+
+This button opens the Braille Color Markings dialog. Use this dialog to view and change the defined colors for Braille marking. This button is only available when the Color attribute is checked.
+
+Attribute Rotation
+
+In attribute mode, all attributes assigned to a block of text are indicated. When multiple attributes are assigned to the same block of text, the braille display cycles through each of them. This setting determines the rate at which this occurs. This setting is in milliseconds.
+
+Braille Dot Pattern Values
+
+Dot Pattern Values are located in Settings Center in the Braille Marking group. Use these items to modify the braille dot patterns that identify text attributes such as highlight, bold, underline, italic, strikeout, extra marking, and normal text. Each digit in the edit box represents a dot on a refreshable braille display. For example, DOTS 1-2 indicate bold text. DOTS 1-2-5 indicated highlighted text.
+
+To edit a dot pattern, do the following:
+
+1.    Open Settings Center, and type "Dot Pattern Values" without the quotes in the Search edit box.
+
+2.    Press DOWN ARROW to move to Dot Pattern Values in the filtered results in the tree view.
+
+3.    Press ENTER to move the Dot Pattern Value group in the tree view.
+
+4.    Use the UP and DOWN ARROWS to move to an item, and press F6 to move directly to its edit box.
+
+5.    Type a new value, and press F6 to return to the tree view.
+
+6.    Choose OK to save changes to the selected application's JCF file, and close Settings Center.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Cursor Settings
+
+Use the options in the Cursor group to configure the dot pattern, cursor state, and blink rate for the PC Cursor, JAWS Cursor, and Invisible Cursor. The different cursor settings are located in the Cursor group in Settings Center.
+
+The PC Cursor is the primary cursor used by JAWS, and it corresponds to the system focus. Use it to navigate menus, edit text in documents, and navigate dialog boxes.
+
+The JAWS Cursor is useful when working with Windows, and it corresponds to the system mouse. Use it to manipulate the system mouse, read static text, obtain an overview of information that appears on the screen, and access other parts of Windows to which the PC Cursor cannot access.
+
+The Invisible Cursor allows you to move around the screen without changing the position of the PC Cursor or mouse pointer. Use it to read text and access options that you cannot move to with the PC Cursor. You can also use the Invisible Cursor to provide a quick overview of information currently available on the screen.
+
+To edit cursor settings, do the following:
+
+1.    Open Settings Center, and type "Cursor" without the quotes in the Search edit box.
+
+2.    Press DOWN ARROW to move to the filtered results.
+
+3.    Select the appropriate cursor group: PC Cursor, JAWS Cursor, or Invisible Cursor.
+
+4.    Press F6 to edit the Dot Pattern value.
+
+5.    Press TAB to move to the cursor state radio buttons and press SPACEBAR to select a value.
+
+6.    If the cursor state is set to blinking, press TAB to move and change to the Blink Rate value.
+
+7.    If necessary, press TAB to cycle through and change other cursor settings.
+
+8.    Press F6 to return to the tree view, press TAB to move to the OK button, and then press SPACEBAR to save changes and close Settings Center.
+
+Dot Patterns
+
+Use the edit box to specify the dot pattern for the selected cursor. Each digit in the edit box represents a dot on a refreshable braille display. The default setting for each cursor type is dots 78. Press F6 to move from the tree view directly to the edit box.
+
+Braille Cursor
+
+Use this series of radio buttons to determine how the braille cursor is indicated. The available options are: Always Up, Always Down, and Blinking.
+
+Note: It is very useful to have the braille cursor display differently depending on whether the PC or the JAWS Cursor is active. This provides functionality similar to having different speech synthesizer voices assigned to these cursors.
+
+Blink Rate
+
+Use this edit box to specify the rate at which the braille cursor blinks. The braille cursor blinks on and off for the number of milliseconds specified. The default value is 500. This control is only available if the braille cursor is set to blinking.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Flash Messages 
+
+Braille Flash Messages are short announcements that appear on your braille display for only a few seconds. These messages can include errors, status information, help balloons and other information. You can dismiss these messages at any time by pressing a cursor routing button. If you need more time to finish reading a message, press one of your braille display's panning buttons to keep the message on the display longer.
+
+Flash Message Time Out
+
+Select the length of time (in milliseconds) that you want Braille Flash Messages to remain on your braille display. You can choose a value between zero and 30,000 milliseconds. 1,000 milliseconds are equivalent to 1 second.
+
+Tip: Select "Manually Clear Only," if you want JAWS to keep the message on the display until you press a cursor routing button.
+
+Enable Flash Messages
+
+Select this check box if you want JAWS to announce information by using Braille Flash Messages. Clear this check box to disable Braille Flash Messages.
+
+Enable Message Prefixes
+
+If you select this check box and your braille display does not have any status cells, JAWS displays a special prefix before Braille Flash Messages to distinguish them from screen text. This prefix is a three-letter abbreviation that indicates the source of the message. If your braille display has status cells, JAWS uses those to indicate that the text is a Braille Flash Message regardless of whether you select this check box. Clear this check box if you do not want to use this feature.
+
+Verbosity Level
+
+Select one of the following radio buttons in the Verbosity Level area to determine how much information JAWS displays using Braille Flash Messages:
+
+·         Beginner, Highest - If you select this level, JAWS uses Braille Flash Messages to display application start messages, error messages, help balloons, JAWS messages, smart help messages, status information, and user requested information by default.
+
+·         Intermediate - If you select this level, JAWS uses Braille Flash Messages to display error messages, help balloons, JAWS messages, status information, and user requested information by default.
+
+·         Advanced, Lowest - If you select this level, JAWS uses Braille Flash Messages to display error messages, help balloons, status information, and user requested information by default.
+
+Customizing the Verbosity Levels
+
+Use the Beginner Preferences, Intermediate Preferences, and Advanced Preferences buttons to open dialog boxes that allow you to customize each of the verbosity levels. The dialog boxes all include the following options.
+
+Items to be Brailled
+
+In the Items to be Brailled list, select which items JAWS displays using Braille Flash Messages. These items are based on Speech Output Types and include application start messages, error messages, help balloons, JAWS messages, smart help messages, status information, tool tips, tutor messages, and user requested information. This list also shows the text JAWS uses to represent each item on your braille display as a Flash Message prefix.
+
+JAWS Message Length
+
+In the JAWS Message Length area, you can choose between short or long messages. For example, when you select text and press CTRL+C to copy it to the Clipboard, JAWS displays, "Copied," when using short messages. If you have selected long messages, JAWS displays, "Copied selected text to clipboard."
+
+Modify Braille Text
+
+The Modify Braille Text button allows you to change how JAWS indicates the selected item on your braille display. For example, the Braille Flash Message for a help balloon is "bln." To change the representation for an item, select it in the list and then choose Modify Braille Text. Type the new text that you want to represent this item and then choose OK.
+
+Restore Default Settings
+
+The Restore Default Settings button clears preferences for the current verbosity level only in the current configuration (.jcf) file. If you are in Default.jcf, original factory settings are restored. Although this dialog box reflects this change, the actual change back to default settings does not take place until you save the .jcf file.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Structured Mode Options
+
+Structured Mode provides descriptive information about the dialog box or control that currently has focus. These options allow you to configure how the structured line is shown on your braille display. Refer to the Braille Display Modes for more information about Structured Mode.
+
+Include Optional Components
+
+Use this group of options to determine what is included in the structured line.
+
+Type
+
+Select one of the options in the Type combo box to specify where control type information will be included in the structured data. Examples of the control type include, chk for check box, btn for button, lv for list view, etc. The following options are available:
+
+·         Off: Control type information is not shown on the braille display.
+
+·         On: Control type information is included in the main cells with the rest of the structured data.
+
+·         On (In Status Cells): Control type information is shown in the status cells of the braille display. This is the default setting.
+
+Show Level and Position
+
+Select this check box to include the tree view level, position of a list item, or the position of a radio button in the structured representation of the focused control. This check box is selected by default.
+
+Show Hotkey
+
+Select this check box to include the hotkey, or access key, of a control in the structured representation of the focused control. This check box is selected by default.
+
+Show Other Hints
+
+Select this check box to include context help or HTML attributes (if applicable) of a control in the structured representation of the focused control. This check box is selected by default.
+
+Show Dialog Title
+
+Select this check box to include the title of the dialog box in the structured representation of the focused control. This check box is selected by default.
+
+Show Dialog Descriptive Text
+
+Select this check box to include dialog box descriptive text in the structured representation of the focused control. This check box is selected by default.
+
+Show Control Group Info
+
+Select this check box to include the group box name of the current item in the structured representation of the focused control. This check box is selected by default.
+
+Align to Structured Segment
+
+Select this check box to align to the most appropriate Structured Mode segment when a control gains focus. This check box is selected by default.
+
+Reverse Order of Structured Data
+
+Select this check box to reverse the order of the structured data to show the focused control's info first, followed by its grouping information, and then the dialog box information. This check box is selected by default.
+
+For example, when this option is enabled, the following structured line would be displayed as:
+
+Name: ed Spouse grp Enter Personal information for Personal Information dlg
+
+When off, this structured line would be displayed as:
+
+Personal Information dlg Enter Personal information for Spouse grp Name: ed
+
+Advanced
+
+Activate this button to open the Control Type Options dialog box where you can modify the structured mode representation of individual control types. It allows you to define the braille symbol and state properties for each control, and the braille representation for HTML attributes that appear on the braille display. Refer to Defining Structured Mode for more information.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Advanced Options
+
+The Focus and PAC Mate Braille displays allow you to adjust the location of the status cells, as well as vary the firmness of the braille dots to suit your needs.
+
+To adjust these settings, do the following:
+
+1.    Open Settings Center, and type "Advanced" without the quotes in the Search edit box.
+
+2.    Press DOWN ARROW to move to the filtered results in the Settings Tree.
+
+3.    Press SPACEBAR to open the Advanced dialog box within the Braille group.
+
+Placement of Status Cells
+
+Specify if the informational status cells on the Focus display are located on the left or right end of the display, or choose to not display them at all. The status cells are located at the left end of the display by default.
+
+Dot Firmness
+
+Specify the firmness of the braille dots on the Focus or PAC Mate display. There are five levels of firmness. Adjust the display to the level of firmness most suited to the sensitivity of your fingers.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Caret and Cursor Group
+
+Use the caret and cursor options to identify when a cursor changes shape in an application, for example, from an I-beam, to an arrow, to an hourglass, or to detect different size caret symbols. If a caret's vertical and horizontal pixel dimensions fall outside a specified range, JAWS does not recognize the item as a caret. These options are found in the Caret and Cursor group in Settings Center. Below is a description for each option.
+
+Notify When Mouse Cursor Changes Shape
+
+Use this checkbox to determine if JAWS states the cursor shape when it changes. This gives you useful information about what options are available. For example, an hourglass cursor indicates the system is busy and cannot respond to commands until the current task is completed. This check box is cleared by default.
+
+Text Caret Blink Rate
+
+This edit box allows you to specify a rate between 53 and 1000 milliseconds at which the cursor blinks on and off in application edit fields. The default value is 53 which is the fastest blink rate. The higher the value, the slower the cursor will blink in edit fields. In some applications, slowing it down could result in JAWS reporting wrong characters as you move quickly through text.
+
+Mouse Click Tolerance
+
+This series of edit boxes determines the exact position at which a mouse click is simulated when using keystrokes such as NUM PAD SLASH and NUM PAD STAR. The position is measured relative to the position of the JAWS cursor.
+
+Mouse Click Tolerance X
+
+This edit box specifies the number of pixels to the right of the JAWS cursor at which a mouse click is simulated. The default value is 1.
+
+Mouse Click Tolerance Y
+
+This edit box specifies the number of pixels below the JAWS cursor at which a mouse click is simulated. The default value is -2.
+
+Vertical Caret Dimensions
+
+This series of edit boxes allows you to determine minimums and maximums for the height and width of vertical carets that JAWS recognizes. Vertical carets less than the minimums or greater than the maximums are not recognized. The following are the default values (in Default.jcf) for each setting:
+
+·         Minimum Height: The default value is 4 pixels.
+
+·         Maximum Height: The default value is 110 pixels.
+
+·         Minimum Width: The default value is 1 pixel.
+
+·         Maximum Width: The default value is 4 pixels.
+
+Horizontal Caret Dimensions
+
+This series of edit boxes allows you to determine minimums and maximums for the height and width of horizontal carets that JAWS recognizes. Horizontal carets less than the minimums or greater than the maximums are not recognized. The following are the default values (in Default.jcf) for each setting:
+
+·         Minimum Height: The default value is 1 pixel.
+
+·         Maximum Height: The default value is 4 pixels.
+
+·         Minimum Width: The default value is 4 pixels.
+
+·         Maximum Width: The default value is 14 pixels.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Synthesizer Group
+
+Synthesizer settings are located in the Synthesizer group in Settings Center. These options allow smoother playing of WAV files with software synthesizers.
+
+Allow Wave Files with Software Synthesizers
+
+If this check box is checked, wave files play while using a software synthesizer without occasionally causing the sound to stutter. This check box is only available in Default.jcf, and is cleared by default. If you check this item, after saving the Default.jcf file, JAWS must be restarted for this setting to take effect.
+
+Reset Frequency
+
+This edit box allows you to specify the frequency with which JAWS resets the speech synthesizer’s hardware level communication. For example, while using Eloquence with this setting at the default value, JAWS verifies communication with the sound card every 2 seconds, and reestablishes that communication if necessary. The default value is 2000 milliseconds. If you change this value, we recommend you stay within ranges from 1000 to 3500 milliseconds.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Customize Punctuation Dialog
+
+Use the Customize Punctuation dialog box to control when and how JAWS speaks individual punctuation marks. To open the dialog box, do the following:
+
+1.    Open Settings Center, and type "Customize Punctuation" without the quotes in the Search edit box.
+
+2.    Press DOWN ARROW to move to the filtered results in the Settings Tree.
+
+3.    Press SPACEBAR to open the Customized Punctuation dialog box.
+
+The dialog box contains the following items:
+
+List Control
+
+The list control shows the punctuation Symbols, current Description, and Level when Spoken. To modify a punctuation symbol, select it from this list.
+
+Symbols
+
+The Symbols column contains a list of almost all of the punctuation in the English language. Use the arrow keys to move up and down the list.
+
+Description
+
+The current description is the spoken text when JAWS encounters the symbol. Press F2 to change this description.
+
+Level When Spoken
+
+There are four possible punctuation levels. When you set a level for a punctuation level, JAWS speaks that symbol at the chosen level and all levels above. The levels are none, some, most or all. You can modify the level setting by pressing SPACEBAR when in the list control, or use the radio buttons.
+
+For example, if you set commas to none, JAWS will read commas when the punctuation level is None, Some, Most, or All. If you set commas to Most, JAWS only reads commas if the punctuation level is Most or All. If you set commas to All, then JAWS only reads commas if the punctuation level is All.
+
+Tip: If the punctuation level for JAWS verbosity is set to all, JAWS always reads every symbol in the list, regardless of punctuation level. If the punctuation level is set to All, but you do not want JAWS to read one or more symbols, reduce the punctuation level to Most. Then, in the Customize Punctuation dialog box, change the level for the symbols that you want JAWS to speak to None, Some, or Most. Set the level for the symbols you do not want JAWS to speak to All.
+
+Level Selection Radio Buttons
+
+These radio buttons allow you to define the level when the punctuation is spoken. The levels are None, Some, Most, and All.
+
+Edit Description Button
+
+Activate this button, or press F2 from within the punctuation list, to edit the spoken description of the selected symbol.
+
+Restore Defaults Button
+
+Activate this button to return the entire list to the original settings.
+
+Advanced Button
+
+This button opens the Advanced Dialog, which allows you to change descriptions for special symbols not classified as punctuation marks.
+
+Symbols
+
+There is a limited set of punctuation that you can change the description of but not define the level. JAWS should always speak; blank, colon, comma, dot, point, and space. These symbols are used in special circumstances such as the decimal point in numbers, and the dot in IP addresses or web sites.
+
+Description
+
+This column lists the current description for the selected item. Press F2 or activate the Edit Description button to modify the spoken description.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Voice Aliases
+
+Voice aliases allow you to save any combination of person, pitch, and rate into a voice name that JAWS remembers. You can then attach the saved voice alias to one or more items in the Speech and Sounds Schemes group.
+
+Adding a Voice Alias
+
+To add a new voice alias, do the following:
+
+1.    Open Settings Center, and type "Voice Alias" without the quotes in the Search edit box.
+
+2.    Press DOWN ARROW  to move to Customize Voice Aliases in the filtered results in the tree view, and press SPACEBAR. The Voice Aliases dialog box opens.
+
+3.    Press ALT+A to activate the Add button.
+
+4.    Enter a name in the Alias Name edit field. The name can be anything you want, but try to make it something descriptive. For example, if you intend to use the new voice to indicate headings, you could call it "HeadingVoice."
+
+5.    Press TAB to until you move to the Person combo box. This list contains all available voices for the synthesizer you are using, along with a Current Voice option. Selecting any of the voices except Current Voice causes JAWS to use that person's voice any time this alias is used. Selecting Current Voice tells JAWS to make the necessary pitch or rate changes, but do not change person voices when using this alias. Note that Current Voice means the voice JAWS is using when the alias is activated, not when the alias is created.
+
+6.    The next two sliders allow you to adjust the pitch and rate for this alias. The default values are the values JAWS is using at the time that you create the alias. You can leave these as they are, or adjust one or both of the values to make the alias more recognizable when it is used.
+
+Modifying Aliases
+
+To modify a voice alias, first select it in the Voice Alias list box. Next, press ALT+M to activate the Modify button. The Modify dialog is the same as the one for adding new aliases, except that values are set to the current values for the alias you are modifying.
+
+Removing Aliases
+
+To remove a voice alias, select the alias you want to remove in the alias list box. Press ALT+R to activate the Remove button.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Window Classes Group
+
+A window class is a programming level label for a window or control. When non-standard class labels are used for edit boxes and check boxes, JAWS may not recognize these labels. Use the items in the Window Classes dialog box (described below) to assign standard class labels to windows and controls so that JAWS can more readily access them. This is most useful in programs where JAWS does not recognize controls such as edit fields or check boxes. Although the control may work the same as in other programs, it may have a different name. Assigning the standard name to such controls allows JAWS to read and work with them properly.
+
+To open the Window Classes dialog box, do the following:
+
+1.    Open Settings Center, and type "Window Classes" without the quotes in the Search edit box.
+
+2.    Press DOWN ARROW to move to Customize Window Classes in the filtered results in the tree view, and press SPACEBAR. The Window Classes dialog box opens.
+
+New Class
+
+This edit box contains the window class name of the current window or control that can be reclassed.
+
+Assign To
+
+This list box contains window classes JAWS recognizes. Select the name of the class you want to relate to the item in the New Class edit box.
+
+Assigned Classes
+
+This list box contains the unknown classes that have already been associated with known classes for the application whose .jcf file is open.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Keyboard Group
+
+These options allow you to configure how JAWS works with physical keyboards as well as the Windows touch keyboard.
+
+General Group
+
+Use the options in this group to configure the state of important keys used by JAWS. For example, this group controls the use of Navigation Quick Keys, the assignment of the JAWS modifier key (INSERT, CAPS LOCK, or SCROLL LOCK), the use of one or both INSERT keys, the state of the NUM LOCK key on start up, and other essential keyboard functions.
+
+Navigation Quick Keys
+
+Navigation Quick Keys let you move through web pages with easy to remember commands, such as T for table, F for form field, N for non link text, and V for visited link. These commands are only available when the Virtual Cursor is active. This series of radio buttons allows you to set Navigation Quick Keys to be on, on only during Say All reading, or to turn off Navigation Quick Keys. On is the default.
+
+JAWS INSERT Key
+
+This group box contains a series of check boxes that allow you to specify how JAWS uses the INSERT keys.
+
+Use NUM PAD INSERT
+
+If this checkbox is checked, the NUM PAD INSERT key is used as the INSERT key, and can be used together with other keys in JAWS keystrokes. This check box is checked by default.
+
+Use Extended INSERT
+
+If this checkbox is checked, the Extended INSERT key is used as the INSERT key, and can be used together with other keys in JAWS keystrokes. The Extended INSERT key is the top left key in the group of keys called the "six pack" between the number pad and the main body of keys on the keyboard. This check box is checked by default.
+
+JAWS Key for Current Layout
+
+Use these radio buttons to specify which key you wish to use as the primary modifier for JAWS commands within the active keyboard layout. The active keyboard layout is listed within the prompt for this control. Available options are INSERT, CAPS LOCK, and SCROLL LOCK. INSERT is the default JAWS Key for the Desktop keyboard layout. CAPS LOCK is the default JAWS key for the laptop keyboard layout. This setting is only available in Default.jcf.
+
+Initial State of NUM LOCK Key
+
+JAWS uses the numeric keypad to perform numerous speech functions.  By default, the NUM LOCK key is turned off so that you can easily use these functions.  However, you may have a job that requires extensive use of the numeric keypad, in which case, you must always turn on the NUM LOCK key after JAWS starts.
+
+The Initial State of Num Lock Key option allows you to control whether or not the NUM LOCK key is enabled when JAWS starts. This option is only available in Default.jcf.
+
+The Turn off at startup radio button is the default value.  When selected, the NUM LOCK key is off when JAWS starts.
+
+The Turn on at startup radio button enables the NUM LOCK key so that it is on when JAWS starts.
+
+When the Do not modify radio button is selected, JAWS uses the current NUM LOCK key setting.
+
+Use Unified Keyboard Processing Method
+
+Beginning in JAWS, ZoomText, and Fusion 2020, a new method for processing keystrokes is now used which works consistently across all three products. This helps to avoid key conflicts and offers a better user experience for someone transitioning to Fusion from either ZoomText or JAWS.
+
+When this check box is selected, JAWS and Fusion will use the latest keyboard processor while clearing this option switches to the solution used in version 2019 or earlier. This check box is cleared by default.
+
+Differentiate Between NUM PAD Keys and Extended Keys
+
+If this checkbox is checked, the NUM PAD keys and the Extended keys are treated as separate keys rather than as duplicate instances of the same keys. The Extended keys are the keys between the number pad and the main body of the keyboard, and are often referred to as the "six pack and inverted T." You can then use Keyboard Manager to assign different commands to these keys. For example, NUM PAD INSERT+UP ARROW and Extended INSERT+UP ARROW could be assigned to separate commands. This check box is cleared by default.
+
+Differentiate Between Left and Right Paired Keys
+
+The "paired" keys, LEFT or RIGHT ALT, CTRL, and SHIFT keys are used interchangeably. For example, if you change a keyboard assignment in Keyboard Manager, and press left CTRL+INSERT+K, when you later activate the command, the LEFT or RIGHT CTRL key can be used as part of the keystroke. You may want to specify to differentiate between these keys when assigning hot keys to make more key combinations available to you. By default, this setting is not checked.
+
+Allow On Screen Keyboards
+
+Select this check box if you want to use an on-screen keyboard with JAWS. If this option is enabled, some programs that allow you to assign replacement text to keystrokes or automate typing (such as ShortKeys™) may not work correctly. This option is only available in Default.jcf.
+
+Manage Key Labels
+
+The options on this page allow you to specify which keyboard keys are echoed, and what name is echoed for each key.
+
+Key List View
+
+This list provides information in three columns. As you press the ARROW keys to move through this list, the Key name column is read. Press INSERT+UP ARROW to hear all three columns of information for the selected key. The three columns are:
+
+·         Key Name: This is the name of the key on the keyboard.
+
+·         Key Label: This is the label JAWS speaks when echoing a press of a key.
+
+·         Mute Status: This indicates whether or not a key label is spoken. Most keys can be toggled between the status of Speak or Mute. Keys with the status of Always Speak cannot be muted.
+
+Toggle Mute
+
+This button allows you to toggle the mute status of the selected item in the Key list view between Speak and Mute.
+
+Change Label
+
+This button allows you to change the key label for the currently selected item in the Key list view.
+
+Touch Keyboard Group
+
+Use the options in this group to configure JAWS settings related to the touch keyboard such as typing mode, touch keyboard typing echo, and notifications.
+
+Touch Typing Mode
+
+Choose which typing mode to use for the touch keyboard. With Standard Typing, a key is typed when the screen is double tapped after exploring to any of the keyboard buttons. With Touch Typing, a key is typed when the finger is lifted from any of the keyboard buttons. In either mode, a key may be typed by performing a split tap on a keyboard button. The default typing mode is Touch Typing.
+
+Touch Typing Echo
+
+Use the radio buttons in this group to determine how much feedback is received when typing using the touch keyboard. You may choose either Characters, Words, Both Characters and Words, or None so that JAWS remains silent as you type using the touch keyboard. This option enables you to configure the feedback for the touch keyboard separate from the feedback for the physical keyboard. The default typing echo for the touch keyboard is Both Characters and Words.
+
+Touch Keyboard Notification
+
+Use this option to configure how you will be notified when the touch keyboard appears and disappears from the screen. If you choose to be notified by a spoken message, JAWS announces "Opened touch keyboard" when the keyboard appears and "Closed touch keyboard" when it disappears. If you choose to be notified by sound, an ascending sound will play when the keyboard appears and a descending sound will play when it disappears. By default, you will be notified by both a spoken message and a sound when the keyboard appears and disappears.
+
+Touch Alternative Character Panel Popup Notification
+
+Use this option to configure how you will be notified when a panel of keys for alternative characters related to the current keyboard button appears. An ascending sound will play when the panel of keys for alternative characters opens, and a descending sound will play when it closes. If you choose to be notified by both message and sound, which is the default setting, a message will be spoken along with the panel open sound; otherwise, only the sound will be played to notify you of the panel opening and closing.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Custom Highlight Options
+
+Use the Custom Highlight Options dialog box to modify how JAWS reacts to Custom Highlights you have assigned for an application. Change how JAWS treats Windows Highlights and Custom Highlights or delete assigned Custom Highlights. However, you cannot assign Custom Highlights from this dialog. See Assigning Custom Highlight Colors.
+
+To open the dialog box, do the following:
+
+1.    Open Settings Center, and type "Custom Highlight" without the quotes in the Search edit box.
+
+2.    Press DOWN ARROW to move to the filtered results, and select Configure Highlight Colors.
+
+3.    Press SPACEBAR to open the Custom Highlight Options dialog box.
+
+The dialog box contains the following items:
+
+Highlights List View
+
+This list contains all of the defined color highlights. To remove an item in this list, select the Delete button or press DELETE on the keyboard.
+
+Color Highlight Group
+
+Use this series of radio buttons to specify which highlights are spoken. Regardless of this radio button selection, all of the custom highlights are displayed in the Highlights list view. The following options are available:
+
+·         Windows Only: When this is checked, only the Windows Standard Highlights are treated as highlights. All custom colors defined for the application are ignored.
+
+·         Custom Only: When this is checked, only the custom highlight colors are treated as highlights. Windows Standard Highlights are ignored.
+
+·         Windows and Custom: Both Windows Standard Highlights and Custom Highlights defined in this application are processed as highlights.
+
+See also:
+
+Custom Highlight Colors
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Assigning Custom Highlight Colors
+
+To assign Custom Highlight Colors, you first need to identify text with the colors you wish to use. This might be text that is already present on the screen, but is difficult to access with other JAWS features. If text of the colors you wish to use is not already present on the screen, you may need to set the text color in the application. This is not an option in all applications, but should be possible in most word processing programs. Verify text color with the SayColor keystroke, INSERT+5.
+
+Once text with the desired colors is identified, move the focus of the active cursor to this text. Press INSERT+F2 to bring up the Run JAWS Manager dialog, and select Custom Highlight Assign from the list. CTRL+INSERT+H also opens Custom Highlight Assign.
+
+This brings up the Choose an Option dialog. This dialog lists the following options:
+
+·         Set Foreground and Background
+
+·         Set Foreground Only
+
+·         Set Background Only
+
+Select the desired option and press ENTER. This brings up the Add Custom Highlight dialog to confirm you want the selected colors assigned as a Custom Highlight. Use the TAB key to move to the Do Not Show This Dialog Again checkbox and press SPACEBAR to bypass this dialog in the future. Press ENTER for OK, and this brings up the Custom Highlight Options dialog.
+
+Use the Custom Highlight Options Dialog to view the Custom Highlights currently assigned within an application, delete Custom Highlights you are no longer using, and specify if JAWS recognizes only Windows highlights, only Custom Highlights, or both. The default is for JAWS to recognize both Windows highlights and Custom Highlights. Press ENTER to accept the default settings, and return to the active application. Text matching the options you selected are then treated as highlighted within the application.
+
+See also:
+
+Custom Highlight Options Dialog
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Custom Highlight Colors
+
+Windows uses highlights to set apart icons and menu items that have the system focus. Text that is selected is also highlighted. The colors used for these highlights are set in Control Panel, Display, Appearance. These colors are also specified in some applications. JAWS reads the text of highlighted items, an JAWS echoes changes to what is highlighted. So when you move through a menu, JAWS reads each menu item to which the highlight (or selection) is moved.
+
+In JAWS, you can now specify which colors are recognized as custom highlights for your applications. Specify custom highlights based on:
+
+·         Foreground Color (text color)
+
+·         Background Color
+
+·         Both Foreground and Background Colors
+
+Once assigned, text matching the color(s) you have specified is treated as highlighted by JAWS. For example, SaySelectedText (INSERT+SHIFT+DOWN ARROW) reads Custom Highlights you have assigned.
+
+See also:
+
+Assigning Custom Highlight Colors
+
+Custom Highlight Options Dialog
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Research It Group
+
+Research It configuration options are located in the Research It group in Settings Center. Use these options to determine which lookup sources are available in the Research It dialog box and which lookup source is set as the default.
+
+To access Research It options, do the following:
+
+1.    Press INSERT+F2, and select Settings Center.
+
+2.    Press CTRL+SHIFT+D to load the JAWS default settings.
+
+3.    Press TAB to move to the tree view, and then select and open the Research It group.
+
+4.    Press SPACEBAR to choose the Configure Lookup button. The Research It Options dialog box opens.
+
+For more information about this feature, select Research It.
+
+Lookup List Box
+
+The list box contains all lookup sources that are currently available to JAWS. Each item in the list has a check box. By default, all check boxes are selected. If you clear a check box, that item will not appear in the lookup list in the Research It dialog box. For example, if you do not want CNN news stories to be available as a lookup item, just clear the CNN Headline News Stories check box. The next time you run Research It, CNN Headline News Stories will not appear in the lookup item list.
+
+Description
+
+This read-only edit box displays a brief description about the lookup source currently selected in the Lookup list box.
+
+Set Primary
+
+Choose this button to set the lookup source that is currently selected in the list box as the default or primary lookup source. This is what determines which lookup source is automatically used when you press INSERT+WINDOWS Key+R.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Text Analyzer Group
+
+When editing a document using speech only, inconsistencies such as unmatched parentheses, unintentional format changes, extra whitespace, and stray or unspaced punctuation can often be missed. Text Analyzer is a tool that notifies you of these errors in your document by using a spoken message or WAV file. You can configure JAWS to announce discrepancies by count, by description, or by sound while proofreading the document by line, sentence, paragraph, or Say All command. Braille users will benefit from this since a sound can be emitted before the user has time to read the entire line looking for errors.
+
+Turning On Text Analyzer
+
+Text Analyzer is off by default. To turn it on, do one of the following:
+
+·         Use the layered keystroke, INSERT+SPACEBAR, A. By pressing and releasing INSERT+SPACEBAR, and then pressing A, the Text Analyzer can be toggled on or off.
+
+·         Open Settings Center (INSERT+F2). In the Search edit box type "text analyzer" without the quotes. Press DOWN ARROW to move to Text Analyzer in the filtered results. Press SPACEBAR to select an alert notification.
+
+·         Use Quick Settings (INSERT+V). The process for selecting an alert notification is the same as the Settings Center procedure described above.
+
+Keystrokes
+
+If multiple issues are identified in the document, press ALT+WINDOWS Key+I to move to the next item, or ALT+SHIFT+WINDOWS Key+I to move to the previous item. Note that these keystrokes can still be used even if Text Analyzer is off.
+
+Text Analyzer Options
+
+Use the radio buttons in this group to determine the type of alert used to indicate errors when editing or proofreading a document by line, sentence, paragraph, or Say All command. Select Indicate with Sound to play a WAV file when a formatting error is detected. Select Speak Count to announce the number of inconsistencies in the current text. Select Describe Inconsistencies for a description of the error. The default setting is off.
+
+Indicate Mismatched Symbols
+
+Select this check box to enable the detection of mismatched symbols such as parenthesis, braces, brackets, angle brackets, and quotes. If this check box is cleared, the items in the Symbols to Check group are not available.
+
+Symbols to Check
+
+Select one or more check boxes to search for mismatched parentheses, braces, brackets, angle brackets, or quotes where the equivalent opening or closing symbol is missing. These check boxes are only available when the Indicate Mismatched Symbols check box is selected.
+
+Inconsistencies to Check
+
+Select one or more check boxes to identify inconsistencies with stray punctuation, extra spaces, missing capital letters, or inverted lowercase and uppercase text.
+
+Font Changes to Check
+
+Select one or more check boxes to identify incorrect font changes in the current text including name, size, attributes, and colors.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Convenient OCR Group
+
+Use the items in this group to configure settings for OCR.
+
+Primary Recognition Language
+
+Use this item to specify the language used to read and decipher text. Select the language that corresponds to the language of the images you are acquiring. This allows correct recognition of characters (such as accent marks and umlauts) unique to that language.
+
+Secondary Recognition Language
+
+Use this item to specify a second recognition language used to recognize acquired text. It uses the languages selected for both the primary and secondary options to recognize text. This is helpful if the document contains text from more than one language.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Gestures Group
+
+Use the options in this group to configure touch screen gesture recognizer settings. These options are only available if the default settings file is open (CTRL+SHIFT+D).
+
+The options in this group are slider controls. If you are focused on an item in the tree view pane, press F6 to access the slider, and then use the ARROW keys to change the value.
+
+Explore Delay
+
+Use this slider to increase or decrease the time interval between when the finger touches the surface of the touch screen and when JAWS enters explore mode.
+
+Double Tap Speed
+
+Use this slider to increase or decrease the time interval between individual taps in a double or triple tap. If you perform one or more taps at the same location in the specified time interval, a double or triple tap will be performed instead of a sequence of single taps.
+
+Tap Radius
+
+Use this slider to increase or decrease the size of the finger contact spot on the touch screen.
+
+Flick Velocity
+
+Use this slider to increase or decrease the minimum finger velocity on the touch screen above which the movement is recognized as a flick.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Mouse Echo Group
+
+You can configure JAWS to read text that you point to with the mouse pointer. Use the options in this group to configure settings for mouse echo.
+
+Enable Mouse Echo
+
+When enabled, JAWS speaks text as you point to it with the mouse. Mouse echo is off by default.
+
+Mouse Echo Interrupt
+
+Select this check box to allow JAWS to interrupt speech when you move the mouse pointer over text. If you clear this check box, you can move the mouse pointer anywhere on the screen without interrupting speech. This check box is selected by default.
+
+Mouse Echo Delay
+
+This option lets you specify the length of time JAWS waits before it reads the text at the location of the mouse pointer. The delay is measured in seconds. If you move the mouse pointer away before the delay has elapsed, JAWS does not read the text. The default selection is No Delay which means text is read while the mouse is in motion so you do not have to pause to hear the text under the mouse.
+
+Mouse Echo Unit
+
+Select the unit of text you want to hear when the mouse pointer pauses over text in a control. The available options are Character, Word, Line, or Paragraph. The default mouse echo unit is Line. This means that if you move the mouse pointer into the document area of an application such as Microsoft Word, JAWS will read the line of text under the mouse. As you continue moving the mouse around the edit control, JAWS will read other lines from the document.
+
+If the control cannot provide the requested unit of text, then JAWS will read all of the text provided by the control. For example, if you move the mouse into the edit control of the Windows 10 Sticky Notes app, JAWS will read the entire contents of the edit field instead of the specified unit of text.
+
+Speak Description of Item
+
+Select this check box to have JAWS speak descriptive information provided by the control that contains the text at the mouse pointer. This information will be spoken after the text at the mouse pointer is spoken. Note that descriptive text is not always available. This check box is cleared by default.
+
+Speak Control Type and State of Item
+
+Select this check box to have JAWS speak the control type and state of the control containing the text at the mouse pointer. This information will be spoken after the text at the mouse pointer is spoken. This check box is selected by default.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Visual Tracking Group
+
+Use the options in this group to configure settings for visual tracking when JAWS is running by itself. When used with Fusion or MAGic, visual highlighting is controlled by the screen magnification software. JAWS Visual Tracking is available in Windows 10 and Windows 8.1.
+
+Highlight Virtual Ribbon
+
+If the Virtual Ribbon Menu is enabled, select this check box to have JAWS highlight each item as you navigate to help visually determine the currently selected menu item. This option is selected by default. Press F6 to move to the Visual Tracking Pane to define attributes of the highlight including color, style (box, block, or underline), transparency, thickness, and spacing.
+
+Highlight Virtual PC Cursor
+
+When navigating web pages, PDF documents, or email messages with the Virtual PC Cursor, select this check box to have JAWS highlight the currently selected text as it speaks. This allows you to easily follow the text visually while JAWS reads. This option is selected by default in Internet Explorer, Chrome, Firefox, Adobe Reader, and Microsoft Mail. Press F6 to move to the Visual Tracking Pane to define attributes of the highlight including color, style (box, block, or underline), transparency, thickness, and spacing.
+
+Highlight Touch Cursor
+
+When navigating using the Touch Cursor or touch gestures, select this check box to have JAWS highlight the currently selected item to visually indicate the location of the Touch Cursor. This option is selected by default. Press F6 to move to the Visual Tracking Pane to define attributes of the highlight including color, style (box, block, or underline), transparency, thickness, and spacing.
+
+Visual Settings
+
+Color
+
+Choose the color to use for the visual highlight. The default color is lime green.
+
+Style
+
+Select one of the following styles to use for the visual highlight:
+
+·         Box - Places a rectangular outline around the text as it is spoken.
+
+·         Block - Uses a solid rectangle to highlight text as it is spoken.
+
+·         Underline - Underlines text as it is spoken.
+
+The default style is Block.
+
+Transparency
+
+Use this slider to increase or decrease the level of opacity for the visual highlight around the selected text. Higher levels of transparency allow you to see text and images beneath the overlay. Press F6 to access this slider and then use the ARROW keys to change the value.
+
+Thickness
+
+Use this slider to increase or decrease the border thickness of the box and underline styles. Thicker borders are easier to see and stand out more. Thinner borders are more subdued and let you see more of the text. Press F6 to access this slider and then use the ARROW keys to change the value.
+
+Spacing
+
+Use this slider to increase or decrease the amount of white space between the selected text and the highlight border for the box, block, and underline styles. Press F6 to access this slider and then use the ARROW keys to change the value.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 
+
+Miscellaneous Group
+
+Using the options in this group, you can adjust various miscellaneous JAWS settings.
+
+ 
+
+Sleep Mode
+
+These check boxes are used to turn off JAWS processing within specific applications. This is generally used in applications that provide their own speech or Braille support. We recommend you do not set this option in Default.jcf, as this would stop all processing of JAWS commands.
+
+·         Enable: If selected, this option enables sleep mode, and turns off JAWS processing. This check box is cleared by default.
+
+·         Unload Synthesizer: If selected, the synthesizer is unloaded from memory, freeing it for use by other applications. This check box is cleared by default. This check box is only available if the Enable check box is selected.
+
+Search for Prompts
+
+This series of radio buttons allows you to determine to what extent JAWS searches for prompts. Prompts are the labels for controls. The three levels of searching are:
+
+·         Minimum Search: JAWS reads the prompt only if it is right next to the control.
+
+·         Extended Search: JAWS reads the prompt if it is on the same line as the control.
+
+·         Maximum Search: JAWS reads the prompt if it is on the same line as, or on the line directly above the control. Maximum Search is the default setting.
+
+Use Virtual Ribbon Menu
+
+Select this check box to turn on the Virtual Ribbon Menu. It provides predictable navigation through an application’s Ribbon, which is a style of menu common in programs created and modified for Windows 7 and later operating systems. The Virtual Ribbon Menu organizes any Ribbon into a menu structure, which makes it easy to navigate using ARROW keys. When it is on, the Ribbon is navigated using a traditional menu and submenu format familiar to most JAWS users. This is true for any application that uses the Ribbon menu format.
+
+To move between tabs on the Upper Ribbon, press LEFT ARROW or RIGHT ARROW.
+
+To move to the Lower Ribbon of the current tab, press DOWN ARROW.
+
+To leave the Upper Ribbon and return to the document, press ESC or ALT. 
+
+If a keystroke sequence that uses ALT combined with a letter to invoke a command is available for an application, JAWS uses that keystroke; and the Virtual Ribbon Menu does not appear.
+
+The Virtual Ribbon Menu option is only available when using the Default settings as selected in the Application combo box. It is unavailable when using any other application specific settings. The Use Virtual Ribbon Menu check box is cleared by default. Note that the Virtual Ribbon Menu can also be turned on or off using the Startup Wizard.
+
+Use Virtual PC Cursor
+
+If this check box is selected, the Virtual PC cursor is used to read HTML documents. When using the Virtual PC cursor, Web pages and other HTML documents are read as if they were formatted into single columns, with each link or form field on a line of its own. This mode allows you to navigate or select text in a Web page as if you were in a standard text document, while also giving you the ability to fill out forms or activate links. This check box is selected by default.
+
+Virtual Cursor On/Off Based on Browser Tabs
+
+When this check box is selected, JAWS remembers the current state of the Virtual Cursor when toggled using INSERT+Z for a tab in Google Chrome. For example, if you choose to turn the Virtual Cursor off in a web application such as GMail which offers a better user experience, and then you press CTRL+N or CTRL+T to open a web page in a new tab, the Virtual Cursor will be turned back on, but will remain off in GMail. This allows you to move focus back to GMail and not have to remember to disable the Virtual Cursor again. The Virtual Cursor reverts back to its default setting when you close the browser tab or restart JAWS.
+
+Clearing this check box causes the Virtual Cursor to go back to the default setting when focus changes as it did in prior versions. For example, if you turn it off in GMail and then press ALT+TAB to move to another window, the Virtual Cursor will be turned back on when focus returns to GMail.
+
+This check box is selected by default. For technical reasons, this feature only works in Chrome at this time.
+
+Track Focus Rectangle
+
+This setting is required for programs that use a focus rectangle, such as Microsoft Excel. A focus rectangle is similar to a caret, but the focus is a rectangular area defined by line segments in the off screen model. This check box is selected by default. It is recommended that this setting is not changed.
+
+Text Out Delay
+
+This edit box allows you to specify the number of milliseconds JAWS waits before speaking text newly written to the screen. The default value is 0.
+
+Pixels Per Space
+
+JAWS often needs to estimate the number of blank spaces represented within a blank portion of a line. JAWS bases such estimates using the number of pixels specified in this edit box. The default value is 8.
+
+Pixels Per Tab
+
+JAWS can estimate the number of tab spaces contained within a blank portion of a line. JAWS bases these estimates on the number of pixels specified in this edit box. The default value is 10.
+
+Left Margin in Pixels
+
+JAWS ignores the distance specified in pixels from the left border of the window. This can prevent JAWS from misreading the left margin, and prevent JAWS from assuming there are spaces where there really are none.
+
+Underline Proximity
+
+This edit box allows you to specify how far away an underline must be from the text for it to be considered an underline by JAWS. The default value is 0 pixels.
+
+Rely on MSAA for List Views
+
+By default, JAWS uses MSAA (Microsoft Active Accessibility) when it fails to read list views using the normal method. However, if you are experiencing problems reading list views in a certain application (such as AudibleManager), you can select this check box and see if the issue is resolved. JAWS will then read only the MSAA information for list views. This option is only available for application configuration files.
+
+MSAA Mode
+
+Use this combo box to select one of the following MSAA modes:
+
+·         Automatic: JAWS uses MSAA when it is appropriate for such menus.
+
+·         Enhanced: Normally you do not need to change to the Enhanced setting. If you know this application is MSAA enabled, changing this setting to Enhanced may give better results. This setting in combination with the Screen Echo setting of highlighted text may provide too much speech (double echo). If so, change the Screen Echo setting in the User Options dialog to "Echo no Text." Using this setting will not allow Window Class assignments to take effect as defined in the Window Classes dialog.
+
+·         Classic: JAWS Legacy MSAA handling. This setting in combination with the Screen Echo setting of highlighted text may provide too much speech (double echo). If so, change the Screen Echo setting in the User Options dialog to "Echo no Text." Using this setting will not allow Window Class assignments to take effect as defined in the Window Classes dialog.
+
+Note: This option is only available for application configuration files. Automatic is the default, and recommended, setting for this option.
+
+Use Accessibility Driver for Screen Capture
+
+The accessibility driver is a system level driver installed by our software that has been used for many years to provide screen information to JAWS. This information is known as the Off Screen Model (OSM) and is used primarily by review cursors like the JAWS Cursor and Invisible Cursor as well as by JAWS scripts. As Windows 10 increasingly uses different methods of displaying information, this legacy accessibility driver no longer works in many cases.
+
+Clearing this check box configures JAWS to use new API Accessibility Monitor technology we developed in order to help overcome the missing information previously obtained from the Accessibility Driver.
+
+You can also assign a keystroke to the ToggleScreenCaptureMethod script using the Keyboard Manager to quickly toggle this setting.
+
+This check box is selected by default and is only available when modifying the default settings file.
+
+Announce Multiline Edit
+
+If this check box is selected, JAWS indicates when focus moves into a multiline edit field. This check box is cleared by default.
+
+Submit Anonymous Usage Data
+
+Select this check box if you would like to contribute your anonymous usage data to help us improve Freedom Scientific Products. Collected data includes JAWS version, operating system version, language, country, as well as information on various JAWS settings such as the current synthesizer, braille display, and braille table. No spoken or braille content is collected and no data is shared with any parties outside of Freedom Scientific.
+
+This option is cleared by default.
+
+Error Reporting
+
+Use this group of radio buttons to specify whether or not JAWS sends error report files to Freedom Scientific after it restarts following an unexpected error. You can choose to::
+
+·         Ask me if I want to send error reports to Freedom Scientific each time: JAWS will display a dialog box each time an error is detected and will ask if you want to send this information to Freedom Scientific. Choose the Send button to transmit the error report directly to Freedom Scientific, or Choose Don't Send if you do not wish to send the error report to Freedom Scientific. This is the default setting.
+
+·         Send all error reports to Freedom Scientific: If you choose this option, future error reports are automatically sent to Freedom Scientific without displaying a dialog box.
+
+·         Never send error reports to Freedom Scientific: If you choose this option,, any future error reports will not be sent to Freedom Scientific and you will not be prompted to send an error report.
+
+Note: The information transmitted to Freedom Scientific is limited to a memory dump file as well as generic information allowing Freedom Scientific to investigate the source of the issue, such as your product version number, the date and time the error occurred, number of times your system has experienced an error, and the error code related to the problem that occurred. The only information related to your specific environment that is transmitted is your computer’s MAC address to find trends on a particular system. However, there is no way for us to map MAC addresses to any particular individual, and no personal identification information is transmitted.
+
+Notify About New FSCasts
+
+FSCast is Freedom Scientific's podcast featuring news, interviews, and product demonstrations relating to Freedom Scientific products.
+
+Select this check box to have JAWS display a dialog box when a new FSCast episode is available. You can then choose whether to listen to the current episode, go to the FSCast web page to hear the current episode as well as prior episodes, or be reminded again later. Press ESC or choose OK to not be notified again until the next episode is available. Clear this check box to never receive FSCast notifications.
+
+Note: If you choose the Listen Now button, the current episode is played using Windows Media Player. If Windows Media Player is not installed, JAWS opens the FSCast web page and places focus on the latest episode so you can download and play it using your preferred media player.
+
+FSCast notifications are on by default in the English version of JAWS. Since the content of FSCast episodes and the FSCast web page is only in English, this setting is off by default in non-english versions. This option is only available in the default settings file.
+
+ 
+
+  ------ --- --------------
+  Back       Next Section
+  ------ --- --------------
+
+Speech Output Types
+
+In the Verbosity Preferences Dialog, the Items to be Spoken list box lists Speech Output Types that can be enabled or turned off. This topic contains a list of the output types with a brief description of each.
+
+Application Start Messages
+
+This option refers to those messages spoken each time you start an application. These messages often include information about how to access JAWS specific help for the program, and will sometimes also include tips for setting up the program to work better with JAWS.
+
+Control Description
+
+If a description is available for the control, JAWS will announce the descriptive text when this item is selected.
+
+Control Group Name
+
+Often, controls within a dialog are put into groups when they have related functions. For example, in the Say All group in Settings Center, there are two controls, which relate to SayAll. The first of these controls is a group of radio buttons for setting SayAll to read by line, sentence, or paragraph. The second is the Say Blank Lines checkbox. Since these controls are related, they have been grouped together into a SayAll group. You can hear JAWS speak the word "SayAll" as you move between controls. This information appears on the screen, and control groups are common throughout Windows.
+
+Control Name
+
+A control name refers to the prompt for a particular control. For example, as you navigate in a dialog box, you might hear JAWS speak, "First Name edit Joe." In this case, the prompt for the control is "First Name." Control names appear on the screen, and usually provide information about a control.
+
+Control Type
+
+A control type refers to the type of a particular control. There are several common types of controls found in Windows. These include Edit fields, combo boxes, buttons, list boxes, and so on. JAWS normally speaks the control type after the control name, and before the content of the control. For example, as you navigate in a dialog box, you might hear JAWS speak, "First Name edit Joe." In this case, the type of this control is "Edit," meaning that this control is an edit field in which text can be entered. Control types do not appear as text on the screen.
+
+Dialog Name
+
+This type refers to the title of a dialog box. For example, in the JAWS application window, when you select the Basics menu item under the Options menu, JAWS speaks "Basics Settings dialog."
+
+Dialog Text
+
+Dialog text is the text normally found within dialog boxes that describes the page. This can be as simple as a dialog box containing a message followed by OK and Cancel buttons. This type can also refer to the text content describing a multi-page dialog.
+
+Document Name
+
+A document name refers to the title of a window other than a dialog window. This can be the title of a document in Microsoft Word, a text document in Notepad, or the title of an e-mail message.
+
+Error Message
+
+This option refers to errors spoken by JAWS when an action is not successfully completed. For example, if one presses a keystroke to activate a button that is not currently on the screen, JAWS will speak the message, "Button not found." This option includes only JAWS errors. Disabling this option will not eliminate the reading of Windows error messages.
+
+Help Balloon
+
+Help balloons are used in Windows to provide information about the selected item. When the Help Balloons check box is checked, JAWS automatically reads this information as it is displayed.
+
+Help Messages
+
+Help Messages are user requested information JAWS speaks in response to a keystroke. This includes all help keystrokes, such as INSERT+F1, INSERT+W, and INSERT+H. Informational keystrokes such as INSERT+F, INSERT+5, ALT+DELETE, etc. are also in this category.
+
+Note: Because this information is always requested by a keyboard command, it cannot be disabled.
+
+Item Number
+
+This type refers to when the spoken information reflects an items numeric position in relation to the total number of items in a window or group. An example of this is when JAWS speaks "1 of 5" in a list of files or in a group of radio buttons.
+
+Item State
+
+This type is used whenever the spoken information reflects the state of an item. For example, JAWS will say when an item in a list box is selected or not selected, or when a check box as checked or not checked.
+
+JAWS Messages
+
+These are messages that aid in navigation by verifying that a Windows action has taken place. For example, the message "Top of window" assists in navigation by alerting you that you have reached the top of the current window.
+
+Position Information
+
+This type refers to information that describes an item’s location in relation to the larger structure that contains it. For example, the coordinates of a table can be considered positional information because they describe that cell’s position within the table.
+
+Screen Messages
+
+This type refers to text that is written on the screen, but may not be attached to a particular control or read automatically by JAWS. For example, in a dialog box, you may find radio buttons that have additional or related information found in another nearby window.
+
+Select
+
+This type refers to the messages, "Selecting" and "Unselecting," spoken by JAWS when text is selected.
+
+Selected Item
+
+This type refers to the automatic reading of a selected item within a control or window. For example, when entering a list of files, you might hear, "Files: List box, document1.doc not selected". In this example, the speech output, "Document1.doc not selected," is considered the selected item.
+
+Smart Help
+
+Occasionally, JAWS provides orientation information within a program that may be useful as you are first learning a program, but is not necessary after you have become familiar with how the program works.
+
+For example, a message that reminds you to press the F6 key to change panes within an HTML help window can be regarded in this way. This type of information can be thought of as an auditory tool tip.
+
+Status Information
+
+This type refers to messages that provide feedback from JAWS commands. For Example, The message, "Keyboard Help On," reports the current state of JAWS Keyboard Help. Disabling this option is not recommended since it may eliminate the speaking of useful information.
+
+Toasts
+
+This option allows JAWS to automatically announce Windows 10 popup notifications.
+
+Tool Tips
+
+Enabling this option causes Windows tool tips to be spoken automatically as they appear on the screen.
+
+ 
+
+  ------ --- ---
+  Back        
+  ------ --- ---
+
+Braille Tables Dialog
+
+Use the Braille Tables dialog box to select preferred translation tables you can switch to if you need to read text in other languages on your braille display. You can also specify which table is the primary braille table.
+
+To open the dialog box, do the following:
+
+1.    Open Settings Center, and type "Braille Tables Advanced" without the quotes in the Search edit box.
+
+2.    Press DOWN ARROW to move to the filtered results in the Settings Tree.
+
+3.    Press SPACEBAR on Braille Tables to open the Braille Tables dialog box.
+
+Select Preferred Braille Table
+
+This list contains all available braille tables. Each item in the list is checkable. If a table is selected, it is added to the list of preferred tables in the Braille Options group in Quick Settings. Press the SPACEBAR on a table to add or remove it from the list.
+
+Set Primary
+
+Choose this button to make the currently selected preferred table the primary braille table. If the currently selected table is not a preferred table, setting it as the primary table will also make it a preferred table. While you can have as many preferred tables as you want, only one table can be set as primary.
+
+ 
+
+ 
+
+  ------ --- ---
+  Back        
+  ------ --- ---
+
+Defining Structured Mode
+
+Use the Control Types Options dialog box to define structured mode to display the information you want, how you want it displayed. This dialog box has three tabs: Control Properties, State Properties, and HTML Attributes. You can use these tabs to define braille representations for various items.
+
+To open the dialog box, do the following:
+
+1.    Open Settings Center, and type "Structured Mode Advanced" without the quotes in the Search edit box.
+
+2.    Press DOWN ARROW to move to the filtered results in the Settings Tree.
+
+3.    Press SPACEBAR on Advanced to open the Control Type Options dialog box.
+
+To change the braille representation for an item, do the following:
+
+1.    Use CTRL+TAB to move to the appropriate tab.
+
+2.    Press TAB and use the arrow keys to select the control type, state, or HTML attribute you want to modify.
+
+3.    Press F2.
+
+4.    Type the new braille representation you want JAWS to use for that item and then press ENTER.
+
+5.    When you have finished, choose the OK button to save your changes.
+
+The dialog box contains the following items:
+
+Control Properties
+
+For each control listed in the Control Types list box, several types of information are displayed in braille. For example, for a radio button, the information that is displayed is control name, control state, control type, and position information. You can determine what order this information is displayed in, and how much of it is displayed - for each control. To do this select a control type in the list and press ALT+M to choose the Modify Control button.
+
+This opens a dialog with two list boxes and several buttons. The first list box, Show on Display, lists the information types that will be displayed for the control you selected. These are listed in the order they are displayed in braille. The second list box, Available to Add, lists the information types for the control that are currently not displayed in braille. If you remove an information type from the Show on Display list, it is added to the Available to Add list. The buttons let you change the order of the information in the Show on Display list, and remove items from that list. When you remove an item from the Show on Display list, it will not be displayed in braille for the selected type of control.
+
+From the Show on Display list, information types can be moved up or down in the list, changing the order in which they display in braille, by pressing ALT+UP ARROW or ALT+DOWN ARROW. If you do not want a specific type of information displayed, select it in the list, TAB to the Remove button, and press SPACEBAR.
+
+To again display information that you have removed, TAB to the Available to Add list, select the type of information you wish to add, TAB to the Add button, and press SPACEBAR.
+
+State Properties
+
+The State Properties page of this dialog lets you change how the states of a control are represented. Some examples of control states are checked, unchecked, selected, and not selected.
+
+HTML Attributes
+
+The HTML Attributes tab lets you change how JAWS uses braille to represent certain properties for HTML elements. You can control how JAWS indicates visited links, clickable elements, and elements with mouse overs.
+
+ 
+
+ 
+
+  ------ --- ---
+  Back        
+  ------ --- ---
+
+ 

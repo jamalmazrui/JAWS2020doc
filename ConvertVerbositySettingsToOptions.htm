@@ -1,0 +1,301 @@
+﻿<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:16.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:right;
+	page-break-before:always;
+	page-break-after:avoid;
+	border:none;
+	padding:0in;
+	font-size:22.0pt;
+	font-family:"Arial",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Cambria",serif;
+	font-weight:bold;
+	font-style:italic;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	font-family:"Arial",sans-serif;}
+p.CodeSample, li.CodeSample, div.CodeSample
+	{mso-style-name:"Code Sample";
+	margin-top:0in;
+	margin-right:1.0in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	background:#D9D9D9;
+	font-size:11.0pt;
+	font-family:"Courier New";
+	font-weight:bold;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:.7in .7in .7in .7in;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:8.5in 11.0in;
+	margin:.7in .7in .7in .7in;}
+div.WordSection2
+	{page:WordSection2;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<div style='border:none;border-bottom:solid windowtext 2.25pt;padding:0in 0in 1.0pt 0in'>
+
+<h1><a name="_Toc98821693">Convert Verbosity Settings to Options </a></h1>
+
+</div>
+
+<p class=MsoNormal>This document covers conversion of JAWS Script Verbosity
+Options to the new User Options Tree view.</p>
+
+<h2>New Main Script and Old Main Script</h2>
+
+<p class=MsoNormal>The new script assigned to <b>INSERT+V</b> is called: <span
+style='font-family:"Courier New";color:black'>AdjustJAWSOptions</span>.</p>
+
+<p class=MsoNormal>You can still use the old <span style='font-family:"Courier New";
+color:black'>AdjustJAWSVerbosity</span> script, simply by attaching the
+relevant keys in Keyboard Manager.  </p>
+
+<h2>The Main Function and Simplest Conversion</h2>
+
+<p class=MsoNormal>The new function to call in your script is named <span
+style='font-family:"Courier New";color:black'>OptionsTreeCore</span>.</p>
+
+<p class=MsoNormal>The simplest way to convert your verbosity settings to
+Options is simply to build your list and pass it as the only necessary
+parameter to the OptionsTreeCore function.</p>
+
+<p class=MsoNormal>Sample Code:</p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>Script
+AdjustJAWSOptions ()</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>var</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>string strList</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>;todo: setup /
+establish relevant structure</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>Let strList =
+Option1+_DLG_SEPARATOR+Option2+_DLG_SEPARATOR;Carry on with list build:</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>OptionsTreeCore
+(strList)</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>EndScript</span></p>
+
+<p class=MsoNormal>What You Get:</p>
+
+<p class=MsoNormal>Now, when you bring up the Adjust JAWS Options tree view, notice
+you have a node or category at the top, named after your configuration,
+containing your options.  </p>
+
+<p class=MsoNormal>Example category name: &quot;MyApp Options&quot; where MyApp
+is the name of your configuration.</p>
+
+<h2>The Help Edit Window </h2>
+
+<p class=MsoNormal>You probably noticed the Help Edit window was empty.  </p>
+
+<p class=MsoNormal>You need to create a custom version of a UserOption function
+for the category, and a help callback for each member of your list.</p>
+
+<h2>The Category Help</h2>
+
+<p class=MsoNormal>There's a function in UserOptions.jss defined as follows:</p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>string Function
+NodeHlp (string sNodeName)</span></p>
+
+<p class=MsoNormal>Simply add your if condition to see that the Node Name is
+the display text of your category name, and return you help message:</p>
+
+<p class=MsoNormal>Sample code:</p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>string Function
+NodeHlp (string sNodeName)</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>If
+StringContains (sNodeName, GetActiveConfiguration()) then</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>     ;Todo:
+return help string as message</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>Else</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>     Return
+NodeHlp (sNodeName)</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>EndIf</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>EndFunction</span></p>
+
+<p class=MsoNormal>Note that for purposes of localization for foreign
+languages, we checked against the value of GetActiveConfiguration.</p>
+
+<h2>Callbacks for Individual Options</h2>
+
+<p class=MsoNormal>Each option needs to have a companion help function.</p>
+
+<p class=MsoNormal>If you're doing this, you already know to create a string
+function to optionally set a setting, and always display human-readable text
+for the value.</p>
+
+<p class=MsoNormal>To populate the help window, you need to create a companion
+hlp function.</p>
+
+<p class=MsoNormal>This may or may not contain conditional code, but it must
+return a help string for the read-only help edit window.</p>
+
+<p class=MsoNormal>Example functions:</p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>string Function
+Option1 (int iRetCurVal)</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>;Todo: Set data
+and return human-readable value</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>EndFunction</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>string Function
+Option1Hlp (int iRetCurVal)</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>;Todo: Return
+val in @msg format for edit window</span></p>
+
+<p class=CodeSample><span style='font-size:12.0pt;color:black'>EndFunction</span></p>
+
+<p class=MsoNormal>Situations where you have options whose settings depend upon
+one another, you probably want to add conditional help in your return string. 
+For example, when the human-readable text returns &quot;Unavailable&quot; you
+may want to explain why in the help window.  We have done this in numerous
+places in Default UserOptions.jss.</p>
+
+<h2>Extra Stuff</h2>
+
+<p class=MsoNormal>If you want to make options explicit to specific categories,
+study the optional parameters to OptionsTreeCore.</p>
+
+<p class=MsoNormal>The first Optional parameter, <span style='font-family:"Courier New"'>iRetNodeSettings</span>,
+is off by default, which means the incoming string in parameter 1 is examined
+for node paths.</p>
+
+<p class=MsoNormal>Any items that have  node paths are left alone. All those
+that do not are given the node mentioned earlier.</p>
+
+<p class=MsoNormal>Switch this on, especially if you have objects in your list
+you explicitly want to be at level zero - no path.</p>
+
+<p class=MsoNormal>For debugging purposes, it's a good parameter to leave off,
+as you can quickly find items without paths, since they'll be placed under the
+Configuration Name's category.</p>
+
+<p class=MsoNormal>The simplest way to assign paths is use the function <span
+style='font-family:"Courier New"'>ConvertListToNodeList</span>.</p>
+
+<p class=MsoNormal>The first parameter is the list parameter taken reference. 
+This will be converted into a list with path strings.  The second parameter is
+the absolute path for the specific group of items in the node category.  See
+how we've used this by studying the TreeCoreGet*Options functions in
+UserOptions.jss.</p>
+
+<p class=MsoNormal>The third parameter is an optional name to give to all items
+in the incoming string (your list) that have no path strings.  </p>
+
+<p class=MsoNormal>So, if you pass the list parameter, 0 to the second
+parameter, and a node name to the third parameter of OptionsTreeCore, you can
+specify a node name for all your items.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+<span style='font-size:14.0pt;font-family:"Arial",sans-serif'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

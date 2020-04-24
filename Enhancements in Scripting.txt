@@ -1,0 +1,362 @@
+﻿Enhancements in Scripting
+
+[Freedom Scientific]
+
+Call Today!1(800) 444-4443
+
+Search: Search
+
+Submit
+
+Toggle navigation
+
+-   Home
+-   Products
+    -   Low Vision Products
+    -   Blindness Products
+    -   Accessibility Testing Products
+-   Software
+    -   JAWS
+    -   ZoomText
+    -   Fusion
+    -   OpenBook
+    -   Software For Home
+    -   Software For School
+    -   Software For Business
+    -   
+    -   Activate Software License
+    -   Sponsored Software Licenses
+-   Services
+    -   Accessibility Consulting
+    -   Disability Etiquette Training
+    -   Training
+    -   Certification
+-   Support
+    -   Technical Support
+    -   Training and Certification
+    -   Register A Product
+    -   Documentation
+    -   
+    -   Software Downloads
+    -   Synthesizers
+    -   Focus Blue Firmware
+    -   Hardware Drivers
+-   Downloads
+    -   JAWS
+    -   Fusion
+    -   ZoomText
+    -   MAGic
+    -   OpenBook
+    -   WYNN
+    -   Synthesizers
+    -   Focus Blue Firmware
+    -   omniReader Update
+    -   Hardware Drivers
+    -   EyeMerge
+    -   Eye-Pal / Zoom-Office
+-   Find A Dealer
+-   Find A Dealer
+-   Shop Online
+
+-   PRODUCTS
+    -   Low Vision Products
+    -   Blindness Products
+    -   Accessibility Testing Products
+    -   Learning Systems Group Products
+-   SERVICES
+    -   Accessibility Consulting
+    -   Enterprise Accessibility Training
+    -   Disability Etiquette Training
+    -   Training
+    -   Certification
+-   DOWNLOADS
+    -   JAWS
+    -   Fusion
+    -   ZoomText
+    -   MAGic
+    -   OpenBook
+    -   WYNN
+    -   Synthesizers
+    -   Focus Blue Firmware
+    -   omniReader Update
+    -   Hardware Drivers
+    -   EyeMerge
+    -   Eye-Pal / Zoom-Office
+-   SUPPORT
+    -   Technical Support
+    -   Software Activation
+    -   Documentation
+    -   Product Registration
+    -   Product Videos
+    -   Vision Loss Facts and Resources
+    -   Software License Agreements
+-   DEALER LOCATOR
+-   SHOP
+
+Enhancements in Scripting
+
+This page describes scripting changes introduced in JAWS 11 and later. For more information about scripting Freedom Scientific products, see the Basics of Scripting Manual (HTML).
+
+JAWS 18
+
+The following script enhancement is available in JAWS 18.
+
+Updates to the JAWS UIA Script API
+
+Since JAWS 15, The JAWS UIA Script API has provided scripters direct access to Microsoft's UIA (User Interface Automation) infrastructure through the JAWS Script language. This enables you to make even more powerful JAWS customizations for applications that support UIA. In Windows 10, Microsoft has added some new UIA properties, methods, and values. The JAWS UIA Script API has been updated to support the latest UIA properties and methods so you can begin using them in your scripts.
+
+The following special integer types have been added.
+
+-   LandmarkTypeID
+-   TextEditChangeType
+
+The following method was added for the FSUIA object.
+
+-   bool AddTextEditTextChangedEventHandler ( FSUIAElement, TreeScope, TextEditChangeType);
+
+The following properties were added for the FSUIAElement object.
+
+-   IsPeripheral
+-   PositionInSet
+-   SizeOfSet
+-   Level
+-   Annotation Types
+-   Annotation Objects
+-   LandmarkType
+-   LocalizedLandmarkType
+-   FullDescription
+
+The following UIA event was added.
+
+-   TextEditTextChangedEvent(FSUIAElement, TextEditChangeType, FSUIAStringArray);
+
+For more information, refer the the JAWS UIA Script API documentation page.
+
+JAWS 17
+
+The following script enhancements are available in JAWS 17.
+
+Create Domain Specific Scripts
+
+Beginning with JAWS 17, you can now create JAWS scripts that only load when a particular web site is active. This enables you to create custom scripts for applications that run inside of a web browser such as Internet Explorer or Firefox. To aide in creating domain specific scripts, new functions have been added. These functions include:
+
+-   GetDocumentXML - Returns XML for the current virtual document. It obtains well-formed XML from the DOM Server for parsing using the MSXML com object.
+-   PerformActionOnElementWithTagAndAttribute - Finds an element in the DOM by tag and attrib/value pair and performs an action on it such as setFocus, makeVisible or doDefaultAction.
+-   PerformActionOnElementWithId - Finds an element in the DOM by its unique ID and performs an action on it such as setFocus, makeVisible or doDefaultAction.
+
+For more information on creating domain specific scripts, refer to the Domain Scripting Quick Start Guide.
+
+JAWS 15
+
+The following script enhancement is available in JAWS 15.
+
+JAWS UIA Script API
+
+The new JAWS UIA Script API gives scripters direct access to Microsoft's UIA (User Interface Automation) infrastructure through the JAWS Script language. This enables you to make even more powerful JAWS customizations for applications that support UIA. For more information, refer to the JAWS UIA Script API Documentation page.
+
+JAWS 14
+
+The following script enhancement is available in JAWS 14.
+
+GetScreenXML
+
+A new script function has been added to JAWS 14 to obtain screen content in XML format. It is called GetScreenXML. This function takes four optional parameters specifying the rectangle from which content will be obtained. If not supplied, content from the entire screen will be returned.
+
+The XML includes text, font name, size, attributes, color and click locations for every character in the specified rectangle. Control type and state information is also included. It also includes OCRed text if the OCR function has been used and the OCR data not invalidated. One can determine from the Spanâ€™s Source attribute where the text came from, i.e. the OSM or OCR. If source=OCR, the text was from the OCR engine, if the source is not specified it is either from the OSM or the Dom Server.
+
+-   Each run of text with the same source, font and attributes is enclosed in a span so that font and attributes do not need to be specified for every character.
+-   XML Element and attribute names are camel-cased, i.e. each word in the name is capitalized.
+-   The XML format is of the form:
+
+<Lines Version=1.0>
+<Line Left=X1, Top=Y1, Right=X2, Bottom=Y2>
+<Span Source=â€?OCRâ€? Font=Name Size=Pts Bold=On Italic=On Underline=On ... color=hex, background=hex controlType=type ControlState=state>text inside span</Span><Span>...</Span>...
+<CharLocations><Char x=XCoord Y=YCoord>...</CharLocations></Line>
+...
+</Lines>
+
+Explanatory Notes
+
+All content is placed within a Lines element with a Version attribute. The Lines element contains one or more Line elements representing each Line of text in the specified rectangle. Each Line element has attributes describing its encapsulating rectangle. Each line element contains one or more Span elements containing text with the same font/attribute/color/source/controltype. Attributes are only included if on. For example, if the text in a span is not italicized, the Italic attribute will not be included in the XML. If text in a span is bolded, the Span will contain an attribute, Bold=on. After all the Spans on a line, as the last child of the Line node, a CharLocations element encloses a list of Char elements for each character on the line (within the specified rectangleâ€™s bounds), specifying the click point for each character in the line or line segment.
+
+A sample test script is given below to demonstrate how to use the MSXML 6.0 object to parse the screen XML into a DOM tree and then interact with its DOM. Please consult the MSXML 6.0 documentation or XPath documentation for more information on the MSXML object or the XPath query language.
+
+   script test()
+   var object msxml = CreateObject("msxml2.DOMDocument.6.0")
+   if (!msxml)
+   SayString("no MSXML")
+   return
+   EndIf
+   msxml.async = false;
+   msxml.resolveExternals = false;
+   msxml.loadXML(GetScreenXML()) ; Obtain the XML from the screen and/or OCRed text.
+   var object results = msxml.SelectNodes("//Span") ; Get list of all spans
+   if (!results)
+   sayString("no results")
+   return
+   EndIf
+   var object node
+   foreach node in results
+   var object attribs = node.attributes
+   if (!attribs)
+   SayString("no attribs")
+   EndIf
+   if attribs.GetNamedItem("Source").nodeValue=="OCR" then
+   ;This text is from OCR
+           sayUsingVoice(VCTX_MESSAGE, node.text, OT_SCREEN_MESSAGE)
+   else
+   ;This is from the OSM
+           saystring(node.text)
+   endIf
+   EndForeach
+   ;SayString(result.nodename)
+   ;SayString(result.nodevalue)
+   endScript
+
+JAWS 13
+
+The following script enhancements were made in JAWS 13.
+
+Behavior Changes to String Comparison Operators
+
+In all versions of JAWS prior to JAWS 13, string comparison operators in the script language operate in a non-intuitive fashion. For two strings X and Y, the string equality operator == will return true not only if X and Y are identical, but also if the shorter of the two strings is the starting substring of the longer. So the expression if ("Hello" == "Hello there") will return true. The not-equal operator != works in the opposite fashion.
+
+In JAWS 13, these operators by default work as one would expect. That is, the == operator only returns true if the strings exactly match and the != operator returns true unless the strings exactly match. We realize that existing JAWS scripts may depend on the pre JAWS 13 behavior and have taken the following steps to minimize problems or inconvenience.
+
+Any script compiled using JAWS 12 or earlier and used in JAWS 13 will maintain the pre JAWS 13 behavior.
+
+Any script compiled using JAWS 13 will by default have the new behavior. If a script file needs to be compiled with JAWS 13 but requires the old string comparison operator behavior, this can be accomplished by putting the line
+
+  ;#pragma StringComparison partial
+
+anywhere in the script file outside of a script or function.
+
+  ;#pragma StringComparison full
+
+is the default in JAWS 13 and beyond, but can be used explicitly to go back to full string comparison after one or more scripts/functions that required partial comparison semantics.
+
+The pragma syntax begins with a comment character which means that these lines can be placed in script files that will be compiled both with JAWS 13 and with earlier versions. In earlier versions, the lines will be ignored and in JAWS 13 and beyond they will be processed as described above.
+
+Note that any scripts compiled with JAWS 13, will not be backwardly compatible with earlier versions of JAWS.
+
+JAWS 11 Update 1
+
+The following script enhancements were made in JAWS 11 Update 1.
+
+Arrays
+
+New in JAWS version 11 Update 1 is the ability to use arrays. Arrays can contain elements of any standard JAWS scripting data type. Declare the array as data-type followed immediately by the word array, as in:
+
+  StringArray names
+  IntArray ages
+  VariantArray mixed
+
+Note that variantArrays can contain a mixture of elements of different data types.
+
+Declaring an array does not create it. Creation is done using the keyword New:
+
+  Let names = new StringArray[3]
+
+The above statement will create an empty three item string array called names. This is known as a one dimensional array because there is only one number between the brackets in the array creation. In order to create a two dimensional array, use a comma to separate the two values. For example, the following statement will create a two dimensional array with five rows and three columns.
+
+  Let names = new StringArray[5, 3]
+
+Collection Variables
+
+There is now a new datatype called collection. Each item in a collection has a name of type string and can contain any type of value. Declaring a collection does not create it. This must be done with the new keyword as in the following example.
+
+  var
+    collection MonthDays
+    let MonthDays = new collection
+
+There are two ways to access items of a collection. If you know the name of an item then it can be assigned or retrieved using the dot operator.
+
+    let MonthDays.february = 28
+    SayInteger(MonthDays.February)
+
+If the name of an item is enclosed in quotes, contained in a variable, or is returned by a function call, then you must use the [] operator with the variable name, quoted string, or the function call inside the brackets.
+
+  var
+    string MonthName
+    let MonthName = "january"
+    let MonthDays[MonthName] = 31   
+
+The dot operator and [] operator can be used interchangeably.
+
+Items of a collection spring into existence the first time they are assigned. Setting a collection item will make that item's type the type of the value being assigned. It is the scripter's responsibility to ensure that when retrieving a collection item, the value is stored in the appropriate type of variable. Retrieving a nonexistent item does not throw an error. Collections are always passed to functions by reference, and assigning one collection to another will result in two variables referring to the same collection.
+
+The names of the items contained in a collection can be enumerated using the ForEach statement. Arrays can be members of a collection and collections can be elements of an array if that array is of type VariantArray.
+
+Assigning Values to Variables
+
+The LET statement is no longer required when assigning a value to a variable. For example, the following two statements will compile in JAWS 11 Update 1 and later:
+
+  LET x = 10
+  X = 10
+
+You can also assign a value to a variable at declaration as in the following example:
+
+  Var
+   Int x = 10, string sText = “hello”
+
+The For Loop
+
+Another method of performing looping in your scripts is by using the For-EndFor looping statements. Similar to a While loop, a For loop consists of three parts: the keyword For that starts the loop, the condition being tested, and the EndFor keyword that terminates the loop. JAWS performs all statements found in the boundaries of the loop as long as the loop condition is true. An example of the syntax of a For loop follows.
+
+  For x = Start to End
+  ...Statements to be performed go here
+  EndFor
+
+The value of x must be an integer variable and the values of Start and End must be integers, integer variables, or integer constants. The major difference between the While and For looping structures is that a For loop will run a predetermined number of times. An example of the use of a For loop follows.
+
+  Var
+   int iCounter
+   For iCounter = 1 to 10; Loop will execute 10 times
+   SayInteger(iCounter); Speak the value of the iCounter variable
+   EndFor
+
+In the above example the For loop will execute ten times. As set by the For statement, the iCounter variable starts with a value of 1 and increments by 1 each time the loop executes. Notice that the iCounter variable is automatically incremented each time the loop executes. At the end of the tenth loop iteration the value of icounter becomes 11 and the For statement is no longer true thus ending the loop. Each time the loop executes the SayInteger function speaks the value of iCounter. When this script is run you will hear JAWS count from one to ten.
+
+------------------------------------------------------------------------
+
+©2020 Freedom Scientific, Inc.
+800-444-4443
+727-803-8000
+
+GSA Advantage
+Accessibility Policy
+Conditions of Use
+Privacy Policy
+
+Careers
+Contact Us
+About
+
+[Consumer Technology Association member][Part of VFO]
+
+[Freedom Scientific]
+
+Freedom Scientific is the largest worldwide manufacturer of assistive technology products for those with vision impairments or learning disabilities.
+Read More About Freedom Scientific
+
+-   Home
+-   About Us
+-   Careers
+-   Blog
+-   Contact Us
+-   Media Center
+
+-   GSA Advantage
+-   Privacy Policy
+-   Accessibility Policy
+-   Conditions of Use
+
+Contact Us
+
+(800) 444-4443
+
+(727) 803-8000
+
+[Freedom Scientific Facebook] [Freedom Scientific Twitter]
+
+Copyright © Freedom Scientific Inc. - A Vispero Brand - All Rights Reserved.

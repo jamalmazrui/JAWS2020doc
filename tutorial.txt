@@ -1,0 +1,203 @@
+﻿JAWS Tutorial
+
+Table of Contents
+
+About JAWS for Windows
+
+Starting  JAWS
+
+Getting Help
+
+Reading Overview
+
+About JAWS Cursors
+
+Voice Settings
+
+About JAWS for Windows
+
+Welcome to the World of JAWS!
+
+You will now experience the power of a screen reading program that allows blind and visually impaired computer users to access today’s most popular computer software applications and the Internet. JAWS is the world’s most powerful screen reader for Microsoft Windows.
+
+This section, designed specifically for new users, will provide the basic knowledge required to start using JAWS. In just a few steps we will show you how to get help, use the basic navigation keystrokes to move through the Windows desktop environment, set JAWS voice options to your preference, and launch any of the software applications installed on your computer including Internet Explorer. With JAWS, you can access most of today’s information, educational, and job-related applications.
+
+At the end of each topic in this section, move to the next topic by selecting the Next link.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Starting JAWS
+
+Manually Starting JAWS
+
+To manually start JAWS, do the following:
+
+·         Press WINDOWS Key+R to open the Run dialog box, type JAWSX, where X is the JAWS version number, and press ENTER.
+
+Automatically Starting JAWS
+
+When you first install JAWS, the JAWS Startup Wizard launches. The Run JAWS Settings page in the wizard provides several options for starting JAWS. Use the default settings on this page since these will ensure that JAWS always loads, starts, and runs before and after Windows launches. If these settings change and later you want to restore the default values, do the following so that JAWS starts automatically:
+
+1.    Press INSERT+J to access the JAWS application window.
+
+2.    From the Options menu, choose Basics.
+
+3.    Choose the Automatically Start JAWS button. The Start JAWS Options dialog box appears. If you have an Administrator account, several items appear in the dialog box. If you have a Standard User account, only one item appears.
+
+4.    For an Administrator account, do the following:
+
+·         Select the Start JAWS at the Log On Screen check box.
+
+·         Clear the Start JAWS after Log On for all Users check box.
+
+·         Select Always in the Start JAWS after Log On for this User combo box.
+
+For a Standard User account, do the following:
+
+·         Select Always in the Start JAWS after Log On for this User combo box.
+
+5.    Choose OK to save changes, and close the Start JAWS Options dialog box.
+
+6.    Next, close the Basic Settings dialog box. The next time you start Windows, JAWS starts automatically and is one of the first programs available.
+
+Closing JAWS
+
+·         Press INSERT+F4 to close JAWS.
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Getting Help
+
+Information and help is provided in a variety of formats and places within JAWS. For the moment, we will just review some of the best ways to get help for JAWS, Windows, or the application you are using.
+
+·         INSERT+1 Keyboard Help
+
+·         INSERT+H Hot key Help
+
+·         INSERT+F1 Screen Sensitive Help
+
+·         INSERT+F1, F1 JAWS Help for Applications
+
+·         INSERT+J, ALT+H  JAWS Help Menu
+
+For more information about Getting Help, please visit Help!
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Reading Overview
+
+For detailed information about reading with JAWS, refer to the Reading Screens and Documents topic and the Advanced Reading of Screens and Documents topic.
+
+Use the following keys on the numeric keypad (NUM PAD) to start reading with JAWS.
+
+·         NUM PAD 5 Say Character
+
+·         INSERT+NUM PAD 5 Say Word
+
+·         INSERT+NUM PAD 5 twice  Spell Word
+
+·         INSERT+LEFT ARROW Say Prior Word
+
+·         INSERT+RIGHT ARROW Say Next Word
+
+·         INSERT+UP ARROW Say Line
+
+·         INSERT+HOME (7) Say To Cursor
+
+·         INSERT+PAGE UP (9) Say From Cursor
+
+·         INSERT+PAGE DOWN (3) Say Bottom Line Of Window
+
+·         INSERT+END (1) Say Top Line Of Window
+
+·         CTRL+INSERT+DOWN ARROW Start Skim Reading
+
+·         INSERT+ALT+W Virtualize Window
+
+·         INSERT+ALT+SHIFT+W Virtualize Current Control
+
+·         INSERT+CTRL+W Word Index
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+About JAWS Cursors
+
+Navigating through Windows with JAWS is accomplished with cursors. These cursors determine the focus of JAWS speech and are often directly linked with Windows cursors.
+
+The PC Cursor - Follows Keystrokes
+
+This cursor is linked to the keyboard functions of Windows and applications. This is the cursor that is used when typing information, moving through options in dialog boxes, and selecting options or icons. As you type information, the PC Cursor follows along with each key you press. If you are making a selection in a menu or dialog box, the PC Cursor highlights the currently selected object. The PC Cursor is activated by default when JAWS starts. If you are using a different cursor, pressing NUM PAD PLUS returns you to the PC Cursor.
+
+The JAWS Cursor - Follows Mouse Pointer
+
+The JAWS Cursor is linked to mouse pointer functions in Windows and other applications. It is used to read information the PC Cursor cannot read, such as toolbar information. The mouse follows along with the JAWS Cursor when it is moved, and you therefore have access to information in an application window that is beyond the scope of the PC Cursor. To activate the JAWS Cursor, press NUM PAD MINUS.
+
+The Invisible Cursor - Explore Without Moving Focus
+
+The Invisible Cursor allows you to move around the screen without changing the position of the PC Cursor or mouse pointer. You can use this cursor to read text and access options that you cannot move to with the PC Cursor. You can also use the Invisible Cursor to provide a quick overview of the information currently available on the screen. To activate the Invisible Cursor, press NUM PAD MINUS twice quickly.
+
+The Touch Cursor - Object Navigation
+
+The Touch Cursor enables you to navigate the Windows environment using a touch screen, found on many tablet computers running Windows 8 or later. To control JAWS from a touch screen, you will use one or more fingers to perform various gestures directly on the screen, such as tapping, flicking, and swiping. When activated from the keyboard, you can use keystrokes to simulate touch screen gestures to move through the objects in an application to access information that is not readily accessible using the JAWS or PC Cursor.
+
+The Touch Cursor is always available when navigating using a touch screen. To activate the Touch Cursor from the keyboard, press SHIFT+NUM PAD PLUS.
+
+The Virtual PC Cursor - HTML Environment
+
+The virtual PC Cursor mimics the functions of the PC Cursor, but is activated by default when entering an HTML document, such as a web page on the Internet. The virtual PC Cursor speaks the number of elements on the page when it first opens. For instance, the number of links, headings, and regions. You can use the ARROW keys to navigate and read the document, or use Navigation Quick Keys to move to specific elements, such as paragraphs, tables, or headings. JAWS also reads graphics labeled by alt tags in the HTML code.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Voice Settings
+
+JAWS allows you to customize the voices used for speech so you don’t get them confused. You can assign different voices for cursor messages, the keyboard voice that you hear when you type, and even upper case characters.
+
+To open voice settings, do the following:
+
+1.    Press INSERT+J to make the JAWS window active.
+
+2.    Press ALT+O to choose the Options menu.
+
+3.    Press V and then press ENTER to open the Voice Adjustment dialog box. From here you can choose an existing voice profile or a factory voice profile template and change various settings such as language, voice, speech rate, announced punctuation, and more to configure JAWS speech to your liking.
+
+4.    After making changes, save the voice profile and exit the Voice Adjustment dialog box.
+
+To select a voice profile, do the following:
+
+1.    Press INSERT+CTRL+S to open the Select a Voice Profile dialog box.
+
+2.    Use the Default combo box to select a voice profile that will be used globally by JAWS.
+
+3.    Use the For combo box to select a voice profile to use with the application that is currently open. If you select Default, JAWS will use the voice profile currently selected in the Default combo box.
+
+ 
+
+  ------ --- --------------
+  Back       Next Section
+  ------ --- --------------
+
+ 

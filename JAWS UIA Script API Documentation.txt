@@ -1,0 +1,905 @@
+﻿JAWS UIA Script API Documentation
+
+[Freedom Scientific]
+
+Call Today!1(800) 444-4443
+
+Search: Search
+
+Submit
+
+Toggle navigation
+
+-   Home
+-   Products
+    -   Low Vision Products
+    -   Blindness Products
+    -   Accessibility Testing Products
+-   Software
+    -   JAWS
+    -   ZoomText
+    -   Fusion
+    -   OpenBook
+    -   Software For Home
+    -   Software For School
+    -   Software For Business
+    -   
+    -   Activate Software License
+    -   Sponsored Software Licenses
+-   Services
+    -   Accessibility Consulting
+    -   Disability Etiquette Training
+    -   Training
+    -   Certification
+-   Support
+    -   Technical Support
+    -   Training and Certification
+    -   Register A Product
+    -   Documentation
+    -   
+    -   Software Downloads
+    -   Synthesizers
+    -   Focus Blue Firmware
+    -   Hardware Drivers
+-   Downloads
+    -   JAWS
+    -   Fusion
+    -   ZoomText
+    -   MAGic
+    -   OpenBook
+    -   WYNN
+    -   Synthesizers
+    -   Focus Blue Firmware
+    -   omniReader Update
+    -   Hardware Drivers
+    -   EyeMerge
+    -   Eye-Pal / Zoom-Office
+-   Find A Dealer
+-   Find A Dealer
+-   Shop Online
+
+-   PRODUCTS
+    -   Low Vision Products
+    -   Blindness Products
+    -   Accessibility Testing Products
+    -   Learning Systems Group Products
+-   SERVICES
+    -   Accessibility Consulting
+    -   Enterprise Accessibility Training
+    -   Disability Etiquette Training
+    -   Training
+    -   Certification
+-   DOWNLOADS
+    -   JAWS
+    -   Fusion
+    -   ZoomText
+    -   MAGic
+    -   OpenBook
+    -   WYNN
+    -   Synthesizers
+    -   Focus Blue Firmware
+    -   omniReader Update
+    -   Hardware Drivers
+    -   EyeMerge
+    -   Eye-Pal / Zoom-Office
+-   SUPPORT
+    -   Technical Support
+    -   Software Activation
+    -   Documentation
+    -   Product Registration
+    -   Product Videos
+    -   Vision Loss Facts and Resources
+    -   Software License Agreements
+-   DEALER LOCATOR
+-   SHOP
+
+JAWS UIA Script API
+
+Introduction
+
+The JAWS UIA Script API provides access to Microsoft’s User Interface Automation (UIA) infrastructure via the JAWS script language. You can find detailed information about UIA on the Microsoft web site. This document describes the objects, methods, properties, and events available through the JAWS UIA Script API.
+
+Supported Versions
+
+With each version of Windows®, Microsoft extends the features provided by UI Automation. Many of the methods and properties described in this document are supported in Windows 7, most in Windows 8 and Windows 8.1, and all in Windows 10. Please consult the Microsoft documentation to find out which UIA interfaces, methods, and properties are supported in which versions of Windows.
+
+All the objects, methods, properties, and events described in this document are available as of JAWS 18.0.2530.
+
+Getting the FSUIA Object
+
+The primary object in the JAWS UIA script API is FSUIA. Using this object, you can get other objects that represent UIA elements, get tree walkers which will allow you to traverse the tree of UIA elements, register for UIA events, and more.
+
+To get an FSUIA object in scripts, use the JAWS built-in function CreateObjectEx as follows:
+
+var object myObject = CreateObjectEx ("FreedomSci.UIA", false, "UIAScriptAPI.x.manifest" );
+
+You can create as many FSUIA objects as you like, although you probably won’t need that many.
+
+Properties
+
+In the UIA Script API, all properties are get-only, except those for which “get/put” is explicitly declared in this document.
+
+Caching
+
+Those familiar with UIA will know that clients may request element and pattern data be cached in order to improve system performance. The JAWS UIA Script API handles UIA’s caching mechanism internally. Several of the most commonly requested element and pattern properties are requested to be cached; and the cached values are always checked before the uncached values. Using this approach should make most situations efficient while keeping the API as simple as possible.
+
+The “Bool” Type
+
+At present, the JAWS script language has no Boolean type. The term “bool” is used throughout the remainder of this document to indicate an integer value where zero (0) represents a Boolean value of false and any non-zero value represents a Boolean value of true.
+
+The “Variant” Type
+
+In the JAWS script language, a “variant” is a variable whose type is unknown at compile-time. Variants may be an int, string, handle, or object, and they can be used like any of these types. You can use the JAWS built-in script function GetVariantType to determine the type of a variant, although you may already know the underlying type based on the context. For example, if you request the name property of a UIA element and the return type is a variant, the underlying type will almost certainly be a string. If you happen to know the type of a given variant, you can declare the variable as the known type in the scripts. For example: if the GetProperty function returns a variant, but you know the type of the property returned will be a string, you can assign the return value directly to a string variable, rather than having to declare a variant. But even if you don’t know that a variant is a certain type like a string, you can still pass it to functions which take the string type.
+
+Special Integer Types
+
+There are several sets of pre-defined integer values used by UI Automation methods and properties. These represent various element types, property types, pattern identifiers, and so on. For JAWS scripters, these types are declared in the file UIA.jsh. In the file, each of the types listed below is preceded by a comment containing the name of the type in order to make them easy to reference from this document. These types are used to indicate the intended values of certain parameter, return, and property types from here on.
+
+-   AnnotationTypeID
+-   ControlTypeID
+-   DockPosition
+-   Endpoint
+-   EventID
+-   ExpandCollapseState
+-   LandmarkTypeID
+-   LegacySelectionFlags
+-   LiveSetting
+-   OrientationTypeID
+-   PropertyID
+-   RowOrColumnMajor
+-   ScrollAmountID
+-   StructureChangeTypeID
+-   StyleID
+-   SupportedTextSelectionID
+-   SynchronizedInputType
+-   TextAttributeID
+-   TextEditChangeType
+-   TextUnit
+-   ToggleState
+-   TreeScope
+-   WindowInteractionState
+-   WindowVisualState
+-   ZoomUnit
+
+Parameters by Reference
+
+When a parameter is passed to a function “by reference,” the value of the parameter is not only passed to the function, but also returned from the function. Therefore, after calling a function that takes a parameter by reference, the value of the parameter may have changed. This is a way of returning multiple pieces of information from a single function call. Throughout this document, the term “ByRef” is used to indicate those parameters which need to be passed to a function by reference.
+
+In the JAWS script language, When a parameter is passed by reference, it must be done using a call to one of the reference functions: IntRef, StringRef, or IDispatchRef.
+
+Note: this last function is used when the variable type is object. For example:
+
+var int x;      var int y;      element.GetClickablePoint(IntRef(x), IntRef(y));
+
+When this function returns, the values of x and y will be populated with the coordinates of the clickable point.
+
+Arrays
+
+The table below lists the types of arrays provided by the UIA Script API. Although the types of items contained in each array are different, all arrays behave the same way.
+
+To get the number of items in an array, use its Count property, for instance, myArray.Count.
+
+To access a specific item in an array by index, include the index in parentheses after the array name, for instance, myArray(5).
+
+Note: Indexes are zero-based.
+
+Finally, arrays may be used in ForEach loops as follows:
+
+var string s;      ForEach s in myArray      ; do something with s      EndForEach
+
+  Array                 Item type
+  --------------------- ----------------
+  FSUIAElementArray     FSUIAElement
+  FSUIAIntArray         int
+  FSUIARectArray        FSUIARect
+  FSUIAStringArray      string
+  FSUIATextRangeArray   FSUIATextRange
+
+Objects
+
+FSUIA
+
+Methods
+
+  Name                                                                                                     Description
+  -------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  bool AddAutomationEventHandler( EventID, FSUIAElement, TreeScope );                                      Registers a method that handles Microsoft UI Automation events. See the Events section of this document for further details.
+  bool AddFocusChangedEventHandler();                                                                      Registers a method that handles focus-changed events. See the Events section of this document for further details.
+  bool AddPropertyChangedEventHandler( PropertyID, FSUIAElement, TreeScope );                              Registers a method that handles property-changed events. See the Events section of this document for further details.
+  bool AddStructureChangedEventHandler( FSUIAElement, TreeScope );                                         Registers a method that handles structure-changed events. See the Events section of this document for further details.
+  bool AddTextEditTextChangedEventHandler ( FSUIAElement, TreeScope, TextEditChangeType);                  Registers a method that handles programmatic text-edit events. See the Events section of this document for further details.
+  bool CheckNotSupported(variant );                                                                        Checks a provided VARIANT to see if it contains the Not Supported identifier.
+  bool CompareElements( FSUIAElement, FSUIAElement );                                                      Compares two UI Automation elements to determine whether they represent the same underlying UI element.
+  bool CompareRuntimeIds( FSUIAIntArray, FSUIAIntArray );                                                  Compares two integer arrays containing run-time identifiers (IDs) to determine whether their content is the same and they belong to the same UI element.
+  FSUIACondition CreateAndCondition( FSUIACondition, FSUIACondition );                                     Creates a condition that selects elements that match both of two conditions.
+  FSUIACondition CreateBoolPropertyCondition( PropertyID, bool );                                          Creates a condition for a Boolean property.
+  FSUIACondition CreateFalseCondition();                                                                   Creates a condition that is always false.
+  FSUIACondition CreateIntPropertyCondition( PropertyID, int );                                            Creates a condition for an integer property.
+  FSUIACondition CreateNotCondition( FSUIACondition );                                                     Creates a condition that is the negative of a specified condition.
+  FSUIACondition CreateOrCondition( FSUIACondition, FSUIACondition );                                      Creates a combination of two conditions where a match exists if either of the conditions is true.
+  FSUIACondition CreateStringPropertyCondition( PropertyID, string );                                      Creates a condition for a string property.
+  FSUIATreeWalker CreateTreeWalker( FSUIACondition );                                                      Retrieves an IUIAutomationTreeWalker interface that can be used to traverse the UI Automation tree. Elements in the tree match the provided condition.
+  FSUIACondition CreateTrueCondition();                                                                    Retrieves a predefined condition that selects all elements.
+  FSUIAElement GetElementFromHandle( handle );                                                             Retrieves a UI Automation element for the specified window.
+  FSUIAElement GetElementFromIAccessible(object, int );                                                    Retrieves a UI Automation element for the specified accessible object from a Microsoft Active Accessibility server. Parameter 2 is the MSAA child ID of the desired object.
+  FSUIAElement GetElementFromPoint( int, int );                                                            Retrieves the FSUIAElement interface for the UI element at the specified point on the desktop. Parameter 1 is the x coordinate of the point. Parameter 2 is the y coordinate.
+  FSUIAElement GetFocusedElement();                                                                        Retrieves the UI Automation element that has the input focus.
+  string GetPatternProgramaticName( PatternID );                                                           Retrieves the registered programmatic name of a control pattern.
+  string GetPropertyProgramaticName( PropertyID );                                                         Retrieves the registered programmatic name of a property.
+  FSUIAElement GetRootElement();                                                                           Retrieves the UI Automation element that represents the desktop.
+  bool PollForPotentialSupportedPatterns( FSUIAElement, ByRef FSUIAIntArray, ByRef FSUIAStringArray );     Retrieves the control patterns that might be supported on a UI Automation element. Parameter 2 is an array of PatternIDs. Parameter 3 is an array of localized pattern name strings.
+  bool PollForPotentialSupportedProperties( FSUIAElement, ByRef FSUIAIntArray, ByRef FSUIAStringArray );   Retrieves the properties that might be supported on a UI Automation element. Parameter 2 is an array of PropertyIDs. Parameter 3 is an array of localized property name strings.
+
+Properties
+
+  Type              Name                   Description
+  ----------------- ---------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  bool              AutoSetFocus           Specifies whether calls to UI Automation control pattern methods automatically set focus to the target element. (get/put)
+  int               ConnectionTimeout      Specifies the length of time, in milliseconds, that UI Automation will wait for a provider to respond to a client request for an automation element. (get/put)
+  FSUIACondition    ContentViewCondition   Retrieves a predefined condition object that selects content elements.
+  FSUIATreeWalker   ContentViewWalker      Retrieves an IUIAutomationTreeWalker interface used to discover content elements.
+  FSUIACondition    ControlViewCondition   Retrieves a predefined condition interface that selects control elements.
+  FSUIATreeWalker   ControlViewWalker      Retrieves an IUIAutomationTreeWalker interface used to discover control elements.
+  FSUIACondition    RawViewCondition       Retrieves a condition interface for a predefined condition that selects all UI elements in an unfiltered view.
+  FSUIATreeWalker   RawViewWalker          Retrieves an IUIAutomationTreeWalker interface used to traverse an unfiltered view of the UI Automation tree.
+  int               TransactionTimeout     Specifies the length of time, in Milliseconds, that UI Automation will wait for a provider to respond to a client request for information about an automation element. (get/put)
+
+FSUIAAnnotation
+
+Properties
+
+  Type               Name       Description
+  ------------------ ---------- ---------------------------------------------------------------
+  string             Author     Retrieves the name of the annotation author.
+  string             DateTime   Retrieves the date and time that this annotation was created.
+  FSUIAElement       Target     Retrieves the element that is being annotated.
+  AnnotationTypeID   TypeID     Retrieves a value that identifies the annotation's type.
+  string             TypeName   Retrieves the localized name of this annotation's type.
+
+FSUIACondition
+
+The FSUIACondition object has no script-accessible members.
+
+FSUIADock
+
+Methods
+
+  Name                               Description
+  ---------------------------------- -----------------------------------------
+  bool SetPosition(DockPosition );   Sets the dock position of this element.
+
+Properties
+
+  Type           Name       Description
+  -------------- ---------- ---------------------------------------------------------------------------
+  DockPosition   Position   Retrieves the dock position of this element within its docking container.
+
+FSUIADrag
+
+Methods
+
+  Name                                   Description
+  -------------------------------------- --------------------------------------------------------------------------------------------------------------------------------
+  FSUIAElementArray GetGrabbedItems();   Retrieves a collection of elements that represent the full set of items that the user is dragging as part of a drag operation.
+
+Properties
+
+  Type               Name          Description
+  ------------------ ------------- --------------------------------------------------------------------------------------------------------------------------------------------------------
+  string             DropEffect    Retrieves a localized string that indicates what happens when the user drops this element as part of a drag-drop operation.
+  FSUIAStringArray   DropEffects   Retrieves an array of localized strings that enumerate the full set of effects that can happen when this element as part of a drag-and-drop operation.
+  bool               IsGrabbed     Indicates whether the user has grabbed this element as part of a drag-and-drop operation.
+
+FSUIADropTarget
+
+Properties
+
+  Type               Name      Description
+  ------------------ --------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  string             Effect    Retrieves a localized string that describes what happens when the user drops the grabbed element on this drop target.
+  FSUIAStringArray   Effects   Retrieves an array of localized strings that enumerate the full set of effects that can happen when the user drops a grabbed element on this drop target as part of a drag-and-drop operation.
+
+FSUIAElement
+
+Methods
+
+  Name                                                      Description
+  --------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------
+  FSUIAElement BuildUpdatedCache();                         Retrieves a new FSUIAElement interface with an updated cache.
+  FSUIAElementArray FindAll( TreeScope, FSUIACondition );   Returns all UI Automation elements that satisfy the specified condition.
+  FSUIAElement FindFirst( TreeScope, FSUIACondition );      Retrieves the first child or descendant element that matches the specified condition.
+  FSUIAAnnotation GetAnnotationPattern();                   Returns a pattern object if the pattern is available.
+  bool GetClickablePoint( ByRef int, ByRef int );           Retrieves a point on the element that can be clicked. The first parameter is the x coordinate. The second parameter is the y coordinate.
+  FSUIADock GetDockPattern();                               Returns a pattern object if the pattern is available.
+  FSUIADrag GetDragPattern();                               Returns a pattern object if the pattern is available.
+  FSUIADropTarget GetDropTargetPattern();                   Returns a pattern object if the pattern is available.
+  FSUIAExpandCollapse GetExpandCollapsePattern();           Returns a pattern object if the pattern is available.
+  FSUIAGridItem GetGridItemPattern();                       Returns a pattern object if the pattern is available.
+  FSUIAGrid GetGridPattern();                               Returns a pattern object if the pattern is available.
+  FSUIAInvoke GetInvokePattern();                           Returns a pattern object if the pattern is available.
+  FSUIAItemContainer GetItemContainerPattern();             Returns a pattern object if the pattern is available.
+  FSUIALegacyIAccessible GetLegacyIAccessiblePattern();     Returns a pattern object if the pattern is available.
+  FSUIAMultipleView GetMultipleViewPattern();               Returns a pattern object if the pattern is available.
+  variant GetPropertyValue(PropertyID );                    Retrieves the value of a property for this UI Automation element.
+  FSUIARangeValue GetRangeValuePattern();                   Returns a pattern object if the pattern is available.
+  FSUIAIntArray GetRuntimeID();                             Retrieves the unique identifier assigned to the UI element.
+  FSUIAScrollItem GetScrollItemPattern();                   Returns a pattern object if the pattern is available.
+  FSUIAScroll GetScrollPattern();                           Returns a pattern object if the pattern is available.
+  FSUIASelectionItem GetSelectionItemPattern();             Returns a pattern object if the pattern is available.
+  FSUIASelection GetSelectionPattern();                     Returns a pattern object if the pattern is available.
+  FSUIASpreadsheetItem GetSpreadsheetItemPattern();         Returns a pattern object if the pattern is available.
+  FSUIASpreadsheet GetSpreadsheetPattern();                 Returns a pattern object if the pattern is available.
+  FSUIAStyles GetStylesPattern();                           Returns a pattern object if the pattern is available.
+  FSUIASynchronizedInput GetSynchronizedInputPattern();     Returns a pattern object if the pattern is available.
+  FSUIATableItem GetTableItemPattern();                     Returns a pattern object if the pattern is available.
+  FSUIATable GetTablePattern();                             Returns a pattern object if the pattern is available.
+  FSUIATextChild GetTextChildPattern();                     Returns a pattern object if the pattern is available.
+  FSUIATextEdit GetTextEditPattern();                       Returns a pattern object if the pattern is available.
+  FSUIAText GetTextPattern();                               Returns a pattern object if the pattern is available.
+  FSUIAToggle GetTogglePattern();                           Returns a pattern object if the pattern is available.
+  FSUIATransform GetTransformPattern();                     Returns a pattern object if the pattern is available.
+  FSUIAValue GetValuePattern();                             Returns a pattern object if the pattern is available.
+  FSUIAVirtualizedItem GetVirtualizedItemPattern();         Returns a pattern object if the pattern is available.
+  FSUIAWindow GetWindowPattern();                           Returns a pattern object if the pattern is available.
+  bool SetFocus();                                          Sets the keyboard focus to this UI Automation element.
+  bool ShowContextMenu();                                   Programmatically invokes a context menu on the target element.
+
+Properties
+
+  Type                Name                       Description
+  ------------------- -------------------------- ------------------------------------------------------------------------------------------------------------------------------
+  string              AcceleratorKey             Retrieves the accelerator key for the element.
+  string              AccessKey                  Retrieves the access key character for the element.
+  FSUIAElementArray   Annotation Objects         Retrieves an array of elements representing the annotations associated with this element.
+  FSUIAIntArray       Annotation Types           Retrieves an array of annotation type identifiers indicating the types of annotations that are associated with this element.
+  string              AriaProperties             Retrieves the value of the ARIA properties of the element.
+  string              AriaRole                   Retrieves the ARIA role of the element.
+  string              AutomationId               Retrieves the UI Automation identifier of the element.
+  FSUIARect           BoundingRectangle          Retrieves the coordinates of the rectangle that completely encloses the element.
+  string              ClassName                  Retrieves the class name of the element.
+  FSUIAElementArray   ControllerFor              Retrieves an array of elements for which this element serves as the controller.
+  int                 ControlType                Retrieves the control type of the element.
+  int                 Culture                    Retrieves the culture identifier for the element.
+  FSUIAElementArray   DescribedBy                Retrieves an array of elements that describe this element.
+  FSUIAElementArray   FlowsFrom                  Retrieves an array of elements that indicates the reading order before the current element.
+  FSUIAElementArray   FlowsTo                    Retrieves an array of elements whose order suggests the reading order after the current element.
+  string              FrameworkID                Retrieves the name of the underlying UI framework.
+  string              FullDescription            Returns a localized string which can contain extended description text for an element.
+  bool                HasKeyboardFocus           Retrieves a value that indicates whether the element has keyboard focus.
+  string              HelpText                   Retrieves the help text for the element.
+  bool                IsContentElement           Retrieves a value that indicates whether the element is a content element.
+  bool                IsControlElement           Retrieves a value indicating whether the UI element is a control.
+  bool                IsDataValidForForm         Retrieves a value that indicates whether the element contains valid data for the form.
+  bool                IsEnabled                  Retrieves a value that indicates whether the UI Automation element is enabled.
+  bool                IsKeyboardFocusable        Retrieves a value that indicates whether the UI Automation element can accept keyboard focus.
+  bool                IsOffscreen                Retrieves a value that indicates whether the element is off screen.
+  bool                IsPassword                 Retrieves a value that indicates whether the element contains a disguised password.
+  bool                IsPeripheral               Retrieves the peripheral UI indicator for the element.
+  bool                IsRequiredForForm          Retrieves a value that indicates whether the element is required to be filled out on a form.
+  string              ItemStatus                 Retrieves a description of the status of an item within an element.
+  string              ItemType                   Retrieves a string describing the type of the item represented by a UI element.
+  FSUIAElement        LabeledBy                  Retrieves the element that contains the text label for this element.
+  LandmarkTypeID      LandmarkType               Returns the landmark type identifier associated with an element.
+  int                 Level                      Returns the 1-based integer for the level in the hierarchical or broken hierarchical structure for the element.
+  LiveSetting         LiveSetting                Indicates the type of notifications, if any, that the element sends when the content of the element changes.
+  string              LocalizedControlType       Retrieves a localized description of the UI element's control type.
+  string              LocalizedLandmarkType      Returns a text string describing the type of landmark that the element represents.
+  string              Name                       Retrieves the name of the UI element.
+  handle              NativeWindowHandle         Retrieves the window handle of the element.
+  bool                OptimizeForVisualContent   Indicates whether the provider exposes only elements that are visible.
+  OrientationTypeID   Orientation                Retrieves the orientation of the element.
+  int                 PositionInSet              Returns the 1-based integer for the ordinal position in the set for the element.
+  int                 ProcessId                  Retrieves the ID of the process that hosts the element.
+  string              ProviderDescription        Retrieves a description of the UI Automation provider for this element.
+  int                 SizeOfSet                  Returns the 1-based integer for the size of the set where the element is located.
+
+FSUIAExpandCollapse
+
+Methods
+
+  Name               Description
+  ------------------ ----------------------------------------------------------------
+  void Collapse();   Hides all child nodes, controls, or content of the element.
+  void Expand();     Displays all child nodes, controls, or content of the element.
+
+Properties
+
+  Type                  Name                  Description
+  --------------------- --------------------- ------------------------------------------------------------------------------------
+  ExpandCollapseState   ExpandCollapseState   Retrieves a value that indicates the state, expanded or collapsed, of the element.
+
+FSUIAGrid
+
+Methods
+
+  Name                                Description
+  ----------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  FSUIAElement GetItem( int, int );   Retrieves a UI Automation element representing an item in the grid. Parameter 1 is the zero-based index of a row, Parameter 2 is the zero-based index of a column.
+
+Properties
+
+  Type   Name          Description
+  ------ ------------- -------------------------------------------
+  int    ColumnCount   The number of columns in the grid.
+  int    RowCount      Retrieves the number of rows in the grid.
+
+FSUIAGridItem
+
+Properties
+
+  Type           Name             Description
+  -------------- ---------------- ------------------------------------------------------------------------
+  int            Column           Retrieves the zero-based index of the column that contains the item.
+  int            ColumnSpan       Retrieves the number of columns spanned by the grid item.
+  FSUIAElement   ContainingGrid   Retrieves the element that contains the grid item.
+  int            Row              Retrieves the zero-based index of the row that contains the grid item.
+  int            RowSpan          Retrieves the number of rows spanned by the grid item.
+
+FSUIAInvoke
+
+Methods
+
+  Name             Description
+  ---------------- ----------------------------------------------------------
+  bool Invoke();   Invokes the action of a control, such as a button click.
+
+FSUIAItemContainer
+
+Methods
+
+  Name                                                                    Description
+  ----------------------------------------------------------------------- ----------------------------------------------------------------------------------------
+  FSUIAElement FindItemByProperty( FSUIAElement, PropertyID, variant );   Retrieves an element within a containing element, based on a specified property value.
+
+FSUIALegacyIAccessible
+
+Methods
+
+  Name                                  Description
+  ------------------------------------- --------------------------------------------------------------------------------------------------------------
+  void DoDefaultAction();               Performs the Microsoft Active Accessibility default action for the element.
+  object GetIAccessible();              Retrieves an IAccessible object that corresponds to the UI Automation element.
+  FSUIAElementArray GetSelection();     Retrieves the Microsoft Active Accessibility property that identifies the selected children of this element.
+  bool Select(LegacySelectionFlags );   Performs a Microsoft Active Accessibility selection.
+  bool SetValue( string );              Sets the Microsoft Active Accessibility value property for the element.
+
+Properties
+
+  Type     Name               Description
+  -------- ------------------ ------------------------------------------------------------------------------------------
+  int      ChildID            Retrieves the Microsoft Active Accessibility child identifier for the element.
+  string   DefaultAction      Retrieves the Microsoft Active Accessibility default action for the element.
+  string   Description        Retrieves the Microsoft Active Accessibility description of the element.
+  string   Help               Retrieves the Microsoft Active Accessibility help string for the element.
+  string   KeyboardShortcut   Retrieves the Microsoft Active Accessibility keyboard shortcut property for the element.
+  string   Name               Retrieves the Microsoft Active Accessibility name property of the element.
+  int      Role               Retrieves the Microsoft Active Accessibility role identifier of the element.
+  int      State              Retrieves the Microsoft Active Accessibility state identifier for the element.
+  string   Value              Retrieves the Microsoft Active Accessibility value property.
+
+FSUIAMultipleView
+
+Methods
+
+  Name                                 Description
+  ------------------------------------ --------------------------------------------------------------
+  FSUIAIntArray GetSupportedViews();   Retrieves a collection of control-specific view identifiers.
+  string GetViewName( int );           Retrieves the name of a control-specific view.
+  bool SetCurrentView( int );          Sets the view of the control.
+
+Properties
+
+  Type   Name          Description
+  ------ ------------- -------------------------------------------------------------------------------
+  int    CurrentView   Retrieves the control-specific identifier of the current view of the control.
+
+FSUIARangeValue
+
+Methods
+
+  Name                    Description
+  ----------------------- --------------------------------
+  bool SetValue( int );   Sets the value of the control.
+
+Properties
+
+  Type   Name          Description
+  ------ ------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------
+  bool   IsReadOnly    Indicates whether the value of the element can be changed.
+  int    LargeChange   Retrieves the value that is added to or subtracted from the value of the control when a large change is made, such as when the PAGE DOWN key is pressed.
+  int    Maximum       Retrieves the maximum value of the control.
+  int    Minimum       Retrieves the minimum value of the control.
+  int    SmallChange   Retrieves the value that is added to or subtracted from the value of the control when a small change is made, such as when an ARROW key is pressed.
+  int    Value         Retrieves the value of the control.
+
+FSUIARect
+
+Properties
+
+  Type   Name     Description
+  ------ -------- -----------------------------------
+  int    Bottom   The bottom edge of the rectangle.
+  int    Left     The left edge of the rectangle.
+  int    Right    The right edge of the rectangle.
+  int    Top      The top edge of the rectangle.
+
+FSUIAScroll
+
+Methods
+
+  Name                                            Description
+  ----------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  bool Scroll(ScrollAmountID, ScrollAmountID );   Scrolls the visible region of the content area horizontally and vertically. Parameter 1 is horizontal. Parameter 2 is vertical.
+  bool SetScrollPercent( int, int );              Sets the horizontal and vertical scroll positions as a percentage of the total content area within the UI Automation element. Parameter 1 is horizontal. Parameter 2 is vertical.
+
+Properties
+
+  Type   Name                      Description
+  ------ ------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------
+  bool   HorizontallyScrollable    Indicates whether the element can scroll horizontally.
+  int    HorizontalScrollPercent   Retrieves the horizontal scroll position.
+  int    HorizontalViewSize        Retrieves the horizontal size of the viewable region of a scrollable element, expressed as a percentage of the total content area within the element.
+  bool   VerticallyScrollable      Indicates whether the element can scroll vertically.
+  int    VerticalScrollPercent     Retrieves the vertical scroll position.
+  int    VerticalViewSize          Retrieves the vertical size of the viewable region of a scrollable element, expressed as a percentage of the total content area within the element.
+
+FSUIAScrollItem
+
+Methods
+
+  Name                     Description
+  ------------------------ --------------------------------------------------------------------------------------------------------------------------------------------
+  void ScrollIntoView();   Scrolls the content area of a container object to display the UI Automation element within the visible region (viewport) of the container.
+
+FSUIASelection
+
+Methods
+
+  Name                                Description
+  ----------------------------------- ---------------------------------------------------
+  FSUIAElementArray GetSelection();   Retrieves the selected elements in the container.
+
+Properties
+
+  Type   Name                  Description
+  ------ --------------------- ------------------------------------------------------------------------------------
+  bool   CanSelectMultiple     Indicates whether more than one item in the container can be selected at one time.
+  bool   IsSelectionRequired   Indicates whether at least one item must be selected at all times.
+
+FSUIASelectionItem
+
+Methods
+
+  Name                          Description
+  ----------------------------- -----------------------------------------------------------------
+  bool AddToSelection();        Adds the current element to the collection of selected items.
+  bool RemoveFromSelection();   Removes this element from the selection.
+  void Select();                Clears any selected items and then selects the current element.
+
+Properties
+
+  Type           Name                 Description
+  -------------- -------------------- ------------------------------------------------------------------------------------------------------------
+  bool           IsSelected           Indicates whether this item is selected.
+  FSUIAElement   SelectionContainer   Retrieves the element that supports IUIAutomationSelectionPattern and acts as the container for this item.
+
+FSUIASpreadsheet
+
+Methods
+
+  Name                                    Description
+  --------------------------------------- -------------------------------------------------------------------------------------------------------------------------
+  FSUIAElement GetItemByName( string );   Retrieves a UI Automation element that represents the spreadsheet cell that has the specified name, for instance, “A1”.
+
+FSUIASpreadsheetItem
+
+Methods
+
+  Name                                        Description
+  ------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------
+  FSUIAElementArray GetAnnotationObjects();   Retrieves an array of elements representing the annotations associated with this spreadsheet cell.
+  FSUIAIntArray GetAnnotationTypes();         Retrieves an array of annotation type identifiers indicating the types of annotations that are associated with this spreadsheet cell.
+
+Properties
+
+  Type     Name      Description
+  -------- --------- --------------------------------------
+  string   Formula   Retrieves the formula for this cell.
+
+FSUIAStyles
+
+Properties
+
+  Type      Name                 Description
+  --------- -------------------- ----------------------------------------------------------------------------------------------------------
+  string    ExtendedProperties   Retrieves a localized string that contains the list of extended properties for an element in a document.
+  int       FillColor            Retrieves the fill color of an element in a document.
+  int       FillPatternColor     Retrieves the color of the pattern used to fill an element in a document.
+  string    Shape                Retrieves the shape of an element in a document.
+  StyleID   StyleID              Retrieves the identifier of the visual style associated with an element in a document.
+  string    StyleName            Retrieves the name of the visual style associated with an element in a document.
+
+FSUIASynchronizedInput
+
+Methods
+
+  Name                                           Description
+  ---------------------------------------------- -----------------------------------------------------------------------------------
+  bool Cancel();                                 Causes the UI Automation provider to stop listening for mouse or keyboard input.
+  bool StartListening(SynchronizedInputType );   Causes the UI Automation provider to start listening for mouse or keyboard input.
+
+FSUIATable
+
+Methods
+
+  Name                                    Description
+  --------------------------------------- --------------------------------------------------------------------------------------------------
+  FSUIAElementArray GetColumnHeaders();   Retrieves a collection of UI Automation elements representing all the column headers in a table.
+  FSUIAElementArray GetRowHeaders();      Retrieves a collection of UI Automation elements representing all the row headers in a table.
+
+Properties
+
+  Type               Name               Description
+  ------------------ ------------------ -------------------------------------------------------------
+  RowOrColumnMajor   RowOrColumnMajor   Retrieves the primary direction of traversal for the table.
+
+FSUIATableItem
+
+Methods
+
+  Name                                        Description
+  ------------------------------------------- --------------------------------------------------------------------
+  FSUIAElementArray GetColumnHeaderItems();   Retrieves the column headers associated with a table item or cell.
+  FSUIAElementArray GetRowHeaderItems();      Retrieves the row headers associated with a table item or cell.
+
+FSUIAText
+
+Methods
+
+  Name                                                  Description
+  ----------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  FSUIATextRange GetCaretRange( ByRef int );            Retrieves a zero-length text range at the location of the caret that belongs to the text-based control. Parameter 1 is a reference to an int that indicates whether the text-based control that contains the caret has keyboard focus; 0 is false, otherwise true.
+  FSUIATextRangeArray GetSelection();                   Retrieves a collection of text ranges that represents the currently selected text in a text-based control.
+  FSUIATextRangeArray GetVisibleRanges();               Retrieves an array of disjoint text ranges from a text-based control where each text range represents a contiguous span of visible text.
+  FSUIATextRange RangeFromAnnotation( FSUIAElement );   Retrieves a text range containing the text that is the target of the annotation associated with the specified annotation element.
+  FSUIATextRange RangeFromChild( FSUIAElement );        Retrieves a text range enclosing a child element such as an image, hyperlink, Microsoft Excel spreadsheet, or other embedded object.
+  FSUIATextRange RangeFromPoint( int, int );            Retrieves the degenerate (empty) text range nearest to the specified screen coordinates. Parameter 1 is the x coordinate. Parameter 2 is the y coordinate.
+
+Properties
+
+  Type                       Name                     Description
+  -------------------------- ------------------------ -----------------------------------------------------------------------------------------------
+  FSUIATextRange             DocumentRange            Retrieves a text range that encloses the main text of a document.
+  SupportedTextSelectionID   SupportedTextSelection   Retrieves a value that specifies the type of text selection that is supported by the control.
+
+FSUIATextChild
+
+Properties
+
+  Type             Name            Description
+  ---------------- --------------- -------------------------------------------------------------------------------------------
+  FSUIAElement     TextContainer   Retrieves this element's nearest ancestor element that supports the Text control pattern.
+  FSUIATextRange   TextRange       Retrieves a text range that encloses this child element.
+
+FSUIATextEdit
+
+Methods
+
+  Name                                    Description
+  --------------------------------------- ----------------------------------------------
+  FSUIAElement GetActiveComposition();    Returns the active composition.
+  FSUIATextRange GetConversionTarget();   Returns the current conversion target range.
+
+FSUIATextRange
+
+Methods
+
+  Name                                                              Description
+  ----------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  bool AddToSelection();                                            Adds the text range to the collection of selected text ranges in a control that supports multiple, disjoint spans of selected text.
+  FSUIATextRange Clone();                                           Retrieves a new IUIAutomationTextRange identical to the original and inheriting all properties of the original.
+  bool Compare( FSUIATextRange );                                   Retrieves a value that specifies whether this text range has the same endpoints as another text range.
+  int CompareEndPoints( Endpoint, FSUIATextRange, Endpoint );       Retrieves a value that specifies whether the start or end endpoint of this text range is the same as the start or end endpoint of another text range.
+  bool ExpandToEnclosingUnit( TextUnit );                           Normalizes the text range by the specified text unit. The range is expanded if it is smaller than the specified unit, or shortened if it is longer than the specified unit.
+  FSUIATextRange FindAttribute( TextAttributeID, variant, bool );   Retrieves a text range subset that has the specified text attribute value. Parameter 3 should be set to true if the search is to be done backward; otherwise false.
+  FSUIATextRange FindText( string, bool, bool );                    Retrieves a text range subset that contains the specified text. Parameter 2 should be set to true if the search is to be done backward; otherwise false. Parameter 3 should be set to true if the search is to be case-insensitive; otherwise false.
+  variant GetAttributeValue( TextAttributeID );                     Retrieves the value of the specified text attribute across the entire text range.
+  FSUIARectArray GetBoundingRectangles();                           Retrieves a collection of bounding rectangles for each fully or partially visible line of text in a text range.
+  FSUIAElementArray GetChildren();                                  Retrieves a collection of all embedded objects that fall within the text range.
+  FSUIAElement GetEnclosingElement();                               Returns the innermost UI Automation element that encloses the text range.
+  string GetText( int );                                            Returns the plain text of the text range. Parameter 2 is the maximum length in characters of the text to retrieve.
+  int Move( TextUnit, int );                                        Moves the text range forward or backward by the specified number of text units. Negative values for parameter 2 will move the range backward. Returns the number of units actually moved.
+  bool MoveEndpointByRange( Endpoint, FSUIATextRange, Endpoint );   Moves one endpoint of the current text range to the specified endpoint of a second text range.
+  int MoveEndpointByUnit( Endpoint, TextUnit, int );                Moves one endpoint of the text range the specified number of text units within the document range. Negative values for parameter 3 will move the range backward. Returns the number of units actually moved.
+  bool RemoveFromSelection();                                       Removes the text range from an existing collection of selected text in a text container that supports multiple, disjoint selections.
+  bool ScrollIntoView( bool );                                      Causes the text control to scroll until the text range is visible in the viewport. Parameter 1 should be true if the text control should be scrolled so that the text range is flush with the top of the viewport; false if it should be flush with the bottom of the viewport.
+  bool Select();                                                    Selects the span of text that corresponds to this text range, and removes any previous selection.
+  bool ShowContextMenu();                                           Programmatically invokes a context menu on the target element.
+
+FSUIAToggle
+
+Methods
+
+  Name             Description
+  ---------------- --------------------------------------------------
+  void Toggle();   Cycles through the toggle states of the control.
+
+Properties
+
+  Type          Name          Description
+  ------------- ------------- ---------------------------------------------
+  ToggleState   ToggleState   Retrieves the toggled state of the control.
+
+FSUIATransform
+
+Methods
+
+  Name                          Description
+  ----------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  bool Move( int, int );        Moves the UI Automation element. Parameter 1 is the screen coordinates of the left side of the control. Parameter 2 is the screen coordinates of the top of the control.
+  bool Resize( int, int );      Resizes the UI Automation element. Parameter 1 is the new width of the window, in pixels. Parameter 2 is the new height of the window, in pixels.
+  bool Rotate( int );           Rotates the UI Automation element. Parameter 1 is the number of degrees to rotate the element. A positive number rotates clockwise; a negative number rotates counterclockwise.
+  bool Zoom( int );             Zooms the viewport of the control. Parameter 1 is the amount to zoom the viewport, specified as a percentage. Positive values increase the zoom level, and negative values decrease it. The control zooms its viewport to the nearest supported value.
+  bool ZoomByUnit(ZoomUnit );   Zooms the viewport of the control by the specified unit.
+
+Properties
+
+  Type   Name          Description
+  ------ ------------- -----------------------------------------------------------------
+  bool   CanMove       Indicates whether the element can be moved.
+  bool   CanResize     Indicates whether the element can be moved.
+  bool   CanRotate     Indicates whether the element can be rotated.
+  bool   CanZoom       Indicates whether the control supports zooming of its viewport.
+  int    ZoomLevel     Retrieves the zoom level of the control's viewport.
+  int    ZoomMaximum   Retrieves the maximum zoom level of the control's viewport.
+  int    ZoomMinimum   Retrieves the minimum zoom level of the control's viewport.
+
+FSUIATreeWalker
+
+Methods
+
+  Name                       Description
+  -------------------------- ------------------------------------------------------------------------------------------------------
+  bool GoToFirstChild();     Moves the current element to its first child. Returns true if the move succeeded. Otherwise false.
+  bool GoToNextSibling();    Moves the current element to its next sibling. Returns true if the move succeeded. Otherwise false.
+  bool GoToParent();         Moves the current element to its parent. Returns true if the move succeeded. Otherwise false.
+  bool GoToPriorSibling();   Moves the current element to its prior sibling. Returns true if the move succeeded. Otherwise false.
+
+Properties
+
+  Type             Name             Description
+  ---------------- ---------------- -------------------------------------------------------------------
+  FSUIACondition   Condition        Retrieves the condition that specifies items to walk in the tree.
+  FSUIAElement     CurrentElement   An element in the UIA tree. (get/put)
+
+FSUIAValue
+
+Methods
+
+  Name                       Description
+  -------------------------- -------------------------------
+  bool SetValue( string );   Sets the value of an element.
+
+Properties
+
+  Type     Name         Description
+  -------- ------------ ----------------------------------------------------------
+  bool     IsReadOnly   Indicates whether the value of the element is read-only.
+  string   Value        Retrieves the value of the element.
+
+FSUIAVirtualizedItem
+
+Methods
+
+  Name              Description
+  ----------------- --------------------------------------------------------------
+  bool Realize();   Creates a full UI Automation element for a virtualized item.
+
+FSUIAWindow
+
+Methods
+
+  Name                                             Description
+  ------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------------
+  bool Close();                                    Closes the window.
+  bool SetWindowVisualState(WindowVisualState );   Minimizes, maximizes, or restores the window.
+  bool WaitForInputIdle( int );                    Causes the calling code to block for the specified time or until the associated process enters an idle state, whichever completes first.
+
+Properties
+
+  Type                     Name               Description
+  ------------------------ ------------------ ----------------------------------------------------------------------------------------------------------------
+  bool                     CanMaximize        Indicates whether the window can be maximized.
+  bool                     CanMinimize        Indicates whether the window can be minimized.
+  WindowInteractionState   InteractionState   Retrieves the current state of the window for the purposes of user interaction.
+  bool                     IsModal            Indicates whether the window is modal.
+  bool                     IsTopmost          Indicates whether the window is the topmost element in the z-order.
+  WindowVisualState        VisualState        Retrieves the visual state of the window; that is, whether it is in the normal, maximized, or minimized state.
+
+Events
+
+Scripts may register to receive UIA events by calling one of the add-event-handler methods on an FSUIA object.
+
+Begin example
+
+var object events = CreateObjectEx ("FreedomSci.UIA", false, "UIAScriptAPI.x.manifest" );      var object element = events.GetFocusedElement();      events.AddPropertyChangedEventHandler(UIA_NamePropertyId, element, TreeScope_Element | TreeScope_Descendants )
+
+End example
+
+The same FSUIA object must then be passed to the JAWS built-in function ComAttachEvents.
+
+Note the second parameter below. This string will be prepended to the event callback function in the scripts.
+
+Begin example
+
+ComAttachEvents( events, “UIA_” );
+
+EndExample
+
+Now, when a UIA property changed event occurs for the name property, the function UIA_PropertyChangedEvent in the JAWS scripts will be called.
+
+Finally, to stop receiving events, the FSUIA object must be set to a null object.
+
+Begin example
+
+var object nullObject;      events = nullObject;
+
+End example
+
+Note: In the examples above, the FSUIA object named events would typically be declared as a global variable. If it were declared inside a function, when the function ended, the object would automatically be set to null, and any previously registered events would be unregistered before JAWS ever had a chance to receive them.
+
+Event callback functions
+
+The following table gives the names and parameter types of the available event callback functions.
+
+  Name                                                                            Description
+  ------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  AutomationEvent( FSUIAElement, EventID );                                       The automation event callback. Parameter 1 is the element for which the event occurred. Parameter 2 is the EventID.
+  FocusChangedEvent(FSUIAElement );                                               The focus changed event callback. Parameter 1 is the new element with focus.
+  PropertyChangedEvent( FSUIAElement, PropertyID, variant );                      The property changed event callback. Parameter 1 is the element for which the event occurred. Parameter 2 is the property ID for the property that changed. Parameter 3 is the new value for the specified property.
+  StructureChangedEvent( FSUIAElement, StructureChangeTypeID, FSUIAIntArray );    The structure changed event callback. Parameter 1 is the element for which the event occurred. Parameter 2 is the type of structure change. Parameter 3 is the runtime ID of the element that changes. Parameter 3 is only valid when the StructureTypeID in parameter 2 is StructureChangeType_ChildRemoved.
+  TextEditTextChangedEvent(FSUIAElement, TextEditChangeType, FSUIAStringArray);   The text edit changed event callback. Parameter 1 is the element for which the event occurred. Parameter 2 is the type of text-edit change that occurred. Parameter 3 is the event data passed by the event. Parameter 3 contains different payloads for each text-edit change type. For the TextEditChangeType_AutoCorrect, the data is the new corrected string. For the TextEditChangeType_Composition, the data is the updated string in the composition (only the part that changed). For the TextEditChangeType_CompositionFinalized, the data is the finalized string of the completed composition (this may be empty if composition was canceled or deleted).
+
+------------------------------------------------------------------------
+
+©2020 Freedom Scientific, Inc.
+800-444-4443
+727-803-8000
+
+GSA Advantage
+Accessibility Policy
+Conditions of Use
+Privacy Policy
+
+Careers
+Contact Us
+About
+
+[Consumer Technology Association member][Part of VFO]
+
+[Freedom Scientific]
+
+Freedom Scientific is the largest worldwide manufacturer of assistive technology products for those with vision impairments or learning disabilities.
+Read More About Freedom Scientific
+
+-   Home
+-   About Us
+-   Careers
+-   Blog
+-   Contact Us
+-   Media Center
+
+-   GSA Advantage
+-   Privacy Policy
+-   Accessibility Policy
+-   Conditions of Use
+
+Contact Us
+
+(800) 444-4443
+
+(727) 803-8000
+
+[Freedom Scientific Facebook] [Freedom Scientific Twitter]
+
+Copyright © Freedom Scientific Inc. - A Vispero Brand - All Rights Reserved.

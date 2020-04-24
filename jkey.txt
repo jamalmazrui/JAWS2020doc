@@ -1,0 +1,175 @@
+﻿JAWS Keyboard Manager
+
+Table of Contents
+
+Introduction to Keyboard Manager
+
+Using the Keyboard Manager
+
+Changing Keyboard Manager Options
+
+Introduction to Keyboard Manager
+
+The Keyboard Manager controls the assignment of keystrokes to JAWS activities. All JAWS activities assigned to keystrokes are called scripts. A script is a small computer program that controls how JAWS reacts, and what you hear. For example, when you press INSERT+NUM PAD 5, the Say Word script runs. In addition to just saying the current word, it also checks to see if you pressed INSERT+NUM PAD 5 twice, in which case it spells the word. Groups of scripts are stored in script files. There are two basic types of script files: default and application. The default script file contains those scripts that are always available. Application script files contain scripts that are only available when a particular application is running. Each script may have one or more keystrokes assigned to it, but a keystroke assignment is not required.
+
+The Keyboard Manager stores keystroke assignments in key map files with the extension JKM. Like the two types of script files, there are two types of key map files: default and application. The default key map file contains the keystroke assignments for the default scripts. Application key map files usually contain keystroke assignments for scripts in an application script file.
+
+As with the files created by other JAWS managers, all application key map files have the same name as the application’s executable file name.
+
+To open the Keyboard Manager, press INSERT+F2, K, and then press ENTER.
+
+Follow these links for more information about Keyboard Manager:
+
+Using the Keyboard Manager
+
+Changing Keyboard Manager Options
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Using the Keyboard Manager
+
+Add, Change, or Delete a Keystroke
+
+Find a Keystroke
+
+Review Documentation for a Keystroke
+
+Shared Key Map Files
+
+Adding New Keyboard Layouts
+
+Keystrokes are usually assigned to scripts at the time the script is created using the Script Manager, however, you can use the Keyboard Manager to browse and change current keystroke assignments, as well as add and delete keystroke assignments.
+
+Add, Change, or Delete a Keystroke
+
+The Keyboard Manager has a similar screen layout to Windows Explorer. It consists of two panes. The left pane contains a list of all current key map files in alphabetic order. The right pane contains a list of scripts in the script file associated with the current key map file. The list is organized in columns, and each script is listed with its assigned keystroke (if one is assigned), the key map file name, and the key map section for the script. Use the arrow keys to select one of the key map files in the left pane and then tab to the right pane and use the arrow keys to focus on a specific script. After you locate the proper script, use the Action menu to Add, Change, or Remove the keystroke assigned to this script.
+
+Note: If more than one keystroke is assigned to a script, the script will be listed once for each keystroke. In addition, the following keystrokes are used specifically for JAWS Tandem and cannot be assigned to another script: INSERT+ALT+CTRL+T, INSERT+ALT+TAB, and INSERT+CTRL+SHIFT+V.
+
+Find a Keystroke
+
+To search for a specific keystroke in the current key map file, focus on the Scripts List in the right pane, choose Find Keystroke from the Action menu, press the keystroke you wish to find, and press ENTER. If the keystroke exists, the Keyboard Manager selects the script name assigned to this keystroke.
+
+Review Documentation for a Keystroke
+
+When assigning a keystroke to a script, it is often useful to browse the script documentation first. The script documentation consists of the Synopsis (brief description of the script’s purpose) and the Description (additional information about the script). You can view the documentation for the current script by choosing Documentation from the Actions menu.
+
+Shared Key Map Files
+
+JAWS allows you to have both user and shared versions of key map files. JAWS applies the settings in user key map files only when a particular user is logged on to the computer. The settings in shared key map files apply to all users on the computer or network. This allows system administrators to create shared key map files so that all users on the network or computer have access to a certain set of keystrokes. If a user creates a modified version of a shared key map file, those keystrokes override the shared keystrokes while that user is logged on the computer.
+
+To change whether Keyboard Manager displays user specific or shared key map files, open the Options menu and choose File Filter. Refer to Changing Keyboard Manager Options for more information.
+
+Tip: When you change or add keystrokes in a shared key map file, JAWS automatically creates a user version of that file.
+
+Adding New Keyboard Layouts
+
+JAWS includes several predefined keyboard layouts, such as "Laptop" and "Desktop." However, you can also create your own keyboard layouts. To create a new keyboard layout, do the following:
+
+1.    In Keyboard Manager, open the Action menu and choose Add New Keyboard Layout.
+
+2.    Type a name for this keyboard layout in the edit box.
+
+3.    In the Inherit Keyboard Layout From combo box, select one of the existing keyboard layouts. This makes all the keystrokes found in the selected layout available in your new keyboard layout as well. For example, if you select "Desktop," your keyboard layout will inherit all the keystrokes in the Desktop keyboard layout. If you do not want your keyboard layout to inherit any keystrokes, select "No Inheritance."
+
+4.    Choose OK and then press ALT+F4 to close Keyboard Manager.
+
+5.    Press INSERT+J, open the Options menu, and choose Basics.
+
+6.    In the Use Keyboard Layout combo box, select your new keyboard layout and choose OK.
+
+7.    Now that your new keyboard layout is selected, you can return to Keyboard Manager to change or add keystrokes to your keyboard layout.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+Changing Keyboard Manager Options
+
+There are five groups of optional settings that change how the Keyboard Manager displays its information. All of these options are contained in one multi-page dialog box. Choose any of the five commands on the Options menu to go to that tab in the Options dialog box. Once you open the dialog box, you can move to each tab by pressing CTRL+TAB.
+
+Use the Key Filter tab of the Options dialog box to decide which key assignments and scripts to display in the scripts list.
+
+Use the Sort tab of the Options dialog box to decide which column of the script list is used to sort the list.
+
+Use the Hot Key tab of the Options dialog box to choose keys you can use in a hot key edit.
+
+Use the Messages tab of the Options dialog box to choose messages used by Keyboard Manager Filter Options.
+
+Use the File Filter tab of the Options dialog box to choose whether you want to display only shared files, only user files, or all active key map files.
+
+Key Filter Options
+
+The Keyboard Manager has two filter settings: Key Assignments and Scripts.
+
+The Key Assignments group has three radio buttons: All, Active, and Application.
+
+·         All displays all keystroke assignments in both the current key map file and the default key map file.
+
+·         Active displays only active keystroke assignments in both the current key map file and the default key map file. If a keystroke is assigned in both the application and default key map files, only the application keystroke is active as JAWS always acts on the first keystroke it finds and it looks in the application key map file first. This setting filters out duplicate keystrokes in the default key map file.
+
+·         Application displays only key assignments in the current key map file.
+
+The Scripts group has three radio buttons: All, Assigned to Keys, and Unassigned.
+
+·         All displays all scripts.
+
+·         Assigned to Keys displays only scripts assigned to keystrokes.
+
+·         Unassigned displays only scripts not assigned to keystrokes.
+
+Sort Options
+
+The Sort page has four radio buttons: Script Name, Keystroke, Key Map File, and Key Map Section. Choose the radio button that corresponds to the column you would like to use as the sort column for the Scripts List in the right pane.
+
+Hot Key Options
+
+The Hot Keys page has four checkboxes that correspond to: TAB, SHIFT+TAB, ENTER, and ESC. Select each one you want to use as a hot key. These keys are usually used to navigate in dialog boxes. For example, pressing TAB usually moves focus to the next control. That prevents it from being assigned to a script.
+
+Note: Assigning scripts to these keys is not recommended!
+
+If you would like to assign TAB to a script, follow these steps:
+
+1.    Choose Hot Key from the Options menu, check the Tab checkbox, and press ENTER.
+
+2.    Focus on a specific script and choose either Add Keystroke or Change Keystroke from the Action menu.
+
+3.    Focus on the Assign To: field in either the Add Keystroke or Change Keystroke dialog box, press TAB, and ENTER.
+
+4.    Choose Hot Key from the Options menu, uncheck the Tab checkbox, and press ENTER.
+
+Messages Options
+
+The Messages page has one check box:
+
+·         Select the Show Notification Messages When About to Modify a File check box to have Keyboard Manager notify you before modifying a key map file.
+
+File Filter Options
+
+Select one of the following radio buttons to indicate which set of key map files JAWS should display in Keyboard Manager:
+
+·         Active Files - Displays all key map files currently in use. If both a shared and user version of the same key map file exist, only the user-specific file is displayed.
+
+·         User Files - Displays only user key map files. These keystrokes override those in the shared key map files.
+
+·         Shared Files -Displays only shared key map files.
+
+ 
+
+ 
+
+  ------ --- ------
+  Back       Next
+  ------ --- ------
+
+ 

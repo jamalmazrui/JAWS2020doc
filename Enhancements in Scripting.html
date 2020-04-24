@@ -1,0 +1,1142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Enhancements in Scripting</title>
+    <link rel="stylesheet" href="/Content/Css/Site.min.css?v=1.7" media="all" />
+    <link rel="stylesheet" href="/Content/Css/MainMenu.min.css?v=3" media="all" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+
+	.inner-page-wrap{font-size:16px !important;}
+	p{font-size:16px !important;}
+	</style>
+	<!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+
+      </style>
+    <![endif]-->
+    <!--[if IE 8]>
+      <style type="text/css">
+	  body{font-size:1.8em !important; 	font-family: 'Montserrat', sans-serif !important;
+}
+        #main-menu {
+            background-color: #a2a4a7;
+        }
+
+		a {
+			color: #1a1a1a !important;
+		}
+		a:visited {
+			color: #1a1a1a !important;
+		}
+		a:hover, a:active {
+			color: #222222 !important;
+		}
+		/*
+		a:focus {
+			outline: thin dotted;
+		}*/
+		a:hover, a:active {
+			outline: 0 !important;
+		}
+		.underlineit:after {
+
+    content: "" !important; /* This is necessary for the pseudo element to work. */
+
+    display: block !important; /* This will put the pseudo element on its own line. */
+
+    margin: 0 !important; /* This will center the border. */
+
+    width: 10% !important; /* Change this to whatever width you want. */
+
+    padding-top: 20px !important; /* This creates some space between the element and the border. */
+
+    border-bottom: 4px solid #f17878 !important; /* This creates the border. Replace black with whatever color you want. */
+
+}
+
+
+      </style>
+    <![endif]-->
+    <!-- include jquery -->
+    <script src="/Scripts/jquery-1.11.0.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function OpenVideo(url, w, h) { if (w == null) w = 875; if (h == null) h = 690; var left = (screen.width / 2) - (w / 2); var top = (screen.height / 2) - (h / 2); window.open(url, '', 'scrollbars=no,status=no,resizable=no,width=' + w + ',height=' + h + ',left=' + left + ',top=' + top); }
+    </script>
+
+    
+    <meta name="Author" content="Freedom Scientific" />
+    <meta name="Description" content="Scripting language updates for JAWS and MAGic" />
+<link rel="canonical" href="http://www.freedomscientific.com/Support/JAWSDocumentation/ScriptingInfo" />
+
+
+    <script>
+        (function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-97234721-1', 'auto'); ga('send', 'pageview');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google AdWords: 1065046387 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1065046387"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-1065046387'); </script>
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4793141.js"></script>
+    <!-- End of Async HubSpot Analytics Code -->
+
+    <!-- Hotjar Tracking Code -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1466271,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+</head>
+<body>
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-P6GZBF"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-P6GZBF');</script>
+
+
+	<div class="row" style="max-width:1200px; margin:0 auto !important;">
+
+
+
+    <div class="col-sm-8 logo mobilecenter">
+
+    	<a focusable="false" href="https://www.freedomscientific.com"><img src="https://www.freedomscientific.com/assets/images/freedom-scientific-logo.png" alt="Freedom Scientific"/></a>
+
+	</div>
+
+    <div class="col-sm-4 mobilecenter" style="text-align:right;">
+
+		<span class="calltoday">Call Today!</span><span class="mainphone"><a href="tel:+18004444443">1(800) 444-4443</a></span>
+
+
+
+        <form title="Site Search Form" method="get" action="/Home/SiteSearch" class="navbar-form navbar-right nomobile" style="margin=top:25px;">
+
+        <div class="form-group">
+
+          <label for="search">Search:</label>
+<input type="hidden" value="date:D:L:d1" name="sort" />
+                                <input type="hidden" value="xml_no_dtd" name="output" />
+                                <input type="hidden" value="UTF-8" name="oe" />
+                                <input type="hidden" value="UTF-8" name="ie" />
+                                <input type="hidden" value="default_frontend" name="client" />
+                                <input type="hidden" value="default_collection" name="site" />
+                                <input type="hidden" value="p" name="filter" />
+                                <label class="sr-hidden" for="search-query">Search</label>
+          <input type="text" class="form-control" name="q" id="search-query" value="" />
+
+        </div>
+
+        <button type="submit" class="btn btn-dark">Submit</button>
+
+      </form>
+
+    </div>
+
+
+
+</div>
+
+
+
+    <div class="">
+        <div>
+		<!--
+            <div class="header">
+
+				<div class="column-1">
+                    <div class="sr-hidden" id="skip-div"><a href="#main-content-anchor" id="skip-link">Skip to main content</a></div>
+                    <a href="/" title="Freedom Scientific"><img class="logo" alt="Freedom Scientific" src="/Content/Images/freedomLogo.gif" /></a>
+                </div>
+
+                <div class="column-2" style="text-align: right;">
+                    <div style="display: inline-block; width: 100%;">
+                        <div class="low-vision-controls">
+                            <span class="decrease-font">
+                                <a href="javascript:fsTextResizer.decreaseSize();" title="Decrease font size"><img src="/Content/Images/decrease-font-size.gif" alt="Decrease font size" /></a></span> <span class="font-sample" aria-hidden="true">A</span>
+                            <span class="increase-font">
+                                <a href="javascript:fsTextResizer.increaseSize();" title="Increase font size"><img src="/Content/Images/increase-font-size.gif" alt="Increase font size" /></a></span>
+                            <span class="toggle-contrast">
+                                <a href="javascript:fsHighContrast.toggle();" title="Toggle contrast"><img src="/Content/Images/toggle-high-contrast-mode.gif" alt="Toggle contrast" /></a></span>
+                        </div>
+                        <div class="search-bar" role="search">
+                            <form title="Site Search Form" method="get" action="/Home/SiteSearch">
+                                <input type="hidden" value="date:D:L:d1" name="sort" />
+                                <input type="hidden" value="xml_no_dtd" name="output" />
+                                <input type="hidden" value="UTF-8" name="oe" />
+                                <input type="hidden" value="UTF-8" name="ie" />
+                                <input type="hidden" value="default_frontend" name="client" />
+                                <input type="hidden" value="default_collection" name="site" />
+                                <input type="hidden" value="p" name="filter" />
+                                <label class="sr-hidden" for="search-query">Search</label>
+                                <input type="text" class="form-control" value="" name="q" id="search-query" /><button type="submit" id="btnG" name="btnG" title="Search" class="search-button">Search</button>
+                            </form>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+			-->
+			<!-- done hiding old header -->
+	<script>
+$(document).ready(function(){
+    $(".dropdown").hover(
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');
+        }
+    );
+});
+</script>
+	<nav class="navbar">
+
+<div class="menuwrap">
+
+  <div class="container-fluid">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fsnavbar" aria-expanded="false">
+
+        <span class="sr-only">Toggle navigation</span>
+
+        <span class="icon-bar"></span>
+
+        <span class="icon-bar"></span>
+
+        <span class="icon-bar"></span>
+
+      </button>
+
+    </div>
+
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+    <div class="collapse navbar-collapse" id="fsnavbar">
+
+      <ul class="nav navbar-nav">
+
+        <li><a href="https://www.freedomscientific.com">Home</a></li>
+
+        <li class="dropdown">
+
+          <a href="https://www.freedomscientific.com/products" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+
+            <li><a href="https://www.freedomscientific.com/products/lowvision">Low Vision Products</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/blindness">Blindness Products</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/accessibility-testing">Accessibility Testing Products</a></li>
+
+          </ul>
+
+        </li>
+
+
+
+        <li class="dropdown">
+
+          <a href="https://www.freedomscientific.com/software" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Software<span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+
+            <li><a href="https://www.freedomscientific.com/products/software/jaws">JAWS</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/software/zoomtext">ZoomText</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/software/fusion">Fusion</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/software/openbook">OpenBook</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/software/home-licenses/">Software For Home</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/software/school-licenses/">Software For School</a></li>
+
+            <li><a href="https://www.freedomscientific.com/products/software/business-licenses/">Software For Business</a></li>
+
+            <li role="separator" class="divider" aria-hidden="true"></li>
+
+            <li><a href="//fsactivate.freedomscientific.com">Activate Software License</a></li>
+
+            <li><a href="//portal.freedomscientific.com/SponsoredSoftware">Sponsored Software Licenses</a></li>
+
+          </ul>
+
+        </li>
+
+
+
+        <li class="dropdown">
+
+          <a href="https://www.freedomscientific.com/services" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+
+          	<li><a href="https://www.freedomscientific.com/services/accessibilityconsulting/">Accessibility Consulting</a></li>
+
+            <li><a href="https://www.freedomscientific.com/services/disabilityetiquettetraining/">Disability Etiquette Training</a></li>
+
+            <li><a href="https://www.freedomscientific.com/training">Training</a></li>
+            
+            <li><a href="https://www.freedomscientific.com/training/certification">Certification</a></li>
+          </ul>
+
+        </li>
+
+
+
+        <li class="dropdown">
+
+          <a href="//support.freedomscientific.com" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support<span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+
+            <li><a href="https://support.freedomscientific.com/support">Technical Support</a></li>
+
+            <li><a href="https://www.freedomscientific.com/training/">Training and Certification</a></li>
+
+            <li><a href="https://support.freedomscientific.com/forms/productregistration">Register A Product</a></li>
+
+	    <li><a href="https://support.freedomscientific.com/downloads/documentation">Documentation</a></li>
+
+            <li role="separator" class="divider" aria-hidden="true"></li>
+
+            <li><a href="https://www.freedomscientific.com/downloads">Software Downloads</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/Synthesizers">Synthesizers</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/Focus">Focus Blue Firmware</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/HardwareDrivers">Hardware Drivers</a></li>
+
+          </ul>
+
+        </li>
+
+
+
+        <li class="dropdown">
+
+          <a href="/downloads" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Downloads<span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+
+            <li><a href="https://support.freedomscientific.com/Downloads/JAWS">JAWS</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/fusion">Fusion</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/ZoomText">ZoomText</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/MAGic">MAGic</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/OpenBook">OpenBook</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/WYNN">WYNN</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/Synthesizers">Synthesizers</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/Focus">Focus Blue Firmware</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/omniReader">omniReader Update</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/HardwareDrivers">Hardware Drivers</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/EyeMerge">EyeMerge</a></li>
+
+            <li><a href="https://support.freedomscientific.com/Downloads/EyePalZoomOffice">Eye-Pal / Zoom-Office</a></li>
+
+          </ul>
+
+        </li>
+
+
+
+        <li><a href="https://support.freedomscientific.com/forms/dealerlocator">Find A Dealer</a></li>
+
+        <li style="display:none;"><a href="https://www.freedomscientific.com/dealer-locator/">Find A Dealer</a></li>
+
+        <li><a href="//store.freedomscientific.com" class="shopnow">Shop Online</a></li>
+
+      </ul>
+
+
+
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+
+</div>
+
+</nav>
+
+<style>
+html {
+
+	line-height: 1.15; /* 1 */
+
+	-webkit-text-size-adjust: 100%; /* 2 */
+
+	border-top:4px solid #f17878;
+
+	padding-top:7px;
+
+}
+
+body{font-size:1.3em;}
+.navbar{background:/*#06C*/ #fcfbfb; width:100%; color:#1a1a1a !importantform;  margin-top:25px !important; margin-bottom:0 !important; -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+		  border:0px !important;
+		  border-bottom:1px solid #efefef !important;
+ }
+ .navbar-default {
+  box-shadow: none;
+}
+.navbar a:link{color:#1a1a1a; box-shadow: none; padding:15px 25px; font-weight:600; font-size:15.5px;}
+.navbar-brand, .navbar-nav>li>a {
+    text-shadow: 0 0px 0 rgba(255,255,255,.25) !important;
+}
+.dropdown-menu>li>a{
+	display: block;
+    padding: 13px 20px;
+    clear: both;
+    font-weight: 400 !important;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+	}
+.row{margin:0 !important;}
+.shopnow{background:#005abf !important; color:#ffffff !important;}
+.calltoday{font-size:22px; color:#005abf; padding:9px; margin:0; /*background:#1a1a1a;*/ font-weight:bold;}
+.mainphone{font-size:22px; color:#222222; padding:9px; margin:0; /*background:#005abf;*/ font-weight:bold;}
+.content-page h1, .form-page h1 {
+    margin: 0 0 20px;
+    padding: 10px 35px;
+    background-color: #ffffff;
+    font-size: 2.6em;
+	display:block;
+    font-weight: 700;
+}
+/*.content-page h1, .form-page h1 :after {
+    content: "";
+    display: block;
+    margin: 0;
+    width: 10%;
+    padding-top: 20px;
+    border-bottom: 4px solid #f17878;
+}*/
+hr.large-solid {
+    height: 1px;
+    margin: 0 0 30px;
+    padding: 0;
+    width: 100%;
+}
+hr.medium {
+    height: 1px;
+}
+.search-header-side{font-weight:bold;}
+.search-result{width:98%; margin:1%; min-height:130px; background:#f7f7f7; padding:10px; border:1px solid #efefef; float:left;}
+.results-nav-links{display:block;}
+.kb-search .search-results-col a h3 {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 0;
+}
+.search-footer-row h4{font-weight:bold;}
+.search-footer-row .search-result{width:98%; min-height:10px; margin:.5%; background:#f7f7f7; padding:10px; border-bottom:1px solid #efefef; border-left:4px solid #f17878; float:left;}
+.search-footer-row .liRecent{width:98%; min-height:10px; margin:.5%; background:#f7f7f7; padding:10px; border-bottom:1px solid #efefef; border-left:4px solid #f17878; float:left;}
+.search-footer-col1{width:98%; margin:1%;}
+.search-footer-col2{width:98%; margin:1%;}
+.search-footer-row ol {
+    list-style: none;
+    padding-left: 0px;
+}
+.search-footer-row a {
+    font-size: 1.2em;
+    line-height: 20px;
+}
+.form-page, .form-page fieldset label {
+    font-size: 0.8em;
+}
+label {
+    display: inline;
+    max-width: 20%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.form-page INPUT[type=text], .form-page SELECT, .form-page TEXTAREA {
+    display: inline-block;
+    /*width: 100%;*/
+    height: 28px;
+    padding: 6px 12px;
+    font-size: 14px;
+    /*line-height: 1.42857143;*/
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-page .form-field label {
+    display: inline-block;
+	text-align:left;
+	font-size:1.0em;
+}
+.form-page.base-form FORM {
+    /* width: auto; */
+    display: block;}
+
+footer{
+
+	background:#f9f9f9; border-top:1px solid #efefef;padding:25px 0; /*min-height:400px;*/ /*margin-top:200px;*/ width:100%; /*color:#a7a7a7 !important*/ color:#222222;
+
+}
+
+footer a:link, footer a:active, footer a:visited {color:#222222;}
+
+footer a:hover {color:#666666;}
+
+/*footer h3{border-bottom:0px solid #dddddd; padding:5px;}*/
+
+.footer-links{list-style:none !important;
+
+			  margin-left: 0px;
+
+    		  padding-left: 5px;
+
+			  line-height:1.8em;
+
+			  }
+
+footer .footermain h3:after {
+
+    content: '';
+
+    width: 40px;
+
+    height: 2px;
+
+    background-color: #005abf;
+
+    display: block;
+
+    margin-top: 13px;
+
+}
+
+
+</style>
+
+
+
+            <nav id="main-menu" style="z-index: 999999; position: relative; display:none; aria-hidden="true">
+                <!-- BEGIN DO NOT CHANGE SPACING IE REQUIRES NO SPACE AFTER CLOSING UL AND NEXT LI TO READ PROPERLY -->
+                <ul id="mb1" class="menubar root-level" title="Main Menu" aria-controls="st1">
+
+                    <li class="menu-parent" tabindex="-1" aria-haspopup="true" aria-label="PRODUCTS" data-section="/products/">
+                        <a style="color:white!important;" href="javascript:void(0);">PRODUCTS <span class="menu-hidden-description-parent"></span></a>
+                        <ul id="productsSubMenu" class="menu" aria-hidden="true">
+                            <li id="low-vision-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a id="low-vision-menu_link" title="" href="/Products/LowVision">
+                                    Low Vision Products
+                                </a>
+                            </li>
+                            <li id="blindness-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a id="blindness-menu_link" title="" href="/Products/Blindness">
+                                    Blindness Products
+                                </a>
+                            </li>
+                            <li id="accessibility-testing-products-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a id="accessibility-testing-products_link" title="" href="/Services/AccessibilityTestingProducts">
+                                    Accessibility Testing Products
+                                </a>
+                            </li>
+                            <li id="blindness-learning-systems"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a id="blindness-learning-systems_link" title="" href="https://lsg.freedomscientific.com">
+                                    Learning Systems Group Products
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-parent" aria-haspopup="true" tabindex="-1" aria-label="SERVICES" data-section="/services/">
+                        <a style="color:white!important;" href="javascript:void(0);">SERVICES<span class="menu-hidden-description-parent"></span></a>
+                        <ul id="servicesSubmenu" class="menu" aria-hidden="true">
+
+                            <li id="consulting-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Services/AccessibilityConsulting">
+                                    Accessibility Consulting
+                                </a>
+                            </li>
+                            <li id="accessibility-Training-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="https://www.paciellogroup.com/services/training/">
+                                    Enterprise Accessibility Training
+                                </a>
+                            </li>
+                            <li id="Disability-Etiquette-Training-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Services/DisabilityEtiquetteTraining">
+                                    Disability Etiquette Training
+                                </a>
+                            </li>
+                            <li id="training-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Services/TrainingAndCertification">
+                                    Training
+                                </a>
+                            </li>
+                            <li id="certification-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Services/TrainingAndCertification/Certification">
+                                     Certification
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li id="downloadsMenu" class="menu-parent" tabindex="-1" aria-haspopup="true" data-section="/downloads/" aria-label="DOWNLOADS">
+                        <a style="color:white!important;" href="javascript:void(0);">DOWNLOADS<span class="menu-hidden-description-parent"></span></a>
+                        <ul id="downloadsSubMenu" class="menu" aria-hidden="true">
+                            <li id="JAWS-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/JAWS">
+                                    JAWS
+                                </a>
+                            </li>
+                            <li id="Fusion-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="https://www.zoomtext.com/downloads#Fusion 2018" target="_blank">
+                                    Fusion
+                                </a>
+                            </li>
+                            <li id="ZoomText-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="https://www.zoomtext.com/help/product-downloads#ZoomText 2018" target="_blank">
+                                    ZoomText
+                                </a>
+                            </li>
+                            <li id="MAGic-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/MAGic">
+                                    MAGic
+                                </a>
+                            </li>
+                            <li id="OpenBook-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/OpenBook">
+                                    OpenBook
+                                </a>
+                            </li>
+                            <li id="WYNN-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/WYNN">
+                                    WYNN
+                                </a>
+                            </li>
+                            <li id="synthesizers-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/Synthesizers">
+                                    Synthesizers
+                                </a>
+                            </li>
+                            <li id="focus-blue-firmware-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/Focus">
+                                    Focus Blue Firmware
+                                </a>
+                            </li>
+                            <li id="omniReader-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/omniReader">
+                                    omniReader Update
+                                </a>
+                            </li>
+                            <li id="hardware-drivers-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/HardwareDrivers">
+                                    Hardware Drivers
+                                </a>
+                            </li>
+                            <li id="EyeMerge-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/EyeMerge">
+                                    EyeMerge
+                                </a>
+                            </li>
+                            <li id="EyePal-ZoomOffice-downloads"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/EyePalZoomOffice">
+                                    Eye-Pal / Zoom-Office
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="supportMenu" class="menu-parent" tabindex="-1" aria-haspopup="true" data-section="/support" aria-label="SUPPORT">
+                        <a style="color:white!important;" href="javascript:void(0);">SUPPORT<span class="menu-hidden-description-parent"></span></a>
+                        <ul id="supportSubMenu" class="menu" aria-hidden="true">
+                            <li id="tech-support-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Support">
+                                    Technical Support
+                                </a>
+                            </li>
+                            <li id="activation-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="https://fsactivate.freedomscientific.com/">
+                                    Software Activation
+                                </a>
+                            </li>
+                            <li id="documentation-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Downloads/Documentation">
+                                    Documentation
+                                </a>
+                            </li>
+                            <li id="product-registration-menu"
+                                class="menu-item"
+                                tabindex="-1">
+                                <a title="" href="/Forms/ProductRegistration">
+                                    Product Registration
+                                </a>
+                            </li>
+                            <li id="product-demo-videos-menu"
+                                class="menu-item"
+                                tabindex="-1" data-href="/Support/ProductVideos">
+                                <a title="" href="/Support/ProductVideos">
+                                    Product Videos
+                                </a>
+                            </li>
+                            <li id="vision-loss-menu"
+                                class="menu-item"
+                                tabindex="-1" data-href="/Support/VisionLoss">
+                                <a title="" href="/Support/VisionLoss">
+                                    Vision Loss Facts and Resources
+                                </a>
+                            </li>
+                            <li id="EULAS-menu"
+                                class="menu-item"
+                                tabindex="-1" data-href="/Products/EULAS">
+                                <a title="" href="/Products/EULAS">
+                                    Software License Agreements
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="dealerMenu" class="menu-parent" tabindex="-1" data-section="/forms/dealerlocator" data-href="/Forms/DealerLocator" aria-label="DEALER LOCATOR">
+                        <a title="" style="color:white!important" href="/Forms/DealerLocator">DEALER LOCATOR<span class="menu-hidden-description"></span></a>
+                    </li>
+                    <li id="shopMenu" class="menu-parent" style="background-image:none !important;" tabindex="-1" data-href="https://sales.freedomscientific.com" data-section="https://sales.freedomscientific.com" aria-label="SHOP">
+                        <a title="" style="color:white!important" href="https://sales.freedomscientific.com">SHOP<span class="menu-hidden-description"></span></a>
+                    </li>
+                </ul>
+                <!-- END DO NOT CHANGE SPACING IE REQUIRES NO SPACE AFTER CLOSING UL AND NEXT LI TO READ PROPERLY -->
+            </nav>
+        </div>
+		<div class="row" style="height:200px; /*background:#06C;*/ background-image:url('https://www.freedomscientific.com/wp-content/uploads/2018/08/topbackground.jpg');
+    background-position:top left;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+ color:#ffffff; text-align:center;">
+	</div>
+        <div class="main-content" role="main" style="z-index: 1; position: relative; max-width:1600px; margin:-90px auto 0 auto; background:#ffffff;" id="main-div-layout">
+            
+<div class="content-page">
+<h1>Enhancements in Scripting</h1>
+    <div class="inner-page-wrap">
+<p>This page describes scripting changes introduced in JAWS 11 and later. For more information about scripting Freedom Scientific products, see the <a href="/Content/Documents/Other/ScriptManual/01-0_Introduction.htm" target="_blank">Basics of Scripting Manual (HTML)</a>.</p>
+<h2><a name="JAWS18"></a>JAWS 18</h2>
+<p>The following script enhancement is available in JAWS 18.</p>
+<h3>Updates to the JAWS UIA Script API</h3>
+<p>Since JAWS 15, The JAWS UIA Script API has provided scripters direct access to Microsoft's UIA (User Interface Automation) infrastructure through the JAWS Script language. This enables you to make even more powerful JAWS customizations for applications that support UIA. In Windows 10, Microsoft has added some new UIA properties, methods, and values. The JAWS UIA Script API has been updated to support the latest UIA properties and methods so you can begin using them in your scripts.</p>
+<p>The following special integer types have been added.</p>
+<ul>
+<li>LandmarkTypeID</li>
+<li>TextEditChangeType</li>
+</ul>
+<p>The following method was added for the FSUIA object.</p>
+<ul>
+<li>bool AddTextEditTextChangedEventHandler ( FSUIAElement, TreeScope, TextEditChangeType);</li>
+</ul>
+<p>The following properties were added for the FSUIAElement object.</p>
+<ul>
+<li>IsPeripheral</li>
+<li>PositionInSet</li>
+<li>SizeOfSet</li>
+<li>Level</li>
+<li>Annotation Types</li>
+<li>Annotation Objects</li>
+<li>LandmarkType</li>
+<li>LocalizedLandmarkType</li>
+<li>FullDescription</li>
+</ul>
+<p>The following UIA event was added.</p>
+<ul>
+<li>TextEditTextChangedEvent(FSUIAElement, TextEditChangeType, FSUIAStringArray);</li>
+</ul>
+<p>For more information, refer the the <a href="UIAScriptAPI">JAWS UIA Script API documentation</a> page.</p>
+<h2><a name="JAWS17"></a>JAWS 17</h2>
+<p>The following script enhancements are available in JAWS 17.</p>
+<h3>Create Domain Specific Scripts</h3>
+<p>Beginning with JAWS 17, you can now create JAWS scripts that only load when a particular web site is active. This enables you to create custom scripts for applications that run inside of a web browser such as Internet Explorer or Firefox. To aide in creating domain specific scripts, new functions have been added. These functions include:</p>
+<ul>
+<li><strong>GetDocumentXML</strong> - Returns XML for the current virtual document. It obtains well-formed XML from the DOM Server for parsing using the MSXML com object.</li>
+<li><strong>PerformActionOnElementWithTagAndAttribute</strong> - Finds an element in the DOM by tag and attrib/value pair and performs an action on it such as setFocus, makeVisible or doDefaultAction.</li>
+<li><strong>PerformActionOnElementWithId</strong> - Finds an element in the DOM by its unique ID and performs an action on it such as setFocus, makeVisible or doDefaultAction.</li>
+</ul>
+<p>For more information on creating domain specific scripts, refer to the <a href="/Content/Documents/Other/Domain-Scripting-Quick-Start.pdf" target="_blank">Domain Scripting Quick Start Guide</a>.</p>
+<h2><a name="JAWS15"></a>JAWS 15</h2>
+<p>The following script enhancement is available in JAWS 15.</p>
+<h3>JAWS UIA Script API</h3>
+<p>The new JAWS UIA Script API gives scripters direct access to Microsoft's UIA (User Interface Automation) infrastructure through the JAWS Script language. This enables you to make even more powerful JAWS customizations for applications that support UIA. For more information, refer to the <a href="UIAScriptAPI">JAWS UIA Script API Documentation</a> page.</p>
+<h2><a name="JAWS14"></a>JAWS 14</h2>
+<p>The following script enhancement is available in JAWS 14.</p>
+
+<h3><a name="Get"></a>GetScreenXML</h3>
+<p>A new script function has been added to JAWS 14 to obtain screen content in XML format. It is called GetScreenXML. This function takes four optional parameters specifying the rectangle from which content will be obtained. If not supplied, content from the entire screen will be returned.</p>
+
+<p>The XML includes text, font name, size, attributes, color and click locations for every character in the specified rectangle. Control type and state information is also included. It also includes OCRed text if the OCR function has been used and the OCR data not invalidated. One can determine from the Spanâ€™s Source attribute where the text came from, i.e. the OSM or OCR. If source=OCR, the text was from the OCR engine, if the source is not specified it is either from the OSM or the Dom Server.</p>
+
+<ul>
+  <li>Each run of text with the same source, font and attributes is enclosed in a span so that font and attributes do not need to be specified for every character.</li>
+  <li>XML Element and attribute names are camel-cased, i.e. each word in the name is capitalized.</li>
+  <li>The XML format is of the form:</li>
+</ul>
+
+  <p style="padding-left:72px"><strong>&lt;Lines Version=1.0&gt;<br />
+  &lt;Line Left=X1, Top=Y1, Right=X2, Bottom=Y2&gt;<br />
+  &lt;Span Source=â€OCRâ€ Font=Name Size=Pts Bold=On Italic=On Underline=On ... color=hex, background=hex controlType=type ControlState=state>text inside span&lt;/Span&gt;&lt;Span>...&lt;/Span&gt;...<br />
+  &lt;CharLocations>&lt;Char x=XCoord Y=YCoord&gt;...&lt;/CharLocations&gt;&lt;/Line&gt;<br />
+  ...<br />
+  &lt;/Lines&gt;</strong></p>
+
+<h4><a name="Explain"></a>Explanatory Notes</h4>
+<p>All content is placed within a Lines element with a Version attribute. The Lines element contains one or more Line elements representing each Line of text in the specified rectangle. Each Line element has attributes describing its encapsulating rectangle. Each line element contains one or more Span elements containing text with the same font/attribute/color/source/controltype. Attributes are only included if on. For example, if the text in a span is not italicized, the Italic attribute will not be included in the XML. If text in a span is bolded, the Span will contain an attribute, Bold=on. After all the Spans on a line, as the last child of the Line node, a CharLocations element encloses a list of Char elements for each character on the line (within the specified rectangleâ€™s bounds), specifying the click point for each character in the line or line segment.</p>
+<p>A sample test script is given below to demonstrate how to use the MSXML 6.0 object to parse the screen XML into a DOM tree and then interact with its DOM. Please consult the MSXML 6.0 documentation or XPath documentation for more information on the MSXML object or the XPath query language.</p>
+
+	<p>&nbsp;&nbsp; <strong>script test()<br />
+	&nbsp;&nbsp; var object msxml = CreateObject("msxml2.DOMDocument.6.0")<br />
+	&nbsp;&nbsp; if (!msxml)<br />
+	&nbsp;&nbsp; SayString("no MSXML")<br />
+	&nbsp;&nbsp; return<br />
+	&nbsp;&nbsp; EndIf<br />
+	&nbsp;&nbsp; msxml.async = false;<br />
+	&nbsp;&nbsp; msxml.resolveExternals = false;<br />
+	&nbsp;&nbsp; msxml.loadXML(GetScreenXML()) ; Obtain the XML from the screen and/or OCRed text.<br />
+	&nbsp;&nbsp; var object results = msxml.SelectNodes("//Span") ; Get list of all spans<br />
+	&nbsp;&nbsp; if (!results)<br />
+	&nbsp;&nbsp; sayString("no results")<br />
+	&nbsp;&nbsp; return<br />
+	&nbsp;&nbsp; EndIf<br />
+	&nbsp;&nbsp; var object node<br />
+	&nbsp;&nbsp; foreach node in results<br />
+	&nbsp;&nbsp; var object attribs = node.attributes<br />
+	&nbsp;&nbsp; if (!attribs)<br />
+	&nbsp;&nbsp; SayString("no attribs")<br />
+	&nbsp;&nbsp; EndIf<br />
+	&nbsp;&nbsp; if attribs.GetNamedItem("Source").nodeValue=="OCR" then<br />
+	&nbsp;&nbsp; ;This text is from OCR<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  sayUsingVoice(VCTX_MESSAGE, node.text, OT_SCREEN_MESSAGE) <br />
+	&nbsp;&nbsp; else<br />
+	&nbsp;&nbsp; ;This is from the OSM<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  saystring(node.text)<br />
+	&nbsp;&nbsp; endIf<br />
+	&nbsp;&nbsp; EndForeach<br />
+	&nbsp;&nbsp; ;SayString(result.nodename)<br />
+	&nbsp;&nbsp; ;SayString(result.nodevalue)<br />
+	&nbsp;&nbsp; endScript </strong></p>
+
+<h2><a name="JAWS13"></a>JAWS 13</h2>
+<p>The following script enhancements were made in JAWS 13.</p>
+
+<h3><a name="Behavior"></a>Behavior Changes to String Comparison Operators</h3>
+<p>In all versions of JAWS prior to JAWS 13, string comparison operators in the script language operate in a non-intuitive fashion. For two strings X and Y, the string equality operator == will return true not only if X and Y are identical, but also if the shorter of the two strings is the starting substring of the longer. So the expression if (&quot;Hello&quot; == &quot;Hello there&quot;) will return true.  The not-equal operator != works in the opposite fashion.</p>
+<p>In JAWS 13, these operators by default work as one would expect.  That is, the == operator only returns true if the strings exactly match and the != operator returns true unless the strings exactly match. We realize that existing JAWS scripts may depend on the pre JAWS 13 behavior and have taken the following steps to minimize problems or inconvenience.</p>
+<p>Any script compiled using JAWS 12 or earlier and used in JAWS 13 will maintain the pre JAWS 13 behavior.</p>
+<p>Any script compiled using JAWS 13 will by default have the new behavior.  If a script file needs to be compiled with JAWS 13 but requires  the old string comparison operator behavior, this can be accomplished by putting the line</p>
+
+  <p>&nbsp;&nbsp;<strong>;#pragma StringComparison partial</strong> </p>
+
+<p>anywhere in the script file outside of a script or function.</p>
+
+  <p>&nbsp;&nbsp;<strong>;#pragma StringComparison full</strong> </p>
+
+<p>is the default in JAWS 13 and beyond, but can be used explicitly to go back to full string comparison after one or more scripts/functions that required partial comparison semantics.</p>
+<p>The pragma syntax begins with a comment character which means that these lines can be placed in script files that will be compiled both with JAWS 13 and with earlier versions. In earlier versions, the lines will be ignored and in JAWS 13 and beyond they will be processed as described above.</p>
+<p>Note that any scripts compiled with JAWS 13, will not be backwardly  compatible with earlier versions of JAWS.</p>
+
+<h2><a name="JAWS11"></a>JAWS 11 Update 1</h2>
+<p>The following script enhancements were made in JAWS 11 Update 1.</p>
+
+<h3><a name="Arrays"></a>Arrays</h3>
+<p>New in JAWS version 11 Update 1  is the ability to use arrays. Arrays can contain elements of any standard JAWS  scripting data type. Declare the array as 
+  data-type followed immediately  by the word array, as in:</p>
+
+  <p>&nbsp;&nbsp;<strong>StringArray names<br />
+    &nbsp;&nbsp;IntArray ages<br />
+    &nbsp;&nbsp;VariantArray mixed</strong></p>
+
+<p>Note that variantArrays can  contain a mixture of elements of different data types.</p>
+<p>Declaring an array does not  create it. Creation is done using the keyword New:</p>
+
+  <p>&nbsp;&nbsp;<strong>Let names = new StringArray[3]</strong></p>
+
+<p>The above statement will create  an empty three item string array called names. This is known as a one  dimensional array because there is only one number  between the brackets in the  array creation. In order to create a two dimensional array, use a comma to  separate the two values. For example, the following statement will create a two  dimensional array with five rows and three columns.</p>
+
+  <p>&nbsp;&nbsp;<strong>Let names = new StringArray[5,  3]</strong></p>
+
+<h3><a name="CollectionVariables"></a>Collection  Variables </h3>
+<p>There is now a new datatype called collection. Each item in a collection has  a name of type string and can contain any type of value. Declaring a collection  does not create it. This must be done with the new keyword as in the following  example. </p>
+
+  <p>&nbsp;&nbsp;<strong>var</strong><br />
+    <strong>&nbsp;&nbsp;&nbsp; collection MonthDays</strong><br />
+    <strong>&nbsp;&nbsp;&nbsp; let MonthDays = new collection</strong></p>
+
+<p>There are two ways to access items of a collection. If you know the name of  an item then it can be assigned or retrieved using the dot operator. </p>
+
+  <p>&nbsp;&nbsp;<strong>&nbsp; let MonthDays.february = 28</strong><br />
+    <strong>&nbsp;&nbsp;&nbsp; SayInteger(MonthDays.February)</strong></p>
+
+<p>If the name of an item is enclosed in quotes, contained in a variable, or is  returned by a function call, then you must use the [] operator with the  variable name, quoted string, or the function call inside the brackets. </p>
+
+  <p>&nbsp;&nbsp;<strong>var</strong><br />
+  	<strong>&nbsp;&nbsp;&nbsp; string MonthName</strong><br />
+    <strong>&nbsp;&nbsp;&nbsp; let MonthName = &quot;january&quot;</strong><br />
+    <strong>&nbsp;&nbsp;&nbsp; let MonthDays[MonthName] = 31</strong><strong>&nbsp;&nbsp;&nbsp; </strong></p>
+
+<p>The dot operator and [] operator can be used interchangeably. </p>
+<p>Items of a collection spring into existence the first time they are  assigned. Setting a collection item will make that item's type the type of the  value being assigned. It is the scripter's responsibility to ensure that when  retrieving a collection item, the value is stored in the appropriate type of  variable. Retrieving a nonexistent item does not throw an error. Collections  are always passed to functions by reference, and assigning one collection to  another will result in two variables referring to the same collection. </p>
+<p>The names of the items contained in a collection can be enumerated using the <em>ForEach</em> statement. Arrays can be members of a collection and collections  can be elements of an array if that array is of type VariantArray. </p>
+
+<h3><a name="AssigningVariables"></a>Assigning Values to Variables</h3>
+<p>The LET statement is no longer  required when assigning a value to a variable. For example, the following two  statements will compile in JAWS 11 Update 1 and later:</p>
+
+  <p>&nbsp;&nbsp;<strong>LET x = 10<br />
+  &nbsp;&nbsp;X = 10</strong></p>
+
+<p>You can also assign a value to a  variable at declaration as in the following example:</p>
+
+  <p>&nbsp;&nbsp;<strong>Var<br />
+   &nbsp;&nbsp; Int x = 10, string sText =  &ldquo;hello&rdquo;</strong></p>
+
+
+<h3><a name="ForLoop"></a>The For Loop</h3>
+<p>Another method of performing  looping in your scripts is by using the For-EndFor looping statements. Similar  to a While loop, a For loop consists of three parts: the keyword For that  starts the loop, the condition being tested, and the EndFor keyword that terminates  the loop. JAWS performs all statements found in the boundaries of the  loop as long as the loop condition is true. An example of the syntax of a For  loop follows.</p>
+
+  <p>&nbsp;&nbsp;<strong>For x = Start to End<br />
+   &nbsp;&nbsp;...Statements to be performed go  here<br />
+   &nbsp;&nbsp;EndFor</strong></p>
+
+<p>The value of x must be an  integer variable and the values of Start and End must be integers, integer  variables, or integer constants. The major difference  between the While and For  looping structures is that a For loop will run a predetermined number of times.  An example of the use of a For loop follows.</p>
+
+  <p>&nbsp;&nbsp;<strong>Var<br />
+   &nbsp;&nbsp; int iCounter<br />
+   &nbsp;&nbsp; For iCounter = 1 to 10; Loop  will execute 10 times<br />
+   &nbsp;&nbsp; SayInteger(iCounter); Speak the  value of the iCounter variable<br />
+   &nbsp;&nbsp; EndFor</strong></p>
+
+<p>In the above example the For  loop will execute ten times. As set by the For statement, the iCounter variable  starts with a value of 1 and increments by 1 each time the loop executes.  Notice that the iCounter variable is automatically incremented each time the  loop executes. At the end of the tenth loop iteration the value of icounter  becomes 11 and the For statement is no longer true thus ending the loop. Each  time the loop executes the SayInteger function speaks the value of iCounter.  When this script is run you will hear JAWS count from one to ten.</p>
+<!--<hr>
+<p>Press <strong>ALT+LEFT ARROW</strong> or the Back button to return to the previous page.</p>-->
+</div>
+</div>
+
+        </div>
+        <hr class="medium" aria-hidden="true" />
+        <div class="footer" style="display:none;">
+            <div class="col" style="width: 250px;">
+                <strong>&copy;2020 Freedom Scientific, Inc.</strong><br />
+                800-444-4443<br />
+                727-803-8000<br />
+            </div>
+            <div class="col" style="padding-left: 40px; width: 200px;">
+                <a href="/About/Index/GSAAdvantage" target="_blank">GSA Advantage</a><br />
+                <a href="/About/Index/AccessibilityPolicy">Accessibility Policy</a><br />
+                <a href="/About/Index/ConditionsOfUse">Conditions of Use</a><br />
+                <a href="/About/Index/PrivacyPolicy">Privacy Policy</a>
+            </div>
+            <div class="col" style="padding-left: 40px; width: 200px;">
+                <a href="/About/Index/Careers">Careers</a><br />
+                <a href="/About/ContactUs">Contact Us</a><br />
+                <a href="/About">About</a>
+            </div>
+            <div class="col" style="padding-left:0px; width:200px; vertical-align:top">
+                <img src="/Content/Images/CEA-Member-Logo.png" alt="Consumer Technology Association member" width="90" height="60" style="padding-right:10px" /><img src="/Content/Images/Part_of_VFO.png" alt="Part of VFO" />
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+<footer id="colophon" class="site-footer">
+
+
+
+ <div class="footer-wrap" style="max-width:1600px; margin:0 auto !important;">
+
+    <div class="row">
+
+      <div class="col-md-4 col-sm-6">
+
+        <div class="footer-logo"><img src="https://www.freedomscientific.com/assets/images/freedom-scientific-logo.png" alt="Freedom Scientific"></div>
+
+        <p>Freedom Scientific is the largest worldwide manufacturer of assistive technology products for those with vision impairments or learning disabilities. <br /><strong><a href="https://www.freedomscientific.com/about/" alt="" />Read More About Freedom Scientific</a></strong></p>
+
+      </div>
+
+
+
+      <div class="col-md-3 col-sm-6 bluetop footermain">
+
+        <ul class="footer-links">
+
+          <li><a href="/" alt="Back to Home" />Home</a></li>
+
+          <li><a href="//www.freedomscientific.com/about/" alt="About Freedom Scientific" />About Us</a></li>
+
+          <li><a href="//www.freedomscientific.com/careers/" alt="Careers" />Careers</a></li>
+
+          <li><a href="//blog.freedomscientific.com/" target="_blank" alt="Freedom Scientific Blog" />Blog</a></li>
+
+          <li><a href="//www.freedomscientific.com/contact-us/" alt="Contact Us" />Contact Us</a></li>
+
+          <li><a href="https://support.freedomscientific.com/about/mediacenter" alt="media center" />Media Center</a></li>
+
+        </ul>
+
+      </div>
+
+      <div class="col-md-3 col-sm-6 bluetop footermain">
+
+        <ul class="footer-links">
+
+          <li><a href="//www.freedomscientific.com/GSA-Advantage/" alt="GSA Advantage" />GSA Advantage </a></li>
+
+          <li><a href="//www.freedomscientific.com/privacy-policy/" alt="Privacy Policy" />Privacy Policy</a></li>
+
+          <li><a href="//www.freedomscientific.com/accessibility-policy/" alt="Accessibility Policy" />Accessibility Policy</a></li>
+
+          <li><a href="//www.freedomscientific.com/Terms-and-conditions/" alt="Conditions of Use" />Conditions of Use</a></li>
+
+        </ul>
+
+        <div class="clearfix"></div>
+
+      </div>
+
+      <div class="col-md-2 col-sm-6 footermain">
+
+        <h3>Contact Us</h3>
+
+        <div class="info">
+
+ <a href="tel:800-444-4443" alt="Call Toll Free Number" />(800) 444-4443</a></div>
+
+        <div class="info">
+
+ <a href="tel:727-803-8000" alt="Call local number" />(727) 803-8000</a></div>
+
+ <br />
+
+ <a href="https://www.facebook.com/FreedomScientificInc"><img src="https://www.freedomscientific.com/assets/images/social-facebook.png" alt="Freedom Scientific Facebook" width="50px" /></a>
+
+        <a href="https://twitter.com/FreedomSci"><img src="https://www.freedomscientific.com/assets/images/social-twitter.png" alt="Freedom Scientific Twitter" width="50px" /></a>
+
+        <br /><br />
+
+      </div>
+
+    </div>
+
+    <center><div class="copyright">Copyright &copy; Freedom Scientific Inc. - <a href="https://www.vispero.com" target="_blank" />A Vispero Brand</a> - All Rights Reserved.</div>
+</center>
+
+
+</div>
+
+
+
+</footer><!-- #colophon -->
+
+<!--footer end-->
+
+    <script src="/Scripts/MainMenu.min.js?v=1.3" type="text/javascript"></script>
+    <script src="/Scripts/fsCookiesFunctions.min.js" type="text/javascript"></script>
+    <script src="/Scripts/fsAriaCarousel.min.js?v1.0" type="text/javascript"></script>
+    <script>
+        function getInternetExplorerVersion() { var rv = -1; if (navigator.appName == 'Microsoft Internet Explorer') { var ua = navigator.userAgent; var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})"); if (re.exec(ua) != null) rv = parseFloat(RegExp.$1); } return rv; } $(document).ready(function () { $('.menu-hidden-description-parent').text('\xA0' + 'submenu.'); $("#skip-link").blur(function () { $("#skip-div").addClass("sr-hidden"); }); $("#skip-link").focus(function () { $("#skip-div").removeClass("sr-hidden"); }); var menu1 = new menubar('mb1', false); var $anchor = $("#main-content-anchor"); if ($anchor.length == 0 || $anchor == null) { var $firstH1 = $("h1").first(); var html = $firstH1.html(); $firstH1.html("<a name='main-content-anchor' id='main-content-anchor'></a>" + html); } var ieVersion = getInternetExplorerVersion(); if (ieVersion > 0) { $('html').addClass('ie' + ieVersion); } $(".menu-parent").each(function () { var link = $(this).data("section").toLowerCase(); if (window.location.href.toLowerCase().indexOf(link) >= 0 && link != "/") { $(this).addClass("active"); } else if (link == "/" && $("#home-page").length > 0) { $(this).addClass("active"); } }); $(".carousel").freedomScientificAriaCarousel(); });
+    </script>
+    <script>
+    /* To make sure JAWS is not speaking Region in forms we need to remove the role='main' attribute. The script is searching for the form and if found the attribuet is removed.*/$(document).ready(function () {if ($('form')[1] != null) {$('#main-div-layout').removeAttr("role")}});
+    </script>
+
+    
+</body>
+</html>

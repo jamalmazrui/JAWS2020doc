@@ -1,0 +1,1343 @@
+﻿<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>JAWS 5.0 Script Manager</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:6.0pt;
+	margin-right:6.5pt;
+	margin-bottom:0in;
+	margin-left:5.75pt;
+	margin-bottom:.0001pt;
+	line-height:14.4pt;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+h1
+	{margin-top:12.0pt;
+	margin-right:6.5pt;
+	margin-bottom:3.0pt;
+	margin-left:5.75pt;
+	text-align:right;
+	line-height:20.4pt;
+	border:none;
+	padding:0in;
+	font-size:17.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+h2
+	{margin-top:12.0pt;
+	margin-right:6.5pt;
+	margin-bottom:3.0pt;
+	margin-left:5.75pt;
+	line-height:16.2pt;
+	font-size:13.5pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+p.Para01, li.Para01, div.Para01
+	{mso-style-name:"Para 01";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:14.4pt;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;
+	font-weight:bold;}
+p.Para02, li.Para02, div.Para02
+	{mso-style-name:"Para 02";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:14.4pt;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+p.Para03, li.Para03, div.Para03
+	{mso-style-name:"Para 03";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	line-height:14.4pt;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+p.Para04, li.Para04, div.Para04
+	{mso-style-name:"Para 04";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:14.4pt;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:blue;
+	text-decoration:underline;}
+p.Para07, li.Para07, div.Para07
+	{mso-style-name:"Para 07";
+	margin-top:6.0pt;
+	margin-right:1.0in;
+	margin-bottom:0in;
+	margin-left:66.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-24.0pt;
+	line-height:14.4pt;
+	border:none;
+	padding:0in;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+p.Para08, li.Para08, div.Para08
+	{mso-style-name:"Para 08";
+	margin-top:0in;
+	margin-right:5.0pt;
+	margin-bottom:0in;
+	margin-left:5.0pt;
+	margin-bottom:.0001pt;
+	line-height:14.4pt;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+p.Para09, li.Para09, div.Para09
+	{mso-style-name:"Para 09";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:14.4pt;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+p.Para10, li.Para10, div.Para10
+	{mso-style-name:"Para 10";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:14.4pt;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;
+	vertical-align:super;}
+span.0Text
+	{mso-style-name:"0 Text";
+	font-weight:bold;}
+span.1Text
+	{mso-style-name:"1 Text";
+	color:blue;
+	text-decoration:underline;}
+span.2Text
+	{mso-style-name:"2 Text";
+	font-style:italic;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<div style='border:none;border-bottom:ridge windowtext 2.25pt;padding:0in 0in 0in 0in;
+margin-left:5.75pt;margin-right:6.5pt'>
+
+<h1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left:
+0in'><span lang=EN>Table of Contents</span></h1>
+
+</div>
+
+<p class=MsoNormal style='margin-left:0in'><span lang=EN><a
+href="#Top_of_what_is_the_script_manage">Overview of the Script Manager</a></span></p>
+
+<p class=MsoNormal style='margin-left:0in'><span lang=EN><a
+href="#Top_of_working_with_script_files">Working with Script Files</a></span></p>
+
+<p class=MsoNormal style='margin-left:0in'><span lang=EN><a
+href="#Top_of_script_and_function_overv">Script and Function Overview</a></span></p>
+
+<p class=MsoNormal style='margin-left:0in'><span lang=EN><a
+href="#Top_of_accessing_script_and_func">Accessing Script and Function
+Information</a></span></p>
+
+<p class=MsoNormal style='margin-left:0in'><span lang=EN><a
+href="#Top_of_the_script_compiler_htm">The Script Manager Compiler</a></span></p>
+
+<p class=MsoNormal style='margin-left:0in'><span lang=EN><a
+href="#Top_of_Glossary_of_Scripting_Ter">Glossary of Scripting Terms</a></span></p>
+
+<div style='border:none;border-bottom:ridge windowtext 2.25pt;padding:0in 0in 0in 0in;
+margin-left:5.75pt;margin-right:6.5pt'>
+
+<h1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left:
+0in;page-break-before:always'><span lang=EN>Overview of the Script Manager</span></h1>
+
+</div>
+
+<p class=MsoNormal><span lang=EN>The topics in this section describe how to use
+the Script Manager and provide a very basic overview of what scripting is and
+what it does. For a more detailed description of scripting concepts, including
+numerous practice exercises, refer to the Basics of Scripting manual available
+from the <a
+href="http://www.freedomscientific.com/Products/Blindness/JawsDocumentation"><span
+class=1Text>Freedom Scientific web site</span></a>. For specific references to
+scripts and functions, refer to the <a
+href="http://www.freedomscientific.com/support/jawsdocumentation/FSDN"><span
+class=1Text>Freedom Scientific Developer Network (FSDN)</span></a>.</span></p>
+
+<p class=MsoNormal><span lang=EN>The Freedom Scientific Script Manager is an editing
+program similar to popular code editors like Notepad++ and offers all the
+features necessary for you to create JAWS scripts. These features include:</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN><a href="#hotkeys"><span class=1Text>Hot keys</span></a>
+for quick file navigation, text editing, and dialog box access</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>Easy to follow dialog boxes that help you to find
+and assign scripts, functions, and parameters</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>Seamless information transfer to other files</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>Commands for <a href="#open"><span class=1Text>opening</span></a>
+and <a href="#save"><span class=1Text>saving</span></a> both user and shared
+script files</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN><a href="#UTF8"><span class=1Text>UTF-8</span></a>
+file support</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>A <a href="#Top_of_the_script_compiler_htm"><span
+class=1Text>compiler</span></a> that checks for syntax errors when compiling</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>Continuous zoom and syntax highlighting features
+for low vision or fully sighted users</span></p>
+
+<p class=MsoNormal><span lang=EN>Press <span class=0Text>INSERT+0</span> to run
+Script Manager. The Script Manager always opens the script file associated with
+the active application. If the program does not have any scripts, a new script
+file is created.</span></p>
+
+<p class=MsoNormal><span lang=EN>While you can have multiple script files open
+at the same time, you can only have one instance of the Script Manager running.
+To move between multiple script files, press <span class=0Text>CTRL+TAB</span>.</span></p>
+
+<h2 style='page-break-before:always'><span lang=EN>Finding Scripts</span></h2>
+
+<p class=MsoNormal><span lang=EN>The following describes where scripts are
+located on your system:</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>Shared JAWS scripts are saved to C:\ProgramData\Freedom
+Scientific\JAWS\<span class=2Text>version number</span>\Scripts while user
+specific scripts are save to C:\Users\<span class=2Text>user name</span>\AppData\Roaming\Freedom
+Scientific\JAWS\<span class=2Text>version number</span>\settings\enu.</span></p>
+
+<h2><a name=open></a><span lang=EN>Opening Scripts</span></h2>
+
+<p class=MsoNormal><span lang=EN>Freedom Scientific applications allow you to
+have both user and shared versions of the same script file. User script files
+are only available when a particular user is logged in to the computer. In
+addition, when using Chrome, Firefox, or Internet Explorer, you can have
+domain-specific scripts that only load when a particular web site is active.</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>To open a user script, choose <span class=0Text>Open</span>
+or <span class=0Text>Open User File</span> from the File menu. Shared script
+files are available to users on the local computer or network. If a user
+version of a script file is available, JAWS and MAGic use that file instead of
+the shared version.</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>To open a shared script, choose Open Shared File
+from the File menu.</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>To open a domain-specific script, launch the Script
+Manager while focused in the web browser application and then choose Open
+Domain File from the File menu. If a script file for the currently active web
+site does not currently exist, it will automatically be created using the name
+of the site. For example, www.freedomscientific.com.jss.</span></p>
+
+<h2><a name=save></a><span lang=EN>Saving Scripts</span></h2>
+
+<p class=MsoNormal><span lang=EN>There are several ways to save scripts:</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>You can save your changes and compile the script by
+using the <span class=0Text>Save</span> command. If you modify a shared script
+and then save your changes with this command, the application saves the file in
+your user settings folder.</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>To save the currently open script as a shared file,
+choose <span class=0Text>Save As Shared</span> from the File menu.</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>To save the currently open script as a user file,
+choose <span class=0Text>Save As User</span> from the File menu.</span></p>
+
+<div style='border:outset 1.0pt;padding:3.0pt 0in 3.0pt 0in;margin-left:42.0pt;
+margin-right:1.0in'>
+
+<p class=Para07 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:24.0pt;margin-bottom:.0001pt'><span class=0Text><span lang=EN>Tip:</span></span><span
+lang=EN> You can view the contents of your shared and user settings folders by
+using the Explore Utilities Folder option in the Utilities menu in the JAWS
+application window.</span></p>
+
+</div>
+
+<p class=MsoNormal><span lang=EN>You can change the tab settings in Script
+Manager by selecting Tab Sizes in the View menu. Using Tab indentation with
+complex scripts and functions helps in understanding the logic and sequence of
+the script.</span></p>
+
+<p class=MsoNormal><span lang=EN>At times, you may be working with multiple
+files from multiple directories. To always know what directory you are in, you
+can choose to display the full path in the title bar. To do this, go to the
+View Menu and select Display Full Path.</span></p>
+
+<p class=MsoNormal><span lang=EN>Also found in the View Menu is the zoom
+feature, which allows you to magnify the contents of a file. Choose Zoom In to
+increase magnification, Zoom Out to decrease magnification, or Restore Default
+to set the zoom level to 100 percent. You can also hold down the <span
+class=0Text>CTRL</span> key and use the mouse wheel to continuously increase or
+decrease the zoom level.</span></p>
+
+<p class=MsoNormal><span lang=EN>If you are not finished writing your scripts,
+you can save the work you have done without compiling by pressing <span
+class=0Text>CTRL+W</span>.</span></p>
+
+<h2><a name=hotkeys></a><span lang=EN>Script Manager Hot Keys</span></h2>
+
+<p class=MsoNormal><span lang=EN>The table below lists all the hot keys
+available in the Script Manager.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width="50%" valign=top style='width:50.0%;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p class=Para10><span lang=EN>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='border-collapse:collapse'>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><a name="Hot_Key"><span lang=EN>Hot Key</span></a></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><a name="Command_Description"><span lang=EN>Command
+    Description</span></a></p>
+    </td>
+   </tr>
+   <tr>
+    <td width="50%" valign=top style='width:50.0%;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+    <p class=Para01><span lang=EN>INSERT+0</span></p>
+    </td>
+    <td width="50%" valign=top style='width:50.0%;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+    <p class=Para02><span lang=EN>Open Script Manager</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+O</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Open a Script File</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+SHIFT+D</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Open the User Specific Default Script Source
+    File (Default.jss)</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+SHIFT+W</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Open the Domain Script Source File (for the
+    Currently Active Web Site)</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+SHIFT+T</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Reopen the Last Closed File</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+N</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Create a New File</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+F4</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Close Current File without Closing Script
+    Manager</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>F2</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Move to Next Script or Message</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>SHIFT+F2</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Move to Previous Script or Message</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+F</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Find</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>F3</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Find Next</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>SHIFT+F3</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Find Previous</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+H</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Find and Replace</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>ALT+CTRL+I</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Incremental Search</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+G</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Go to Line</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+E</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Create New Script</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+S</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Save and Compile</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+W</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Save without Compiling</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+TAB</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Move between Open Files</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+I</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Insert Function (works from within the Insert
+    Function dialog box if you need a function inside another function.)</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+R</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Select Script or Function</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+D</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>View/Edit Documentation for the Current
+    Script or Function</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+P</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Print File</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+SHIFT+I</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Insert Perform Script</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>CTRL+L</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Script List</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>SHIFT+F1</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Keyword Help</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>F12</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Go to Definition</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>ALT+CTRL+F</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Format Script File (Syntax Highlighting Must
+    be Enabled)</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para01><span lang=EN>ALT+CTRL+S</span></p>
+    </td>
+    <td valign=top style='padding:0in .5pt 0in .5pt'>
+    <p class=Para02><span lang=EN>Format Current Script (Syntax Highlighting
+    Must be Enabled)</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name=UTF8></a><span lang=EN>UTF-8 File Support</span></h2>
+
+<p class=MsoNormal><span lang=EN>JAWS script files support ANSI or UTF-8
+format. When you open a UTF-8 encoded script file (JSS), the UTF-8 option in
+the File menu has a check mark. If you open an ANSI encoded script file, this
+option does not have a check mark.</span></p>
+
+<p class=MsoNormal><span lang=EN>You can save an ANSI encoded file as UTF-8 by
+simply selecting, or checking, the UTF-8 Format option before you save the
+file. Likewise, to save a UTF-8 formatted file as ANSI, clear, or uncheck, this
+option before saving. Note that the script’s header and message files (JSH and
+JSM) can be in a different format. This means that a UTF-8 script file can
+include ANSI header and message files or vice versa.</span></p>
+
+<p class=Para08><span lang=EN><br>
+ <br>
+ </span></p>
+
+<p class=Para09><span lang=EN>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para04><span lang=EN>Back</span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para02><span lang=EN>&nbsp;</span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para04><span lang=EN><a href="#Top_of_working_with_script_files"><span
+  style='color:blue'>Next</span></a></span></p>
+  </td>
+ </tr>
+</table>
+
+<div style='border:none;border-bottom:ridge windowtext 2.25pt;padding:0in 0in 0in 0in;
+margin-left:5.75pt;margin-right:6.5pt'>
+
+<h1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left:
+0in;page-break-before:always'><a name="Top_of_working_with_script_files"><span
+lang=EN>Working with Script Files</span></a></h1>
+
+</div>
+
+<p class=MsoNormal><span lang=EN>When you use the <span class=0Text>Open Shared
+File</span> and <span class=0Text>Open User File</span> commands on the File
+menu, the JSS files appear in either your shared or user folder. The shared
+folder contains JSS files for every supported application. Your user folder
+contains script files that you have created or modified. The file Default.jss
+is especially important because it contains all the scripts and functions used
+by Freedom Scientific applications to interface with Windows applications and
+because any scripts added to this file cause global changes in the behavior of
+JAWS. While you are working with Script Manager, you can quickly access this
+file at anytime by pressing <span class=0Text>CTRL+SHIFT+D</span>.</span></p>
+
+<p class=MsoNormal><span lang=EN>Similarly, you may find that you want scripts
+to affect only a specific application. For this, you would need to open and add
+your scripts to the application-specific JSS file. The easiest way to access an
+application's JSS file is to open the application with JAWS running in the
+background and press <span class=0Text>INSERT+0</span>. To be sure you have the
+correct file open, press <span class=0Text>INSERT+T</span>.</span></p>
+
+<p class=MsoNormal><span lang=EN>You can also have scripts that are created
+specifically for a web site or web application opened in Chrome, Firefox, or
+Internet Explorer. These domain-specific scripts are loaded on top of the
+browser scripts and override general application behavior with the web site
+specific functionality when the particular site is active. To open a web site
+specific JSS file, press <span class=0Text>INSERT+0</span> from an open web
+page and then press <span class=0Text>CTRL+SHIFT+W</span>. For more information
+on domain-specific scripting, refer to the <a
+href="http://www.freedomscientific.com/support/jawsdocumentation/FSDN"><span
+class=1Text>Freedom Scientific Developer Network (FSDN)</span></a> or read the
+Domain Scripting Quick Start document available from the <a
+href="http://www.freedomscientific.com/Products/Blindness/JawsDocumentation"><span
+class=1Text>Freedom Scientific web site</span></a>.</span></p>
+
+<div style='border:outset 1.0pt;padding:3.0pt 0in 3.0pt 0in;margin-left:42.0pt;
+margin-right:1.0in'>
+
+<p class=Para07 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:24.0pt;margin-bottom:.0001pt'><span class=0Text><span lang=EN>Tip:</span></span><span
+lang=EN> You can use the Confignames.ini file to associate a more meaningful
+name with the application. Your settings files can then use this alias instead
+of the executable file's name. You can modify this file with any text editor
+program, such as Notepad. For more information, see Naming JAWS Settings Files
+in the <a
+href="http://www.freedomscientific.com/Products/Blindness/JawsDocumentation"><span
+class=1Text>Basics of Scripting manual</span></a>.</span></p>
+
+</div>
+
+<p class=MsoNormal><span lang=EN>After you open a JSS file that contains
+multiple scripts, use <span class=0Text>F2</span> or <span class=0Text>SHIFT+F2</span>
+to move among each script. If you have opened a JSM (script message) file, <span
+class=0Text>F2</span> and <span class=0Text>SHIFT+F2</span> will move between
+messages. If you are looking for a specific text string, press <span
+class=0Text>CTRL+F</span> to open the Find dialog box. Once you have found the
+text string, you must close the dialog box in order to edit. However, you can
+now press <span class=0Text>F3</span> or <span class=0Text>SHIFT+F3</span> to
+find another instance of the text string and immediately begin editing. If you
+are making multiple and identical edits to the same text string, you may want
+to use the Replace dialog box instead. To open this dialog box, press <span
+class=0Text>CTRL+H</span>. The Find and Replace dialog boxes allow you to make
+your searches case sensitive and/or match whole words.</span></p>
+
+<p class=MsoNormal><span lang=EN>Another method of searching for text that you
+may find faster and less obtrusive is the Incremental Search feature. This
+feature lets you skim your script files and quickly edit as there is no dialog
+box to open or close. In addition, Incremental Search works well with <span
+class=0Text>F3</span> and <span class=0Text>SHIFT+F3</span>. To use this
+feature, press <span class=0Text>ALT+CTRL+I</span> and then type the letter(s)
+or word(s) you are searching for. As you type the letters, your cursor will
+move about the page, while JAWS announces the text of the incremental search.
+The search displays in the Status Bar, which you can read by pressing <span
+class=0Text>INSERT+PAGE DOWN</span> on the Num Pad. Move up or down in the
+search with <span class=0Text>F3</span> or <span class=0Text>SHIFT+F3</span>.
+These keystrokes remain available after exiting Incremental Search. Once you
+are on the line or in the area you want to edit, you must press one of the
+arrow keys to exit Incremental Search. You can then edit the script.</span></p>
+
+<p class=MsoNormal><span lang=EN>If the cursor is on a script or function name
+defined in the same file, pressing <span class=0Text>F12</span> moves directly
+to that script or function. If the cursor is on a line containing an
+&quot;include&quot; or &quot;use&quot; statement, pressing <span class=0Text>F12</span>
+opens the specified file.</span></p>
+
+<p class=MsoNormal><span lang=EN>If you are familiar with a script file and you
+know the line that contains the script you want to work with, use the Go To
+Line dialog box (<span class=0Text>CTRL+G</span>). Type the number of the line
+and press <span class=0Text>ENTER</span>. The cursor moves immediately to the
+beginning of the line you specified. You can always find the number of the line
+you are working on by reading the Status Bar. You can also turn on Line Numbers
+in the View menu to always display the current line number as you navigate.</span></p>
+
+<p class=MsoNormal><span lang=EN>To quickly delete an entire script, press <span
+class=0Text>CTRL+R</span> to select the script and then press the <span
+class=0Text>DELETE</span> key.</span></p>
+
+<p class=Para09><span lang=EN>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para04><span lang=EN>Back</span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para02><span lang=EN>&nbsp;</span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para04><span lang=EN><a href="#Top_of_script_and_function_overv"><span
+  style='color:blue'>Next</span></a></span></p>
+  </td>
+ </tr>
+</table>
+
+<div style='border:none;border-bottom:ridge windowtext 2.25pt;padding:0in 0in 0in 0in;
+margin-left:5.75pt;margin-right:6.5pt'>
+
+<h1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left:
+0in;page-break-before:always'><a name="Top_of_script_and_function_overv"><span
+lang=EN>Script and Function Overview</span></a></h1>
+
+</div>
+
+<p class=MsoNormal><span lang=EN>The Freedom Scientific scripting language is
+comprised of scripts and functions. Scripts can be associated with keystrokes.
+For example, when you are in a word processor and press <span class=0Text>DOWN
+ARROW</span>, JAWS reads a new line of text. A default script, called
+SayNextLine, is associated or &quot;bound&quot; to the <span class=0Text>DOWN
+ARROW</span> key.</span></p>
+
+<p class=MsoNormal><span lang=EN>Functions, on the other hand, are not bound to
+keystrokes and are always called by a script or another function. Functions can
+use parameters to complete a task and often return information or a specific
+value. The scripting language has three different types of functions: event
+functions, built-in functions, and user-defined functions.</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>Event functions execute automatically when a
+Windows operating system event occurs. You cannot create new event functions.
+However, you can modify existing event functions. You can also create
+application-specific versions of the event functions found in the default
+script file.</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>User-defined functions can use existing built-in
+functions to create new or modify existing user-defined functions</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>Built-in functions are the building blocks of
+scripts and functions. They can not be modified or created.</span></p>
+
+<p class=MsoNormal><span lang=EN>See the <a
+href="http://www.freedomscientific.com/support/jawsdocumentation/FSDN"><span
+class=1Text>Freedom Scientific Developer Network (FSDN)</span></a> for a
+complete reference guide to all of the built-in functions you can use to create
+scripts.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=Para09><span lang=EN>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para04><span lang=EN>Back</span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para02><span lang=EN>&nbsp;</span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para04><span lang=EN><a href="#Top_of_accessing_script_and_func"><span
+  style='color:blue'>Next</span></a></span></p>
+  </td>
+ </tr>
+</table>
+
+<div style='border:none;border-bottom:ridge windowtext 2.25pt;padding:0in 0in 0in 0in;
+margin-left:5.75pt;margin-right:6.5pt'>
+
+<h1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left:
+0in;page-break-before:always'><a name="Top_of_accessing_script_and_func"><span
+lang=EN>Accessing Script and Function Information</span></a></h1>
+
+</div>
+
+<p class=MsoNormal><span lang=EN>With Script Manager, you can view
+documentation for any script or function as well as information on any key word
+used in a script.</span></p>
+
+<p class=MsoNormal><span lang=EN>To view key word help, move the insertion
+point to a key word in a script or function and press <span class=0Text>SHIFT+F1</span>.
+The Script Manager displays the Key Word Help dialog box containing specific
+information on the script or function.</span></p>
+
+<p class=MsoNormal><span lang=EN>After you have reviewed the key word help
+information, press <span class=0Text>ESC</span> to close the Key Word Help
+dialog box.</span></p>
+
+<p class=MsoNormal><span lang=EN>You can also view documentation for any script
+or function within the current script file. First, move the insertion point to
+an individual script or function. You can use the Next Script (<span
+class=0Text>F2</span>), Prior Script (<span class=0Text>SHIFT+F2</span>), or
+Script List (<span class=0Text>CTRL+L</span>) actions to move to the desired
+script or function. Any of the three navigation methods will move the insertion
+point to the beginning line of the script or function. Press <span class=0Text>DOWN
+ARROW</span> twice to move into the body of the script or function. This also
+removes the highlight from the name of the script or function. To view the
+documentation, press <span class=0Text>CTRL+D</span>. This displays the Script
+Information multi-page dialog box. The General page of this dialog box displays
+general information about the script or function. The information shown in the
+Script Information dialog box changes depending on whether you are viewing
+script or function information. The Parameters page displays the parameters
+used by the selected function. You can view a list of existing parameters on
+this page along with their descriptions. After you are finished viewing the
+script information, press <span class=0Text>ESC</span> to close the dialog box.</span></p>
+
+<p class=Para09><span lang=EN>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para04><span lang=EN>Back</span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para02><span lang=EN>&nbsp;</span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para04><span lang=EN><a href="#Top_of_the_script_compiler_htm"><span
+  style='color:blue'>Next</span></a></span></p>
+  </td>
+ </tr>
+</table>
+
+<div style='border:none;border-bottom:ridge windowtext 2.25pt;padding:0in 0in 0in 0in;
+margin-left:5.75pt;margin-right:6.5pt'>
+
+<h1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left:
+0in;page-break-before:always'><a name="Top_of_the_script_compiler_htm"><span
+lang=EN>The Script Manager Compiler</span></a></h1>
+
+</div>
+
+<p class=MsoNormal><span lang=EN>When you save a script file using the Script Manager,
+your file is saved and compiled into machine-readable language. When you write
+scripts for JAWS in the Script Manager, you write them in plain text. JAWS,
+however, cannot use them in text form. When the Script Manager saves your file,
+it creates an additional file that is converted from text into a binary format
+that JAWS can understand and use.</span></p>
+
+<p class=MsoNormal><span lang=EN>The original text file is saved with a JSS
+(JAWS Script Source) file extension, and the compiled or binary version is
+saved with a JSB (JAWS Script Binary) file extension. The compiler checks the
+syntax (coding) of your script to make sure that it conforms to the script
+language rules. If there is an error, the compiler advises you what the error
+is and approximately where in the script you can find the error. This is why it
+is important to always create and save your script files using the Script
+Manager. If you edit and save your files using some other text editor, they
+will not be compiled when you save them, and JAWS will not be aware of the
+changes you have made.</span></p>
+
+<p class=MsoNormal><span lang=EN>The Script Manager generates several types of
+files. Listed below are the different file extensions along with their
+descriptions.</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=0Text><span lang=EN>JSS</span></span><span lang=EN> –
+This is the JAWS Script Source file that you create when making
+application-specific or web site domain-specific script files. This file must
+be compiled before JAWS can use it.</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=0Text><span lang=EN>JSB</span></span><span lang=EN> –
+This is the JAWS Script Binary (machine-readable language) file that is created
+when you save and compile a JSS file. You do not directly create this file nor
+do you edit this file.</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=0Text><span lang=EN>JSM</span></span><span lang=EN> –
+This is the JAWS Script Message file. It contains all spoken messages used by
+the SayFormattedMessage functions. Each message in the file is given a unique
+name. Only the name is referenced when a script uses the SayFormattedMessage
+function to read a message. This way, when script files are distributed
+internationally the translation into other languages is easier since all
+messages are stored in one file.</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=0Text><span lang=EN>.JSH</span></span><span lang=EN>
+– This is the JAWS Script Header file. This file contains information relevant
+to the associated JSS file, such as definitions of constants and global
+variables.</span></p>
+
+<p class=Para03 style='margin-left:.8in;text-indent:-.25in'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=0Text><span lang=EN>JSD</span></span><span lang=EN> –
+This is the JAWS Script Documentation file. This file contains all of the
+descriptive information about each script. This information is entered into the
+JSD file automatically when you create a script using the New Script dialog.
+You can edit this file if desired.</span></p>
+
+<p class=MsoNormal><span lang=EN>All shared JSS, JSB, JSH, and JSM files are
+stored in the C:\ProgramData\Freedom Scientific\JAWS\<span class=2Text>version
+number</span>\Scripts folder. All shared JSD files are stored one folder level
+down in C:\ProgramData\Freedom Scientific\JAWS\<span class=2Text>version number</span>\Scripts\Enu.</span></p>
+
+<h2 style='page-break-before:always'><span lang=EN>Compiling Scripts</span></h2>
+
+<p class=MsoNormal><span lang=EN>When you save your script with <span
+class=0Text>CTRL+S</span>, the compiler automatically runs, checking syntax and
+statement sequences. If there are errors, it displays them in the Compile Error
+dialog box. After you review the listed errors, press <span class=0Text>ENTER</span>
+to close the dialog box. JAWS places the cursor at or near the error. If no
+error is present, you can assume that at least the syntax of your script is
+correct.</span></p>
+
+<p class=MsoNormal><span lang=EN>Once you correct the error, choose Save from
+the File menu or press <span class=0Text>CTRL+S</span> again to recompile the
+script.</span></p>
+
+<p class=MsoNormal><span lang=EN>The compiler cannot always find the exact
+location of the mistake. For example, if you use several If-Then statements
+that are nested, and you forget to use the correct number of EndIf statements,
+the compiler will display an error, but the cursor may not be located exactly
+where the missing EndIf statement should be. The cursor may actually be several
+lines away from that location. The compiler can only tell you that your If-Then
+loops are not formulated properly and that an If statement must be followed by
+an EndIf statement. It is up to you to find out where you need to put the
+missing statement.</span></p>
+
+<p class=MsoNormal><span lang=EN>Include files are examined as they are
+included. Always place the include statement in your script file before you use
+anything in the included file. For instance, you must include Hjconst.jsh
+before using any of the constants it contains. If you layer your script file
+properly, all of your include statements should be near the beginning of the
+script file.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=Para09><span lang=EN>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para04><span lang=EN>Back</span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para02><span lang=EN>&nbsp;</span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para04><span lang=EN><a href="#Top_of_Glossary_of_Scripting_Ter"><span
+  style='color:blue'>Next</span></a></span></p>
+  </td>
+ </tr>
+</table>
+
+<div style='border:none;border-bottom:ridge windowtext 2.25pt;padding:0in 0in 0in 0in;
+margin-left:5.75pt;margin-right:6.5pt'>
+
+<h1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left:
+0in;page-break-before:always'><a name="Top_of_Glossary_of_Scripting_Ter"><span
+lang=EN>Glossary of Scripting Terms</span></a></h1>
+
+</div>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Application Script Files</span></span><span
+lang=EN> - These files are loaded on top of the default files when an
+application runs. JAWS knows to load the application script files, because the
+application script name (except for the extension) is the same as the
+application program name. You can have both user and shared versions of
+application script files. Shared scripts apply to all users on the computer or
+network when they use the application with JAWS. User scripts are loaded only
+by a specific user on a computer or network. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Arithmetic Operators</span></span><span
+lang=EN> -Arithmetic operators are used to perform classic arithmetic
+operations within scripts. The four operators are a minus sign or dash (-) for
+subtraction, a plus sign (+) for addition, a slash (/) for division, and an
+asterisk (*) for multiplication. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Basics of Scripting Manual </span></span><span
+lang=EN>- This guide provides an introduction to the Freedom Scientific
+scripting language. In it, you will find detailed information on scripting
+terms, syntax, functionality, and more. There are also numerous exercises to
+help you practice what you have learned. The Basics of Scripting manual
+consists of a series of HTML web pages and can be viewed online or downloaded
+to your computer as a self-extracting file. You can download this manual from
+the <a
+href="http://www.freedomscientific.com/Products/Blindness/JawsDocumentation"><span
+class=1Text>Freedom Scientific Web site</span></a>.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Bitwise Operators</span></span><span
+lang=EN> - You can use bitwise operators to compare two pieces of information
+bit by bit instead of as a whole value. Computer information is stored in
+digital form as a series of ones and zeros (bits). In a bitwise comparison
+using the &amp; operator, a value of true or 1 will be returned for every pair
+of bit positions in the two pieces of information which are identical.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Built-in Functions</span></span><span
+lang=EN> - The Freedom Scientific script language includes over 200 pre-defined
+functions for use in scripts. Each function performs a specific series of
+activities. These are the building blocks or instructions from which you create
+your scripts. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Built-in Operators</span></span><span
+lang=EN> -The Freedom Scientific script language includes 3 types of operators
+you can plug into functions when creating or editing. Operators come in several
+varieties, each with a specific ability. The three types are; Arithmetic,
+Logical, and Bitwise Operators</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Comments</span></span><span
+lang=EN> - Comments are lines of text in your script file that are not
+executable statements. They are used to inform those reading the source file
+how the statements work. In the code, you can indicate that a line of text is a
+comment by preceding it with a semicolon or pound sign. You can also surround
+the comment text with /* and */. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Compile</span></span><span
+lang=EN> - When you save a script file using the Script Manager, your file is
+saved and compiled into machine-readable language. When the Script Manager
+saves a file, it creates an additional file that is converted from text into a
+binary format, a form that JAWS can understand and use. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Confignames.ini</span></span><span
+lang=EN> - JAWS uses this file to associate more meaningful names with the
+executable file names of Windows applications or the addresses of web
+applications when creating domain-specific scripts. You can then use this alias
+when naming your JAWS settings files for this application or web site. The
+Confignames.ini file can be found in your JAWS settings folder. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Constants</span></span><span
+lang=EN> -Constants do not change their value. Once a value is assigned to a
+constant, it stays that way. They can be used to represent a complex string of
+letters or numbers. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Control IDs</span></span><span
+lang=EN> -The Control ID is an arbitrary number assigned by the programmer to
+identify each window in his or her program. These Control IDs do not change
+during program operation. The Control ID, unlike the Window Class, has no
+special meaning other than the fact that it can be used to refer to a
+particular window. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Default Script File</span></span><span
+lang=EN> - The information which tells JAWS how to behave is contained in a
+default set of built-in files. The default script files (Default.jss) are
+loaded when JAWS starts and are always active during all application sessions.
+Common.jsm contains messages that are available to all scripts, while
+hjglobal.jsh and hjconst.jsh are used in any script file that refers to JAWS
+global variables and constants. Default.jsm contains messages that are
+deprecated, but are still needed for backward compatibility.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Domain-Specific Script Files</span></span><span
+lang=EN> - These files load on top of the application scripts for web browsers.
+This enables you to have unique scripts and settings changes applied for a
+specific web application which will override the general application files when
+the particular web site is active. JAWS knows to load the domain script files,
+because the domain script name (except for the extension) is the same as the
+web site name, for instance, www.freedomscientific.com.jss.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Event Function</span></span><span
+lang=EN> - An event function runs automatically when certain system events
+occur.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Freedom Scientific Developer
+Network</span></span><span lang=EN> - A database containing scripts and
+functions that are built into JAWS. The FSDN includes a complete scripting
+reference manual that is a compiled HTML Help file (FSDN.chm). It has an
+identical format to the JAWS help system; therefore, navigation is also
+identical. It can be used by anyone who wants a general reference for all
+scripts, user-defined functions, and built-in functions found in JAWS. Seasoned
+programmers may want to download the FSDN, as they will most likely pick up the
+syntax of the scripting language rather quickly. The FSDN can be downloaded
+from the <a
+href="http://www.freedomscientific.com/support/jawsdocumentation/FSDN"><span
+class=1Text>Freedom Scientific web site</span></a>.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Functions</span></span><span
+lang=EN> - A block of code that is not called by a keystroke and activates only
+when called by a script or another function.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Global</span></span><span
+lang=EN> - Variables can be local or global. Global variables can be used in
+any script within the script file where they are defined. Global variables can
+be declared at the beginning of a script file with the group heading, Globals.
+Place this group right after the include statements. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Header Files </span></span><span
+lang=EN>- Header files are designated with the extension JSH and contain either
+variable or constant declarations.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Hjconst.jsh</span></span><span
+lang=EN> - Contains the default JAWS constants.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Hjglobal.jsh</span></span><span
+lang=EN> - Contains the default JAWS global variables.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Hook Functions</span></span><span
+lang=EN> - Sometimes it is necessary to put JAWS into an alternative state
+where some or all of the keys on the keyboard perform different functions when
+pressed than they normally would. Briefly, a hook is a special user-defined
+function that you create, which is run instead of the code normally run by the
+JAWS scripts. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Includes</span></span><span
+lang=EN> -The purpose of an include statement is to tell the script source file
+(JSS) that information from other named files is to be included as part of the
+script. The syntax for an include statement requires that the file name along
+with its extension be enclosed in quotation marks. It is assumed that the file
+to be included is contained within the language (ENU) subdirectory of the
+\SETTINGS subdirectory of your JAWS directory.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Integer</span></span><span
+lang=EN>- An integer variable is designed to hold an integer value. An integer
+is a whole number without a decimal point. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>JKM File Extension</span></span><span
+lang=EN> - This is the JAWS key map file. This file contains the keystrokes
+assigned to various scripts.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>JSB File Extension</span></span><span
+lang=EN> - This is the JAWS Script Binary (machine-readable language) file that
+is created by the Script Manager when you save and compile a JSS file. You do
+not directly create this file nor do you edit this file.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>JSD File Extension</span></span><span
+lang=EN> - This is the JAWS Script Documentation file. This file contains all
+of the descriptive information about each script. This information is entered
+into the JSD file automatically when you create a script using the New Script
+dialog box. You can edit this file if desired.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>JSH File Extension</span></span><span
+lang=EN> - This is the JAWS Script Header file. This file contains information
+relevant to the associated JSS file, such as definitions of constants and
+global variables. See Constants and Variables for more details about these
+script components. See also, Include Files.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>JSM File Extension</span></span><span
+lang=EN> - This is the JAWS Script Message file. It contains all of the spoken
+messages used by SayFormattedMessage functions. Each message in the file is
+numbered. Only the number is referenced when a script uses the
+SayFormattedMessage function to read a message. In this way, when script files
+are distributed internationally, translation of the messages into other
+languages is easier when numbered messages are used. See Include Files.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>JSS File Extension</span></span><span
+lang=EN> - This is the JAWS Script Source file that you create when making
+application-specific or domain-specific script files. This file must be
+compiled before JAWS can use it. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Local</span></span><span
+lang=EN> - Variables can be local or global. Local variables can only be used
+in the script where they are declared. Local variables are declared within a
+script in the first statement after the begin statement. They have the heading,
+Var.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Logical Operators</span></span><span
+lang=EN> - Logical operators are used to make comparisons of variables to other
+variables or constants. Sometimes several items or groups of items must be
+compared with other items. The logical operators are usually used within
+If-Then and While loops to check whether conditions required for logical
+decisions are true or false. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Message Files</span></span><span
+lang=EN> - Message Files are designated with the extension JSM and contain
+message statements with their assigned numbers.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Object</span></span><span
+lang=EN> - An object variable is designed to hold an object. An object, for the
+purposes of the Freedom Scientific script language, refers to the types of
+objects present in certain Microsoft applications, such as Office.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Parameters </span></span><span
+lang=EN>- A parameter is a piece of information that is passed to a script or
+function. Parameters can be required or optional. If there is more than one
+parameter, a comma is used to separate each parameter within the parentheses.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Returns </span></span><span
+lang=EN>- A return is information that is sent back from the function to the
+calling script or function. The calling script or function then uses this
+information. The type of returned information, such as string, Int, Object,
+Handle, or Void, is declared before the function name.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Script</span></span><span
+lang=EN> - A script is like a mini computer program that combines a number of
+steps or keystrokes into one operation,</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Script Files</span></span><span
+lang=EN> - Freedom Scientific script files are a collection of individual
+scripts, functions, and variable declarations that are automatically loaded
+whenever JAWS is used with a particular Windows application. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Script Manager</span></span><span
+lang=EN> - The Script Manager is the script-editing program that has all the
+features necessary for you to create scripts.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Scripting Language</span></span><span
+lang=EN> - JAWS provides a powerful scripting language you can use to write or
+edit your own user-defined function. The only difference between a built-in
+function and a user-defined function is that user-defined functions can be
+modified, while built-in functions, which are hard-coded into JAWS, cannot. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Scripts</span></span><span
+lang=EN> - Blocks of code that can be activated by a keystroke are called
+scripts, and those that cannot are called functions. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>String </span></span><span
+lang=EN>- A string variable holds a string of characters. A string is a group
+of characters including letters, numbers, punctuation marks, and spaces. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>User-Defined Functions</span></span><span
+lang=EN> - The difference between a user-defined function and a script is that
+a script is attached to a keystroke and cannot provide a return, while a
+user-defined function cannot be attached to a keystroke and does provide a
+return. User-defined functions can be modified. User-defined functions run
+whenever they are called from within a script or another user-defined function.</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Window Classes</span></span><span
+lang=EN> -The Window Class of a window provides some information about what a
+window does. For example, a Window Class can be an edit field, a list box, or a
+button. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Window Handle</span></span><span
+lang=EN> - A window handle is a unique window identifier that is assigned by
+the system. Window handles are numbers that can change value whenever the
+application is closed, but often only change when Windows is restarted.
+Although the window handle changes during program operation, you can use this
+information to identify the window whenever the window is active. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Window Subtype Code</span></span><span
+lang=EN> - Window Subtype Code also returns an integer. Window Subtype Codes
+are translated into strings using the same constant definitions as Window Type
+Code. The only difference is that the Window Subtype Code provides more
+detailed information. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Window Type</span></span><span
+lang=EN> - Window Type returns a string or name that describes the window. Window
+Class of a button, radio button, and check box is always &quot;button&quot;;
+however, the programmer could add the Window Types of these three windows. In
+this case, the windows are reported as &quot;button,&quot; &quot;radio
+button,&quot; or &quot;check box.&quot;</span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Window Type Code</span></span><span
+lang=EN> - Asking for the Window Type Code returns a number instead of a
+string. This number is translated into a recognizable string by constant
+definitions located in the file called hjconst.jsh. Since the same numbers are
+always returned for a given type of window, the numbers can be mapped to the
+actual text of the Window Type in any language. </span></p>
+
+<p class=MsoNormal><span class=0Text><span lang=EN>Windows Hierarchy</span></span><span
+lang=EN> - Window hierarchy can be defined as the relationship between a parent
+and a child in a family. </span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=Para09><span lang=EN>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse'>
+ <tr>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para02><span class=1Text><span lang=EN>Back</span></span><span
+  lang=EN> </span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para02><span lang=EN>&nbsp;</span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;padding:2.0pt 2.0pt 2.0pt 2.0pt'>
+  <p class=Para04><span lang=EN>Next </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
